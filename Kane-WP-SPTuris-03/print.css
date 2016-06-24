@@ -1,0 +1,377 @@
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+:focus {/* remember to define focus styles! */
+    outline: 0;
+}
+/* ---------------------INICIO----------------------- */
+body {
+    font-family: 'MuseoSans300', arial, sans-serif;;
+}
+/* ---------------------@FONTFACE----------------------- */
+@font-face {
+    font-family: 'MuseoSans300';
+    src: url('fonts/museosans_300-webfont.eot');
+    src: url('fonts/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300-webfont.woff') format('woff'),
+        url('fonts/museosans_300-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300-webfont.svg#MuseoSans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans700';
+    src: url('fonts/museosans_700-webfont.eot');
+    src: url('fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_700-webfont.woff') format('woff'),
+        url('fonts/museosans_700-webfont.ttf') format('truetype'),
+        url('fonts/museosans_700-webfont.svgz#MuseoSans700') format('svg'),
+        url('fonts/museosans_700-webfont.svg#MuseoSans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ---------------------HEADER----------------------- */
+header {
+    display: none;
+}
+#header {
+    display: none;
+}
+
+/* ---------------------HIGHLIGHTS----------------------- */
+#highlights {
+    display: none;
+}
+#highlights_faixa {
+    display: none;
+}
+
+/* ---------------------FAIXA----------------------- */
+#faixa {
+}
+/* ---------------------CONTENT----------------------- */
+#content {
+    display: none;
+}
+#content_faixa {
+    display: none;
+}
+#content_socialSide {
+    display: none;
+}
+#content_socialSide_rss:visited {
+    display: none;
+}
+#content_socialSide_rss:link {
+    display: none;
+}
+#content_socialSide_rss:hover {
+    display: none;
+}
+#content_socialSide_rss:active {
+    display: none;
+}
+#content_socialSide_face:visited {
+    display: none;
+}
+#content_socialSide_face:link {
+    display: none;
+}
+#content_socialSide_face:hover {
+    display: none;
+}
+#content_socialSide_face:active {
+    display: none;
+}
+#content_socialSide_twitter:visited {
+    display: none;
+}
+#content_socialSide_twitter:link {
+    display: none;
+}
+#content_socialSide_twitter:hover {
+    display: none;
+}
+#content_socialSide_twitter:active {
+    display: none;
+}
+#content_socialSide_dobra{
+    display: none;
+}
+#content_destaques {
+}
+#content_destaques_box1 {
+    width: 240px;
+    height: 250px;
+    background-color: white;
+    margin: 63px 0 0 29px;
+    float: left;
+}
+#content_destaques_box2 {
+    width: 240px;
+    height: 250px;
+    background-color: white;
+    margin: 63px 0 0 52px;
+    float: left;
+}
+#content_destaques_box3 {
+    width: 240px;
+    height: 250px;
+    background-color: white;
+    margin: 63px 0 0 52px;
+    float: left;
+}
+.content_destaques_boxX_title {
+    margin: 10px;
+    margin-bottom: 15px;
+    color: #C2D632;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 18px;
+    border-bottom: #C2D632 solid 1px;
+}
+.content_destaques_boxX_article{
+    margin: 8px;
+    width: 217px;
+    margin-left: 15px;  
+}
+.content_destaques_boxX_article a:visited {
+    margin: 10px;
+    color: #C2D632;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+.content_destaques_boxX_article a:link {
+    margin: 10px;
+    color: #565759;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+.content_destaques_boxX_article a:hover {
+    margin: 10px;
+    color: #C2D632;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+.content_destaques_boxX_article a:active {
+    margin: 10px;
+    color: #C2D632;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+#content_videos {
+    width: 825px;
+    height: 230px;
+    float: left;
+    margin: 30px 0 0 76px;
+    list-style: none;
+}
+#content_videos h4 {
+    margin-bottom: 15px;
+    color: #C2D632;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 18px;
+    border-bottom: #C2D632 solid 1px;
+    width: 804px;
+}
+#content_videos_embed1 {
+}
+#content_videos_embed2 {
+}
+#content_videos_embed3 {
+}
+.content_videos_embedX_sidebar {
+    width: 255px;
+    height: 175px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+.widgettitle{
+    margin-bottom: 8px;
+    color: #565759;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 15px;
+}
+#content_fotos {
+    width: 240px;
+    height: 400px;
+    background-color: white;
+    margin: 50px 0 0 66px;
+    float: left;
+}
+.content_fotos_title {
+    margin: 10px;
+    margin-bottom: 15px;
+    color: #C2D632;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 18px;
+    border-bottom: #C2D632 solid 1px;
+}
+#content_socialBox {
+    width: 532px;
+    height: 250px;
+    margin: 50px 0 0 52px;
+    float: left;
+}
+.content_socialBox_title {
+    margin: 10px;
+    margin-bottom: 15px;
+    color: #C2D632;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 18px;
+    border-bottom: #C2D632 solid 1px;
+}
+#content_socialBox_facebook {
+    width: 235px;
+    height: 350px;
+    float: left;
+    margin: 0 25px 0 20px;
+}
+#content_socialBox_twitter {
+    width: 235px;
+    height: 350px;
+    float: left;
+}
+.BoxLorem {
+    width: 220px;
+    background-color: #eee;
+    height: 200px;
+    margin: 0 0 0 10px;
+}
+.BoxLorem2 {
+    width: 220px;
+    background-color: #eee;
+    height: 350px;
+    margin: 0 0 0 10px;
+}
+/* ---------------------SINGLE----------------------- */
+#faixaSingle {
+    display: none;
+}
+#content_faixa_txt{
+    display: none;
+}
+#contentSingle {
+    border: 0;
+}
+#contentSingle_colEsquerda {
+    width: 95%;
+}
+#contentSingle_colDireita {
+    display: none;
+}
+#contentSingle_colEsquerda_theContent {
+}
+#contentSingle_colEsquerda_tituloCategoriaEicones{
+    border-bottom: #C2D632 solid 2px;
+    width: 600px;
+    height: 33px;
+    margin-bottom: 15px;
+}
+.contentSingle_colEsquerda_tituloCategoria{
+    margin: 10px 0 16px 0;
+    color: #C2D632;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 20px;    
+}
+#contentSingle_colEsquerda_tituloCategoria_icones{
+    display: none;
+}
+#contentSingle_colEsquerda_tituloCategoria_icones_imprimir{
+    display: none;
+}
+#contentSingle_colEsquerda_tituloCategoria_icones_pdf{
+    display: none;
+}
+#contentSingle_colEsquerda_tituloCategoria_icones_enviar{
+    display: none;
+}
+#contentSingle_colEsquerda_tituloCategoria_icones_rss{
+    display: none;
+}
+#contentSingle_colEsquerda_tituloCategoria_icones_tamanhotxt{
+    display: none;
+}
+.post-categories{
+    list-style: none;
+}
+.post-categories li a:visited{
+    text-decoration: none;
+    color: #C2D632;
+}
+.post-categories li a:link{
+    text-decoration: none;
+    color: #C2D632;
+}
+.post-categories li a:hover{
+    text-decoration: none;
+    color: #C2D632;
+}
+.post-categories li a:active{
+    text-decoration: none;
+    color: #C2D632;
+}
+.contentSingle_colEsquerda_data{
+    color: #BFBDBA;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 11px;
+}
+.contentSingle_colEsquerda_tituloPost{
+    color: #231F20;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#contentSingle_colEsquerda_autorEshare{
+    margin-bottom: 35px;
+}
+#contentSingle_colEsquerda_autorEshare_share{
+
+}
+#contentSingle_colEsquerda_autorEshare_share_twitter{
+    display: none;
+}
+#contentSingle_colEsquerda_autorEshare_share_face{
+    display: none;
+}
+#contentSingle_colEsquerda_autorEshare_share_google{
+    display: none;
+}
+.contentSingle_colEsquerda_autorEshare_autor{
+    color: #231F20;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+#contentSingle_colEsquerda p{
+    color: #231F20;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+}
+#contentSingle_colEsquerda_rodape{
+    display: none;
+}
+#contentSingle_colEsquerda_rodape_newsletter{
+    display: none;
+}
+#contentSingle_colEsquerda_rodape_newsletter_link000:visited{
+    display: none;
+}
+/* ---------------------FOOTER----------------------- */
+#footer{
+    display: none;
+}

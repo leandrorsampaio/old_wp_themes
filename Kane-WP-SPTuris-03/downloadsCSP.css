@@ -1,0 +1,390 @@
+/* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+img {
+    border:0;
+}
+:focus {/* remember to define focus styles! */
+    outline: 0;
+}
+/* ---------------------INICIO----------------------- */
+body {
+    font-family: 'MuseoSans300', arial, sans-serif;;
+    color: #231F20;
+    overflow-x: hidden;
+    background-image: url("images/bg2-cidadesp.gif");
+    background-repeat: repeat-x;
+    background-position: top center;
+}
+/* ---------------------@FONTFACE----------------------- */
+@font-face {
+    font-family: 'MuseoSans100';
+    src: url('fonts/museosans_100-webfont.eot');
+    src: url('fonts/museosans_100-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_100-webfont.woff') format('woff'),
+        url('fonts/museosans_100-webfont.ttf') format('truetype'),
+        url('fonts/museosans_100-webfont.svg#MuseoSans100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans300';
+    src: url('fonts/museosans_300-webfont.eot');
+    src: url('fonts/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300-webfont.woff') format('woff'),
+        url('fonts/museosans_300-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300-webfont.svg#MuseoSans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('fonts/museosans_500-webfont.eot');
+    src: url('fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_500-webfont.woff') format('woff'),
+        url('fonts/museosans_500-webfont.ttf') format('truetype'),
+        url('fonts/museosans_500-webfont.svg#MuseoSans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans700';
+    src: url('fonts/museosans_700-webfont.eot');
+    src: url('fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_700-webfont.woff') format('woff'),
+        url('fonts/museosans_700-webfont.ttf') format('truetype'),
+        url('fonts/museosans_700-webfont.svgz#MuseoSans700') format('svg'),
+        url('fonts/museosans_700-webfont.svg#MuseoSans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans900';
+    src: url('fonts/museosans_900-webfont.eot');
+    src: url('fonts/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_900-webfont.woff') format('woff'),
+        url('fonts/museosans_900-webfont.ttf') format('truetype'),
+        url('fonts/museosans_900-webfont.svgz#MuseoSans900') format('svg'),
+        url('fonts/museosans_900-webfont.svg#MuseoSans900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ---------------------HEADER----------------------- */
+#header {
+    width: 990px;
+    height: 150px;
+    margin: 0 auto;
+}
+#header_logo {
+    width: 180px;
+    height: 130px;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+#header_title {
+    width: 750px;
+    float: left;
+    margin: 20px 0 0 0;
+    border-left: 1px solid #15406D;
+    padding: 10px 0 10px 10px;
+}
+#header_title_top {
+    font-family: 'MuseoSans900';
+    color: #164370;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+#header_title_middle {
+    font-family: 'MuseoSans700';
+    color: #288BC8;
+    font-size: 14px;
+    margin: 2px 0 0 0;
+}
+#header_title_bottom {
+    font-family: 'MuseoSans700';
+    color: #A6C541;
+    font-size: 23px;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+}
+/* ---------------------CONTENT----------------------- */
+#content_pt {
+    width: 950px;
+    margin: 0 auto;
+    background-color: #04B14C;
+    display: table;
+    padding: 40px 0 5px 40px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+#content_en {
+    width: 950px;
+    margin: 0 auto;
+    background-color: #288BC8;
+    display: table;
+    padding: 40px 0 5px 40px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+#content_es {
+    width: 950px;
+    margin: 0 auto;
+    background-color: #FFCB07;
+    display: table;
+    padding: 40px 0 5px 40px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+#content_bottom {
+    width: 910px;
+    height: 70px;
+    float: left;
+    clear: both;
+    margin: 0 40px 0 0;
+}
+#content_bottom_title {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #fff;
+    margin: 0 0 5px 0;
+}
+#content_bottom_title h5 {
+    font-family: 'MuseoSans500';
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 4px 10px;
+    text-transform: uppercase;
+}
+#content_bottom_box {
+}
+#content_bottom_box div {
+    width: 283px;
+    float: left;
+    padding: 0 10px 0 10px;
+}
+#content_bottom_box_left {
+    text-align: left;
+}
+#content_bottom_box_mid {
+    text-align: center;
+}
+#content_bottom_box_right {
+    text-align: right;
+}
+#content_bottom_box div a:visited {
+    font-family: 'MuseoSans300';
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+#content_bottom_box div a:link {
+    font-family: 'MuseoSans300';
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+#content_bottom_box div a:hover {
+    font-family: 'MuseoSans300';
+    color: #fff;
+    font-size: 16px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#content_bottom_box div a:active {
+    font-family: 'MuseoSans300';
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+/* ---------------------ABAS----------------------- */
+#abas {
+    width: 505px;
+    height: 35px;
+    margin: 0 auto;
+    padding: 0 0 0 485px;
+}
+#abas_pt:visited {
+    background-color: #04B14C;
+}
+#abas_pt:link {
+    background-color: #04B14C;
+}
+#abas_pt:hover {
+    background-color: #1BCC62;
+}
+#abas_pt:active {
+    background-color: #04B14C;
+}
+#abas_en:visited {
+    background-color: #288BC8;
+}
+#abas_en:link {
+    background-color: #288BC8;
+}
+#abas_en:hover {
+    background-color: #32a3e8;
+}
+#abas_en:active {
+    background-color: #288BC8;
+}
+#abas_es:visited {
+    background-color: #FFCB07;
+}
+#abas_es:link {
+    background-color: #FFCB07;
+}
+#abas_es:hover {
+    background-color: #FFE180;
+}
+#abas_es:active {
+    background-color: #FFCB07;
+}
+#abas a {
+    width: 150px;
+    height: 35px;
+    float: left;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-underline: none; 
+}
+#abas h3 {
+    font-family: 'MuseoSans700';
+    color: #fff;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* ---------------------ITEM----------------------- */
+.item {
+    width: 287px;
+    height: 222px;
+    float: left;
+    margin: 0 25px 65px 0;
+}
+.item_thumb {
+    width: 154px;
+    height: 222px;
+    float: left;
+}
+.item_thumb a:visited {
+    width: 150px;
+    height: 218px;
+    display: block;
+    border: 2px solid #666;
+}
+.item_thumb a:link {
+    width: 150px;
+    height: 218px;
+    display: block;
+    border: 2px solid #666;
+}
+.item_thumb a:hover {
+    width: 150px;
+    height: 218px;
+    display: block;
+    border: 2px solid #fff;
+}
+.item_thumb a:active {
+    width: 150px;
+    height: 218px;
+    display: block;
+    border: 2px solid #666;
+}
+.item_text {
+    width: 126px;
+    height: 222px;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.item_text_link {
+    color: #000;
+    text-decoration: none;
+}
+.item_text_title {
+    font-family: 'MuseoSans300';
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+}
+.item_text_resumo {
+    font-family: 'MuseoSans100';
+    font-size: 12px;
+    color: #000;
+    margin: 20px 0 0 0;
+    display: block;
+}
+.item_text_donloadlink  {
+    font-family: 'MuseoSans100';
+    font-size: 12px;
+    color: #000;
+    margin: 20px 0 0 0;
+    display: block;
+}
+.item_text_donloadlink  a:visited {
+    text-decoration: none;
+    color: #000;
+}
+.item_text_donloadlink  a:link {
+    text-decoration: none;
+    color: #000;
+}
+.item_text_donloadlink  a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+.item_text_donloadlink  a:active {
+    text-decoration: none;
+    color: #000;
+}
+/* ---------------------FOOTER----------------------- */
+#footer_logosEtxtDOWNLOAD{
+    width: 435px;
+    margin: 0 auto;
+}
+#footer_logosDOWNLOAD{
+    background-color: white;
+    height: 93px;
+    border-radius: 10px;
+    margin-bottom: 21px;
+    padding: 12px 0 8px 0;
+}
+#footer_logos_imgMarcaSpDOWNLOAD{
+    float: left;   
+    border-right: 1px black solid;
+    padding:  0 14px 0 16px;
+    margin: 0 25px 0 0;
+}
+.footer_logos_imgDOWNLOAD{
+    float: left;
+    margin: 0 25px 0 0;
+}
+#footer_txtDOWNLOAD{
+    color: #000;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,2621 @@
+/*
+Theme Name: Saint Nicholas WP Theme - Natal Iluminado 2013
+Theme URI: http://www.natal.spturis.com
+Author: SPTuris/DMV - Luciana Jabur / Leandro Rossi Sampaio / Daniella Parra / Pagu Senna
+Author URI: http://lesampaio.com.br
+Description: Tema padrao desenvolvido para o site Natal Iluminado
+Version: 2.5.7
+License: Todos os direitos reservados.  
+*/
+/* ################################################# Reset CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background-color: #28ae4e;
+    background-image: url(images/bg_bolinhas.gif);
+    background-repeat: repeat;
+    font-family: 'MuseoSans300', arial, sans-serif;
+}
+iframe { 
+    display:block; 
+    border:none; 
+}
+a:visited {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: none;
+}
+ol, ul, li {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+aside {
+    list-style: none;
+}
+/* ################################################# Fontes */
+@font-face {
+    font-family: 'MuseoSans100';
+    src: url('fonts/museosans_100-webfont.eot');
+    src: url('fonts/museosans_100-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_100-webfont.woff') format('woff'),
+        url('fonts/museosans_100-webfont.ttf') format('truetype'),
+        url('fonts/museosans_100-webfont.svg#MuseoSans100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans300';
+    src: url('fonts/museosans_300-webfont.eot');
+    src: url('fonts/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300-webfont.woff') format('woff'),
+        url('fonts/museosans_300-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300-webfont.svg#MuseoSans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('fonts/museosans_500-webfont.eot');
+    src: url('fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_500-webfont.woff') format('woff'),
+        url('fonts/museosans_500-webfont.ttf') format('truetype'),
+        url('fonts/museosans_500-webfont.svg#MuseoSans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans500Italic';
+    src: url('fonts/museosans_500_italic-webfont.eot');
+    src: url('fonts/museosans_500_italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_500_italic-webfont.woff') format('woff'),
+        url('fonts/museosans_500_italic-webfont.ttf') format('truetype'),
+        url('fonts/museosans_500_italic-webfont.svgz#MuseoSans500Italic') format('svg'),
+        url('fonts/museosans_500_italic-webfont.svg#MuseoSans500Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans700Italic';
+    src: url('fonts/museosans_700_italic-webfont.eot');
+    src: url('fonts/museosans_700_italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_700_italic-webfont.woff') format('woff'),
+        url('fonts/museosans_700_italic-webfont.ttf') format('truetype'),
+        url('fonts/museosans_700_italic-webfont.svgz#MuseoSans700Italic') format('svg'),
+        url('fonts/museosans_700_italic-webfont.svg#MuseoSans700Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans700';
+    src: url('fonts/museosans_700-webfont.eot');
+    src: url('fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_700-webfont.woff') format('woff'),
+        url('fonts/museosans_700-webfont.ttf') format('truetype'),
+        url('fonts/museosans_700-webfont.svgz#MuseoSans700') format('svg'),
+        url('fonts/museosans_700-webfont.svg#MuseoSans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans900';
+    src: url('fonts/museosans_900-webfont.eot');
+    src: url('fonts/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_900-webfont.woff') format('woff'),
+        url('fonts/museosans_900-webfont.ttf') format('truetype'),
+        url('fonts/museosans_900-webfont.svgz#MuseoSans900') format('svg'),
+        url('fonts/museosans_900-webfont.svg#MuseoSans900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.negrito {
+    font-family: 'MuseoSans700';
+}
+/* ################################################# Gerais */
+#all {
+    min-height: 100%;
+    position: relative;
+}
+#faixaSpturis {
+    width:100%;
+    height:25px;
+}
+#faixaSpturis_guirlanda {
+}
+#faixaSpturis_faixaPadrao {
+}
+/* ################################################# Header */
+#headerBGvinho {
+    /* background-color: #830915; BG VINHO 2013 */
+    width: 100%;
+    background-image: url(images/bg_bolinhas.gif);
+}
+#header {
+    width:960px;
+    height:136px;
+    margin: 0 auto;
+}
+#headerHOME {
+    width:960px;
+    margin: 0 auto;
+    height: 151px;
+}
+#header_logo_home {
+    width: 348px;
+    float: left;
+    margin: 195px 0 0 0px;
+    z-index: 100;
+    position: absolute;
+    background-image: url(images/bg-black-75.png);
+    padding: 19px;
+}
+#header_logo_interno {
+    width: 190px;
+    height: 188px;
+    float: left;
+    margin: 9px 0 0 12px;
+    z-index: 100;
+    position: absolute;
+}
+#header_logo_interno img {
+    width: 100%;
+}
+#header_bannerHOME {
+    width: 728px;
+    height: 90px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+#header_bannerHOMESeparator {
+    height: 23px;
+    width: 100%;
+}
+#header_banner {
+    width: 728px;
+    height: 90px;
+    background-color: #000;
+    float: right;
+    margin: 27px 25px 0 0;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+#header_logo_interno {
+    width: 130px;
+    background-image: url(images/header_logo_pagInterna.png);
+    float: left;
+    margin: 10px 0 0 20px;
+    z-index: 3000;
+    position: absolute;
+}
+/* ################################################# Menu */
+#menu {
+    width:100%;
+    height:70px;
+    background: url(images/BG-menu.png);
+    background-position:center;
+    position: absolute;
+    z-index: 2000;
+    color: #FFF;
+    *position: relative;
+}
+#menuHome {
+    width: 900px;
+    height: 38px;
+    margin: 0 auto;
+    padding: 12px 0 0 0;
+}
+#menuInterno{
+    width: 705px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 12px 0 0 147px;
+}
+#menuHome ul {
+    list-style: none;
+    text-align: left;
+    height: 18px;
+}
+#menuHome ul li {
+    float: left;
+    padding: 0 30px;
+}
+#menuHome li a:hover {
+    background: #ce302d;
+    color: #fff200;
+}
+#menuHome ul li a:visited {
+    display: block;
+    margin: 0;
+    padding: 8px 19px 8px 13px;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 20px;
+    color: #fff200;
+    text-align: center;
+    text-decoration: none
+}
+#menuHome ul li a:link {
+    display: block;
+    margin: 0;
+    padding: 8px 19px 8px 13px;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 20px;
+    color: #fff200;
+    text-align: center;
+    text-decoration: none
+}
+#menuHome ul li a:hover {
+    background: #ce302d;
+    color: #fff200;
+}
+#menuHome ul li ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+}
+#menuHome ul li:hover ul { 
+    display: block;
+    background: #ce302d;
+    color: #fff200;
+    padding: 0;
+}
+#menuHome ul li ul li {
+    clear: both;
+    display: block;
+    margin: 0;
+    width: 100%;
+    white-space: nowrap;
+    background: #03621e;
+    color: #fff200;
+    padding: 0;
+}
+#menuHome ul li ul li a {
+    display: block;
+    font-size: 12px;
+    text-transform: none;
+    color:#fff200;
+    text-align: left;
+    padding: 5px;
+}
+#menuHome ul li ul li a:visited {
+    display: block;
+    font-size: 11px;
+    text-transform: none;
+    color:#fff200;
+}
+#menuHome ul li ul li a:link {
+    display: block;
+    font-size: 11px;
+    text-transform: none;
+    text-align: left;
+    color:#fff200;
+}
+#menuHome ul li ul li a:hover {
+    background: #ce302d;
+    color: #fff200;
+}
+#menuHome ul li ul li a:active {
+    display: block;
+    font-size: 11px;
+    text-transform: none;
+    color:#F15C27;
+}
+/*----- Menu Interno ----- */
+#menuInterno ul {
+    list-style: none;
+    text-align: left;
+    height: 18px;
+}
+#menuInterno ul li {
+    float: left;
+    padding: 0 6px;
+}
+#menuInterno li a:hover {
+    background: #ce302d;
+    color: #fff200;
+}
+#menuInterno ul li a:visited {
+    display: block;
+    margin: 0;
+    padding: 8px 19px 8px 13px;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 20px;
+    color: #fff200;
+    text-align: center;
+    text-decoration: none
+}
+#menuInterno ul li a:link {
+    display: block;
+    margin: 0;
+    padding: 8px 19px 8px 13px;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 20px;
+    color: #fff200;
+    text-align: center;
+    text-decoration: none
+}
+#menuInterno ul li a:hover {
+    background: #ce302d;
+    color: #fff200;
+}
+#menuInterno ul li ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+}
+#menuInterno ul li:hover ul { 
+    display: block;
+    background: #ce302d;
+    color: #fff200;
+    padding: 0;
+}
+#menuInterno ul li ul li {
+    clear: both;
+    display: block;
+    margin: 0;
+    width: 100%;
+    white-space: nowrap;
+    background: #03621e;
+    color: #fff200;
+    padding: 0;
+}
+#menuInterno ul li ul li a {
+    display: block;
+    font-size: 12px;
+    text-transform: none;
+    color:#fff200;
+    text-align: left;
+    padding: 4px;
+}
+#menuInterno ul li ul li a:visited {
+    display: block;
+    font-size: 11px;
+    text-transform: none;
+    color:#fff200;
+}
+#menuInterno ul li ul li a:link {
+    display: block;
+    font-size: 11px;
+    text-transform: none;
+    text-align: left;
+    color:#fff200;
+}
+#menuInterno ul li ul li a:hover {
+    background: #ce302d;
+    color: #fff200;
+}
+#menuInterno ul li ul li a:active {
+    display: block;
+    font-size: 11px;
+    text-transform: none;
+    color:#F15C27;
+}
+/* ################################################# Nivo Slider */
+#slider {
+    background-position: center;
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    border-bottom: #FFF000 solid 3px;
+}
+.slider_title {
+    width: 424px;
+    text-decoration: none;
+    background-image: url(images/bg_black_50.png);
+    height: 130px;
+    margin: 104px 18px 0;
+    float: right;
+}
+.slider_title h2 {
+    padding: 15px 0 0 0;
+    color: #FFF200;
+    font-size: 45px;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0 0 0 40px;
+    height: 85px;
+    text-shadow: 3px 3px 5px #212121;
+    -webkit-text-shadow: 3px 3px 5px #212121;
+    -moz-text-shadow: 3px 3px 5px #212121;
+}
+.slider_excerpt {
+    margin: 5px 0 0;
+}
+.slider_title p {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #FFF200;
+    padding: 78px 0 0;
+    font-size: 13px;
+    text-align: right;
+}
+.nivoSlider {
+    position:relative;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0;
+    left:0;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:0;
+    padding:0;
+    margin:0;
+    z-index:6;
+    display:none;
+    text-decoration: none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+    display:block;
+    position:absolute;
+    z-index:5;
+    height:100%;
+}
+.nivo-box {
+    display:block;
+    position:absolute;
+    z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+    position:absolute;
+    left:0;
+    bottom:0;
+    background:#000;
+    color:#fff;
+    opacity:0.8; /* Overridden by captionOpacity setting */
+    width:100%;
+    z-index:8;
+}
+.nivo-caption p {
+    padding:5px;
+    margin:0;
+}
+.nivo-caption a {
+    display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav {
+    width: 200px;
+    height: 25px;
+    background-color: #FFF000;
+    position: absolute;
+    z-index: 10;
+    margin: 510px 0 0 330px;
+}
+.nivo-directionNav a {
+    cursor:pointer;
+}
+.nivo-prevNav {
+    left:0;
+}
+.nivo-nextNav {
+    right:0;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+    position:relative;
+    z-index:20;
+    cursor:pointer;
+    display: none;
+}
+.nivo-controlNav a.active {
+    font-weight:bold;
+}
+/* NIVO SLIDER - DEFAULT THEME CSS */
+.theme-default {
+    width: 1600px;
+    height: 400px;
+    background-color: #000;
+    margin: 0 auto;
+}
+.theme-default .nivoSlider {
+    position:relative;
+    background:#fff url(nivo-slider/loading.gif) center;
+    margin-bottom: 50px;
+}
+.theme-default .nivoSlider img {
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+.theme-default .nivoSlider a {
+    border:0;
+    display:block;
+}
+#contentHome_setor1 .nivo-controlNav {
+    position: absolute;
+    display: inline-block;
+    z-index: 3000;
+    margin: 306px 0 0 442px;
+}
+#contentHome_setor1 .nivo-controlNav a {
+    display:block;
+    width:13px;
+    height:14px;
+    float: left;
+    background:url(images/slider_control_off.png);
+    border:0;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+    z-index: 3000;
+}
+#contentHome_setor1 .nivo-controlNav a.active {
+    background:url(images/slider_control_on.png);    
+    text-decoration: none;
+    z-index: 3000;
+}
+.theme-default .nivo-directionNav a {
+    display:block;
+    width:30px;
+    height:30px;
+    background:url(nivo-slider/arrows.png) no-repeat;
+    text-indent:-9999px;
+    border:0;
+}
+.theme-default a.nivo-nextNav {
+    background-position:-30px 0;
+    right:15px;
+}
+.theme-default a.nivo-prevNav {
+    left:15px;
+}
+.theme-default .nivo-caption {
+    font-family: Century, arial, sans-serif;
+}
+.theme-default .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.theme-default .nivo-caption a:hover {
+    color:#fff;
+}
+/* ################################################# Footer */
+#footer {
+    width:100%;
+    height: 750px;
+    float: left;
+    background-image: url(images/preserpio.png);
+    background-position:top center;
+    background-repeat:no-repeat;
+}
+#footer_logo {    
+    width:882px;
+    height:600px;
+    margin: 0 auto;
+    margin-top: 138px;
+}
+#footer_logo_bloco1 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 12px;
+    color: #000;
+    float: left;
+    width: 322px;
+    height: 300px;
+    margin: 0 25px 0 0;
+    padding: 0 23px 0 0;
+    border-right: #BDBCBC 1px solid;
+}
+#footer_logo_bloco1 img {
+    padding: 7px;
+    float: left;
+}
+#footer_logo_bloco1_title {
+    width: 396px;
+    margin: 0 0 20px 0;
+}
+.footer_logo_blocos_titulo{
+    font-family: 'MuseoSans500', arial, sans-serif!important;
+    font-size: 14px!important;
+    text-align: center!important;
+}
+#footer_logo_bloco2 {
+    float: left;
+    height: 300px;
+    width: 205px;
+    border-right: #BDBCBC 1px solid;
+    margin: 0 22px 0 0;
+    padding: 0 39px 0 0;
+}
+#footer_logo_bloco2_title {
+    width: 215px;
+    margin: 0 0 20px 0;
+}
+#footer_logo_bloco2 table td, tr{
+    padding: 14px;
+}
+#footer_logo_bloco3 {
+    float: left;
+    width: 243px;
+}
+#footer_logo_bloco3_title {
+    margin: 0 0 20px 0;
+}
+#footer_logo_bloco3 p{
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 14px;
+}
+#footer_logo_bloco3 h1{
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+#footer_logo_bloco3 h2{
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+#footer_logo_bloco3 a:visited{
+    text-decoration: none;
+    color: #000;
+}
+#footer_logo_bloco3 a:link{
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+}
+#footer_logo_bloco3 a:hover{
+    color: #620D0D;
+    text-decoration: none;
+}
+#footer_logo_bloco3 a:active{
+    text-decoration: none;
+}
+/* ################################################# Conteúdo HOME */
+#contentHome {
+    width:960px;
+    background-color: #ce302d;
+    display: table;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+#contentHome_setor1 {
+    width:960px;
+    height:325px;
+    float: left;
+}
+#photo_container {
+    width: 960px;
+    height: 325px;
+    margin: auto;
+    background-color: #000;
+}
+#contentHome_setor2 {
+    width:960px;
+    float: left;
+    padding: 33px 0 33px 0;
+}
+.contentHome_setor2_box {
+    background-image: url(images/BG-contentHome_setor2_box.jpg);
+    display:table;
+    width:144px;
+    height:300px;
+    float: left;
+    margin:0 36px 0 30px;
+    box-shadow: 2px 2px 10px #000;
+    -webkit-box-shadow: 2px 2px 10px #000;
+    -moz-box-shadow: 5px 5px 10px #000;
+}
+#contentHome_setor2_box_imgArvore {
+    width:85px;
+    height:119px;
+    margin: 15px 0 10px 27px;
+}
+#contentHome_setor2_box_imgPresente {
+    width:92px;
+    height:95px;
+    margin: 27px 0 23px 26px;  
+}
+#contentHome_setor2_box_imgEstrela {
+    width:106px;
+    height:100px;
+    margin: 25px 0 23px 20px;  
+}
+.contentHome_setor2_box_titulo {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #ce302d;
+    font-size: 28px;
+    text-align: center;
+}
+.contentHome_setor2_box_texto {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #ce302d;
+    font-size: 13px;
+    text-align: left;
+    margin: 15px 14px 0 15px;
+}
+#contentHome_setor2_boxBig {
+    width:266px;
+    height:300px;
+    float: right;
+    margin:0 30px 0 30px;
+    background-image: url(images/BG-contentHome_setor2_boxBig.jpg);
+    box-shadow: 2px 2px 10px #000;
+    -webkit-box-shadow: 2px 2px 10px #000;
+    -moz-box-shadow: 5px 5px 10px #000;
+}
+#contentHome_setor2_boxBig_header {
+    width:266px;
+    height: 100px;
+}
+#contentHome_setor2_boxBig_header_imgSino {
+    width:83px;
+    height:81px;
+    float: left;
+    margin:17px 0 0 23px;
+}
+#contentHome_setor2_boxBig_content {
+    width:220px;
+    height:180px;
+    margin: 10px 17px 0 23px;
+    float: left;
+}
+#contentHome_setor2_boxBig_content ul {
+}
+#contentHome_setor2_boxBig_content ul li {
+    background: url(images/BG-contentHome_setor2_boxBig_content-ul-li.png) no-repeat;
+    padding: 0 0 0 18px;
+    margin: 0 0 7px 0;
+}
+#contentHome_setor2_boxBig_content ul li a:visited {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    color: #ce302d;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.9px;
+}
+#contentHome_setor2_boxBig_content ul li a:link {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    color: #ce302d;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.9px;
+}
+#contentHome_setor2_boxBig_content ul li a:hover {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    color: #ce302d;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.9px;
+    text-decoration: underline;
+}
+#contentHome_setor2_boxBig_content ul li a:active {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    color: #ce302d;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.9px;
+}
+#contentHome_setor3 {
+    width:960px;
+    float: left;
+    margin: 0 0 65px 0;
+}
+#contentHome_setor3_muralNoel {
+    width:415px;
+    height:270px;
+    float: left;
+    margin: 50px 40px 0 50px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(10deg); 
+    -o-transform: rotate(10deg); 
+}
+#contentHome_setor3_muralNoel_polaroid {
+    width:189px;
+    height:269px;
+    float: left;
+}
+#contentHome_setor3_muralNoel_polaroid_imgLink:link {
+    background-image: url(images/BG-contentHome_setor3_muralNoel_polaroid_imgLink.png);
+    width:189px;
+    height:269px;
+    display: table;
+}
+#contentHome_setor3_muralNoel_polaroid_imgLink:visited {
+    background-image: url(images/BG-contentHome_setor3_muralNoel_polaroid_imgLink.png);
+    width:189px;
+    height:269px;
+    display: table;
+}
+#contentHome_setor3_muralNoel_polaroid_imgLink:hover {
+    background-image: url(images/BG-contentHome_setor3_muralNoel_polaroid_imgLink-ON.png);
+    width:189px;
+    height:269px;
+    display: table;
+}
+#contentHome_setor3_muralNoel_polaroid_imgLink:active {
+    background-image: url(images/BG-contentHome_setor3_muralNoel_polaroid_imgLink.png);
+    width:189px;
+    height:269px;
+    display: table;
+}
+#contentHome_setor3_muralNoel_direita {
+    width:200px;
+    height:249px;
+    float: left;
+    margin: 20px 0 0 10px;
+}
+#contentHome_setor3_muralNoel_direita_titulo a {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff200;
+    font-size: 29px;
+    line-height: 25px;
+    display: table;
+    margin: 0 0 15px 0;
+}
+.contentHome_setor3_muralNoel_direita_texto {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #fff200;
+    font-size: 14px;
+    margin: 0 0 15px 0;
+}
+.contentHome_setor3_muralNoel_direita_texto a {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #fff200;
+    font-size: 14px;
+    margin: 0 0 15px 0;
+}
+#contentHome_setor3_muralNoel_direita_envie a {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff200;
+    font-size: 20px;
+    display: table;
+    margin: 40px 0 0 0;
+}
+#contentHome_setor3_muralSP {
+    width:400px;
+    height:280px;
+    float: left;
+    margin: 60px 0 0 0;
+}
+#contentHome_setor3_muralSP_fotos:visited {
+    background-image: url(images/BG-contentHome_setor3_muralSP_fotos.png);
+    width:402px;
+    height:275px;
+    display: table;
+}
+#contentHome_setor3_muralSP_fotos:link {
+    background-image: url(images/BG-contentHome_setor3_muralSP_fotos.png);
+    width:402px;
+    height:275px;
+    display: table;
+}
+#contentHome_setor3_muralSP_fotos:hover {
+    background: url(images/ON.png);
+    width:402px;
+    height:275px;
+    display: table;
+}
+#contentHome_setor3_muralSP_fotos:active {
+    background: url(images/BG-contentHome_setor3_muralSP_fotos.png);
+    width:402px;
+    height:275px;
+    display: table;
+}
+#contentHome_setor3_muralSP_textos {
+    width:235px;
+    height:60px;
+    display: table;
+    margin: -304px 0 0 162px;
+    -webkit-transform: rotate(-9deg);
+    -moz-transform: rotate(9deg); 
+    -o-transform: rotate(9deg); 
+}
+#contentHome_setor3_muralSP_textos h3 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff200;
+    font-size: 30px;
+    display: table;
+}
+#contentHome_setor3_muralSP_textos p {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #fff200;
+    font-size: 12px;
+    display: table;
+}
+#contentHome_setor4 {
+    width: 976px;
+    height: 203px;
+    background-image: url(images/BG-contentHome_setor4-C.png);
+    margin: 0 auto;
+    box-shadow: 2px 2px 10px #000;
+    -webkit-box-shadow: 2px 2px 10px #000;
+    -moz-box-shadow: 5px 5px 10px #000;
+    background-repeat: no-repeat;
+}
+#contentHome_setor4_concurso {
+    width:450px;
+    height:290px;
+    float: left;
+    margin: 20px 20px 20px 50px;
+}
+#contentHome_setor4_concurso_logo:visited {
+    background-image: url(images/BG-contentHome_setor4_concurso_logo.png);
+    width:395px;
+    height:72px;
+    display: table;
+    margin: 14px 0 0 28px;
+}
+#contentHome_setor4_concurso_logo:link {
+    background-image: url(images/BG-contentHome_setor4_concurso_logo.png);
+    width:395px;
+    height:72px;
+    display: table;
+    margin: 14px 0 0 28px;
+}
+#contentHome_setor4_concurso_logo:hover {
+    background-image: url(images/BG-contentHome_setor4_concurso_logo-ON.png);
+    width:395px;
+    height:72px;
+    display: table;
+    margin: 14px 0 0 28px;
+}
+#contentHome_setor4_concurso_logo:active {
+    background-image: url("../images/BG-contentHome_setor3_muralNoel_polaroid_imgLink.png");
+    width:395px;
+    height:72px;
+    display: table;
+    margin: 14px 0 0 28px;
+}
+#contentHome_setor4_concurso p {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #fff200;
+    font-size: 16px;
+    margin: 6px 0 0 25px;
+}
+#contentHome_setor4_concurso ul {
+    margin: 40px 0 0 15px;
+}
+#contentHome_setor4_concurso ul li {
+    display:table;
+    float: left;
+    margin: 0px 0px 0 30px;
+}
+#contentHome_setor4_concurso ul li a:visited {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #fff200;
+    font-size: 26px;
+}
+#contentHome_setor4_concurso ul li a:link {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #fff200;
+    font-size: 26px;
+}
+#contentHome_setor4_concurso ul li a:hover {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #fff200;
+    font-size: 26px;
+    text-decoration: underline;
+}
+#contentHome_setor4_concurso ul li a:active {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #fff200;
+    font-size: 26px;
+}
+#contentHome_setor4_concurso_fotos:visited {
+    background-image: url("../images/BG-contentHome_setor4_concurso_fotos.png");
+    width:377px;
+    height:84px;
+    display: table;
+    margin: 100px 0 10px 28px;
+}
+#contentHome_setor4_concurso_fotos:link {
+    background-image: url("../images/BG-contentHome_setor4_concurso_fotos.png");
+    width:377px;
+    height:84px;
+    display: table;
+    margin: 100px 0 10px 28px;
+}
+#contentHome_setor4_concurso_fotos:hover {
+    background-image: url("../images/BG-contentHome_setor4_concurso_fotos-ON.png");
+    width:377px;
+    height:84px;
+    display: table;
+    margin: 100px 0 10px 28px;
+}
+#contentHome_setor4_concurso_fotos:active {
+    background-image: url("../images/BG-contentHome_setor4_concurso_fotos.png");
+    width:377px;
+    height:84px;
+    display: table;
+    margin: 100px 0 10px 28px;
+}
+#contentHome_setor4_video {
+    width:310px;
+    height:300px;
+    float: right;
+    margin: 35px 70px 0 0;
+}
+#contentHome_setor4_video h3 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff200;
+    font-size: 25px;
+    margin: 0 0 5px 0;
+}
+#contentHome_setor4_video_boxYT {
+    float: left;
+    background-color: #fff;
+    padding: 10px 10px 30px 10px;
+}
+#contentHome_AlternativoVideo {
+    width: 310px;
+    height: 300px;
+    float: left;
+    margin: 40px 90px 0 75px;   
+}
+#contentHome_AlternativoVideo h3 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff200;
+    font-size: 25px;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+#contentHome_setor4Shadow {
+    width:100%;
+    height:42px;
+    background-image: url(images/home_setor4shadow.png);
+    margin: 0 auto;
+    background-position:top center;
+    background-repeat:no-repeat;
+}
+/* ################################################# Página Interna */
+/* ################################################# Content Página Interna */
+#contentPaginaInterna {
+    width:960px;    
+    background-color: #ce302d;
+    display: table;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+#contentPaginaInterna_setorPrincipal{
+    width: 578px;  
+    float: left; 
+    margin: 30px 0 50px 30px;
+    box-shadow: 2px 2px 10px #000;
+    -webkit-box-shadow: 2px 2px 10px #000;
+    -moz-box-shadow: 5px 5px 10px #000;
+}
+#contentPaginaInterna_setorPrincipal_imgTopo{
+    width:578px;
+    height:18px;
+    background-image: url(images/BG-contentPaginaInterna_setorPrincipal_imgTopo.jpg);
+}
+#contentPaginaInterna_setorPrincipal_imgFim{
+    width:578px;
+    height:14px;
+    background-image: url(images/BG-contentPaginaInterna_setorPrincipal_imgFim.jpg);
+}
+#contentPaginaInterna_setorPrincipal_box{
+    width: 578px;
+    background-image: url(images/BG-contentPaginaInterna_setorPrincipal_imgBox.jpg);
+}
+#contentPaginaInterna_setorPrincipal_box_textos{
+    width: 478px;
+    padding: 22px 60px 20px 40px;
+}
+#contentPaginaInterna_setorPrincipal_box_textos h1{
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 20px;    
+}
+#contentPaginaInterna_setorPrincipal_box_textos i{
+    font-family: 'MuseoSans500Italic', arial, sans-serif;    
+    color: black;
+    font-size: 13px;
+}
+#contentPaginaInterna_setorPrincipal_box_textos h2{
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #28ae4e;
+    font-size: 20px;    
+}
+#contentPaginaInterna_setorPrincipal_box_textos h3{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 18px;      
+}
+#contentPaginaInterna_setorPrincipal_box_textos h4{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #28ae4e;
+    font-size: 15px;      
+}
+#contentPaginaInterna_setorPrincipal_box_textos h5{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: black;
+    font-size: 18px;       
+}
+#contentPaginaInterna_setorPrincipal_box_textos h6{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: black;
+    font-size: 15px;  
+}
+#contentPaginaInterna_setorPrincipal_box_textos p{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: black;
+    font-size: 13px;     
+    line-height: 19px;
+    text-align: justify;
+    clear: both;
+}
+#contentPaginaInterna_setorPrincipal_box_textos b{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: black;
+    font-size: 13px;   
+}
+#contentPaginaInterna_setorPrincipal_box_textos strong{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: black;
+    font-size: 13px;      
+}
+#contentPaginaInterna_setorPrincipal_box_textos a:visited{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #620d0d;
+    font-size: 13px;   
+    text-decoration: underline;
+}
+#contentPaginaInterna_setorPrincipal_box_textos a:link{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color:black;
+    font-size: 13px;    
+    text-decoration: underline; 
+}
+#contentPaginaInterna_setorPrincipal_box_textos a:hover{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #48352e;
+    font-size: 13px;       
+}
+#contentPaginaInterna_setorPrincipal_box_textos a:active{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #48352e;
+    font-size: 13px;   
+}
+.contentPaginaInterna_setorPrincipal_box_textos_data{
+    font-family: 'MuseoSans500Italic', arial, sans-serif!important;    
+    color: black;
+    font-size: 13px;
+    margin: 3px 0 9px 0!important;
+    float: left;
+    width: 204px;
+    clear: none!important;
+    margin: 11px 0 13px 0!important;
+}
+.contentPaginaInterna_setorPrincipal_box_textos_maisNews{
+    margin: 15px 0 0!important;
+}
+#contentPaginaInterna_setorPrincipal_box_textos_imgRoteiros{
+    width: 502px;
+    height: 335px;
+    background-image: url(images/contentPaginaInterna_setorPrincipal_box_textos_imgRoteiros.jpg);
+    margin: 0 0 20px 0;
+}
+#contentPaginaInterna_barraLateral{
+    width:278px;
+    /*    height: 917px;        */
+    float: right;
+    margin: 30px 30px 50px 0;
+    box-shadow: 2px 2px 10px #000;
+    -webkit-box-shadow: 2px 2px 10px #000;
+    -moz-box-shadow: 5px 5px 10px #000;
+}
+#contentPaginaInterna_barraLateral_imgTopo{
+    width:278px;
+    height:18px;
+    background-image: url(images/BG-contentPaginaInterna_barraLateral_imgTopo.jpg);
+}
+#contentPaginaInterna_barraLateral_imgMiolo{
+    width:278px;
+    height: auto;
+    background-image: url(images/BG-contentPaginaInterna_barraLateral_imgMiolo.jpg);    
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo {
+    width: 270px;
+    height: 1083px;
+    margin: 0 auto;
+    padding: 14px 10px 0 0;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_01{
+    width:270px;
+    height:96px;     
+    float: left;
+    margin: 10px 0 0 0;
+    padding: 0 16px 0 25px;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_01_img{
+    width:89px;
+    height:66px;
+    background-image: url(images/contentPaginaInterna_barraLateral_imgMiolo_conteudo_01.png);     
+    float: left;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_01_titulo {
+    width:183px;
+    height:84px; 
+    float: left;
+    margin: -15px 0 0 47px;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_01_titulo a:visited{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #03621e;
+    font-size: 24px;           
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_01_titulo a:link{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #03621e;
+    font-size: 24px;          
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_01_titulo a:hover{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #28ae4e;
+    font-size: 24px;         
+    text-decoration: none;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_01_titulo a:active{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #28ae4e;
+    font-size: 24px;        
+    text-decoration: none;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_02{
+    width:220px;
+    height:144px;   
+    float: left;
+    margin: 60px 0 0 0;
+    padding: 0 25px 0 25px;   
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_02_img{
+    width:54px;
+    height:74px;    
+    background-image: url(images/contentPaginaInterna_barraLateral_imgMiolo_conteudo_02.png);
+    float: left;
+    margin: 0px 12px 0px 0px;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_02_titulo{
+    width:153px;
+    height:67px;
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 36px;    
+    float: left;
+    margin: 3px 0 0 0;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_02_links{    
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_02_links ul{
+    width:161px;
+    height:56px;    
+    float: left;
+    margin: 14px 0 0 9px;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_02_links ul li{   
+    margin: 0 0 2px 0;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_02_links ul li a:visited{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 18px;   
+    text-decoration: underline;
+    float: left;  
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_02_links ul li a:link{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 18px;   
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_02_links ul li a:hover{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #8e211f;
+    font-size: 18px;   
+    text-decoration: none;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_02_links ul li a:active{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #8e211f;
+    font-size: 18px;  
+    text-decoration: none;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_03{
+    width:232px;
+    height:137px;    
+    float: left;
+    margin: 60px 0 0 0;
+    padding: 0 25px 0 25px;    
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_03_img{
+    width:67px;
+    height:68px;    
+    background-image: url(images/contentPaginaInterna_barraLateral_imgMiolo_conteudo_03.png);
+    float: left;
+    margin: 0px 5px 0px 0px;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_03_titulo{
+    width:153px;
+    height:37px;
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 35px;
+    float: left;
+    margin: 15px 1px 0 0;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_03_links{
+    float: left;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_03_links ul{
+    width: 138px;
+    height: 71px;
+    margin: 12px 29px 0 12px;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_03_links ul li{
+    margin: 0 0 2px 0;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_03_links ul li a:visited{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 18px;      
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_03_links ul li a:link{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 18px;       
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_03_links ul li a:hover{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #8e211f;
+    font-size: 18px;  
+    text-decoration: none;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_03_links ul li a:active{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #8e211f;
+    font-size: 18px; 
+    text-decoration: none;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04{
+    width:221px;
+    height:106px;   
+    float: left;
+    margin: 60px 0 0 0;
+    padding: 0 25px 0 25px;    
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04_img{
+    width:58px;
+    height:58px;  
+    background-image: url(images/contentPaginaInterna_barraLateral_imgMiolo_conteudo_04.png);
+    float: left;
+    margin: 0px 12px 0px 0px;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04_titulo{
+    width:151px;
+    height:58px;    
+    float: left;  
+}   
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04_titulo a:visited{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 29px;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04_titulo a:link{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 29px;  
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04_titulo a:hover{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #8e211f;
+    font-size: 29px;   
+    text-decoration: none;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04_titulo a:active{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #8e211f;
+    font-size: 29px;
+    text-decoration: none; 
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04_titulo_subTitulo{
+    width: 210px;
+    height: 58px;
+    float: left;
+    margin: 14px 0 0 12px;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04_titulo_subTitulo a:visited{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 18px; 
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04_titulo_subTitulo a:link{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 18px; 
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04_titulo_subTitulo a:hover{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #8e211f;
+    font-size: 18px;  
+    text-decoration: none;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_04_titulo_subTitulo a:active{
+    font-family: 'MuseoSans500', arial, sans-serif;    
+    color: #8e211f;
+    font-size: 18px;  
+    text-decoration: none;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_05{
+    width:228px;
+    height:96px;    
+    float: left;
+    margin: 60px 0 0 0;
+    padding: 0 25px 0 25px;    
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_05_img{
+    width:69px;
+    height:91px;  
+    background-image: url(images/contentPaginaInterna_barraLateral_imgMiolo_conteudo_05.png);
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_05_titulo{
+    width:146px;
+    height:67px;      
+    float: left;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_05_titulo a:visited{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 36px;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_05_titulo a:link{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 36px;  
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_05_titulo a:hover{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #8e211f;
+    font-size: 36px;   
+    text-decoration: none;
+}
+#contentPaginaInterna_barraLateral_imgMiolo_conteudo_05_titulo a:active{
+    font-family: 'MuseoSans700', arial, sans-serif;    
+    color: #8e211f;
+    font-size: 36px;
+    text-decoration: none; 
+}
+#contentPaginaInterna_barraLateral_imgFim{
+    width:278px;
+    height:14px;
+    background-image: url(images/BG-contentPaginaInterna_barraLateral_imgFim.jpg);
+}
+#contentPaginaInterna_barraLateral_boxNoticias {
+    width: 234px;
+    float: left;
+    margin: 47px 0 0 25px;
+}
+#contentPaginaInterna_barraLateral_boxNoticias_img{
+    width:62px;
+    height:61px;  
+    background-image: url(images/contentPaginaInterna_barraLateral_boxNoticias_img.png);
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_title{
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #28AE4E;
+    font-size: 29px;
+    text-decoration: none;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_title:visited{
+    color: #03621e;   
+    text-decoration: none;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_title:link{
+    color: #03621e;  
+    text-decoration: none;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_title:hover{    
+    color: #28ae4e;     
+    text-decoration: none;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_title:active{
+    color: #03621e;     
+    text-decoration: none;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_query{
+    margin: 18px 0 18px 0;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_query_title{
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 14px;
+    color: #03621e;
+    background: url(images/contentPaginaInterna_barraLateral_boxNoticias_query_title.png) no-repeat;
+    background-position: left top;
+    padding: 0 0 0 17px;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_query_title_link{
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #03621e;
+    font-size: 13px;
+    text-decoration: none;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_query_title_link:visited{
+    color: #03621e;   
+    text-decoration: none;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_query_title_link:link{
+    color: #03621e;  
+    text-decoration: none;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_query_title_link:hover{    
+    color: #28ae4e;     
+    text-decoration: none;
+}
+.contentPaginaInterna_barraLateral_boxNoticias_query_title_link:active{
+    color: #28AE4E;     
+    text-decoration: none;
+}
+#footer_preserpio_desenho_semSombra{
+    width:1122px;
+    height:87px;    
+    margin: 0 auto;
+    display: block;
+}
+#social {
+    float: right;
+    width: 296px;
+    margin: 0 -110px 0 -18px;
+}
+#social_page {
+    float: left;
+    width: 296px;
+    margin: -32px 0 0 290px;
+}
+#social_mural {
+    float: left;
+    width: 425px;
+    margin-bottom: 20px;
+}
+#social_gPlus, #social_twitter, #social_face {
+    float: left;
+    margin: 12px 8px 0 0;
+}
+.contentPaginaInterna_setorPrincipal_box_textos_noticias {
+    margin: 0 0 15px 0;
+}
+/* ################################################# Quem Faz */
+.contentPaginaInterna_setorPrincipal_box_textos_QuemFaz_fields{
+    margin: 25px 0 32px;
+}
+.contentPaginaInterna_setorPrincipal_box_textos_QuemFaz_fields_content{
+    margin: 25px 0 0 0;
+}
+.contentPaginaInterna_setorPrincipal_box_textos_QuemFaz_fields_content table img{
+    padding: 0 0 30px 0;
+}
+.contentPaginaInterna_setorPrincipal_box_textos_QuemFaz_fields_content table p{
+    text-align: center;
+}
+.contentPaginaInterna_setorPrincipal_box_textos_QuemFaz_fields_content h2{
+    font-family: 'MuseoSans700', arial, sans-serif!important;
+    font-size: 23px!important;
+    color: black!important;
+    line-height: 32px;
+}
+.contentPaginaInterna_setorPrincipal_box_textos_QuemFaz_fields_content a:visited{
+    color: black!important;
+    text-decoration: none!important;
+}
+.contentPaginaInterna_setorPrincipal_box_textos_QuemFaz_fields_content a:link{
+    font-family: 'MuseoSans700', arial, sans-serif!important;
+    font-size: 23px!important;
+    color: black!important;
+    line-height: 32px;
+    text-decoration: none!important;
+}
+.contentPaginaInterna_setorPrincipal_box_textos_QuemFaz_fields_content a:hover{
+    color: black!important;
+}
+.contentPaginaInterna_setorPrincipal_box_textos_QuemFaz_fields_content a:active{
+    color: black!important;
+    text-decoration: none!important;
+}
+/* ################################################# Calendário */
+#calendario_content p { 
+    font-family: 'MuseoSans100', arial, sans-serif;    
+    font-size: 21px;  
+    margin: 7px 0 0 0;
+    text-align: center;
+}
+#calendario_content a:link{
+    font-family: 'MuseoSans700', arial, sans-serif!important;
+    font-size: 22px;
+    color: #620d0d;
+    text-decoration: none;
+}
+#calendario_content a:visited {
+    color: #620d0d;
+    width: 39px;
+    height: 35px;
+}
+#caldendario_content a:active {
+    color: #620d0d;
+    width: 39px;
+    height: 35px;
+}
+#caldendario_content a:visited {
+    color: #620d0d;
+    width: 39px;
+    height: 35px;
+}
+#eventos_lista_tabela a:link { /*lista de categorias*/
+    font-family: 'MuseoSans300', arial, sans-serif!important;
+    color: #ce302d;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+#eventos_lista_tabela a:hover { /*lista de categorias*/
+    text-decoration: underline;
+    color: #ce302d;
+    background: none;
+}
+#eventos_lista_tabela a:active { /*lista de categorias*/
+    color: #ce302d;
+    text-decoration: none;
+}
+#eventos_lista_tabela a:visited { /*lista de categorias*/
+    color: #ce302d;
+    text-decoration: none;
+}
+.events-table td {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    width: 389px;
+    padding: 3px
+}
+.event-time {
+    font-size: 23px;
+    color: #CE302D;
+    line-height: 41px;
+    text-align: left;
+}
+.event-description {
+    font-size: 23px;
+    color: #CE302D;
+    line-height: 41px;
+    text-align: left;
+}
+#categorias_calendario a:link { /*lista de categorias*/
+    font-family: 'MuseoSans300', arial, sans-serif!important;
+    color: #ce302d;
+    font-size: 16px;
+    line-height: 20px;
+}
+#categorias_calendario a:hover { /*lista de categorias*/
+    text-decoration: underline;
+    color: #ce302d;
+    background: none;
+}
+#categorias_calendario a:active { /*lista de categorias*/
+    color: #ce302d;
+}
+#categorias_calendario a:visited { /*lista de categorias*/
+    color: #ce302d;
+}
+#calendario_escolha_tipo_titulo {
+    font-family: 'MuseoSans500', arial, sans-serif!important;
+    color: #ce302d!important;
+    font-size: 18px!important;
+    margin: 0 0 11px 0!important;
+}
+.calendario_content_title a {
+    font-family: 'MuseoSans700', arial, sans-serif !important;    
+    font-size: 20px !important;
+    margin: 0 0 5px 0 !important;
+    text-decoration: none !important;
+    color: #ce302d !important;
+    display: block;
+}
+.calendario_content_backTop {
+}
+.calendario_content_backTop a {
+    font-family: 'MuseoSans700', arial, sans-serif !important;    
+    font-size: 20px !important;
+    padding: 5px 0 0 0 !important;
+    text-decoration: none !important;
+    color: #ce302d !important;
+    display: block;
+}
+#calendario_escolha_data {
+    background-color: #CCC;
+    float: left;
+    padding: 1px 1px 2px 1px;
+    margin: 20px 27px 0 1px;
+    width: 294px;
+}
+#calendario_escolha_data_titulo {
+    font-family: 'MuseoSans100', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 22px;  
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+/*---------------- SINGLE EVENTOS E CALENDÁRIO -----------*/
+.event-categories li{
+    list-style: none;
+    float: left;
+    padding: 2px 3px 0 2px;
+}
+table.fullcalendar td {
+    text-align: center!important;
+    width: 27px!important;
+    height: 27px!important;
+    border: 3px solid #DDDDDD!important;
+    font-family: 'MuseoSans700', arial, sans-serif!important;
+    font-size: 15px;
+    color: #ce302d;
+}
+.days-names td {
+    color: #212121!important;
+    font-family: 'MuseoSans500', arial, sans-serif!important;
+}
+.month_name {
+    background-color: #FFF;
+    font-size: 20px!important;
+    padding: 13px 0 0 0!important;
+    color: #28AE4E!important;
+    font-family: 'MuseoSans900', arial, sans-serif!important;
+}
+.eventful a:visited {
+    color: #03621e!important;
+    text-decoration: none!important;
+    font-family: 'MuseoSans900', arial, sans-serif!important;
+    font-size: 20px!important;
+}
+.eventful a:link {
+    color: #03621e!important;
+    text-decoration: none!important;
+    font-family: 'MuseoSans900', arial, sans-serif!important;
+    font-size: 20px!important;
+}
+.eventful a:hover {
+    color: #28AE4E!important;
+    text-decoration: none!important;
+    font-family: 'MuseoSans900', arial, sans-serif!important;
+    font-size: 20px!important;
+    background: none!important;
+}
+.eventful a:active {
+    color: #03621e!important;
+    text-decoration: none!important;
+    font-family: 'MuseoSans900', arial, sans-serif!important;
+    font-size: 20px!important;
+}
+#calendario_escolha_titulo2 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: black;
+    font-size: 16px !important;
+    margin: 15px 0 0 0;
+    clear: both;
+}
+table.fullcalendar {
+    border-collapse: collapse;
+    float: left;
+    width: 268px;
+    margin: 0 15px 0 0;
+}
+#em-wrapper {
+    display: table;
+    width: 495px;
+}
+#em-wrapper p {
+    display:  none;
+}
+#categorias_calendario {
+    margin: 12px 0 0;
+    float: left;
+}
+/* ################################################# Envio de Cartão */
+#social_page {
+    float: right!important;
+}
+.subtitulo_cartao {
+    font-family: 'Handlee', cursive!important;
+    font-size: 28px!important;
+}
+.textos_item {
+    margin: 15px 0 15PX;
+    float: left;
+}
+.textos_item p {
+    clear: none!important;
+    font-family: 'Handlee', cursive!important;
+    font-size: 19px!important;
+    line-height: 27px!important;
+}
+.textos_item_radio {
+    display: block;
+    float: left;
+    margin: 69px 0 0;
+}
+.textos_item_aspas {
+    color: #28AE4E;
+    font-size: 38px;
+    font-family: 'Handlee', cursive!important;
+}
+#botao {
+    margin: 38px auto 0;
+    width: 104px;
+}
+.textos_item_botao {
+    border: none;
+    font-size: 18px;
+    background-color: #ce302d;
+    width: 104px;
+    height: 36px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    margin: 35px 0 0;
+}
+.textos_aspas_esquerda {
+    float: left;
+    background: url(images/aspas.png) no-repeat;
+    width: 73px;
+    height: 75px;
+}
+.textos_aspas_direita {
+    float: right;
+    background: url(images/aspas_direita.png) no-repeat;
+    width: 73px;
+    height: 75px;
+    margin: 46px 0 0;
+}
+.textos_aspas_esquerda_vermelha {
+    float: left;
+    background: url(images/aspas_vermelha.png) no-repeat;
+    width: 73px;
+    height: 75px;
+}
+.textos_aspas_direita_vermelha {
+    float: right;
+    background: url(images/aspas_direita_vermelha.png) no-repeat;
+    width: 73px;
+    height: 75px;
+    margin: 46px 0 0;
+}
+.textos_item_texto {
+    float: left;
+    width: 652px;
+    margin: 33px 0 0;
+}
+#contentCartao {
+    width:960px;    
+    background-color: #ce302d;
+    display: table;
+    margin: 0 auto;
+    margin-top: 126px;
+}
+#contentCartao_setorPrincipal{
+    width: 900px;  
+    float: left; 
+    margin: 30px 0 50px 30px;
+    box-shadow: 2px 2px 10px #000;
+    -webkit-box-shadow: 2px 2px 10px #000;
+    -moz-box-shadow: 5px 5px 10px #000;
+}
+.contentCartao_setorPrincipal_h1OK1{
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 36px;    
+    text-align: center;
+}
+.contentCartao_setorPrincipal_h1OK2{
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #48352E;
+    font-size: 20px;    
+    margin: 0 0 59px 0;
+    text-align: center;
+}
+.contentCartao_setorPrincipal_h1OK2:link {
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #48352E;
+    font-size: 20px;    
+    margin: 0 0 59px 0;
+    text-align: center;
+}
+.contentCartao_setorPrincipal_h1OK2:hover {
+    color: #48352E;
+    text-decoration: underline;
+}
+.contentCartao_setorPrincipal_h1OK2:active {
+    color: #48352E;
+}
+#contentCartao_setorPrincipal_box_imgDivisora{
+    width: 834px; 
+    height: 20px;
+    background-image: url(images/costuraDIVISOR.png);
+    margin: -36px 0 20px -20px;
+
+}
+.contentCartao_setorPrincipal_h1{
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 20px;    
+}
+.contentCartao_setorPrincipal_h2 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #28AE4E;
+    font-size: 16px;
+    margin: 5px 0 35px 0;
+}
+#contentCartao_setorPrincipal_imgTopo{
+    width:900px;
+    height:18px;
+    background-image: url(images/costuraTOPO.jpg);
+}
+#contentCartao_setorPrincipal_imgFim{
+    width:900px;
+    height:20px;
+    background-image: url(images/costuraFIM.jpg);
+}
+#contentCartao_setorPrincipal_box{
+    width: 820px;
+    background-image: url(images/costuraMEIO.jpg);
+    padding: 0 80px 60px 0;
+}
+#contentCartao_setorPrincipal_box_postCard {
+    background: url(images/posrcard_background.jpg);
+    height: 490px;
+    width: 815px;
+    behavior: url(border-radius.htc);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    box-shadow: 2px 2px 10px #000;
+    -webkit-box-shadow: 2px 2px 10px #000;
+    -moz-box-shadow: 5px 5px 10px #000;
+    margin: 30px 0 0;
+}
+#contentCartao_setorPrincipal_box_postCard_esquerda {
+    margin: 80px 0 0 12px;
+    float: left;
+    width: 380px;
+    padding: 10px 0px 10px 10px;
+    border-right: #B7903D 1px solid;
+}
+#contentCartao_setorPrincipal_box_postCard_direita {
+    margin: 84px 0 0 18px;
+    float: left;
+    padding: 10px;
+    width: 367px;
+}
+#contentCartao_setorPrincipal_box_postCard_selo {
+    width: 184px;
+    height: 68px;
+    float: left;
+    background: url(images/postcard_selo.png);
+    position: absolute;
+    margin: 21px 0 0 631px;
+}
+.contentCartao_setorPrincipal_box_thumb {
+    width: 150px;
+    margin: 0 14px 20px 0;
+    float: left;
+    height: 160px;
+}
+.contentCartao_setorPrincipal_box_thumb_img {
+    margin: 0 0 5px 0;
+}
+.contentCartao_setorPrincipal_box_thumb_radio {
+    width: auto;
+    height: auto;
+    display: block;
+    float: left;
+}
+.contentCartao_setorPrincipal_box_thumb_texto {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #000;
+    font-size: 14px;
+    clear: none!important;
+    text-align: left!important;
+}
+.contentCartao_setorPrincipal_box_inputs {
+    width: 343px;
+    float: left;
+    margin: 0;
+    padding: 5px;
+    margin: 0 0 25px 0;
+} 
+.contentCartao_setorPrincipal_box_inputsTiles {
+    font-family: 'MuseoSans100', arial, sans-serif;
+    color: #ce302d;
+    font-size: 30px;
+}
+.contentCartao_setorPrincipal_box_inputs_texto {
+    width: 350px;
+    display: block;
+    float: left;
+    margin: 0 13px 0 14px;
+    font-family: 'MuseoSans500', arial, sans-serif!important;
+    color: #000;
+    font-size: 14px;
+}
+.contentCartao_setorPrincipal_box_inputs_texto_input {
+    width: 315px;
+    background-color: transparent;
+    border: 1px dashed #b7903d;
+    padding: 4px;
+    margin: 0 0 9px;
+}
+.contentCartao_setorPrincipal_box_textarea {
+    float: left;
+    display: block;
+    font-family: 'MuseoSans100', arial, sans-serif!important;
+    color: #ce302d;
+    font-size: 30px;
+    margin: 0 0 0 16px;
+}
+.contentCartao_setorPrincipal_box_textarea_input {
+    width: 330px;
+    height: 292px;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    color: #000;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px dashed #B7903D;
+}
+.contentCartao_setorPrincipal_box_btnUgly {
+    width: 150px;
+    height: 30px;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #000;
+    font-size: 14px;
+    float: right;
+    margin: -9px 31px 0 0;
+}
+#contentCartao_setorPrincipal_box_btn:visited {
+    width: 200px;
+    height: 40px;
+    background-color: #CE302D;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 8px 20px;
+    display: table;
+    text-align: center;
+    float: right;
+    margin: 18px 32px 0 0;
+    text-decoration: none;
+}
+#contentCartao_setorPrincipal_box_btn:link {
+    width: 200px;
+    height: 40px;
+    background-color: #CE302D;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 8px 20px;
+    display: table;
+    text-align: center;
+    float: right;
+    margin: 18px 32px 0 0;
+    text-decoration: none;
+}
+#contentCartao_setorPrincipal_box_btn:hover {
+    width: 200px;
+    height: 40px;
+    background-color: #8e211f;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 8px 20px;
+    display: table;
+    text-align: center;
+    float: right;
+    margin: 18px 32px 0 0;
+    text-decoration: none;
+}
+#contentCartao_setorPrincipal_box_btn:active {
+    width: 200px;
+    height: 40px;
+    background-color: #CE302D;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 8px 20px;
+    display: table;
+    text-align: center;
+    float: right;
+    margin: 18px 32px 0 0;
+    text-decoration: none;
+}
+
+/*----------------SINGLE CARTÃO --------------*/
+#cartaoSingle_title {
+    font-family: 'Handlee', cursive!important;
+    font-size: 40px!important;
+    text-align: center!important;
+}
+#cartaoSingle_texto {
+    font-family: 'Handlee', cursive!important;
+    text-align: center!important;
+    font-size: 25px!important;
+    padding: 25px 0;
+}
+#cartaoSingle_foto img {
+    width: 100%;
+}
+#cartaoSingle_share {
+    margin: 25px 0 0;
+}
+#cartaoSingle_share_text {
+    width: 81%;
+    float: left;
+}
+#cartaoSingle_share_text_p {
+    font-family: 'Handlee', cursive!important;
+    color: #ce302d!important;
+    font-size: 30px!important;
+    text-align: left!important;
+    line-height: 30px!important;
+}
+#cartaoSingle_share_widget {
+    float: left;
+    margin: 0 0 0 24px;
+}
+#cartaoSingle_share_widget_face {
+    margin: 5px 0 8px;
+}
+#cartaoSingle_share_widget_twitter {
+
+}
+#cartaoSingle_chamada {
+    width: 100%;
+    display: table;
+}
+#cartaoSingle_chamada p {
+    padding: 30px 0 0;
+}
+#cartaoSingle_chamada p a:link {
+    font-family: 'Handlee', cursive!important;
+    color: #03621e!important;
+    text-align: center!important;
+    font-size: 25px!important;
+    text-decoration: none!important;
+}
+#cartaoSingle_chamada p a:hover {
+    color: #28AE4E!important;
+    text-decoration: none!important;
+}
+#cartaoSingle_chamada p a:visited {
+    color: #03621e!important;
+    text-decoration: none!important;
+}
+#cartaoSingle_chamada p a:active {
+    color: #03621e!important;
+    text-decoration: none!important;
+}
+
+/* ################################################# BOXES */
+#contentPaginaInterna_setorPrincipal_boxCalendario {
+    width: 578px;
+    background-image: url(images/BG-contentPaginaInterna_setorPrincipal_imgBox.jpg);
+    display: table;
+}
+#contentPaginaInterna_setorPrincipal_boxContato {
+    width: 518px;
+    background-image: url(images/BG-contentPaginaInterna_setorPrincipal_imgBox.jpg);
+    display: block;
+    padding: 30px;
+}
+#contentPaginaInterna_setorPrincipal_boxContato h1 {
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 20px;
+}
+#contentPaginaInterna_setorPrincipal_boxContato h1 a {
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #ce302d; 
+}
+#contentPaginaInterna_setorPrincipal_box_textos_form{
+    margin: 0 0 40px 0;
+}
+#contentPaginaInterna_setorPrincipal_box_textos_form h2{
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #28ae4e;
+    font-size: 18px;
+    margin: 20px 0 8px 0;
+}
+.contentPaginaInterna_setorPrincipal_box_textos_form_input{
+    width: 340px;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    color: #000;
+    font-size: 12px;
+}
+#contentPaginaInterna_setorPrincipal_box_textos_form_textArea{
+    width: 338px;
+    height: 150px;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    color: #000;
+    font-size: 12px;
+}
+#contentPaginaInterna_setorPrincipal_box_textos_form_botaoUgly {
+    width: 140px;
+    height: 30px;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #000;
+    font-size: 14px;
+    float: left;
+    margin: 15px 100px 0 0;
+}
+#contentPaginaInterna_setorPrincipal_box_textos_form_botao:visited {
+    width: 122px;
+    height: 40px;
+    background-color: #CE302D;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+    display: table;
+    text-align: center;
+    margin: 18px 0 0 0;
+    text-decoration: none;
+}
+#contentPaginaInterna_setorPrincipal_box_textos_form_botao:link {
+    width: 122px;
+    height: 40px;
+    background-color: #CE302D;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+    display: table;
+    text-align: center;
+    margin: 18px 0 0 0;
+    text-decoration: none;
+}
+#contentPaginaInterna_setorPrincipal_box_textos_form_botao:hover {
+    width: 122px;
+    height: 40px;
+    background-color: #8e211f;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+    display: table;
+    text-align: center;
+    margin: 18px 0 0 0;
+    text-decoration: none;
+}
+#contentPaginaInterna_setorPrincipal_box_textos_form_botao:active {
+    width: 122px;
+    height: 40px;
+    background-color: #CE302D;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+    display: table;
+    text-align: center;
+    margin: 18px 0 0 0;
+    text-decoration: none;
+}
+/* ################################################# Galeria */
+#gallery {
+    margin: 10px 0 0 90px;
+}
+#gallery_h1{
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 20px;
+    margin: 0 0 0 30px;
+}
+#gallery h2{
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #28ae4e;
+    font-size: 18px;    
+}
+#gallery ul { list-style: none; display: table;}
+#gallery ul li { 
+    margin: 15px 20px 0 0;
+    display: table;
+    float: left;
+}
+#gallery ul img {
+    border: 2px solid #ce302d;
+}
+#gallery ul a:hover img {
+    border: 2px solid #fff200;
+}
+#gallery ul a:hover { color: #fff200; 
+}
+#contentPaginaInterna_setorPrincipal_boxGalerias { 
+    padding: 10px 0 50px 0; 
+    clear: both;
+}
+.galeria_menu {
+    width: 200px;
+    float: left;
+    margin: 0 0 0 18px;
+}
+.galeria_menu_middle {
+    width: 200px;
+    float: left;
+    margin: 0 0 0 16px;
+}
+.galeria_menu_right {
+    float: left;
+    margin: 0 0 0 8px;
+}
+.back-top a:link {
+    text-align: right;
+    float: right;
+    margin: -10px 22px 0 0;
+}
+.back-top a:hover {
+    text-align: right;
+    float: right;
+    margin: -10px 22px 0 0;
+}
+.back-top a:visited {
+    text-align: right;
+    float: right;
+    margin: -10px 22px 0 0;
+}
+p .back-top a:active {
+    text-align: right;
+    float: right;
+    margin: -10px 22px 0 0;
+}
+/*###################################### Barra Lateral */
+#text-3 .widgettitle, #text-4 .widgettitle {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #ce302d;
+    font-size: 28px;
+    text-align: center;
+}
+#text-3 .textwidget, #text-4 .textwidget {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #ce302d;
+    font-size: 13px;
+    text-align: left;
+    margin: 15px 14px 0 15px;
+}
+#text-3 .textwidget ul, #text-4 .textwidget ul{
+
+}
+#text-3 .textwidget li, #text-4 .textwidget li{
+    margin: 0 0 3px 0;
+}
+#text-3 .textwidget a:visited, #text-4 .textwidget a:visited{
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #ce302d;
+}
+#text-3 .textwidget a:link, #text-4 .textwidget a:link{
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #ce302d;
+}
+#text-3 .textwidget a:hover, #text-4 .textwidget a:hover{
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #8e211f;
+}
+#text-3 .textwidget a:active, #text-4 .textwidget a:active{
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #8e211f;
+}
+#text-5 .widgettitle {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #ce302d;
+    font-size: 23px;
+    text-align: center;
+}
+#text-5 .textwidget {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #ce302d;
+    font-size: 13px;
+    text-align: left;
+    margin:  16px 2px 0 35px;
+    line-height: 16px;
+}
+#text-5 .textwidget a:visited{
+    color: #ce302d;
+}
+#text-5 .textwidget a:link{
+    color: #ce302d;
+}
+#text-5 .textwidget a:hover{
+    color: #8e211f;
+}
+#text-5 .textwidget a:active{
+    color: #8e211f;
+}
+#text-6 .widgettitle {
+    width:120px;
+    height:65px;
+    float: left;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #ce302d;
+    font-size: 30px;
+    text-align: left;
+    margin: 25px 0 0 15px;
+}
+#contentPaginaInterna_barraLateral_socialLuzes {
+    width: 278px;
+    clear: both;
+    height: 58px;
+    margin: -21px 0 22px 0;
+    background: url(images/sidebar_social_lightsOFF.png) no-repeat;
+}
+.socialLuzes_rss {
+    float: left;
+    margin: 34px 0 0 71px;
+}
+.socialLuzes_rss_bg {
+    width: 20px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    display: block;
+    margin: -4px -4px -5px;
+}
+.socialLuzes_rss_bg:hover {
+    width: 28px;
+    height: 28px;
+    float: left;
+    background: url(images/sidebar_social_lightsON_rss.png) no-repeat;
+}
+#socialLuzes_face {
+    float: left;
+    margin: 31px 0 0 16px;
+}
+#socialLuzes_face_bg {
+    width: 20px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    display: block;
+    margin: -6px -5px -5px;
+}
+#socialLuzes_face_bg:hover {
+    width: 29px;
+    height: 31px;
+    float: left;
+    background: url(images/sidebar_social_lightsON_face.png) no-repeat;
+}
+#socialLuzes_twitter {
+    float: left;
+    margin: 14px 0 0 15px;
+}
+#socialLuzes_twitter_bg {
+    width: 18px;
+    height: 21px;
+    float: left;
+    position: absolute;
+    display: block;
+    margin: -3px -6px -5px;
+}
+#socialLuzes_twitter_bg:hover {
+    width: 27px;
+    height: 27px;
+    float: left;
+    background: url(images/sidebar_social_lightsON_twitter.png) no-repeat;
+}
+/*#################################### IE 8*/
+#gallery_IE8 {
+    margin: 10px 0 0 90px;
+    width: 850px;
+}
+#gallery_h1_IE8 {
+    font-family: 'MuseoSans900', arial, sans-serif;    
+    color: #ce302d;
+    font-size: 20px;
+    margin: 0 
+}
+#gallery_IE8 ul li { 
+    margin: 15px 0 0 0;
+    display: table;
+    float: left;
+}
+#contentCartao_setorPrincipal_box_postCard_direita_IE8 {
+    margin: 84px 0 0 18px;
+    padding: 10px;
+    width: 367px;
+}
+.contentCartao_setorPrincipal_box_textarea_input_IE8 {
+    width: 308px;
+    height: 292px;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    color: #000;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px dashed #B7903D;
+}
+#contentCartao_setorPrincipal_box_postCard_selo_IE8 {
+    width: 184px;
+    height: 68px;
+    float: left;
+    background: url(images/postcard_selo.png);
+    position: absolute;
+    margin: 21px 0 0 239px;
+}
+.contentCartao_setorPrincipal_box_btnUgly_IE8 {
+    width: 150px;
+    height: 30px;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #000;
+    font-size: 14px;
+    float: right;
+    margin: -9px -12px 0 0;
+}
+.days-names {
+    display: none !important;
+}
+/*#################################### ALTERACOES NATAL 2014 */
+.boasNoticiasAnos {
+    font-family: 'MuseoSans700', arial, sans-serif !important;
+    color: #ce302d !important;
+    font-size: 16px !important;
+}
+.boasNoticiasAnos_link {
+    font-family: 'MuseoSans900', arial, sans-serif !important;
+    color: #ce302d !important;
+    font-size: 16px !important;
+}
+.pesquisaLink {
+    background: url(images/linkhomepesquisa.jpg);
+    height: 233px;
+    display: block;
+    width: 350px;
+}
+.pesquisaLink:hover {
+    background: url(images/linkhomepesquisa_ON.jpg);
+}
+.pesquisaLink_text {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff200;
+    font-size: 40px;
+    display: table;
+    -webkit-transform: rotate(-9deg);
+    -moz-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+    padding: 80px 0 0 20px;
+    text-shadow: 0px 0px 10px #000;
+    text-align: center;
+}

@@ -1,0 +1,229 @@
+/*---------------------- HEADER ------------------*/
+iframe {
+    border: none;
+}
+#IEall {
+    background-color: #F15C27;
+}
+#header{
+    background-color: white;
+    width: 100%;
+    height: 105px;
+    padding-top: 15px;
+    background:url(images/BG-header.png);
+    background-repeat: repeat;
+    position: absolute;
+    z-index: 999;
+    margin: 20px 0 0 0;
+}
+/*---------------------- MENU SUPERIOR ----------------- */
+#header_content_menus {
+    width: 760px;
+    height: 75px;
+    float: left;
+    margin-left: 28px;
+}
+#header_content_menus_nav_content ul li a:link {
+    font-family: 'antique_olive_romanbold', arial, sans-serif;
+    font-size: 12px;
+    color: #F15C27;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 4px 2px 4px 2px;
+}
+.content_bloco1_search_input {
+    padding: 5px 0 1px 4px!important;
+}
+.content_bloco1_search_btn {
+    margin: 0 0 -6px 0!important;
+}
+
+/*---------------------- INDEX ----------------- */
+.content_bloco2_boxX {
+    width: 210px;
+}
+.content_bloco2_boxX_article_aTitle_h1 {
+    width: 230px;
+}
+.widgettitle {
+    color: #212121;
+    font-size: 14px;
+    font-family: CenturyBold, arial, sans-serif;
+    text-decoration: none;
+    text-align: left;
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+}
+.textwidget {
+    font-size: 12px;
+    font-family: Century, arial, sans-serif;
+}
+/*---------------------- DIREITA ------------------*/
+#content_direita {
+    width: 689px;
+    min-height: 300px;
+    float: left;
+    margin: 0 0 0 25px;
+}
+#content_direita_IE {
+    width: 689px;
+    min-height: 300px;
+    float: left;
+    margin-left: 25px;
+}
+#content_direita_article {
+    margin: 0;
+}
+.content_direita_article_theContent {
+    margin: 0;
+}
+/*---------------------- DESTAQUES ------------------*/
+#destaquesNoticias {
+    width: 689px;
+    height: 261px;
+    background-color: black;
+    text-decoration: none;
+    margin: 0;
+}
+.destaques3col {
+    width: 213px;
+    float: left;
+    margin: 25px 25px 0 0;
+}
+.destaques3col_videos {
+    width: 188px;
+    float: left;
+    margin: 25px 25px 0 0;
+}
+/*---------------------- SERVIÇOS ------------------*/
+.servicosHome_2col {
+    width: 200px;
+    float: left;
+    margin: 0 29px 25px 0;
+}
+.servicos_4col {
+    width: 130px;
+    float: left;
+    margin: 0 42px 0 0;
+}
+#telecomTables_titulos h1 {
+    margin: 0 0 5px 0;
+    color: #F15C27;
+}
+#telecomTables_titulos {
+    width: 144px;
+    float: left;
+}
+#diarias_select {
+    background: #FFF;
+    border: 1px solid #FFF;
+    font-family: Century, arial, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    padding: 2px 0 2px 2px;
+}
+.telecomform_inputsupercurto {
+    width: 130px!important;
+    float: left;
+    margin: 0 0 10px;
+}
+.telecomform_title {
+margin: 0 5px 0 0;
+}
+/*---------------------- VIDEOS ------------------*/
+#content_videos {
+    margin: 0 0 0 0;
+    float: left;
+}
+#videosDestaque {
+    float: left;
+    width: 564px;
+    background-color: #000;
+    height: 308px
+}
+.videosMosaico_thumb_title_IE {  
+    width: 130px;
+    margin: 71px 0 0 -192px;
+    padding: 3px 1px 4px 7px;
+}
+.videosMosaico_thumb_IE {
+    width: 188px;
+    height: 154px;
+    float: left;
+    cursor: pointer;
+}
+#searchContent {
+    margin: 0;
+}
+.searchContent_result_resumo {
+    font-family: Century, arial, sans-serif;
+    margin: 8px 0 5px 0;
+    font-size: 12px;
+    color: #212121;
+}
+.searchContent_result_title {
+    text-decoration: none;
+    color: #212121;
+    margin: 20px 0 2px 0;
+}
+#downloads_lista {
+    margin: 0 25px 0 0;
+}
+/*-------------- Oportunidades ---------------*/
+#oportunidadesInternas {
+    padding: 0;
+    margin: 0;
+}
+#oportunidadesInternas_query {
+    padding: 0;
+    margin: 0;
+}
+.oportunidadesInternas_query_article {
+    margin-left: 36px
+}
+/*------------ CLIPPING -------------*/
+#clippingRelacionadas_box {
+    margin-left: 0;
+}
+#destaques_noticiasRel_box {
+    margin-left: 0;
+}
+.newsletterinput {
+    width: 200px!important;
+    height: 23px;
+    border: #F68725 solid 1px;
+    margin: 0 0 -8px 0;
+    padding: 0 0 0 5px;
+}
+#newsletterBtn_small {
+    margin-top: 20px;
+}
+#newsletterBtn {
+    margin-top: 20px;
+}
+#comoChegar {
+    margin: 0;
+}
+.comoChegarSub_title {
+    font-family: 'antique_olive_romanregular', arial, sans-serif !important;
+    color: #F15C27 !important;
+    text-transform: uppercase !important;
+    font-size: 20px !important;
+}
+/*--------- SIDEBAR ------------*/
+#text-22 .widgettitle {
+    margin: 25px 0 3px 0;
+}
+.contentEsquerda_servicos_box {
+    margin: 20px 0 0 0;
+    width: 180px;
+}
+.menu-espacos-container {
+    margin: 25px 0 0 0;
+}
+.menuSupSingle_lista_itemON {
+    border-bottom: #fff 2px solid;
+}
+.menuSupSingle_lista_item_separator {
+    margin: 0;
+}

@@ -1,0 +1,858 @@
+@import "variaveis.less";
+@import "fonts.less";
+
+
+
+.homeAcontece {
+    .homeAcontece_slider {
+        width: 100%;
+        float: left;
+        margin: 0 0 45px 0;
+        .homeAcontece_slider_wrapper {
+            height: 400px;
+            .homeAcontece_slider_wrapper_box {
+                background-size: cover;
+                display: block;
+                background-position: center;
+                border-radius: 4px;
+                color: #fff;
+                span {
+                    display: block;
+                    font-family: @museo100;
+                    padding: 5px 15px 3px 15px;
+                    background-color: #65bb46;
+                    color: #fff;
+                    width: 100%;
+                    height: auto;
+                    font-size: 1.1em;
+                    top: 0;
+                    position: absolute;
+                    border-radius: 3px 3px 0 0;
+                }
+                .homeAcontece_slider_wrapper_box_content {
+                    display: block;
+                    bottom: 0;
+                    position: absolute;
+                    background-color: @preto_alpha70;
+                    text-align: left;
+                    border-radius: 0 0 3px 3px;
+                    h3 {
+                        display: block;
+                        font-family: @museo700;
+                        padding: 15px 15px 5px 15px;
+                        text-transform: uppercase;
+                        font-size: 2em;
+                    }
+                    p {
+                        display: block;
+                        font-family: @museo300;
+                        padding: 5px 15px 15px 15px;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+        .swiper-button-next {
+            background-image: url(../images/acontece_setas_home_dir.png) !important;
+        }
+        .swiper-button-prev {
+            background-image: url(../images/acontece_setas_home_esq.png) !important;            
+        }
+        @media screen and (max-width: @media_mobile) {
+            .swiper-button-next {
+                display: none;
+            }
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+        @media screen and (min-width: @media_tablet_1) and (max-width: @media_tablet_2) {
+            .swiper-button-next {
+                display: none;
+            }
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+
+
+
+
+        .swiper-pagination-bullet {
+            background: @cinza !important; 
+        }
+        .swiper-pagination-bullet-active {
+            background: @verde !important; 
+        }
+    }
+
+    .homeAcontece_dicas {
+        width: 100%;
+        height: 350px;
+        display: block;
+        border-radius: 3px;
+        float: left;
+        margin: 0 0 45px 0;
+        .homeAcontece_dicas_fotos {
+            height: 350px;
+            width: 75%;
+            float: left;
+            display: block;
+            border-radius: 3px;
+            .homeAcontece_dicas_fotos_img {
+                height: 350px;
+                display: block;
+                width: 33.32%;
+                float: left;
+                background-size: cover;
+                background-position: center;
+                .homeAcontece_dicas_fotos_img_bg {
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    height: 350px;
+                    -webkit-transition: background-color @transition_4;
+                    -moz-transition: background-color @transition_4;
+                    -o-transition: background-color @transition_4;
+                    -ms-transition: background-color @transition_4;
+                    transition: background-color @transition_4;
+                    h4 {
+                        display: none;
+                        -webkit-transition: @transition_4;
+                        -moz-transition: @transition_4;
+                        -o-transition: @transition_4;
+                        -ms-transition: @transition_4;
+                        transition: @transition_4;
+                        position: absolute;
+                        margin: 500px 0 0 0;
+                        width: 94%;
+                        background-color: @verde;
+                        text-align: center;
+                        padding: 2px 3% 3px 3%;
+                        color: #fff;
+                        font-family: @museo300;
+
+                    }
+                }
+            }
+            .homeAcontece_dicas_fotos_img:hover {
+                display:block;
+                .homeAcontece_dicas_fotos_img_bg {
+                    display: block;
+                    width: 100%;
+                    height: 350px;
+                    background-color: @verde_alpha50;
+                    -webkit-transition: @transition_4;
+                    -moz-transition: @transition_4;
+                    -o-transition: @transition_4;
+                    -ms-transition: @transition_4;
+                    transition: @transition_4;
+                    h4 {
+                        font-size: 1.6em;
+                        margin: 300px 0 0 0;
+                        display: block;
+                        -webkit-transition: @transition_4;
+                        -moz-transition: @transition_4;
+                        -o-transition: @transition_4;
+                        -ms-transition: @transition_4;
+                        transition: @transition_4;
+                    }
+                }
+
+            }
+            .homeAcontece_dicas_fotos_img:nth-child(1) {
+                border-radius: 3px 0 0 3px;
+            }
+        }
+        @media screen and (max-width: @media_mobile) {
+            .homeAcontece_dicas_fotos {
+                display: none;
+            }
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+        @media screen and (min-width: @media_tablet_1) and (max-width: @media_tablet_2) {
+            .swiper-button-next {
+                display: none;
+            }
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+        .homeAcontece_dicas_info {
+            background-color: @verde;
+            width: 25%;
+            float: left;
+            height: 350px;
+            color: #fff;
+            border-radius: 3px;
+            h1 {
+                display: block;
+                font-family: @museo700;
+                padding: 25px 15px 5px 15px;
+                text-transform: uppercase;
+                font-size: 4em;
+            }
+            p {
+                display: block;
+                font-family: @museo300;
+                padding: 15px 15px 5px 15px;
+                font-size: 1.6em;
+            }
+        }
+    }
+    .homeAcontece_topMes {
+        display: block;
+        width: 100%;
+        float: left;
+        h3 {
+            font-family: @museo700;
+            padding: 0 10px 10px 0;
+            color: @verde;
+            font-size: 3em;
+            text-align: right;
+            text-transform: uppercase;
+            width: 100%;
+            float: left;
+        }
+    }
+}
+
+
+@media screen and (max-width: @media_tablet_2) {
+    .homeAcontece_dicas_fotos {
+        display: none;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+    .homeAcontece {
+        position: relative;
+        .homeAcontece_slider {
+            margin: 0 0 45px 0;
+            position: absolute;
+        }
+        .homeAcontece_dicas  {
+            position: relative;
+            margin: 430px 0 0 0 !important;
+            .homeAcontece_dicas_fotos  {
+                display: none;
+            }
+            .homeAcontece_dicas_info {
+                width: 100% !important;
+            }
+        }
+        .homeAcontece_topMes {
+            margin: 20px 0 0 0;
+            height: auto !important;
+            .cardAgenda_item  {
+                width: 48% !important;
+                margin-bottom: 25px !important;
+            }
+            .cardAgenda_item:last-child {
+                display: none !important;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.homeAgenda {
+    .homeAgenda_cards {
+        float: left;
+        width: 100%;
+        margin: 0 0 25px 0;
+        .homeAgenda_cards_title {
+            float: left;
+            width: 100%;
+            margin: 0 0 15px 0;
+            font-size: 2em;
+            text-transform: uppercase;
+            text-align: right;
+            display: block;
+            color: @verde;
+            font-family: @museo700;
+        }
+    }
+}
+
+
+
+.catsBoxes {
+    float: left;
+    width: 100%;
+    margin: 0 0 45px 0;
+    .catsBoxes_item {
+        display: block;
+        background-color: @verde;
+        margin-right: 1%;
+        height: 125px;
+        width: 11.625%;
+        float: left;
+        border-radius: 25px;
+    }
+    .catsBoxes_item:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: @media_mobile) {
+    .catsBoxes {
+        display: none;
+    }
+}
+@media screen and (min-width: @media_tablet_1) and (max-width: @media_tablet_2) {
+    .catsBoxes {
+        .catsBoxes_item {
+            height: 80px;
+        }
+    }
+}
+@media screen and (min-width: @media_medium_1) and (max-width: @media_medium_2) {
+    .catsBoxes {
+        .catsBoxes_item {
+            height: 100px;
+        }
+    }
+}
+@media screen and (min-width: @media_full) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.agendaBusca {
+    float: left;
+    width: 100%;
+    margin: 0 0 45px 0;
+    form {
+        .agendaBusca_exemplo1 {
+            display: block;
+            float: left;
+            width: 25%;
+            p {
+                display: block;
+                float: left;
+                font-size: 1.4em;
+                margin: 7px 5px 0 0;
+                color: @verde;
+                font-family: @museo700;
+                text-transform: uppercase;
+            }
+            input{
+                display: block;
+                float: left;
+                border: 1px solid @verde;
+                border-radius: 6px;
+                padding: 5px 6px 5px 5px;
+                font-size: 1.4em;
+                font-family: @museo300;
+                width: 70%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.cardAgenda_item {
+    display: block;
+    float: left;
+    width: 18%;
+    border: 1px solid #ccc;
+    margin: 0 1% 25px 1%;
+    border-radius: 3px;
+    .cardAgenda_item_img {
+        display: block;
+        width: 100%;
+        height: 230px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3px 3px 0 0;
+    }
+    .cardAgenda_item_content {
+        display: block;
+        padding: 15px;
+        position: relative;
+        height: 135px; 
+        h5 {
+            font-family: @museo700;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            text-align: right;
+            color: @preto;
+            -webkit-transition: @transition_4;
+            -moz-transition: @transition_4;
+            -o-transition: @transition_4;
+            -ms-transition: @transition_4;
+            transition: @transition_4;
+        }
+        p {
+            font-family: @museo300;
+            margin: 15px 0 0 0;
+            text-align: right;
+            font-size: 1.2em;
+            color: @verde;
+            position: absolute;
+            bottom: 10px;
+            float: right;
+            width: 83%;
+        }
+    }
+}
+.cardAgenda_item:hover {
+    h5 {
+        color: @verde;
+        -webkit-transition: @transition_4;
+        -moz-transition: @transition_4;
+        -o-transition: @transition_4;
+        -ms-transition: @transition_4;
+        transition: @transition_4;
+    }
+}
+@media screen and (max-width: @media_mobile) {
+    .homeAgenda {
+        .cardAgenda_item {
+            width: 48%;
+        }
+    }
+}
+@media screen and (min-width: @media_tablet_1) and (max-width: @media_tablet_2) {
+    .homeAgenda {
+        .cardAgenda_item {
+            width: 31%;
+        }
+        .cardAgenda_item:nth-child(19) {
+            display: none;
+        }
+        .cardAgenda_item:nth-child(20) {
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: @media_medium_1) and (max-width: @media_medium_2) {
+    .homeAgenda {
+        .cardAgenda_item {
+            width: 23%;
+        }
+    }
+}
+
+
+
+
+
+
+
+.novidadesHome {
+    .novidadesHome_destaques {
+        .novidadesHome_destaques_item {
+            background-size: cover;
+            display: block;
+            background-position: center;
+            border-radius: 4px;
+            color: #fff;
+            float: left;
+            width: 23%;
+            margin: 25px 1% 0 1%;
+            height: 400px;
+            span {
+                display: block;
+                font-family: @museo100;
+                padding: 5px 15px 3px 15px;
+                background-color: @verde;
+                color: #fff;
+                width: 100%;
+                height: auto;
+                font-size: 1.1em;
+                top: 0;
+                position: absolute;
+                border-radius: 3px 3px 0 0;
+            }
+            .novidadesHome_destaques_item_content {
+                display: block;
+                bottom: 0;
+                position: absolute;
+                background-color: @preto_alpha70;
+                text-align: left;
+                border-radius: 0 0 3px 3px;
+                h3 {
+                    display: block;
+                    font-family: @museo700;
+                    padding: 15px 15px 5px 15px;
+                    text-transform: uppercase;
+                    font-size: 2em;
+                }
+                p {
+                    display: block;
+                    font-family: @museo300;
+                    padding: 5px 15px 15px 15px;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: @media_mobile) {
+    .novidadesHome_destaques_item {
+        width: 100% !important;
+        margin: 25px 0 0 0% !important;
+    }
+}
+@media screen and (min-width: @media_tablet_1) and (max-width: @media_tablet_2) {
+    .novidadesHome_destaques_item {
+        width: 46% !important;
+        margin: 25px 1% 0 1% !important;
+    }
+}
+
+
+
+
+
+
+.dicas {
+    float: left;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    .dicas_title {
+        font-family: @museo700;
+        font-size: 2em;
+        text-align: center;
+        width: 45px;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 4px;
+        color: #fff;
+        background-color: @verde;
+        border-radius: 100%; 
+    }
+    .dicas_linha {
+        width:100%;
+        background-image: url(../images/bg_2px_verde.gif);
+        background-repeat: repeat-y;
+        background-position: center center;
+        display: table;
+        padding: 30px 0 30px 0;
+        .dicas_linha_item {
+            width:50%;
+            float:left;
+            margin: 10px 0 15px 0;
+            @media screen and (max-width: @media_mobile) {
+                width: 100%;
+            }
+            .dicas_linha_item_esqMark {
+                width:5%;
+                float: left;
+                margin-right: -1px;
+                position: relative;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+                @media screen and (max-width: @media_mobile) {
+                    display: none;
+                }
+            }
+            .dicas_linha_item_dirMark {
+                width:5%;
+                float: left;
+                margin-left: -1px;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+                @media screen and (max-width: @media_mobile) {
+                    display: none;
+                }
+            }
+            .dicas_linha_item_box {
+                width:95%;
+                float: left;
+                background-color: @verde;
+                border-radius: 4px;
+                @media screen and (max-width: @media_mobile) {
+                    width: 100%;
+                }
+                .dicas_linha_item_box_info_thumb {
+                    height: 140px;
+                    margin-bottom: 10px;
+                    background-size: cover;
+                }
+                .dicas_linha_item_box_foto {
+                    width: 40%;
+                    float: left;
+                    border-radius: 4px 0 0 4px;
+                    display: block;
+                    height: 354px;
+                    position: relative;
+                    background-size: cover;
+                    background-position: center;
+                    @media screen and (max-width: @media_mobile) {
+                        height: 456px;
+                    }
+                    .dicas_linha_item_box_foto_img {
+                        width: 100%;
+                        display: block;
+                        border-radius: 4px;
+                    }
+                    .dicas_linha_item_box_foto_credito {
+                        display: block;
+                        bottom: 4px;
+                        text-align: right;
+                        width: 97%;
+                        position: absolute;
+                        padding: 0 3% 0 0;
+                        text-shadow: 0 0 6px #000;
+                        color: #fff;
+                        font-size: 0.8em;
+                    }
+                }
+                .dicas_linha_item_box_info {
+                    width: 54%;
+                    float: left;
+                    margin: 3%;
+                    .dicas_linha_item_box_info_nome {
+                        display: block;
+                        color: #fff;
+                        font-size: 3em;
+                        font-family: @museo300;
+                        text-transform: uppercase;
+                    }
+                    .dicas_linha_item_box_info_job {
+                        display: block;
+                        color: #fff;
+                        font-size: 1.4em;
+                        margin: 5px 0 10px 0;
+                        font-family: @museo100_i;
+                    }
+                    .dicas_linha_item_box_info_text {
+                        color: #fff;
+                    }
+                }
+                .dicas_linha_item_box_info_credito {
+                    color: #fff;
+                    text-align: right;
+                    width: 98%;
+                    padding: 130px 0 0 0;
+                    text-shadow: 0 0 6px #000;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}
+
+
+.dicasBusca_alfabeto {
+    width: 100%;
+    text-align: right;
+    a {
+        color: @verde;
+        font-size: 2.5em;
+        font-family: @museo700;
+
+
+    }
+    a:hover {
+        color: #000;
+    }
+}
+
+
+
+.dicasBusca_select {
+    font-size: 1.5em;
+    float: left;
+    color: @verde;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border: 0px solid #000000;
+    @media screen and (max-width: @media_mobile) {
+        margin-bottom: 5%;
+        text-align: right;
+    }
+    p {
+        float: left;
+        font-size: 1.4em;
+        margin-right: 5px;
+        font-family: @museo700;
+        margin-top: 5px;
+        @media screen and (max-width: @media_mobile) {
+            text-align: right;
+            width: 100%;
+        }
+    }
+    select {
+        font-size: 1.2em;
+        background-color: @verde_alpha90;
+        color: #fff;
+        border-radius: 6px 6px 6px 6px;
+        -moz-border-radius: 6px 6px 6px 6px;
+        -webkit-border-radius: 6px 6px 6px 6px;
+        border: 0px solid #000000;
+        padding:2px;
+    }
+    option {
+        font-size: 1em;
+        color: #fff;
+        border-radius: 6px 6px 6px 6px;
+        -moz-border-radius: 6px 6px 6px 6px;
+        -webkit-border-radius: 6px 6px 6px 6px;
+        border: 0px solid #000000;
+    }
+}
+
+
+.sidebar_acontece {
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 0 0 25px 0;
+    .sidebar_acontece_servico {
+        display: block;
+        width: 100%;
+        margin: 0 0 25px 0;
+        .sidebar_acontece_servico_title {
+            font-family: @museo700;
+            text-transform: uppercase;
+            font-size: 2.2em;
+            margin: 0 0 5px 0;
+            color: @verde;
+            width: 95%;
+            padding: 0 0 0 1%;
+        }
+        .sidebar_acontece_servico_box {
+            background-color: @verde;
+            color: #fff;
+            padding: 5%;
+            p {
+                font-family: @museo300;
+                font-size: 1.4em;
+            }
+            strong {
+                font-family: @museo500;
+            }
+        }
+    }
+    .sidebar_acontece_maisEventos {
+        display: block;
+        width: 100%;
+        margin: 0 0 25px 0;
+        .sidebar_acontece_maisEventos_title {
+            font-family: @museo700;
+            text-transform: uppercase;
+            font-size: 2.2em;
+            margin: 0 0 5px 0;
+            color: @verde;
+            width: 95%;
+            border-bottom: 1px solid @verde;
+            margin-bottom: 2.5%;
+            padding: 0 0 0 1%;
+        }
+    }
+}
+
+
+.readMoreAcontece {
+    display: block;
+    .readMoreAcontece_title {
+        display: block;    
+        width: 99%;
+        font-size: 2.2em;
+        border-bottom: 1px solid @verde;
+        margin-bottom: 2.5%;
+        padding: 0 0 0 1%;
+        text-transform: uppercase;
+        font-family: @museo700;
+        color: @verde;
+    }
+    .readMoreAcontece_link {
+        display: block;    
+        display: block;
+        font-size: 1.5em;
+        margin: 9px 0 0 0;
+        width: 99%;
+        padding: 0 0 0 1%;
+        color: @verde;
+        font-family: @museo500;
+    }
+    .readMoreAcontece_link:hover {
+        text-decoration: underline;
+    }
+}
+@media screen and (max-width: @media_tablet_2) {
+    .readMoreAcontece {
+        display: none;
+    }    
+}
+
+.ptyDicas_header {
+    height: 150px;
+    width: 100%;
+    .ptyDicas_header_foto {
+        border-radius: 100%;
+        height: 150px;
+        width: 150px;
+        background-size: cover;
+        background-position: top;
+        float: left;
+        @media screen and (max-width: @media_mobile) {
+            float: none;
+            margin: auto;
+        } 
+    }
+    .ptyDicas_header_foto_credito {
+
+    }
+    .ptyDicas_header_info {
+        float: left;
+        width: 75%;
+        @media screen and (max-width: @media_mobile) {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+        }
+    }
+    .ptyDicas_header_info_nome {
+        font-size: 4em;
+        margin: 48px 0 0 2%;
+        float: left;
+        width: 98%;
+        font-family: @museo700;
+        color: @verde;
+        @media screen and (max-width: @media_mobile) {
+            margin: 10px 0 0 2%;
+        }
+    }
+    p {
+        margin: 5px 0 0 2%;
+        float: left;
+        font-size: 1.5em;
+        width: 98%;
+        font-family: @museo300;
+        color: @verde;
+        @media screen and (max-width: @media_mobile) {
+            margin: 5px 0 10px 2%;
+        }
+    }
+}

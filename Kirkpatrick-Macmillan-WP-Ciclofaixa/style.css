@@ -1,0 +1,2531 @@
+/*
+Theme Name: Kirkpatrick-Macmillan-WP-Ciclofaixa
+Theme URI: http://spturis.com
+Author: SPTuris/DAC - Luciana Jabur, Leandro Rossi Sampaio, Daniella Parra e Joao Paulo LR Oliveira
+Author URI: http://lesampaio.com.br
+Description: Tema padrao desenvolvido a a divulgacao das Ciclofaixas de Turismo, projeto da Sao Paulo Turismo.
+Version: 2.1.7
+License: Todos os direitos reservados.  
+*/
+/* ------------------------------------------- RESET -- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;    
+    font-family: 'MuseoSans300', arial, sans-serif;
+    overflow-x: hidden;
+    color: #212121;
+    background-color: #008BCC;
+    background-image: url(images/bg_geral.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+a:visited {
+    color:#2689c9;
+    text-decoration: none;
+}
+a:link {
+    color:#2689c9;
+    text-decoration: none;
+}
+a:hover {
+    color:#2689c9;
+    text-decoration: underline;
+}
+a:active {
+    color:#2689c9;
+    text-decoration: none;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+    padding: 0 0 0 9px;
+}
+.transition30:hover {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.noUnderlineHover:hover {
+    text-decoration: none !important;
+}
+/* ------------------------------------------- FONTS -- */
+@font-face {
+    font-family: 'MuseoSans300';
+    src: url('fonts/museosans_300-webfont.eot');
+    src: url('fonts/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300-webfont.woff') format('woff'),
+        url('fonts/museosans_300-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300-webfont.svg#MuseoSans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans300Italic';
+    src: url('fonts/museosans_300_italic-webfont.eot');
+    src: url('fonts/museosans_300_italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300_italic-webfont.woff') format('woff'),
+        url('fonts/museosans_300_italic-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300_italic-webfont.svg#MuseoSans300Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('fonts/museosans_500-webfont.eot');
+    src: url('fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_500-webfont.woff') format('woff'),
+        url('fonts/museosans_500-webfont.ttf') format('truetype'),
+        url('fonts/museosans_500-webfont.svg#MuseoSans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans700';
+    src: url('fonts/museosans_700-webfont.eot');
+    src: url('fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_700-webfont.woff') format('woff'),
+        url('fonts/museosans_700-webfont.ttf') format('truetype'),
+        url('fonts/museosans_700-webfont.svgz#MuseoSans700') format('svg'),
+        url('fonts/museosans_700-webfont.svg#MuseoSans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.negrito {
+    font-family: 'MuseoSans700';
+}
+strong {
+    font-family: 'MuseoSans700';
+}
+b {
+    font-family: 'MuseoSans700';
+}
+i {
+    font-family: 'MuseoSans300Italic';
+}
+.wp-caption-text {
+    font-size: 12px!important;
+}
+/* ------------------------------------------- HEADER -- */
+#headerHome {
+    width:990px;
+    height:313px;
+    margin: 0 auto;
+    background-color: #EA1B36;
+}
+#headerHome_logo {
+    width:206px;
+    float: left;
+    height: 250px;
+    margin: 33px 0 0 5%;
+}
+#headerHome_logo_marca {
+    width: 90px;
+    height: 99px;
+    float: left;
+}
+#headerHome_logo_marca img {
+    width: 100%;
+}
+#headerHome_logo_ciclofaixa {
+    width:206px;
+    height:206px;
+    float: left;
+    margin: 15px 0px 0px -11px;
+}
+#headerHome_logo_ciclofaixa img { 
+    width: 100%;
+}
+#headerHome_SP {
+    width: 703px;
+    float: right;
+    height: 313px;
+}
+#headerHome_SP img {
+    width: 100%;
+}
+/* **************************** Header Interno */
+#headerInterna {
+    height: 260px;
+    margin: 0 auto;
+    display: table;
+    width: 990px;
+    background-color: #EA1B36;
+}
+#headerInterna_logo {
+    float: left;
+    height: 221px;
+    width: 198px;
+    margin: 17px 0 0 33px;
+}
+#headerInterna_logo img {
+    width: 100%;
+}
+#headerInterna_logo_marca {
+    width: 86px;
+    height: 96px;
+    float: left;
+}
+#headerInterna_logo_prefeitura {
+    width: 101px;
+    height: 96px;
+    float: left;
+    margin: 0 0 0 11px;
+}
+#headerInterna_logo_ciclofaixa {
+    width: 206px;
+    height: 122px;
+    float: left;
+    margin: 4px 0 0 0;
+}
+#headerInterna_ilustra {
+    float: right;
+    height: 260px;
+    width: 718px;
+}
+#headerInterna_ilustra img {
+}
+#headerInterna_ilustra_imgTitle {
+    margin: 160px 0 0 530px;
+    position: absolute;   
+}
+#headerSocial {
+    height: 38px;
+    width: 105px;
+    position: absolute;
+    margin: 15px 0 0 865px;
+    z-index: 99;
+}
+#headerSocial_facebook {
+    height: 38px;
+    width: 45px;
+    display: block;
+    background:url(images/btn_face_off.png);
+    float: left;
+    margin: 0 10px 0 0;
+}
+#headerSocial_facebook:hover {
+    height: 38px;
+    width: 45px;
+    display: block;
+    background:url(images/btn_face_on.png);
+    float: left;
+    margin: 0 10px 0 0;
+}
+#headerSocial_twitter {
+    background:url(images/btn_twitter_off.png);
+    height: 38px;
+    width: 45px;
+    display: block;
+    float: left;
+}
+#headerSocial_twitter:hover {
+    background:url(images/btn_twitter_on.png);
+    height: 38px;
+    width: 45px;
+    display: block;
+    float: left;
+}
+.faixaHeader {
+    height: 30px;
+    background-color: #EA1B36;
+    width: 990px;
+    margin: auto;
+}
+.faixaHeader .fa {
+    float: left !important;
+    font-size: 22px !important;
+    margin: 4px 7px 0 0 !important;
+    color: #f8ce11 !important;
+}
+.faixaHeader .fa:hover {
+    color: #fff !important;
+}
+.faixaHeader_busca {
+    width: 300px;
+    float: left;
+    height: 30px;
+    margin: 0 30px 0 560px;
+}
+.faixaHeader_busca_input {
+    width: 200px;
+    border-radius: 4px;
+    border: 0;
+    padding: 0 10px 0 10px;
+    font-size: 13px;
+    height: 18px;
+    margin: 6px 6px 0 0;
+    float: left;
+}
+.faixaHeader_busca_btn {
+    border: 0;
+    margin: 3px 0 0 0;
+    float: left;
+    cursor:pointer;
+    background: transparent;
+    background-image:url(images/lupa.png);
+    width: 22px;
+    height: 23px;
+}
+.faixaHeader_busca_btn:hover{
+    background-image:url(images/lupa_hover.png);
+}
+
+
+.faixaHeader_links {
+    width: 100px;
+    float: left;
+    height: 30px;
+}
+.faixaHeader_links .fa-facebook-square {
+}
+.faixaHeader_links .fa-twitter-square {
+}
+.faixaHeader_links .fa-envelope {
+}
+/* ------------------------------------------- MENU -- */
+/* ------------------------------------------- INDEX CONTENT -- */
+/* **************************** Textos */
+.info_title-V1 {
+    color: #ffcb09;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 30px;
+    margin: 150px 10px 0 25px;
+    width: 150px;
+    line-height: 1;
+}
+.info_title-V1 span {
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.info_title-V2 {
+    color: #ffcb09;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 30px;
+    margin: 25px 10px 0 25px;
+    width: 150px;
+    line-height: 1;
+}
+.info_title-V2 span {
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.info_resumo {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 16px;
+    color:#fff;
+    margin: 25px 25px 0 25px;
+    line-height: 1;
+}
+/* ------------------------------------------- PAGINAS CICLOFAIXAS -- */
+#internaContent-ciclofaixas {
+    width: 990px;
+    margin: 0 auto;
+    display: table;
+    background:url(images/ciclofaixas_bg.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+#ciclofaixas_esq {
+    width: 170px;
+    float: left;
+}
+#ciclofaixas_esq_lista {
+}
+.ciclofaixas_esq_lista_item a {
+    height: 65px;
+    width: 155px;
+    display: block;
+    text-align: right;
+    padding: 15px 15px 0 0;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 20px;
+}
+#ciclofaixas_esq_lista_item_link-V1 {
+    background-color: #fff;
+    color: #11416d;
+}
+#ciclofaixas_esq_lista_item_link-V1:hover {
+    background-color: #11416d;
+    color: #fff;
+}
+#ciclofaixas_esq_lista_item_link-V2 {
+    background-color: #f8ce11;
+    color: #e8243f;
+}
+#ciclofaixas_esq_lista_item_link-V2:hover {
+    background-color: #e8243f;
+    color: #f8ce11;
+}
+#ciclofaixas_esq_lista_item_link-V3 {
+    background-color: #11416d;
+    color: #f8ce11;
+}
+#ciclofaixas_esq_lista_item_link-V3:hover {
+    background-color: #f8ce11;
+    color: #11416d;
+}
+.ciclofaixas_esq_lista_item a span {
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+#ciclofaixas_dir {
+    width: 820px;
+    background-color: #f4f4f4;
+    float: left;
+}
+#ciclofaixas_dir h2 {
+    margin: 0 10px 0 0;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 16px;
+    text-align: right;
+}
+#ciclofaixas_dir p {
+    margin: 5px 10px 0 0;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 11px;
+    text-align: right;
+}
+#ciclofaixas_dir a {
+    color: #212121;
+}
+#ciclofaixas_dir_title {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 22px;
+    text-align: right;
+    margin: 20px 50px 40px 0;
+    color: #2689c9;
+}
+#ciclofaixas_dir_title span {
+    font-family: 'MuseoSans500', arial, sans-serif;
+}
+.ciclofaixas_dir_bloco {
+    height: 200px;
+    margin: 0 0 40px 120px;
+    width: 650px;
+    float: left;
+}
+.ciclofaixas_dir_bloco_texto {
+    height: 200px;
+    width: 350px;
+    float: left;
+    text-align: right;
+}
+.ciclofaixas_dir_bloco_imagem {
+}
+.ciclofaixas_dir_bloco_imagem img {
+    width: 300px;
+    height: 200px;
+}
+.ciclofaixas_dir_cicloBox {
+    width: 720px;
+    height: 325px;
+    float: left;
+    margin: 0 0 30px 50px;
+}
+.ciclofaixas_dir_cicloBox_text {
+    width: 240px;
+    height: 325px;
+    float: left;
+}
+.ciclofaixas_dir_cicloBox_mapa {
+    width: 480px;
+    height: 325px;
+    float: left;
+    background-color: #ccc;
+}
+/* ------------------------------------------- PAGINAS TURISMO -- */
+#internaContent-turismo {
+    width: 990px;
+    margin: 0 auto;
+    display: table;
+    background: url(images/ciclofaixas_bg.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+#turismo_esq {
+    width: 170px;
+    float: left;
+}
+
+#turismo_esq_lista {
+}
+.turismo_esq_lista_item {
+}
+.turismo_esq_lista_item a {
+    /* height: 65px; */
+    width: 155px;
+    display: block;
+    text-align: right;
+    padding: 20px 15px 20px 0;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 16px;
+}
+.turismo_esq_lista_item span {
+    font-family: 'MuseoSans300', arial, sans-serif;
+}
+#turismo_esq_lista_item_link-V1 {
+    background-color: #fff;
+    color: #11416D;
+}
+#turismo_esq_lista_item_link-V1:hover {
+    background-color: #11416D;
+    color: #fff;
+}
+#turismo_esq_lista_item_link-V2 {
+    background-color: #f8ce11;
+    color: #e8243f;
+}
+#turismo_esq_lista_item_link-V2:hover {
+    background-color: #e8243f;
+    color: #f8ce11;
+}
+#turismo_esq_lista_item_link-V3 {
+    background-color: #11416d;
+    color: #f8ce11;
+}
+#turismo_esq_lista_item_link-V3:hover {
+    background-color: #fff;
+    color: #11416d;
+}
+#turismo_esq_lista_item_link-V4 {
+    background-color: #e8243f;
+    color: #f8ce11;
+}
+#turismo_esq_lista_item_link-V4:hover {
+    background-color: #f8ce11;
+    color: #e8243f;
+}
+#turismo_dir {
+    width: 820px;
+    background-color: #FFF;
+    float: left;
+}
+#turismo_dir_full{
+    width: 990px;
+    background-color: #FFF;
+    float: left;
+}
+#turismo_dir_legenda {   
+    margin: 20px 0 0 20px;
+    height: 13px;
+    background-color: #fff;
+    padding: 7px 0 7px 10px;
+    width: 770px;
+}
+#turismo_dir-id260 {
+    width: 820px;
+    background-color: #F8CE11;
+    float: left;
+}
+#turismo_dir-id260_internaTitulo {
+    color: #E8243F;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 19px;
+    text-align: right;
+    padding: 15px 20px 20px 0px;
+}
+#turismo_dir-id256 {
+    width: 820px;
+    background-color: #FFF;
+    float: left;
+}
+#turismo_dir-id256_internaTitulo {
+    color: #12426D;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 19px;
+    text-align: right;
+    padding: 15px 20px 20px 0px;
+}
+#turismo_dir-id265 {
+    width: 820px;
+    background-color: #11416D;
+    float: left;
+}
+#turismo_dir-id265_internaTitulo {
+    color: #F8CE11;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 19px;
+    text-align: right;
+    padding: 15px 20px 20px 0px;
+}
+#turismo_dir-id267 {
+    width: 820px;
+    background-color: #E8243F;
+    float: left;
+}
+#turismo_dir-id267_internaTitulo     {
+    color: #F8CE11;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 19px;
+    text-align: right;
+    padding: 15px 20px 20px 0px;
+}
+.turismo_dir_legenda_item {
+}
+.turismo_dir_legenda_item img {
+    float: left;
+    height: 13px;
+}
+.turismo_dir_legenda_item p {
+    font-size: 12px;
+    float: left;
+    margin: 0 12px 0 4px;
+}
+#map_canvas{
+    width: 780px;
+    height: 500px;
+    margin: 5px 0 20px 20px;
+}
+/* ------------------------------------------- FOOTER -- */
+#footer {
+    width: 990px;
+    height: 200px;
+    background-color: #0C3F6D;
+    margin: 0 auto;
+}
+#footer_info {
+    width: 300px;
+    height: 40px;
+    float: left;
+    margin: 50px 0 0 5%;
+}
+#footer_info p {
+    color: #fff;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 12px;
+    margin: 3px 0 0 0;
+}
+#footer_logo {
+    width: 235px;
+    height: 80px;
+    float: right;
+    margin: -120px 5% 0 0;
+}
+#sppp img{
+    width: 40%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 115px;
+}
+#footer_logo_spturis {
+    width: 80px;
+    height: 73px;
+    float: left;
+    margin: 4px 47px 0 0;
+}
+#footer_logo_prefeitura {
+    width: 107px;
+    height: 76px;
+    float: left;
+}
+/* ------------------------------------------- SLIDER -- */
+/* http://www.menucool.com */
+#sliderFrame {
+    position:relative;
+    width: 703px;
+    float: right;
+    height: 313px;
+}
+#ribbon { 
+    border-radius: 12px;
+    width:111px;
+    height:111px;
+    position:absolute;
+    top:-4px;
+    left:-4px;
+    background:url(js/ribbon.png) no-repeat;z-index:7;
+}
+#slider {
+    width: 703px;
+    height: 313px;
+    background:#fff url(js/loading.gif) no-repeat 50% 50%;
+    position:relative;
+    margin:0 auto;
+}
+#slider img {
+    width: 100%;
+    position:absolute;
+    border:none;
+    display:none;
+    border-radius: 12px;
+}
+/* the link style (if an image is wrapped in a link) */
+#slider a.imgLink {
+    z-index:2;
+    display:none;position:absolute;
+    top:0px;left:0px;border:0;padding:0;margin:0;
+    width:100%;height:100%;
+    border-radius: 12px;
+}
+/* Caption styles */
+div.mc-caption-bg, div.mc-caption-bg2 {
+    position:absolute;
+    width:100%;
+    height:auto;
+    padding:0;
+    left:0px; /*if the caption needs to be aligned from right, specify by right instead of left. i.e. right:20px;*/
+    bottom:0px;/*if the caption needs to be aligned from top, specify by top instead of bottom. i.e. top:150px;*/
+    z-index:3;
+    overflow:hidden;
+    font-size: 0;
+}
+div.mc-caption-bg {
+    display: none;
+    background-color:black;
+}
+div.mc-caption {
+    display: none;
+    font: bold 14px/20px Arial;
+    color:#EEE;
+    z-index:4;
+    padding:10px 0;/*Adding a padding-left or padding-right here will make the caption area wider than its background. Sometimes you may need to define its width again here to keep it the same width as its background area (div.mc-caption-bg).*/
+    text-align:center;
+}
+div.mc-caption a {
+    color:#FB0;
+}
+div.mc-caption a:hover {
+    color:#DA0;
+}
+/* ------ built-in navigation bullets wrapper ------*/
+div.navBulletsWrapper  {
+    top: 290px;
+    left: 600px;
+    width: 150px;
+    background: none;
+    padding-left: 20px;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+/* each bullet */
+div.navBulletsWrapper div 
+{
+    width:18px; height:15px;
+    background:transparent url(js/bullet.png) no-repeat 0 0;
+    float:left;overflow:hidden;vertical-align:middle;cursor:pointer;
+    margin-right:11px;/* distance between each bullet*/
+    _position:relative;/*IE6 hack*/
+}
+/*div.navBulletsWrapper div.active {background-position:0 -1px;}*/
+/* --------- Others ------- */
+#slider 
+{
+    transform: translate3d(0,0,0);
+    -ms-transform:translate3d(0,0,0);
+    -moz-transform:translate3d(0,0,0);
+    -o-transform:translate3d(0,0,0);
+}
+.slider_imagem {
+}
+.slider_texto {
+    float: right;
+    padding: 11px 10px 6px 10px;
+    margin: 120px 0 0 0;
+    width: 400px;
+    background-color: #000;
+    -moz-opacity: 0.70;
+    -khtml-opacity: 0.70;
+    opacity: 0.70;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+    filter:alpha(opacity=70);
+    text-align: right;
+}
+.slider_texto h2 {
+    font-family: 'MuseoSans700' !important;
+    color: #fff !important;
+    font-size: 22px !important; 
+    text-align: right !important;
+}
+.slider_texto_resumo {
+    font-family: 'MuseoSans300';
+    color: #fff !important;
+    font-size: 12px !important;
+    display: block !important;
+    padding: 10px 0 3px 5px !important;
+    text-align: right !important;
+}
+.slider_texto_creditos {
+    font-family: 'MuseoSans300Italic';
+    color: #fff !important;
+    font-size: 8px !important;
+    text-align: right !important;
+}
+/* ------------------------------------------- NOTICIAS -- */
+#ciclofaixas_esq_listaNoticia {
+}
+.ciclofaixas_esq_lista_itemNoticia a {
+    width: 140px;
+    display: block;
+    text-align: right;
+    padding: 15px 15px 15px 15px;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V1 {
+    background-color: #f8ce11;
+    color: #e8243f;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V1:hover {
+    background-color: #e8243f;
+    color: #f8ce11;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V2 {
+    background-color: #11416d;
+    color: #f8ce11;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V2:hover {
+    background-color: #f8ce11;
+    color: #11416d;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V3 {
+    background-color: #fff;
+    color: #11416d;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V3:hover {
+    background-color: #11416d;
+    color: #fff;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V4 {
+    background-color: #f8ce11;
+    color: #e8243f;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V4:hover {
+    background-color: #e8243f;
+    color: #f8ce11;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V5 {
+    background-color: #11416d;
+    color: #f8ce11;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V5:hover {
+    background-color: #f8ce11;
+    color: #11416d;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V6 {
+    background-color: #fff;
+    color: #11416d;
+}
+#ciclofaixas_esq_lista_itemNoticia_link-V6:hover {
+    background-color: #11416d;
+    color: #fff;
+}
+#ciclofaixas_dir_content_noticias {
+    padding: 0 20px 30px 30px;
+    font-size: 14px;
+}
+#ciclofaixas_dir_content_noticias p {
+    margin: 0 0 20px 0;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 13px;
+    text-align: justify;
+}
+#ciclofaixas_dir_content_noticias h1,h2,h3,h4,h5,h6 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+/* ------------------------------------------- DANI CSS -- */
+p {
+    line-height: 1.4;    
+    font-size: 16px;
+}
+.aligncenter {
+    margin: 0 auto;
+    display: block;
+}
+#headerHome_logo_prefeitura {
+    width: 103px;
+    height: 96px;
+    float: left;
+    margin: 0 0 0 13px;
+}
+#headerHome_logo_prefeitura img {
+    width: 100%;
+}
+.ciclofaixas_dir_bloco {
+    height: 260px;
+}
+#topBar {
+    float: right;
+    width: 820px;
+    height: 21px;
+    margin: 0px 20px 0px 20px;
+}
+#indique_amigo {
+    padding: 0px 11px 0px 0px!important;
+    float: right;
+}
+#ciclofaixas_dir_title {
+    margin: 16px 23px 25px 0!important;
+}
+#ciclofaixas_dir_content {
+    margin: 25px 0 0;
+    float: left;
+}
+#parquesContent {
+    margin: 25px 0 0;
+    float: left;
+}
+/* ------ PEDALE COM SEGURANÇA   */
+#segurancaDicas {
+    margin: 25px 0 0 54px;
+    float: left;
+}
+.segurancaTextoDicas {
+    font-family: 'MuseoSans300', arial, sans-serif!important;
+    padding: 5px 0 0;
+}
+.segurancaTextoEquipamento {
+    font-family: 'MuseoSans300', arial, sans-serif!important;
+    padding: 5px 0 0;
+}
+.dicas {
+    width: 180px;
+    height: 139px;
+    float: left;
+    margin: 0 5px 5px 0;
+}
+.dicas img {
+    margin: 0 0 0 33px;
+}
+.dicas_equipamento {
+    width: 165px;
+    height: 139px;
+    float: left;
+    margin: 20px 15px 25px 0;
+}
+.dicas_equipamento_iluminacao {
+    background: url(images/seguranca_img14.png) no-repeat;
+    width: 154px;
+    height: 77px;
+    margin: -13px 0 0 0; 
+}
+.dicas_equipamento_capacete {
+    background: url(images/seguranca_img15.png) no-repeat;
+    width: 58px;
+    height: 52px;
+    margin: 0 0 11px 52px;
+}
+.dicas_equipamento_luvas {
+    background: url(images/seguranca_img16.png) no-repeat;
+    width: 70px;
+    height: 46px;
+    margin: 0 0 15px 42px;
+}
+.dicas_equipamento_tools{
+    background: url(images/seguranca_img17.png) no-repeat;
+    width: 70px;
+    height: 51px;
+    margin: 0 0 9px 47px;
+}
+.dicas_equipamento_cadeado{
+    background: url(images/seguranca_img18.png) no-repeat;
+    width: 50px;
+    height: 70px;
+    margin: -11px 0 3px 56px;
+}
+/* ------- BIKE NO METRÔ E TREM    */
+#metroEtrem_esq {
+    width: 170px;
+    float: left;
+}
+#metroEtrem_esq_lista {
+}
+.metroEtrem_esq_lista_item a {
+    height: 65px;
+    width: 155px;
+    display: block;
+    text-align: right;
+    padding: 15px 15px 0 0;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 20px;
+}
+#metroEtrem_esq_lista_item_link-V1 {
+    background-color: #fff;
+    color: #11416d;
+}
+#metroEtrem_esq_lista_item_link-V1:hover {
+    background-color: #11416d;
+    color: #fff;
+}
+#metroEtrem_esq_lista_item_link-V2 {
+    background-color: #f8ce11;
+    color: #e8243f;
+}
+#metroEtrem_esq_lista_item_link-V2:hover {
+    background-color: #e8243f;
+    color: #f8ce11;
+}
+.metroEtrem_esq_lista_item a span {
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+#metroEtrem_dir {
+    width: 790px;
+    background-color: #F4F4F4;
+    float: left;
+    padding: 10px 10px 20px 20px;
+}
+#metroEtrem_dir h1 {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 25px;
+}
+#metroEtrem_dir h2 {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 15px;
+    margin: 25px 0 25px;
+}
+#metroEtrem_dir h3 {
+    text-transform: uppercase;
+    color: #008BCC;
+    padding: 9px 0 2px;
+}
+#metroEtrem_dir span {
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+#metroEtrem_dir strong {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    text-transform: uppercase;
+}
+#metroEtrem_dir a:visited {
+    text-decoration: none;
+    color: #EA1B36;
+}
+#metroEtrem_dir a:link {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #EA1B36;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#metroEtrem_dir a:hover {
+    text-decoration: underline;
+    color: #EA1B36;
+}
+#metroEtrem_dir a:active {
+    text-decoration: none;
+    color: #EA1B36;
+}
+.metroEtrem_dir_li {
+    margin: 0 145px 145px;
+    font-size: 14px;
+    padding: 25px 0 0 0;
+}
+.metroEtrem_dir_li li {
+    text-align: center;
+    list-style: none;
+    width: 93px;
+    min-height: 32px;
+    border-right: 1px #008BCC solid;
+    float: left;
+    padding: 10px;
+    margin: 0 0 0 6px;
+}
+.metroEtrem_dir_li li a:visited{
+    color: #000!important;
+}
+.metroEtrem_dir_li li a:link{
+    color: #000!important;
+}
+.metroEtrem_dir_li li a:hover{
+    color: #000!important;
+    text-decoration: underline;
+}
+.metroEtrem_dir_li li a:active{
+    color: #000!important;      
+}
+.metroEtrem_dir_lista {
+    width: 370px;
+    float: left;
+    margin-right: 25px;
+    line-height: 20px;
+    font-size: 13px;
+}
+/*------ POR AI ---- */
+#internaContent_wrap {
+    margin: 0px 45px 45px 45px;
+    float: left;
+}
+.internaContent_porAiLink {
+    float: left;
+    width: 162px;
+    height: 320px;
+    margin: 25px 18px 25px 0;
+    font-size: 13px;
+}
+.internaContent_porAiLink img {
+    border: 1px solid #999;
+}
+.internaContent_porAiLink h1 {
+    font-size: 14px;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #008BCC;   
+}
+/*------ ALUGUE UMA BIKE ---- */
+#internaContent_alugueBike_left {
+    width: 468px;
+    float: left;
+    margin: 0 19px 0 0;
+    border-right: 1px solid #008BCC;
+    padding: 0 5px 0 0;
+}
+#internaContent_alugueBike_left strong {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    color: #EA1B36;
+}
+#internaContent_alugueBike_left a:visited {
+    color: #EA1B36;
+    text-decoration: none;
+}
+#internaContent_alugueBike_left a:link {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #EA1B36;
+    text-decoration: none;
+}
+#internaContent_alugueBike_left a:hover {
+    color: #EA1B36;
+    text-decoration: underline;
+}
+#internaContent_alugueBike_left a:active {
+    color: #EA1B36;
+    text-decoration: none;
+}
+#internaContent_alugueBike_right {
+    width: 446px;
+    float: left;
+}
+#alugueBike_right_box {
+    width: 300px;
+    border: 1px solid #008BCC;
+    padding: 14px;
+    float: left;
+}
+#alugueBike_right_box ul li {
+    background: url(images/alugueBike_right_box_li.png) no-repeat;
+    background-position: left top;
+    padding: 0 0 11px 8px;
+    background-position-y: 5px;
+    font-size: 14px;
+    list-style: none;
+    line-height: 1.3;
+}
+#alugueBike_right_box h1 {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #008BCC;
+    padding: 8px 0 10px 0;
+}
+#alugueBike_right_box a:visited {
+    color: #EA1B36;
+    text-decoration: none;
+}
+#alugueBike_right_box a:link {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #EA1B36;
+    text-decoration: none;
+}
+#alugueBike_right_box a:hover {
+    color: #EA1B36;
+    text-decoration: underline;
+}
+#alugueBike_right_box a:active {
+    color: #EA1B36;
+    text-decoration: none;
+}
+#alugueBike_right_links {
+    margin: 0;
+}
+#alugueBike_right_links a:visited {
+    color: #FFF;
+}
+#alugueBike_right_links a:link {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    background-color: #008BCC;
+    width: 77px;
+    padding: 10px 7px 10px 6px;
+    float: left;
+    height: 75px;
+    margin: 6px 0 0 17px;
+}
+#alugueBike_right_links a:hover {
+    color: #FFF;
+}
+#alugueBike_right_links a:active {
+    color: #FFF;
+}
+.parqueFoto {
+    margin: 0px 5px 25px 5px!important;
+    background: url(images/thumb_default.png) no-repeat!important;
+}
+.parqueFoto img {
+    width: 100%;
+}
+.mapa {
+    margin: 0px 30px 25px 5px!important;
+}
+#turismoReceptivo_content {
+    margin: 20px 20px 20px 20px;
+    width: 780px;
+    padding: 0;
+    float: left;
+}
+#turismoReceptivo_content_full{
+    margin: 20px 40px 20px 40px;
+    width: 910px;
+    padding: 0;
+    float: left;
+
+}
+#turismoReceptivo_content p {
+    text-align: justify;
+    line-height: 1.7;
+    margin: 15px 25px 15px 25px;
+}
+#turismoReceptivo_content h3{
+    margin: 15px 25px 15px 25px;
+}
+#turismoReceptivo_content img {
+    margin: 0 19px 0 0;
+}
+.turismoReceptivo_links {
+    float: left;
+    margin: 16px 0 0;
+}
+#turismoReceptivo_content p.wp-caption-text {
+    /* background: #666;
+    width: 300px;
+    float: right; */
+}
+#bicicletariosEparaciclos_content {
+    margin: 50px 0 0 25px;
+}
+#bicicletarioRight {
+    float: left;
+    width: 527px;
+    height: 625px;
+}
+.bicicletarioBloco {
+    margin: 0 0 25px 0;
+    float: left;
+}
+.bicicletarioTexto{
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size:14px;
+    text-align: left;
+    padding: 15px 0px 30px 30px;
+}
+.bicicletarioDescricao{
+    width:217px;
+    height:267px;
+    float:left;
+    display:block;
+    margin: 0px 5px 15px 30px;
+}
+.bicicletarioTituloDescricao{
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color:#2689CA;
+    font-size:17px;
+    text-align: right;
+    padding: 0px 0px 20px 0px;
+    clear: both;
+}
+.bicicletarioTextoDescricao{
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size:14px;
+    text-align: right;
+    line-height:150%
+}
+.bicicletarioFoto{
+    width:246px;
+    height:267px;
+    background:#999;
+    display:block;
+    float:left;
+    margin: 0px 15px 15px 5px;
+}
+.mapaBicicletario{
+    width:438px;
+    height:508px;
+    background:#aaa;
+    float:left;
+    margin: 0px 30px 15px 5px;
+}
+#footer_logo_conviva {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: -24px 60px 0 0;
+}
+#footer_logo_CET {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: -24px 0 0;
+}
+/*-------------ENVIE A UM AMIGO----*/
+#wp-email-required {
+    font-weight: normal!important;
+    font-size: 12px;
+    color: #EA1B36;
+}
+
+/*---- IF FIREFOX ---*/
+/*@-moz-document url-prefix() { 
+    #internaContent-ciclofaixas {
+    background: none;
+}
+#internaContent-turismo {
+    background: none;
+}
+}#ciclofaixas_dir p {
+    font-size: 12px!important;
+}*/
+/* ------------------------------------------- CSS JOAO PAULO -- */
+/* ------------------------------------------- SEGURANCA CONTENT -- */
+#internaContent {
+    margin: 0 auto;
+    width: 990px;
+    background-color:#FFF;
+    display:table;
+}
+.internaTitulo{
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color:#12426D;
+    font-size:28px;
+    text-align: right;
+    padding: 20px 20px 20px 0px;
+    margin: 0px 20px 0px 20px;
+}
+.internaData {
+    display: block;
+    padding: 0 40px 20px 0;
+    text-align: right;
+    font-size: 14px;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #12426D;
+}
+.segurancaTexto{
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size:18px;
+    text-align: right;
+    color:#12426D;
+    padding: 15px 30px 30px 0px;
+}
+.segurancaTextoDicas{
+    font-family: 'MuseoSans100', arial, sans-serif;
+    font-size:14px;
+    text-align: center;
+}
+.segurancaTextoEquipamento{
+    font-family: 'MuseoSans100', arial, sans-serif;
+    font-size:14px;
+    text-align: center;
+}
+.dicas{
+    padding: 20px;
+    width:180px;
+}
+#indique_amigo{
+    width:20px;
+    height:20px;
+    padding:0px 20px 0px 0px;
+}
+#imprimir{
+    width:20px;
+    height:20px;
+    padding:0px 20px 0px 0px;
+    float:right;
+}
+.parqueTexto{
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size:14px;
+    text-align: left;
+    padding: 15px 0px 30px 30px;
+}
+.parqueDescricao{
+    width:217px;
+    height:267px;
+    float:left;
+    display:block;
+    margin: 0px 5px 15px 30px;
+}
+.parqueTituloDescricao{
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color:#2689CA;
+    font-size:17px;
+    text-align: right;
+    padding: 0px 0px 20px 0px;
+}
+.parqueTextoDescricao{
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size:11px;
+    text-align: right;
+    line-height:150%
+}
+.parqueFoto{
+    width:247px;
+    height:267px;
+    background:#999;
+    display:block;
+    float:left;
+    margin: 0px 5px 15px 5px;
+}
+.mapa{
+    width:438px;
+    height:267px;
+    background:#aaa;
+    float:left;
+    margin: 0px 30px 15px 5px;
+}
+#mapaVilaLobos{
+    width:438px;
+    height:267px;
+    background:#aaa;
+    float:left;
+    margin: 0px 30px 15px 5px;
+}
+.legenda{
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size:9px;
+    text-align: right;
+}
+/* ------------------------------------------- CSS SOCIAL SHARE -- */
+.share {
+    padding: 0 20px 0 0;
+}
+.shareWraper {
+    float: right;
+    margin: 0 0 0 10px;
+    height: 21px;
+}
+.share_face {
+}
+.share_twitter {
+}
+.share_google {
+}
+.share_pinterest {
+}
+.share_tumblr {
+}
+/* -------------------------------------------  MAPA -- */
+.mapaWrap {
+    float: left;
+    width: 780px;
+    margin: 20px;
+}
+.mapaWrap_esq {
+    width: 380px;
+    float: left;
+    margin: 0 20px 0 0;
+    display: block;
+}
+.mapaWrap_dir {
+    width: 380px;
+    height: 600px;
+    float: left;
+    display: block;
+}
+.mapaWrap_dir img {
+    width: 100%;
+    display: block;
+}
+.mapaWrap_dir_item {
+    position: absolute;
+    background-color: rgba(256, 256, 256, 0.8);
+}
+.mapaWrap_dir_item_link {
+    font-size: 18px;
+    font-family: 'MuseoSans700';
+    padding: 5px;
+    color: #12426D;
+}
+.mapaWrap_dir_item_link:hover {
+    background-color: #e8243f;
+    color: #f8ce11;
+}
+.mapCE {
+    margin: 156px 0 0 122px;
+}
+.mapZN {
+    margin: 88px 0 0 74px;
+}
+.mapZL {
+    margin: 169px 0 0 233px;
+}
+.mapZO {
+    margin: 167px 0 0 62px;
+    width: 60px;
+}
+.mapZS {
+    margin: 373px 0 0 57px
+}
+.tabs_container {
+    height: 600px !important;
+}
+.mapaWrap_esq  {
+    height: 1000px !important;
+    margin: 0 0 0 20px;
+}
+.tabs-1, .tabs-2, .tabs-3, .tabs-4, .tabs-5 {
+    height: 600px !important;
+    position: relative !important;
+}
+.mapaWrap_esq_title {
+    font-size: 22px;
+    font-family: 'MuseoSans700';
+    color: #12426D !important;    
+}
+.mapaWrap_esq_link {
+    float: left;
+    width: 100%;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+}
+.mapaWrap_esq_link:hover {
+    text-decoration: underline;
+}
+/* -------------------------------------------  SEARCH -- */
+#emptygif {
+    position:absolute;
+    z-index:200;
+}
+#overlayr1 {
+    position:absolute;
+    background:#fff;
+    opacity:0.2;
+    width:300px;
+    height:160px;
+    z-index:100;
+    display:none;
+}
+#overlayr2 {
+    position:absolute;
+    background:#fff;
+    opacity:0.2;
+    width:300px;
+    height:160px;
+    top:160px;
+    z-index:100;
+    display:none;
+}
+.resultBuscaNO {
+    padding: 30px 0 450px 0;
+    text-align: center;
+    font-size: 20px;
+}
+.resultBusca {
+    font-size: 20px;
+    float: left;
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 0 0 15px 0;
+}
+#paginationCurrent {
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.pagination {
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+/*
+-------------------------------------------
+-------------------------------------------
+-------------------------------------------
+CSS ANTIGO DESKTOP FILE  
+-------------------------------------------
+-------------------------------------------
+-------------------------------------------
+*/
+#indexContent {
+    margin: 0 auto;
+    width: 991px;
+    display: table;
+}
+/* **************************** Turismo de Bike */
+#indexContent_turisBike {
+    width: 247px;
+    float: left;
+    height: 442px;
+    background-color: #ed243c;
+    display: table;
+    position: relative;
+}
+#indexContent_turisBike_link {
+}
+
+#indexContent_turisBike_link_info {
+    width: 249px;
+    float: left;
+    height: 442px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-escuro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_turisBike:hover #indexContent_turisBike_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;	
+}
+/* **************************** Ciclofaixas */
+#indexContent_ciclofaixas {
+    width: 247px;
+    float: left;
+    height: 442px;
+    background-color: #0c406d;
+    display: table;
+    position: relative;
+}
+#indexContent_ciclofaixas_link {
+}
+#indexContent_ciclofaixas img {
+    width: 100%;
+    height: 442px !important;
+    display: block;
+}
+#indexContent_ciclofaixas_link_info {
+    width: 249px;
+    float: left;
+    height: 442px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-claro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_ciclofaixas:hover #indexContent_ciclofaixas_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Parques */
+#indexContent_parques {
+    width: 248px;
+    float: left;
+    height: 442px;
+    background-color: #ffcb09;
+    display: table;
+    position: relative;
+}
+#indexContent_parques_link {
+}
+#indexContent_parques img {
+    width: 100%;
+    height: 442px !important;
+    display: block;
+}
+#indexContent_parques_link_info {
+    width: 248px;
+    float: left;
+    height: 442px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/vermelho-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_parques:hover #indexContent_parques_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Seguranca */
+#indexContent_seguranca {
+    width: 248px;
+    float: left;
+    height: 221px;
+    background-color: #1e89cb;
+    display: table;
+    position: relative;
+}
+
+#indexContent_seguranca_link_info {
+    width: 248px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-escuro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_seguranca:hover #indexContent_seguranca_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Paraciclos */
+#indexContent_paraciclos {
+    width: 248px;
+    float: left;
+    height: 221px;
+    background-color: #ed243c;
+    display: table;
+    position: relative;
+}
+#indexContent_paraciclos_link {
+}
+
+#indexContent_paraciclos_link_info {
+    width: 248px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-claro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_paraciclos:hover #indexContent_paraciclos_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Social */
+#indexContent_social {
+    width: 247px;
+    float: left;
+    height: 221px;
+    background-color: #ffcb09;
+    display: table;
+    position: relative;
+}
+#indexContent_social_link {
+}
+#indexContent_social img {
+    width: 100%;
+    height: 221px;
+    display: block;
+}
+#indexContent_social_link_info {
+    width: 247px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/vermelho-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_social:hover #indexContent_social_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** metro */
+#indexContent_metro {
+    width: 247px;
+    float: left;
+    height: 221px;
+    background-color: #ffcb09;
+    display: table;
+    position: relative;
+}
+#indexContent_metro_link {
+}
+#indexContent_metro img {
+    width: 100%;
+    height: 221px;
+    display: block;
+}
+#indexContent_metro_link_info {
+    width: 247px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-escuro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_metro:hover #indexContent_metro_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Por ai (Links) */
+#indexContent_links {
+    width: 248px;
+    float: left;
+    height: 221px;
+    background-color: #1f8acb;
+    display: table;
+    position: relative;
+}
+#indexContent_links_link {
+}
+#indexContent_links img {
+    width: 100%;
+    height: 221px;
+    display: block;
+}
+#indexContent_links_link_info {
+    width: 248px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-escuro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_links:hover #indexContent_links_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Aluguel */
+#indexContent_aluguel {
+    width: 248px;
+    float: left;
+    height: 221px;
+    background-color: #ffcb09;
+    display: table;
+    position: relative;
+}
+#indexContent_aluguel_link {
+}
+#indexContent_aluguel img {
+    width: 100%;
+    height: 221px;
+    display: block;
+}
+#indexContent_aluguel_link_info {
+    width: 248px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-escuro-75.png');
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_aluguel:hover #indexContent_aluguel_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* ------------------------------------------- MENU -- */
+#menu {
+    width: 990px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#menu_lista {
+}
+.menu_lista_item {
+    list-style: none;
+}
+.menu_lista_item a:visited {
+    color: #fff;
+}
+.menu_lista_item a:link {
+    color: #fff;
+}
+.menu_lista_item a:hover {
+    color: #EA1B36;
+}
+.menu_lista_item a:active {
+    color: #fff;
+}
+.menu_lista_item_link-V1 {
+    background-color: #EA1B36;
+    float: left;
+    padding: 14px 23px 0 23px;
+    height: 46px;
+    color: #fff;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    text-align: left;
+    display: block;
+    margin: 0 4px 0 0;
+    font-size: 17px;
+}
+.menu_lista_item_link-V1-ajuste {
+    padding-top: 21px;
+    height: 39px;
+}
+.menu_lista_item_link-V2 {
+    background-color: #EA1B36;
+    float: left;
+    padding: 21px 27px 0 27px;
+    height: 39px;
+    color: #fff;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    text-align: left;
+    display: block;
+    font-size: 17px;
+}
+
+
+
+
+.menu_lista_item_link-V1:hover {
+    background-color: #FFCB09;
+    text-decoration: none;
+}
+.menu_lista_item_link-V2:hover {
+    background-color: #FFCB09;
+    color: #EA1B36;
+    text-decoration: none;
+}
+.menu_lista_item_link-V1 span {
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+#menu_lista_item_link-V2-1 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+#menu_lista_item_link-V2-2 {
+    display: none;
+}
+/*
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+---------------------------------------------------- CSS OLD MOBILE FILE
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+*/
+#indexContent {
+    margin: 0 auto;
+    width: 991px;
+    display: table;
+}
+/* **************************** Turismo de Bike */
+#indexContent_turisBike {
+    width: 247px;
+    float: left;
+    height: 442px;
+    background-color: #ed243c;
+    display: table;
+    position: relative;
+}
+#indexContent_turisBike_link {
+}
+#indexContent_turisBike img {
+    width: 100%;
+    height: 442px !important;
+    display: block;
+}
+#indexContent_turisBike_link_info {
+    width: 249px;
+    float: left;
+    height: 442px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-escuro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_turisBike:hover #indexContent_turisBike_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;	
+}
+/* **************************** Ciclofaixas */
+#indexContent_ciclofaixas {
+    width: 247px;
+    float: left;
+    height: 442px;
+    background-color: #0c406d;
+    display: table;
+    position: relative;
+}
+#indexContent_ciclofaixas_link {
+}
+#indexContent_ciclofaixas_link_info {
+    width: 249px;
+    float: left;
+    height: 442px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-claro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_ciclofaixas:hover #indexContent_ciclofaixas_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Parques */
+#indexContent_parques {
+    width: 248px;
+    float: left;
+    height: 442px;
+    background-color: #ffcb09;
+    display: table;
+    position: relative;
+}
+#indexContent_parques_link {
+}
+
+#indexContent_parques_link_info {
+    width: 248px;
+    float: left;
+    height: 442px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/vermelho-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_parques:hover #indexContent_parques_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Seguranca */
+#indexContent_seguranca {
+    width: 248px;
+    float: left;
+    height: 221px;
+    background-color: #1e89cb;
+    display: table;
+    position: relative;
+}
+#indexContent_seguranca img {
+    width: 100%;
+    height: 221px !important;
+    display: block;
+}
+#indexContent_seguranca_link_info {
+    width: 248px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-escuro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_seguranca:hover #indexContent_seguranca_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Paraciclos */
+#indexContent_paraciclos {
+    width: 248px;
+    float: left;
+    height: 221px;
+    background-color: #ed243c;
+    display: table;
+    position: relative;
+}
+#indexContent_paraciclos_link {
+}
+#indexContent_paraciclos img {
+    width: 100%;
+    height: 221px !important;
+    display: block;
+}
+#indexContent_paraciclos_link_info {
+    width: 248px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-claro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_paraciclos:hover #indexContent_paraciclos_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Social */
+#indexContent_social {
+    width: 247px;
+    float: left;
+    height: 221px;
+    background-color: #ffcb09;
+    display: table;
+    position: relative;
+}
+#indexContent_social_link {
+}
+#indexContent_social img {
+    width: 100%;
+    height: 221px;
+    display: block;
+}
+#indexContent_social_link_info {
+    width: 247px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/vermelho-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_social:hover #indexContent_social_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** metro */
+#indexContent_metro {
+    width: 247px;
+    float: left;
+    height: 221px;
+    background-color: #ffcb09;
+    display: table;
+    position: relative;
+}
+#indexContent_metro_link {
+}
+#indexContent_metro img {
+    width: 100%;
+    height: 221px;
+    display: block;
+}
+#indexContent_metro_link_info {
+    width: 247px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-escuro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_metro:hover #indexContent_metro_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Por ai (Links) */
+#indexContent_links {
+    width: 248px;
+    float: left;
+    height: 221px;
+    background-color: #1f8acb;
+    display: table;
+    position: relative;
+}
+#indexContent_links_link {
+}
+#indexContent_links img {
+    width: 100%;
+    height: 221px;
+    display: block;
+}
+#indexContent_links_link_info {
+    width: 248px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-escuro-75.png');
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_links:hover #indexContent_links_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* **************************** Aluguel */
+#indexContent_aluguel {
+    width: 248px;
+    float: left;
+    height: 221px;
+    background-color: #ffcb09;
+    display: table;
+    position: relative;
+}
+#indexContent_aluguel_link {
+}
+#indexContent_aluguel img {
+    width: 100%;
+    height: 221px;
+    display: block;
+}
+#indexContent_aluguel_link_info {
+    width: 248px;
+    float: left;
+    height: 221px;
+    top: 0;
+    left: 0;
+    line-height: 200px;
+    color: #fff;
+    background-image: url('images/azul-escuro-75.png');
+    position: absolute;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, -webkit-transform .5s;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    -moz-transition: opacity 0.5s ease 0s, -moz-transform 0.5s ease 0s;
+}
+#indexContent_aluguel:hover #indexContent_aluguel_link_info {
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 1;
+}
+/* ------------------------------------------- MENU -- */
+#menu_lista {
+}
+.menu_lista_item {
+    list-style: none;
+}
+.menu_lista_item a:visited {
+    color: #fff;
+}
+.menu_lista_item a:link {
+    color: #fff;
+}
+.menu_lista_item a:hover {
+    color: #EA1B36;
+}
+.menu_lista_item a:active {
+    color: #fff;
+}
+.menu_lista_item_link-V1 {
+    background-color: #EA1B36;
+    float: left;
+    padding: 14px 23px 0 23px;
+    height: 46px;
+    color: #fff;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    text-align: left;
+    display: block;
+    margin: 0 4px 0 0;
+    font-size: 17px;
+}
+.menu_lista_item_link-V1-ajuste {
+    padding-top: 21px;
+    height: 39px;
+}
+.menu_lista_item_link-V2 {
+    background-color: #EA1B36;
+    float: left;
+    padding: 21px 27px 0 27px;
+    height: 39px;
+    color: #fff;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    text-align: left;
+    display: block;
+    font-size: 17px;
+}
+.menu_lista_item_link-V1:hover {
+    background-color: #FFCB09;
+    text-decoration: none;
+}
+.menu_lista_item_link-V2:hover {
+    background-color: #FFCB09;
+    color: #EA1B36;
+    text-decoration: none;
+}
+.menu_lista_item_link-V1 span {
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+#menu_lista_item_link-V2-1 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+#menu_lista_item_link-V2-2 {
+    display: none;
+}
+/*
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+---------------------------------------------------- CSS OLD MOBILE FILE
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+*/
+
+.embed-container iframe{ 
+    width: 90%;
+    margin: 0 45px 45px 45px;
+    height: 600px;
+} 
+
+.queryZonas {
+    margin: 20px 45px 20px 45px;
+    float: left;
+    width: 730px;
+}
+.queryZonas_esq {
+    width: 100%;
+    //width: 60%;
+    float: left;
+}
+.queryZonas_esq_title {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 18px;
+    margin: 0 20px 0 0;
+}
+.queryZonas_esq_text {
+}
+.queryZonas_esq_text p {
+    margin: 10px 20px 0 0;
+    text-align: justify;
+}
+.queryZonas_dir {
+    width: 40%;
+    float: left;
+}
+.queryZonas_dir_iframe {
+    height: 215px;
+    width: 100%;
+}
+.showscale {
+    z-index: 999 !important;
+}
+
+.listaTodoasNews {
+    font-size: 20px;
+    float: left;
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 0 0 15px 0;
+    margin: 0 20px 0 0;
+    width: 80%;
+    text-align: right;
+    float: right;    
+}
+
+
+
+/* ---------------------- IFs MOBILE ------------------ */
+.NoDisplay {
+    display: none !important;
+}
+.NoMargin {
+    margin: 0 !important;
+}
+.widith100 {
+    width:100% !important;
+}
+.mob_turismoReceptivo_content {
+    width: 95% !important;
+    margin: 0 auto !important;
+    display: block !important;
+    float: none !important;    
+}
+.visHidden {
+    visibility: hidden !important;
+}
+
+.titleMobile {
+    font-size:70px !important;
+    margin: 30px 3% 30px 3% !important;
+}
+.textMobile p {
+    font-size:40px !important;
+    margin: 30px 3% 30px 3% !important;
+}
+
+
+.form_contato {
+    margin-left: 45px;
+    margin-bottom: 45px;
+}
+
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    width: 200px;
+    color: #999999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;		
+}
+
+textarea {
+    width: 400px;
+    height: 150px;
+    max-width: 400px;
+    line-height: 18px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border-color: 1px solid #C9C9C9;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;	
+}
+
+.form label {
+    margin-bottom: 10px;
+    color: #999999;
+    display: block;
+}
+
+.submit input {
+    width: 100px; 
+    height: 40px;
+    background-color: #133141; 
+    color: #FFF;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;		
+}

@@ -1,0 +1,1014 @@
+    /*
+Theme Name: Francis Drake Wordpress Theme
+Theme URI: http://cidadedesaopaulo.com
+Author: SPTuris - Luciana Jabur, Leandro Rossi Sampaio e Henrique Abdala.
+Author URI: http://spturis.com
+Description: Tema desenvolvido para o projeto Descubra São Paulo.
+Version: 1.2.5
+License: Todos os direitos reservados
+*/
+/* --------------------- RESSET CSS ----------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    border:0;
+    width: 100%;
+}
+:focus {
+    outline: 0;
+}
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+/* --------------------- FONTES ----------------------- */
+@font-face {
+    font-family: 'museo_sans300_italic';
+    src: url('fonts/museosans_300_italic-webfont-webfont.eot');
+    src: url('fonts/museosans_300_italic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300_italic-webfont-webfont.woff') format('woff'),
+        url('fonts/museosans_300_italic-webfont-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300_italic-webfont-webfont.svg#museo_sans300_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans300';
+    src: url('fonts/museosans_300-webfont-webfont.eot');
+    src: url('fonts/museosans_300-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300-webfont-webfont.woff') format('woff'),
+        url('fonts/museosans_300-webfont-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300-webfont-webfont.svg#museo_sans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans700';
+    src: url('fonts/museosans_700-webfont-webfont.eot');
+    src: url('fonts/museosans_700-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_700-webfont-webfont.woff') format('woff'),
+        url('fonts/museosans_700-webfont-webfont.ttf') format('truetype'),
+        url('fonts/museosans_700-webfont-webfont.svg#museo_sans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans900';
+    src: url('fonts/museosans_900-webfont.eot');
+    src: url('fonts/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_900-webfont.woff') format('woff'),
+        url('fonts/museosans_900-webfont.ttf') format('truetype'),
+        url('fonts/museosans_900-webfont.svgz#MuseoSans900') format('svg'),
+        url('fonts/museosans_900-webfont.svg#MuseoSans900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'museo_sans700';
+    font-size: 4.5em;
+}
+i, em {
+    font-family: 'museo_sans300_italic';
+}
+strong, b {
+    font-family: 'museo_sans700';
+}
+/* --------------------- GERAL CSS ----------------------- */
+*, html, body {
+    font-size: 10px;
+}
+
+body {
+    line-height: 1;
+    font-family: 'museo_sans300', arial, sans-serif;
+    overflow-x: hidden;
+    color: #212121;
+}
+#tudo {
+}
+.noBorder {
+    border: 0 !important;
+}
+.txtCenter {
+    text-align: center !important;
+}
+@media screen and (max-width: 479px) {
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+}
+@media screen and (min-width: 1250px) {
+}
+/* --------------------- Header ----------------------- */
+.explosao {
+    background-image: url(images/explosao.png);
+    /*    width: 1620px;    */
+    height: 382px;
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+}
+.headerContainer {
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.menuCSP {
+    width: 100%;
+    height: 18px;
+    padding: 5px 0 0 0;
+}
+.menuCSP ul {
+}
+.menuCSP li {
+    float: left;
+    padding: 3px 12px 3px 11px;
+    border-right: 1px solid #fff;
+    font-size: 1.1em;
+}
+.menuCSP a {
+    color: #fff;
+    text-transform: uppercase;
+}
+.menuCSP a:hover {
+    text-decoration: underline;
+}
+.topo {
+    width: 100%;
+    display: table
+}
+.topo_logo {
+    margin: 40px 0 0 15%;
+    width: 190px;
+    float: left;
+}
+.topo_logo h1 {
+    color: #ffcb09;
+    letter-spacing: -2px;
+    font-size: 4.7em;
+    line-height: 42px;
+}
+.topo_logo h2 {
+    color: #fff;
+    letter-spacing: -2px;
+    font-size: 4.3em;
+    font-family: 'MuseoSans900', arial, sans-serif;
+    line-height: 34px;
+}
+.topo_texto {
+    float: left;
+    width: 35%;
+    margin: 65px 0 0 5%;
+    font-size: 1.5em;
+    color: #fff;
+}
+.topo_texto p {
+    text-transform: uppercase;
+}
+
+.topo_social {
+    width: 16%;
+    float: left;
+    margin: 70px 0 0 5%;
+}
+.topo_social a {
+    width: 20%;
+    float: left;
+    display: block;
+    margin: 0 6% 0 7%;
+}
+.topo_social img {
+}
+@media screen and (max-width: 959px) {
+    .topo {
+    }
+    .topo_texto {
+        width: 94%;
+        margin: 15px 3% 15px 3%;
+    }
+    .explosao {
+        height: 410px;
+        background-image: url(images/explosao-resp.png) !important;
+        background-position-y: top !important;
+    }
+    .topo_social {
+        display: none !important;
+    }
+}
+@media screen and (min-width: 960px) {
+    .noDeskTopo {
+        display: none !important;
+    }
+}
+/* --------------------- Miolo ----------------------- */
+.miolo {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: block;
+    margin-top: -230px;
+}
+.asideMobile {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.asideDesktop {
+    width: 22%;
+    display: block;
+    float: left;
+}
+.ofertas {
+    width: 100%;
+    float: left;
+}
+.ofertas_link {
+    background-color: #fff;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    display: table;
+    height: 100px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1%;
+}
+.ofertas_link_chamada {
+    background-color: #e82037;
+    margin: 2%;
+}
+.ofertas_link_chamada h2 {
+    color: #ffc70b;
+    font-size: 22px;
+    text-align: right;
+    padding: 12px 10px 10px 0;
+}
+.ofertas_linkCSP {
+ 
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+    text-align: right;
+  
+    font-family: 'museo_sans700';
+}
+
+.ofertas_linkCSP:hover {
+    text-decoration: underline;
+}
+.banners {
+    width: 100%;
+    float: left;
+}
+.banners_link {
+    background-color: #fff;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    display: table;
+}
+.banners_link_esq {
+    width: 50%;
+    float: left;
+    padding: 0 5px 0 0;
+}
+.banners_link_esq h6 {
+    font-size: 1.4em;
+}
+.banners_link_esq p {
+    font-size: 1.1em;
+    margin: 5px 0 0 0;
+}
+.banners_link_dir {
+    width: 50%;
+    float: left;
+}
+.banners_link_dir img {
+}
+.calendario {
+    width: 75%;
+    float: left;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1% 1% 0 1%;
+}
+.layout2 p {
+    line-height: normal !important;
+}
+.layout2 .left {
+}
+.layout2 .left .categoria {
+    text-transform: uppercase;
+    height: 20px;
+}
+.layout2 .left .title {
+    font-size: 3.5em;
+}
+.layout2 .left resumo {
+}
+.layout2 .right {
+}
+.layout2 .right .creditos {
+    font-size: 1.0em !important;
+    text-align: center;
+    margin: 3px 0 0 0;
+    width: 100%;
+    display: block;
+}
+.layout2 .bottom {
+    width: 100% !important;
+    margin: 20px 0 0 0 !important;
+}
+.layout2 .bottom .bottom_servEsq {
+    width: 48%;
+    margin: 0 4% 0 0;
+    float: left;
+}
+.layout2 .bottom .servicos {
+    font-size: 2em;
+    margin: 0 0 5px 0;
+}
+.layout2 .bottom .bottom_servDir {
+    width: 48%;
+    float: left;
+}
+.layout2 .bottom .mapaLink {
+    font-size: 1.1em;
+    margin: 10px 0 0 0;
+    display: block;
+    font-family: 'museo_sans700';
+}
+.layout2 .bottom .mapaLink img {
+    display: block;
+    float: left;
+    width: 12px;
+}
+.layout2 .bottom .mapaLink span {
+    display: block;
+    float: left;
+    margin: 5px 0 0 5px;
+}
+@media screen and (max-width: 959px) {
+    .asideMobile {
+        display: block;
+    }
+    .asideDesktop {
+        display: none;
+    }
+    .calendario {
+        width: 100%;
+        margin: 0 auto;
+        margin: 20px 0 20px 0;
+    }
+    .headerContainer {
+        width: 100%;
+    }
+    .miolo {
+        width: 100%;
+    }
+    .banners_link {
+        width: 45%;
+        float: left;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+    .ofertas_linkCSP{
+        background-color: #e82037;
+        color: #ffc70b !important;
+        padding: 1%;
+    }
+}
+@media screen and (min-width: 960px) {
+    .asideMobile {
+        display: none;
+    }
+    .asideDesktop {
+        display: block;
+        margin: 0 3% 0 0;
+    }
+}
+/* --------------------- Rodape ----------------------- */
+.rodape {
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    padding: 20px 0 20px 0;
+    float: left;
+}
+.rodape_logos {
+    width: 960px;
+    margin: 0 auto;
+}
+.rodape_logos_csp {
+    width: 23%;
+    float: left;
+    margin: 0 2% 0 0;
+}
+.rodape_logos_csp .logosLinkMain {
+    display: block;
+    float: left;
+    margin: 15px 20px 0 20px;
+}
+.rodape_logos_csp .logoSPTuris {
+}
+.rodape_logos_csp .logoPrefeitura {
+}
+.rodape_logos_parceiros {
+    width: 75%;
+    background: #fff;
+    float: left;
+    padding: 15px 0 15px 0;
+    margin: 0 0 10px 0;
+}
+.rodape .logosLink {
+    display: block;
+    float: left;
+    margin: 0 8px 0 8px
+}
+.rodape .logo01 {
+    margin-top: 17px;
+}
+.rodape .logo02 {
+    margin-top: 19px;
+}
+.rodape .logo03 {
+    margin-top: 15px;
+}
+.rodape .logo04 {
+    margin-top: 5px;
+}
+.rodape .logo05 {
+    margin-top: 5px;
+}
+.rodape .logo06 {
+    margin-top: 18px;   
+}
+.rodape .logo07 {
+}
+.creditoFotoBG {
+    font-size: 1.2em;
+    display: block;
+    color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000000;
+}
+@media screen and (max-width: 959px) {
+    .rodape_logos {
+        width: 100%;
+    }
+    .rodape_logos_parceiros {
+        width: 73%;
+        margin: 0 2% 10px 0;
+    }
+    .rodape_logos_csp {
+        display: none;
+    }.rodape_logos_parceiros {
+        width: 100%;
+    }
+    .rodape .logosLink {
+        margin: 5px 12px 5px 13px;
+    }
+}
+@media screen and (min-width: 960px) {
+    .noDeskLogo {
+        display: none !important;
+    }
+}
+/* --------------------- Swiper ----------------------- */
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+/* ===============================================================
+Basic Swiper Styles 
+================================================================*/
+.swiper-container {
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    backface-visibility:hidden;
+    /* Fix of Webkit flickering */
+    z-index:1;
+}
+.swiper-container2 {
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    backface-visibility:hidden;
+    /* Fix of Webkit flickering */
+    z-index:1;
+}
+.swiper-wrapper {
+    position:relative;
+    width:100%;
+    -webkit-transition-property:-webkit-transform, left, top;
+    -webkit-transition-duration:0s;
+    -webkit-transform:translate3d(0px,0,0);
+    -webkit-transition-timing-function:ease;
+    -moz-transition-property:-moz-transform, left, top;
+    -moz-transition-duration:0s;
+    -moz-transform:translate3d(0px,0,0);
+    -moz-transition-timing-function:ease;
+    -o-transition-property:-o-transform, left, top;
+    -o-transition-duration:0s;
+    -o-transform:translate3d(0px,0,0);
+    -o-transition-timing-function:ease;
+    -o-transform:translate(0px,0px);
+    -ms-transition-property:-ms-transform, left, top;
+    -ms-transition-duration:0s;
+    -ms-transform:translate3d(0px,0,0);
+    -ms-transition-timing-function:ease;
+    transition-property:transform, left, top;
+    transition-duration:0s;
+    transform:translate3d(0px,0,0);
+    transition-timing-function:ease;
+}
+.swiper-free-mode > .swiper-wrapper {
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    margin: 0 auto;
+}
+.swiper-slide {
+    float: left;
+}
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+    -ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+    -ms-touch-action: pan-x;
+}
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+    /* Specify Swiper's Size: */
+    /*width:200px;
+    height: 100px;*/
+}
+.swiper-slide {
+    /* Specify Slides's Size: */
+    /*width: 100%;
+    height: 100%;*/
+}
+.swiper-slide-active {
+    /* Specific active slide styling: */
+}
+.swiper-slide-visible {
+    /* Specific visible slide styling: */	
+}
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.swiper-pagination-switch {
+    /* Stylize pagination button: */	
+}
+.swiper-active-switch {
+    /* Specific active button style: */	
+}
+.swiper-visible-switch {
+    /* Specific visible button style: */	
+}
+.swiper-container {
+    width: 200px;
+    height: 200px !important;
+    color: #fff;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1%;
+}
+.swiper-container2 {
+    width: 200px;
+    height: 200px !important;
+    color: #fff;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1%;
+}
+.swiper-slide {
+    width: 500px;
+    height: 100%;
+}
+.red-slide {
+    background: #ca4040;
+}
+.blue-slide {
+    background: #4390ee;
+}
+.orange-slide {
+    background: #ff8604;
+}
+.green-slide {
+    background: #49a430;
+}
+.pink-slide {
+    background: #973e76;
+}
+.swiper-slide .title {
+    font-style: italic;
+    font-size: 42px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    line-height: 45px;
+}
+.pagination {
+    position: absolute;
+    z-index: 20;
+    left: 10px;
+    bottom: 10px;
+}
+.pagination2 {
+    position: absolute;
+    z-index: 20;
+    left: 10px;
+    bottom: 10px;
+}
+.swiper-pagination-switch {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #222;
+    margin-right: 5px;
+    opacity: 0.8;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.swiper-visible-switch {
+    background: #aaa;
+}
+.swiper-active-switch {
+    background: #ccc;
+}
+/* --------------------- Responsive Menu ----------------------- */
+/*
+Responsive Mobile Menu v1.0
+Plugin URI: responsivemobilemenu.com
+Author: Sergio Vitov
+Author URI: http://xmacros.com
+License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
+*/
+.rmm {
+    display:block;
+    position:absolute;
+    width:100%;
+    padding: 5px 0 0 0;
+    margin:0 auto !important;
+    text-align: center;
+    line-height:19px !important;
+    z-index: 40;
+
+}
+.rmm * {
+    -webkit-tap-highlight-color:transparent !important;
+    font-family:Arial;
+}
+.rmm a {
+    color: #fff;
+    text-transform: uppercase;
+}
+.rmm a {
+    color: #fff;
+    text-transform: uppercase;
+}
+.rmm .rmm-main-list, .rmm .rmm-main-list li {
+    float: left;
+    padding: 3px 12px 3px 11px;
+    font-size: 0.9em;
+}
+.rmm ul {
+    display:block;
+    width:auto !important;
+    margin:0 auto !important;
+    overflow:hidden;
+    list-style:none;
+}
+/* sublevel menu - in construction */
+.rmm ul li ul, .rmm ul li ul li, .rmm ul li ul li a {
+    display:none !important;
+    height:0px !important;
+    width:0px !important;
+}
+/* */
+.rmm .rmm-main-list li {
+    display:inline;
+    margin:0px !important;
+}
+.rmm-toggled {
+    display:none;
+    width:100%;
+    position:relative;
+    overflow:hidden;
+    margin:0 auto !important;
+}
+.rmm-button:hover {
+    cursor:pointer;
+}
+.rmm .rmm-toggled ul {
+    display:none;
+    margin:0px !important;
+    padding:0px !important;
+}
+.rmm .rmm-toggled ul li {
+    display:block;
+    margin:0 auto !important;
+}
+/* MINIMAL STYLE */
+.rmm.minimal a {
+    color: #fff;
+    text-transform: uppercase;
+}
+.rmm.minimal a:hover {
+    text-decoration: underline;
+}
+.rmm.minimal .rmm-main-list li a {
+    display:inline-block;
+    float: left;
+    padding: 0px 3px 0px 3px;
+    font-size: 1.1em;
+    text-align: center;
+}
+.rmm.minimal .rmm-toggled {
+    width:95%;
+    min-height:36px;
+}
+.rmm.minimal .rmm-toggled-controls {
+    display:block;
+    height:36px;
+    color:#333333;
+    text-align:left;
+    position:relative;
+}
+.rmm.minimal .rmm-toggled-title {
+    position:relative;
+    top:9px;
+    left:9px;
+    font-size: 0.9em;
+    color:#33333;
+}
+.rmm.minimal .rmm-button {
+    display:block;
+    position:absolute;
+    right:9px;
+    top:7px;
+}
+.rmm.minimal .rmm-button span {
+    display:block;
+    margin:4px 0px 4px 0px;
+    height:2px;
+    background:white;
+    width:25px;
+}
+.rmm.minimal .rmm-toggled ul li a {
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:10px 0px 10px 0px;
+    border-bottom:1px solid #dedede;
+    color:#333333;
+    background: WHITE;
+}
+.rmm.minimal .rmm-toggled ul li:first-child a {
+    border-top:1px solid #dedede;
+}
+
+.nivoSlider {
+    position:relative;
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    max-width: none;
+}
+.nivo-main-image {
+    display: block !important;
+    position: relative !important; 
+    width: 100% !important;
+}
+/* --------------------- SLIDER ----------------------- */
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border:0;
+    padding:0;
+    margin:0;
+    z-index:6;
+    display:none;
+    background:white; 
+    filter:alpha(opacity=0); 
+    opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+    display:block;
+    position:absolute;
+    z-index:5;
+    height:100%;
+    top:0;
+}
+.nivo-box {
+    display:block;
+    position:absolute;
+    z-index:5;
+    overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    background:#000;
+    color:#fff;
+    width:100%;
+    z-index:8;
+    padding: 5px 10px;
+    opacity: 0.8;
+    overflow: hidden;
+    display: none;
+    -moz-opacity: 0.8;
+    filter:alpha(opacity=8);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+    padding:5px;
+    margin:0;
+}
+.nivo-caption a {
+    display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+    position:absolute;
+    top:45%;
+    z-index:9;
+    cursor:pointer;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+    text-align:center;
+    padding: 15px 0;
+}
+.nivo-controlNav a {
+    cursor:pointer;
+}
+.nivo-controlNav a.active {
+    font-weight:bold;
+}
+.slider-wrapper {
+    background: #fff;
+    padding: 10px;
+}
+.nivoSlider {
+    position:relative;
+    background:#fff url(images/loading.gif) no-repeat 50% 50%;
+    margin-bottom:10px;
+    overflow: visible;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+
+
+.nivo-directionNav a {
+    display: block;
+    width: 13px;
+    height: 30px;
+    background: url(images/arrows.png) no-repeat;
+    text-indent: -9999px;
+    border: 0;
+    top: auto;
+    bottom: -9%;
+    z-index: 11;
+}
+.nivo-directionNav a:hover {
+    background-color: #eee;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+a.nivo-nextNav {
+    background-position: 110% 60%;
+    right:-11px;
+    margin-right: 43%;
+
+}
+a.nivo-prevNav {
+    background-position: -10% 79%;
+    left:-11px;
+    margin-left: 43%;
+}
+
+.nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.nivo-caption a:hover {
+    color:#fff;
+}
+
+.nivo-controlNav.nivo-thumbs-enabled {
+    width: 80%;
+}
+.nivo-controlNav.nivo-thumbs-enabled a {
+    width: auto;
+    height: auto;
+    background: none;
+    margin-bottom: 5px;
+}
+.nivo-controlNav.nivo-thumbs-enabled img {
+    display: block;
+    width: 120px;
+    height: auto;
+}
+.sliderMobileImg, .slider2 {
+    height: 200px !important;
+}

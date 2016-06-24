@@ -1,0 +1,123 @@
+
+.tl2015pedido_wrapper {
+    margin-top:500px;
+    margin-left: 20px;
+    max-width: 690px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    background-color: #ffffff; 
+}
+
+.tl2015pedido_header {
+    color: #ffffff;
+    background-color: #ffffff; 
+    position: relative;
+    max-width: 690px;
+    margin-left: 30px;
+    margin-top:500px;
+}
+
+.title_p {
+    color: #000000;
+    padding: 2px;
+    margin: 10px 0 0 0;
+}
+
+#title_header {
+    font-size: 36px;
+    color: #f05322;
+    padding: 2px;
+    margin: 35px 0 0 0;
+    font-weight: bold;   
+
+}
+#botoes {
+    width: auto;
+    padding-left: 89px;
+}
+
+#conteudo_pedido {
+    width: 690px;
+    height: auto;
+}
+
+#texto_pedido {
+    font-size: 30px;  
+    color: #f05322;
+    font-weight: bold;    
+    margin-bottom: 20px;
+    
+}
+
+
+.tl2015pedido_img {
+    float:left;
+    margin: 0px 20px 10px 0;
+}
+
+
+
+
+/*#efetuarpedido {
+    background-color: #f05322;
+    color: #ffffff;
+    float: left;
+    width: 190px;
+    height: 30px;
+    background-color: #f05322;
+    box-shadow: 5px 3px 5px #888888;
+    margin-left: 290px;
+    margin-top: -27px;
+    background-color: #f05322;
+    -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    color: #ffffff;
+    
+}
+
+#efetuarpedido_p {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 6px;
+
+}*/
+
+#help {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #f05322;
+    margin: 50px 0px 50px 0px;
+    height: auto;
+    max-width: 690px;
+    font-family: Tahoma;
+}
+
+
+
+
+#efetuarpedido {
+    background-color: #f05322;
+    color: #ffffff;
+    float: left;
+    width: 190px;
+    height: 30px;
+    background-color: #f05322;
+    box-shadow: 5px 3px 5px #888888;
+    margin-left: 195px;
+    background-color: #f05322;
+    -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    color: #ffffff;
+
+}
+
+#efetuarpedido_p {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 6px;
+
+}

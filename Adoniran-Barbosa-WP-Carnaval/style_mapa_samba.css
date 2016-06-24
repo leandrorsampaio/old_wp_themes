@@ -1,0 +1,527 @@
+#mapa {
+    height: 875px;
+    width: 620px;
+    text-align: center;
+    background-image: url(images/mapa_samba_bg.gif);
+    background-repeat:no-repeat;
+    background-color: #fff;
+}
+#legenda {
+    width: 150px;
+    height: 180px;
+    margin: 0 0 0 700px;
+    float: left;
+}
+#legenda h1 {
+    font-family: 'MuseoSans900';
+    font-size: 18px;
+    margin: 0 0 12px 0;
+    color: #1d8bcb;
+}
+#legenda li {
+    margin: 5px 0 0 0;
+}
+#legenda a {
+    font-family: 'MuseoSans500';
+    font-size: 20px;
+}
+/* ------ GRUPOS ------ */
+#uesp01 {
+}
+#uesp01 .marcador_link {
+    background-color: #ccc;
+    width: 50px;
+    height: 50px;
+}
+a{
+    width: 100%;
+    height: 100%;
+}
+/* ------ MARCADORES GERAIS ------ */
+.marcador {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+}
+.marcador_link {
+    height: 20px;
+    width: 20px;
+    -webkit-border-radius: 50px;
+    border-radius: 200px;
+    background-color: #ccc;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.bg_uesp01{
+    background-color: #00B9F1;
+}
+.bg_uesp02{
+    background-color: #F9ED24;
+}
+.bg_uesp03{
+    background-color: #00AB99;
+}
+.bg_uesp04{
+    background-color: #E781B4;
+}
+.bg_blocouesp{
+    background-color: #5068B1;
+}
+.bg_abbc{
+    background-color: #50B047;
+}
+.bg_acesso{
+    background-color: #EF9E29;
+}
+.bg_especial{
+    background-color: #EF403D;
+}
+.bg_abasp{
+    background-color: #B7B720;
+}
+.marcador_popup {
+    display: none;
+    height: 60px;
+    width: 200px;
+    margin: -82px 0 0 -15px;
+    z-index: 999;
+    position: absolute;
+    margin: -75px 0px 0px 20px;
+    height: 50px;
+    width: 200px;
+}
+.marcador:hover .marcador_popup{
+    display:block;
+}
+.marcador_popup span {
+    background-color: #1d8bcb;
+    width: 100%;
+    display: block;
+    padding: 7px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-family: 'MuseoSans500';
+    font-size: 15px;
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.marcador_popup img {
+    display: block;
+    float: left;
+}
+/* ------ MARCADORES ESPECIFICOS ------ */
+/* ------ MARCADORES UESP01 ------ */
+#escola08 {
+    margin: 330px 0px 0px 490px;	
+}
+#escola12 {
+    margin: 223px 0px 0px 297px;
+}
+#escola21 {
+    margin: 240px 0px 0px 503px;	
+}
+#escola38 {
+    margin: 210px 0px 0px 427px;	
+}
+#escola65 {
+    margin: 180px 0px 0px 105px;
+}
+#escola71 {
+    margin: 120px 0px 0px 297px;
+}
+#escola73 {
+    margin: 220px 0px 0px 215px;
+}
+#escola74 {
+    margin: 270px 0px 0px 315px;
+}
+#escola79 {
+    margin: 233px 0px 0px 443px;
+}
+#escola83 {
+    margin: 213px 0px 0px 565px;	
+}
+#escola84 {
+    margin: 327px 0px 0px 367px;	
+}
+/* ------ MARCADORES UESP02 ------ */
+#escola03 {
+    margin: 330px 0px 0px 285px;
+}
+#escola09 {
+    margin: 405px 0px 0px 230px;
+}
+#escola18 {
+    margin: 310px 0px 0px 365px;
+}
+#escola30 {
+    margin: 260px 0px 0px 410px;
+}
+#escola31 {
+    margin: 390px 0px 0px 210px;
+}
+#escola32 {
+    margin: 265px 0px 0px 530px;
+}
+#escola40 {
+    margin: 232px 0px 0px 100px;
+}
+#escola41 {
+    margin: 243px 0px 0px 240px;
+}
+#escola53 {
+    margin: 255px 0px 0px 310px;
+}
+#escola64 {
+    margin: 307px 0px 0px 557px;
+}
+#escola82 {
+    margin: 240px 0px 0px 530px;
+}
+#escola85 {
+    margin: 260px 0px 0px 560px;
+}
+#escola91 {
+    margin: 438px 0px 0px 225px;
+}
+/* ------ MARCADORES UESP03 ------ */
+#escola92 {
+    margin: 72px 0px 0px 88px;
+}
+#escola42 {
+    margin: 170px 0px 0px 165px;
+}
+#escola27 {
+    margin: 160px 0px 0px 247px;
+}
+#escola76 {
+    margin: 108px 0px 0px 315px;
+}
+#escola02 {
+    margin: 170px 0px 0px 330px;
+}
+#escola37 {
+    margin: 200px 0px 0px 400px;
+}
+#escola52 {
+    margin: 228px 0px 0px 550px;
+}
+#escola44 {
+    margin: 272px 0px 0px 250px;
+}
+#escola63 {
+    margin: 295px 0px 0px 255px;
+}
+#escola24 {
+    margin: 320px 0px 0px 350px;
+}
+#escola57 {
+    margin: 393px 0px 0px 30px;
+}
+#escola10 {
+    margin: 400px 0px 0px 115px;
+}
+#escola80 {
+    margin: 410px 0px 0px 245px;
+}
+/* ------ MARCADORES UESP04 ------ */
+#escola69 {
+    margin: 130px 0px 0px 115px;
+}
+#escola29 {
+    margin: 175px 0px 0px 225px;
+}
+#escola59 {
+    margin: 160px 0px 0px 278px;
+}
+#escola68 {
+    margin: 265px 0px 0px 125px;
+}
+#escola72 {
+    margin: 295px 0px 0px 378px;
+}
+#escola25 {
+    margin: 465px 0px 0px 180px;
+}
+#escola62 {
+    margin: 415px 0px 0px 260px;
+}
+#escola58 {
+    margin: 424px 0px 0px 245px;
+}
+/* ------ MARCADORES BLOCOS UESP ------ */
+#escola94 {
+    margin: 170px 0px 0px 75px;
+}
+#escola60 {
+    margin: 205px 0px 0px 85px;
+}
+#escola86 {
+    margin: 140px 0px 0px 150px;
+}
+#escola34 {
+    margin: 178px 0px 0px 140px;
+}
+#escola15 {
+    margin: 200px 0px 0px 145px;
+}
+#escola75 {
+    margin: 178px 0px 0px 178px;
+}
+#escola55 {
+    margin: 170px 0px 0px 200px;
+}
+#escola14 {
+    margin: 315px 0px 0px 265px;
+}
+#escola43 {
+    margin: 330px 0px 0px 260px;
+}
+#escola89 {
+    margin: 440px 0px 0px 250px;
+}
+/*-- ESPECIAL --*/
+#escola06 {
+    margin: 135px 0px 0px 250px;
+}
+#escola39 {
+    margin: 180px 0px 0px 215px;
+}
+#escola49 {
+    margin: 190px 0px 0px 198px;
+}
+#escola67 {
+    margin: 195px 0px 0px 180px;
+}
+#escola22 {
+    margin: 198px 0px 0px 155px;
+}
+#escola07 {
+    margin: 205px 0px 0px 200px;
+}
+#escola70 {
+    margin: 220px 0px 0px 185px;
+}
+#escola61 {
+    margin: 272px 0px 0px 155px;
+}
+#escola35 {
+    margin: 218px 0px 0px 240px;
+}
+#escola92 {
+    margin: 270px 0px 0px 225px;
+}
+#escola95 {
+    margin: 205px 0px 0px 295px;
+}
+#escola05 {
+    margin: 245px 0px 0px 368px;
+}
+#escola56 {
+    margin: 213px 0px 0px 390px;
+}
+#escola45 {
+    margin: 238px 0px 0px 480px;
+}
+/*-- ACESSO --*/
+#escola86 {
+    margin: 203px 0px 0px 325px;
+}
+#escola54 {
+    margin: 185px 0px 0px 235px;
+}
+#escola90 {
+    margin: 205px 0px 0px 220px;
+}
+#escola13 {
+    margin: 230px 0px 0px 200px;;
+}
+#escola47 {
+    margin: 240px 0px 0px 215px;
+}
+#escola17 {
+    margin: 245px 0px 0px 285px;
+}
+#escola36 {
+    margin: 400px 0px 0px 265px;
+}
+#escola28 {
+    margin: 510px 0px 0px 170px;
+}
+/*-- ABBC --*/
+#escola88 {
+    margin: 140px 0px 0px 150px;
+}
+#escola87 {
+    margin: 130px 0px 0px 195px;
+}
+#escola81 {
+    margin: 205px 0px 0px 238px;
+}
+#escola19 {
+    margin: 194px 0px 0px 268px;
+}
+#escola33 {
+    margin: 240px 0px 0px 255px;
+}
+#escola26 {
+    margin: 221px 0px 0px 256px;
+}
+#escola01 {
+    margin: 174px 0px 0px 304px;
+}
+#escola20 {
+    margin: 191px 0px 0px 284px;
+}
+#escola04 {
+    margin: 175px 0px 0px 289px;
+}
+#escola66 {
+    margin: 170px 0px 0px 243px;
+}
+#escola77 {
+    margin: 270px 0px 0px 330px;
+}
+#escola46 {
+    margin: 164px 0px 0 270px;
+}
+
+/*--ABASP --*/
+#abasp01 {
+    margin: 120px 0px 0px 230px;
+}
+#abasp02 {
+    margin: 280px 0px 0px 130px;
+}
+#abasp03 {
+    margin: 230px 0px 0px 220px;
+}
+#abasp04 {
+    margin: 320px 0px 0px 240px;
+}
+#abasp05 {
+    margin: 238px 0px 0px 179px;
+}
+#abasp06 {
+    margin: 180px 0px 0px 300px;
+}
+#abasp07 {
+    margin: 250px 0px 0px 220px;
+}
+#abasp08 {
+    margin: 212px 0 0 270px;
+}
+#abasp09 {
+    margin: 255px 0px 0px 205px;
+}
+#abasp10 {
+    margin: 205px 0 0 255px;
+}
+#abasp11 {
+    margin: 260px 0px 0px 170px;
+}
+#abasp12 {
+    margin: 245px 0px 0px 195px;
+}
+
+/*--RODAS DE SAMBA --*/
+#rodas01 {
+    margin: 390px 0px 0px 290px;
+}
+#rodas02 {
+    margin: 390px 0px 0px 290px;
+}
+#rodas02 {
+    margin: 390px 0px 0px 290px;
+}
+#rodas03 {
+    margin: 390px 0px 0px 290px;
+}
+#rodas04 {
+    margin: 390px 0px 0px 290px;
+}
+#rodas05 {
+    margin: 390px 0px 0px 290px;
+}
+#rodas06 {
+    margin: 390px 0px 0px 290px;
+}
+#rodas07 {
+    margin: 390px 0px 0px 290px;
+}
+#rodas08 {
+    margin: 390px 0px 0px 290px;
+}
+#rodas10 {
+    margin: 390px 0px 0px 290px;
+}
+#rodas11 {
+    margin: 390px 0px 0px 290px;
+}
+#rodas12 {
+    margin: 390px 0px 0px 290px;
+}
+
+
+
+
+#escola2015_01 {
+    margin: 213px 0 0 400px;
+}
+
+#escola2015_02 {
+    margin: 365px 0 0 252px;
+}
+#escola2015_03 {
+    margin: 443px 0 0 73px;
+}
+#escola2015_04 {
+    margin: 111px 0 0 300px;
+}
+#escola2015_05  {
+    margin: 200px 0 0 400px;
+}
+#escola2015_06  {
+    margin: 100px 0 0 300px;
+}
+#escola2015_07 {
+    margin: 240px 0 0 411px;
+}
+#escola2015_08 {
+    margin: 229px 0 0 270px;
+}
+#escola2015_09 {
+    margin: 180px 0 0 260px;
+}
+#escola2015_10 {
+    margin: 235px 0 0 260px;
+}
+#escola2015_11 {
+    margin: 189px 0 0 241px;
+}
+#escola2015_12 {
+    margin: 194px 0 0 223px;
+}
+#escola2015_13 {
+    margin: 210px 0 0 290px;
+}
+#escola2015_14 {
+    margin: 200px 0 0 300px;
+}
+#escola2015_15 {
+    margin: 190px 0 0 310px;
+}
+
+#escola2015_17 {
+    margin: 195px 0 0 250px;
+}
+#escola2015_18 {
+    margin: 205px 0 0 260px;
+}
+#escola2015_19 {
+    margin: 210px 0 0 270px;
+}

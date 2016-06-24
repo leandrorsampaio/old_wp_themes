@@ -1,0 +1,367 @@
+#tudo {
+    float: none!important;
+}
+/* ------------------------------ Header ----- */
+#header {
+    float: left;
+    width: 100%;
+    margin: 0 0 5px;
+}
+#header_lang {
+    float: right;
+    margin: 20px 0 0 0;
+    list-style: none;
+}
+.trf {
+    height: 25px;
+    width: 50px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+}
+.trf-pt {
+    background-image: url(images/header_lang_pt.png)!important;
+    background-position: 0;
+}
+.trf-us {
+    background-image: url(images/header_lang_en.png)!important;
+    background-position: 0;
+}
+.trf-es {
+    background-image: url(images/header_lang_es.png)!important;
+    background-position: 0;
+}
+.transposh_flags a span:hover, .transposh_flags a img:hover {
+    border-color: transparent; 
+}
+#header_multimidia {
+    z-index: 999;
+    position: absolute;
+}
+#header_multimidia_btnBox {
+    margin: 14px 0 0 8px;
+}
+#header_multimidia_audio {
+    float: left;
+    margin: 0 86px;
+    position: absolute;
+}
+.header_multimidia_audio_content {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    background: none;
+}
+.header_multimidia_audio_content ul {
+    display: none;
+    list-style: none;
+    padding: 12px;
+    width: 542px!important;
+    background: #931B20;
+    color: #fff;
+}
+.header_multimidia_audio_content a.expanded, a.collapsed {
+    background: #931B20;
+}
+#header_multimidia_video {
+    float: left;
+}
+.header_multimidia_video_content {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    background: none;
+}
+.header_multimidia_video_content ul {
+    display: none;
+    list-style: none;
+    padding: 15px;
+    background: #931B20;
+    color: #fff;
+    min-width: 563px;
+}
+.header_multimidia_video_content a.expanded, a.collapsed {
+    background: #931B20;
+}
+.audioNome {
+    font-size: 14px;
+    padding: 5px 5px 5px 0;
+}
+div.jAbaHeader {
+    margin: 3px 0 19px 0;
+}
+.jTabHeaderInline {
+    color: #931B20;
+    background-color: #fff;
+    padding: 4px;
+    font-size: 12px;
+    font-family: 'MuseoSans700', arianl, sans-serif;
+    border: 1px solid #fff;
+}
+.jTabHeaderHidden {
+    color: #fff;
+    padding: 4px;
+    font-size: 12px;
+    font-family: 'MuseoSans700', arianl, sans-serif;
+    border: 1px solid #fff;
+}
+#close_audio {
+    float: right;
+    font-size: 13px;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    cursor: pointer;
+}
+#close_video {
+    float: right;
+    font-size: 13px;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    cursor: pointer;
+}
+/* -------------------------- MENU COLLAPSE ----*/
+/*---------- Menu Celular ------ */
+@media screen and (min-width: 767px) { 
+    #menuCel {
+        display: none;
+    }
+}
+#menuCel {
+    float: left;
+    width: 100%;
+}
+#menuCel_img {
+    padding: 0 5px 0 0;
+}
+#menuCel_titulo {
+    text-transform: none;
+    font-size: 16px;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    margin: 0 0 0 28px;
+}
+.expand_all,
+.collapse_all {
+    cursor: pointer;
+}
+.menuCel_label {
+    font-size: 90%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    width: 100%;
+}
+.menuCel_label ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    padding: 12px;
+}
+#menu1
+{
+    margin: 0;
+}
+#menu1 li { 
+    background-image: none;
+    margin: 0;
+    padding: 0;
+    background-color: #931B20;
+}
+#menu1 li a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+#menu1 li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+#menu1 li a:link {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    text-transform: none;
+    font-size: 14px;
+}
+#menu1 li a:active {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'MuseoSans500', arial, sans-serif;
+}
+.categories {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    list-style: none;
+}
+.menuCel_label li {
+    background-image: none;
+    margin: 0;
+    padding: 0;
+    background-color: #931B20;
+}
+.menuCel_label ul ul {
+    display: block;
+}
+.menuCel_label ul ul a {
+    padding-left: 20px;
+    width: 100%;
+}
+.menuCel_label a {
+    cursor: pointer;
+    font-family: MuseoSans700, arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding: 6px 2px 6px 10px;
+    width: 100%;
+
+}
+.menuCel_label a.expanded, a.collapsed {
+    background: #931B20;
+}
+.menuCel_label a:hover {
+    text-decoration: none;
+}
+/*---------- Menu Tablet ------- */
+#menuTablet {
+    background-color: #931B20;
+    height: 100%;
+    float: left;
+    width: 15%;
+    position: fixed;
+    color: #fff;
+}
+#menuTablet_content {
+    margin: 8px;
+}
+@media screen and (max-width: 767px) { 
+    #menuTablet {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    #footer {
+        background-color: #CE2033;
+        width: 82%;
+        float: right;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 814px) { 
+    #menuTablet {
+        width: 18%;
+    }
+    #menuTablet_title h1 {
+        font-size: 14px;
+    }
+    #menuTablet h2 {
+        font-size: 14px;
+    }
+    #menuTablet li a:link {
+        font-size: 14px;
+    }
+    #miolo {
+        background: url(images/miolo_bg.png) repeat;
+        width: 80%;
+        position: relative;
+        height: 100%;
+        margin: 0 11% 0 18%;
+    }
+    #menuTablet li a:link {
+        font-size: 14px!important;
+    }
+}
+@media screen and (min-width: 815px) {
+    #miolo {
+        width: 80%;
+        margin: 0 9% 0 19%;
+    }
+    #menuTablet {
+        width: 18%;
+    }
+}
+#menuTablet_title {
+    width: 100%;
+}
+#menuTablet_title h1 {
+    color: #fff;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+#menuTablet h2 {
+    color: #fff;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    padding: 0 0 8px 16px;
+}
+#menuTablet li a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+#menuTablet li a:link {
+    color: #fff;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    padding: 0 0 0 25px;
+    line-height: 24px;
+    font-size: 15px;
+    text-decoration: none;
+}
+#menuTablet li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+#menuTablet li a:active {
+    color: #fff;
+    text-decoration: none;
+}
+/*--------------------FIM MENUS */
+#section_content_category {
+    height: 100%;
+    background-color: #fff;
+    width: 96%;
+    min-height: 700px;
+    float: left;
+    margin: 2%;
+    padding: 7px 0 0 0;
+}
+#section_content_category ul {
+    list-style: none;
+}
+#section_content_category li {
+    padding: 5px 0 3px 11px;
+}
+#section_content_category li a:visited {
+    color: #212121;
+    text-decoration: none;
+}
+#section_content_category li a:link {
+    color: #212121;
+    text-decoration: none;
+    font-family: 'MuseoSans500', arial, sans-serif;
+}
+#section_content_category li a:hover {
+    color: #212121;
+    text-decoration: none;
+}
+#section_content_category li a:active {
+    color: #212121;
+    text-decoration: none;
+}
+#article_description_content {
+    overflow:hidden;
+    height: 271px;
+}
+#close {
+    background: #EB1C3C;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 12px;
+    float: right;
+    padding: 4px 9px 4px 9px;
+}
+
+#section_content_category li.cat-item {
+    background: url(images/museu.png);
+}

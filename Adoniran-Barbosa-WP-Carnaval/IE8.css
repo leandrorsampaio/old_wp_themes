@@ -1,0 +1,20 @@
+#noticias_section_head_social {
+    width: 250px;
+}
+#servicebar_pdf {
+    margin: 0;
+}
+#pictureka_section_title {
+    margin: 1.1em 0 0 6.42%;
+}
+#deLorean-line {
+    width: 971px;
+    background-position: 50% 50%;
+}
+.deLorean_corner-right {
+    right: 25px;
+    border-right: 1px #fff solid;
+}
+.deLorean img {
+    width: 399px;
+}

@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista_eventos>
+
+    <item>
+        <nome>Grand Circus Santa Claus - Shopping Butantã</nome>  
+        <categoria>3</categoria>
+        <data_inicio>11/11/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Shopping Butantã</promotor>
+        <local>Avenida Prof. Francisco Morato, 2718</local>
+        <ddd>11</ddd>
+        <telefone>3723-3900</telefone>
+        <site>www.shoppingbutanta.com.br</site>
+        <descricao> Papai Noel estará em seu trono, até o dia 23 de dezembro, diariamente, das 10 às 22 horas. No dia 24 de dezembro, ele ficará no Shopping só até as 18 horas. Depois disso, ele tem que partir para entregar presentes e regressar ao Polo Norte. Além disso há o concurso cultural “O Mundo do Circo e Entretenimento” que dará um carro J6 e mais 3500 presentes para os clientes do programa Fidelidade.</descricao>
+        <horarios>das 10h às 22h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Cantata de Natal</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>3/12/11</data_inicio>
+        <data_final>11/12/11</data_final>	
+        <promotor>SPTuris</promotor>
+        <local>CEU Paraisópolis (Rua Dr. José Augusto de Souza e Silva, s/nº)
+CEU Jaçanã (Rua Antônio Cezar Neto, 105)
+CEU Tiquatira (Av. Condessa Elizabeth de Robiano, 270)
+CEU Parque Anhanguera (Rua Pedro José de Lima, s/nº)
+        </local>
+        <descricao>Cantata de Natal terá apresentação da obra do Maestro Amaral Vieira e emocionará a todos em vários cantos de São Paulo.
+        </descricao>
+        <horarios>CEU Paraisópolis - dia 3/12, às 19h
+CEU Jaçanã (Rua Antônio Cezar Neto, 105), dia 4/12, às 15h
+CEU Tiquatira - dia 9/12, às 20h 
+CEU Parque Anhanguera - dia 11/12, às 15h
+        </horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Festival de Corais de Natal - Shopping Center 3</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>23/12/11</data_final>	
+        <promotor>Shopping Center 3</promotor>
+        <local>Avenida Paulista, 2064 - Cerqueira César</local>
+        <ddd>11</ddd>
+        <telefone>3285-2458</telefone>
+        <site>www.shoppingcenter3.com.br</site>
+        <descricao>Com muito veludo, guirlandas de flores, lâmpadas, entre outros adereços, o shopping espera receber 50 mil pessoas diariamente. Além do espaço físico decorado, o Center 3 recebe o já tradicional Festival de Corais do Shopping Center 3. Neste ano, acontece de 01 a 23 de dezembro, com apresentações diárias no coreto da fachada principal, nos horários de almoço e início da noite.</descricao>
+        <horarios>Nos horários de almoço e começo de noite</horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+    <item>
+        <nome>Circuito Luzes de Natal</nome>	 
+        <categoria>6</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>30/12/11</data_final>	
+        <promotor>Circuito São Paulo</promotor>
+        <local>Bar Brahma - esquina da Avenida Ipiranga com a São João</local>
+        <ddd>11</ddd>
+        <telefone>5182-3974</telefone>
+        <site>www.circuitosaopaulo.com.br</site>
+        <descricao>Sempre atenta às necessidades culturais e de entretenimento da capital paulista, a Circuito São Paulo oferece o city tour “Luzes de Natal” para quem quer aproveitar a beleza natural da cidade, que fica ainda mais encantadora durante o período do Natal e Ano Novo.</descricao>
+        <horarios>a partir das 19h30</horarios>
+        <precos>R$ 35 (adulto) R$ 17,50 (criança)</precos>
+    </item>
+
+    <item>
+        <nome>Concerto de Natal no Obelisco do Ibirapuera</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>10/12/11</data_inicio>
+        <data_final>10/12/11</data_final>	
+        <promotor>Sociedade Veteranos de 32 e Polícia Militar de São Paulo</promotor>
+        <local>Avenida Pedro Álvares Cabral, s/n</local>
+        <ddd>11</ddd>
+        <telefone>3105-8541 / 9463-0489</telefone>
+        <email>imprensa@sociedademmdc.com.br</email>
+        <descricao>A Sociedade Veteranos de 32, presenteia a cidade de São Paulo com um concerto de Natal no Obelisco do Ibirapuera. As atrações são Tenente PM Tenhor Bruno César Sobral e Coral de 50 crianças do Centro Social Bom Jesus, Banda da Polícia Militar de São Paulo, entre outras.</descricao>
+        <horarios>19h - Tenente PM Tenor Bruno César Sobral e Coral de 50 crianças do Centro Social
+Bom Jesus
+19h30 - Banda da Polícia Militar do Estado de São Paulo
+20h – Yasmin Amaral e Velask Braw
+20h30 – Soprano Ariane Testa e Tenor Jackson Klébio
+21h - Encerramento
+        </horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Natal Nacional</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>18/11/11</data_inicio>
+        <data_final>14/01/12</data_final>	
+        <promotor>Conjunto Nacional</promotor>
+        <local>Avenida Paulista, 2073</local>
+        <site>www.natalnacional.com.br</site>
+        <descricao>Preocupado com o consumo excessivo nas festas de fim de ano, o Papai Noel aterrissa na Galeria do Conjunto Nacional para firmar uma parceria de sustentabilidade.Em plena Avenida Paulista, o paulistano recebe o edifício embrulhado como um presente para a cidade de São Paulo. A decoração da fachada externa, iluminada a partir das 19 horas, remete a uma caixa adornada com um grande laço elaborado com 46 mil garrafas pet e 40 mil CDs, que dão um brilho especial neste Natal.</descricao>
+        <horarios>das 9h às 21h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Coral Natalino - Corais Irmãos</nome>	  
+        <categoria>2</categoria>
+        <data_inicio>08/12/11</data_inicio>
+        <data_final>08/12/11</data_final>	
+        <promotor>Hospital Santa Catarina</promotor>
+        <local>Avenida Paulista, 200</local>
+        <ddd>11</ddd>
+        <telefone>3016-4133</telefone>
+        <site>www.hsc.org.br</site>
+        <descricao>Apresentação do Coral Irmãos, regido por Ângela Zucarelli e Leonaro Camargos.</descricao>
+        <horarios>19h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Coral Natalino - Duo de Acordeon e Percussão</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>07/12/11</data_inicio>
+        <data_final>07/12/11</data_final>	
+        <promotor>Hospital Santa Catarina</promotor>
+        <local>Avenida Paulista, 200</local>
+        <ddd>11</ddd>
+        <telefone>3016-4133</telefone>
+        <site>www.hsc.org.br</site>
+        <descricao>Apresentação de Duo de Acordeon e Percussão,regido por Virgínia Graziola, Maria Lúcia Benito e Nilson Graziola.</descricao>
+        <horarios>19h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Coral Natalino - Duo de Piano e Violino</nome>
+        <categoria>2</categoria>
+        <data_inicio>23/12/11</data_inicio>
+        <data_final>23/12/11</data_final>	
+        <promotor>Hospital Santa Catarina</promotor>
+        <local>Avenida Paulista, 200</local>
+        <ddd>11</ddd>
+        <telefone>3016-4133</telefone>
+        <site>www.hsc.org.br</site>
+        <descricao>Apresentação de Duo de Violino e Piano, regido por Tereza e Lydia Fonseca.</descricao>
+        <horarios>19h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Coral Natalino - EcoArt</nome>	  
+        <categoria>2</categoria>
+        <data_inicio>16/12/11</data_inicio>
+        <data_final>16/12/11</data_final>	
+        <promotor>Hospital Santa Catarina</promotor>
+        <local>Avenida Paulista, 200</local>
+        <ddd>11</ddd>
+        <telefone>3016-4133</telefone>
+        <site>www.hsc.org.br</site>
+        <descricao>Apresentação do Coral Ecoart, regido pela maestrina Lígia Godau.</descricao>
+        <horarios>19h</horarios>
+        <precos>Grátis</precos>
+    </item>
+  
+    <item>
+        <nome>Coral Natalino - Hospital Santa Catarina</nome>	  
+        <categoria>2</categoria>
+        <data_inicio>09/12/11</data_inicio>
+        <data_final>09/12/11</data_final>	
+        <promotor>Hospital Santa Catarina</promotor>
+        <local>Avenida Paulista, 200</local>
+        <ddd>11</ddd>
+        <telefone>3016-4133</telefone>
+        <site>www.hsc.org.br</site>
+        <descricao>Apresentação do Coral do Hospital Santa Catarina, regido por Márcio Antonio de Almeida.</descricao>
+        <horarios>19h</horarios>
+        <precos>Grátis</precos>
+    </item>
+      
+    <item>
+        <nome>Coral Natalino - Hospital Santa Catarina</nome>	  
+        <categoria>2</categoria>
+        <data_inicio>14/12/11</data_inicio>
+        <data_final>14/12/11</data_final>	
+        <promotor>Hospital Santa Catarina</promotor>
+        <local>Avenida Paulista, 200</local>
+        <ddd>11</ddd>
+        <telefone>3016-4133</telefone>
+        <site>www.hsc.org.br</site>
+        <descricao>Apresentação do Coral do Hospital Santa Catarina, regido por Márcio Antonio de Almeida.</descricao>
+        <horarios>19h</horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+    <item>
+        <nome>Coral Natalino - Hospital Santa Catarina</nome>
+        <categoria>2</categoria>
+        <data_inicio>21/12/11</data_inicio>
+        <data_final>21/12/11</data_final>	
+        <promotor>Hospital Santa Catarina</promotor>
+        <local>Avenida Paulista, 200</local>
+        <ddd>11</ddd>
+        <telefone>3016-4133</telefone>
+        <site>www.hsc.org.br</site>
+        <descricao>Apresentação do Coral do Hospital Santa Catarina, regido pelo maestro Márcio Antionio de Almeida</descricao>
+        <horarios>19h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Coral Natalino da Unesp</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>02/12/11</data_inicio>
+        <data_final>02/12/11</data_final>	
+        <promotor>Hospital Santa Catarina</promotor>
+        <local>Avenida Paulista, 200</local>
+        <ddd>11</ddd>
+        <telefone>3016-4133</telefone>
+        <site>www.hsc.org.br</site>
+        <descricao>Apresentação de Coral da Unesp, regido pela maestrina Érica Hotts.</descricao>
+        <horarios>19h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>22ª Exposição de Presépios do Convento São Francisco</nome>	 
+        <categoria>5</categoria>
+        <data_inicio>7/12/11</data_inicio>
+        <data_final>30/12/11</data_final>	
+        <promotor>Convento de São Francisco de Assis</promotor>
+        <local>Convento São Francisco de Assis - Largo São Francisco, 133 (ao lado da Faculdade de Direito)</local>
+        <descricao>A exposição de presépios do Convento São Francisco de Assis chega a sua 22ª edição e conta em seu acervo mais de 800 presépios, de vários lugares do mundo. Uma alternativa de meditação religiosa na cidade de São Paulo. Aberto diariamente. Não haverá exposição nos dias 24 e 25 de dezembro.
+        </descricao>
+        <horarios>das 10h às 18h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Um Natal de Cinme</nome>
+        <categoria>1</categoria>
+        <data_inicio>30/11/11</data_inicio>
+        <data_final>28/12/11</data_final>	
+        <promotor>Subprefeitura Sé</promotor>
+        <local>Praça Ouvidor Pacheco e Silva s/nº - Centro</local>
+        <site>www.se.prefeitura.sp.org.br</site>
+        <descricao>As tradicionais feiras de artesanato da cidade terão dias extras para atender à demanda do Natal. </descricao>
+        <horarios>das 10h às 15h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Feira de Artesanato - Liberdade</nome>
+        <categoria>1</categoria>
+        <data_inicio>09/12/11</data_inicio>
+        <data_final>30/12/11</data_final>	
+        <promotor>Subprefeitura Sé</promotor>
+        <local>Praça da Liberdade, s/n - Liberdade</local>
+        <site>www.se.prefeitura.sp.org.br</site>
+        <descricao>As tradicionais feiras de artesanato da cidade terão dias extras para atender à demanda do Natal. </descricao>
+        <horarios>das 9h às 17h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Feira de Artesanato - Praça da República</nome>
+        <categoria>1</categoria>
+        <data_inicio>09/12/11</data_inicio>
+        <data_final>30/12/11</data_final>	
+        <promotor>Subprefeitura Sé</promotor>
+        <local>Praça da República, s/n - Centro</local>
+        <site>www.se.prefeitura.sp.org.br</site>
+        <descricao>As tradicionais feiras de artesanato da cidade terão dias extras para atender à demanda do Natal. </descricao>
+        <horarios>das 10h às 17h</horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+    <item>
+        <nome>Feira de Artesanato - Trianon</nome>
+        <categoria>1</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>29/12/11</data_final>	
+        <promotor>Subprefeitura Sé</promotor>
+        <local>Avenida Paulista, s/n - na esquina da Rua Peixoto Gomide - Centro</local>
+        <site>www.se.prefeitura.sp.org.br</site>
+        <descricao>As tradicionais feiras de artesanato da cidade terão dias extras para atender à demanda do Natal. </descricao>
+        <horarios>das 10h às 17h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Fonte Iluminada - Parque Ibirapuera</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>03/12/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Prefeitura de São Paulo</promotor>
+        <local>Parque do Ibirapuera - Avenida Pedro Álvares Cabral s/nº</local>
+        <descricao>A Fonte do Ibirapuera terá apresentações especiais durante o período de natal. Serão dois espetáculos todas as noite, às 20h30 e às 21h, com duração de 30 minutos cada.</descricao>
+        <horarios>Todos os dias, às 20h30 e às 21h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Decoração de Natal - Shopping Frei Caneca</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>30/11/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Shopping Frei Caneca</promotor>
+        <local>Rua Frei Caneca, 569 - Consolação</local>
+        <descricao>Confira a programação de Natal do Shopping Center 3, com oficinas de decoração de guirlandas e árvores com balas Arcor no Espaço Kids, além da presença do Papai Noel.</descricao>
+        <horarios>às 10h e às 23h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Concerto de Natal - Paróquia São Luís Gonzaga</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>16/12/11</data_inicio>
+        <data_final>18/12/11</data_final>	
+        <promotor>Paróquia São Luís Gonzaga</promotor>
+        <local>Avenida Paulista, 2378</local>
+        <ddd>11</ddd>
+        <telefone>3231-5954</telefone>
+        <descricao>Apresentação da Orquestra do Instituto Fukuda - Deise Fukuda</descricao>
+        <horarios>dia 16, às 20h e dia 18, às 12h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Parque do Povo - Atividades Infantis</nome>	 
+        <categoria>10</categoria>
+        <data_inicio>10/12/11</data_inicio>
+        <data_final>18/12/11</data_final>	
+        <promotor>Prefeitura de São Paulo e Santander</promotor>
+        <local>Rua Frei Caneca, 569 - Consolação</local>
+        <descricao>Confira a programação de Natal do Parque do Povo, com atividades voltadas para o público infantil e decoração natalina que agrada todas as idades. Atividades: contação de histórias, maquiagem infantil, espetáculo lúdico, coral, entre outras.
+        </descricao>
+        <horarios>às 10h e às 19h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Praça de Natal da Avenida Paulista</nome>	 
+        <categoria>3</categoria>
+        <data_inicio>4/12/11</data_inicio>
+        <data_final>25/12/11</data_final>	
+        <promotor>Prefeitura de São Paulo</promotor>
+        <local>Avenida Paulista, entre as ruas Padre João Manoel e Ministro Rocha Azevedo</local>
+        <descricao>Em 2011, o espaço está ainda mais mágico. Compõem o cenário um Papai Noel sentado de 7 metros de altura e mecanizado, uma Árvore de Natal de 8 metros, 14 bonecos infláveis, 10 bolas de natal, brinquedos cenográficos e carrossel de Natal. E trilha sonora natalina e iluminação cênica complementam a atmosfera.</descricao>
+        <horarios>segunda a sexta-feira, das 12h às 22h; sábados e domingos, das 12h a meia-noite; dias 24 e 25, das 12h às 20h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Roteiros Turísticos Natal Iluminado 2011</nome>		  
+        <categoria>6</categoria>
+        <data_inicio>5/12/11</data_inicio>
+        <data_final>22/12/11</data_final>	
+        <promotor>SPTuris e Mapfre Seguros</promotor>
+        <local>Praça Charles Miller - Pacaembu</local>
+        <ddd>11</ddd>
+        <telefone>3331-7786</telefone>
+        <site>www.cidadedesaopaulo.com/natal</site>
+        <descricao>Durante o período natalino, a SPTuris, em parceria com a Mapfre Seguros, promove roteiros natalinos. Os ingressos deste ano estarão à venda a partir de 30 de novembro. Nos anos anteriores, a grande procura fez esgotar os ingressos em uma semana. Os passeios turísticos-culturais são feitos em ônibus e acompanhados de guia explicando a história da cidade.</descricao>
+        <horarios>das 19h15 às 23h15</horarios>
+        <precos>R$ 10</precos>
+    </item>
+
+    <item>
+        <nome>Parque de Natal - Shopping Anália Franco</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>24/12/11</data_final>	
+        <promotor>Shopping Anália Franco</promotor>
+        <local>Av. Regente Feijó, 1739 - Tatuapé</local>
+        <ddd>11</ddd>
+        <telefone>4003-4133</telefone>
+        <site>www.shoppinganaliafranco.com.br</site>
+        <descricao> O Shopping Anália Franco se transformará em um verdadeiro parque de diversões dos anos 50 para comemorar o Natal. Reconhecida por suas decorações encantadoras, a empresária Cecília Dale criou o “Parque de Natal” para o Shopping Anália Franco.</descricao>
+        <horarios>das 10h às 22h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Decoração Natalina Shopping Bourbon</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>11/11/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Shopping Bourbon</promotor>
+        <local>Rua Turiassú, 2100</local>
+        <ddd>11</ddd>
+        <telefone>3874-5050</telefone>
+        <site>www.bourbonshopping.com.br</site>
+        <descricao>No cenário principal - Pompéia – caminhõezinhos levarão as crianças para um passeio pela sede da fazenda, onde Papai e Mamãe Noel cultivam pinheiros natalinos. Neste espaço, a criançada poderá visitar cães, gatos, porcos, bezerros, pôneis e galinhas que transformam e animam o ambiente, além de conhecer a linda e rústica cozinha da Mamãe Noel.</descricao>
+        <horarios>das 10h às 22h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Turismetrô Especial de Natal</nome>		  
+        <categoria>6</categoria>
+        <data_inicio>3/12/11</data_inicio>
+        <data_final>24/12/11</data_final>	
+        <promotor>SPTuris em parceria com o Metrô</promotor>
+        <local>Estação da Sé do Metrô</local>
+        <ddd>11</ddd>
+        <telefone>2958-3714</telefone>
+        <site>www.cidadedesaopaulo.com/turismetro</site>
+        <descricao>O Turismetrô, consagrado programa de roteiros turísticos populares da SPTuris que usa o metrô como meio de transporte. O roteiro será oferecido aos sábados e domingos, de 3 a 24 de dezembro, com início às 16 horas. A venda dos ingressos, que custam apenas os bilhetes de metrô correspondentes (máximo três) acontecem no balcão do Turismetrô, na Estação Sé. </descricao>
+        <horarios>às 16h</horarios>
+        <precos>O valor é referente aos bilhetes de metrô usados (no máximo 3)</precos>
+    </item>
+    
+    <item>
+        <nome>Um Natal de Cinema- The Hollywood Soloists</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>21/12/11</data_inicio>
+        <data_final>21/12/11</data_final>	
+        <promotor>Instituto Italiano di Cultura</promotor>
+        <local>Teatro CCBB - Rua Alvares Penteado, 121 - Centro</local>
+        <ddd>11</ddd>
+        <telefone>3113-3651</telefone>
+        <descricao>Trilhas originais de blockbusters como Máquina Mortífera, Forrest Gump, Jurassic Park, Simpsons e Náufrago, além de clássicos da Disney como A Bela e a Fera, O Rei Leão e Aladdin são apenas alguns dos mais de 1,2 mil temas já interpretados pelo oboísta Tom Boyd ao longo de sua carreira. É com este notável currículo que ele se apresenta ao lado do grupo norte-americano The Hollywood Soloists em São Paulo, entre os dias 16 e 21 de dezembro, no projeto UM NATAL DE CINEMA. Espetáculos de Trilhas Natalinas e Trilhas de Cinema de John Williams e outros mestres de Hollywood.</descricao>
+        <horarios>às 13h e às 19h30</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Um Natal de Cinema- The Hollywood Soloists</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>16/12/11</data_inicio>
+        <data_final>16/12/11</data_final>	
+        <promotor>Instituto Italiano di Cultura</promotor>
+        <local>Auditório da AASP - Rua Alvares Penteado, 151 - Centro</local>
+        <ddd>11</ddd>
+        <telefone>3291-9200</telefone>
+        <descricao>Trilhas originais de blockbusters como Máquina Mortífera, Forrest Gump, Jurassic Park, Simpsons e Náufrago, além de clássicos da Disney como A Bela e a Fera, O Rei Leão e Aladdin são apenas alguns dos mais de 1,2 mil temas já interpretados pelo oboísta Tom Boyd ao longo de sua carreira. É com este notável currículo que ele se apresenta ao lado do grupo norte-americano The Hollywood Soloists em São Paulo, entre os dias 16 e 21 de dezembro, no projeto UM NATAL DE CINEMA. Espetáculo de trilhas de cinema de John Williams e outros mestres de Hollywood.</descricao>
+        <horarios>às 19h30</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Um Natal de Cinema- The Hollywood Soloists</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>19/12/11</data_inicio>
+        <data_final>19/12/11</data_final>	
+        <promotor>Instituto Italiano di Cultura</promotor>
+        <local>Auditório da AASP - Rua Alvares Penteado, 151 - Centro</local>
+        <ddd>11</ddd>
+        <telefone>3291-9200</telefone>
+        <descricao>Trilhas originais de blockbusters como Máquina Mortífera, Forrest Gump, Jurassic Park, Simpsons e Náufrago, além de clássicos da Disney como A Bela e a Fera, O Rei Leão e Aladdin são apenas alguns dos mais de 1,2 mil temas já interpretados pelo oboísta Tom Boyd ao longo de sua carreira. É com este notável currículo que ele se apresenta ao lado do grupo norte-americano The Hollywood Soloists em São Paulo, entre os dias 16 e 21 de dezembro, no projeto UM NATAL DE CINEMA. Espetáculo de trilhas de Natal.</descricao>
+        <horarios>às 19h30</horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+    <item>
+        <nome>Um Natal de Cinema- The Hollywood Soloists</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>20/12/11</data_inicio>
+        <data_final>20/12/11</data_final>	
+        <promotor>Instituto Italiano di Cultura</promotor>
+        <local>Teatro CCBB - Rua Alvares Penteado, 121 - Centro</local>
+        <ddd>11</ddd>
+        <telefone>3113-3651</telefone>
+        <descricao>Trilhas originais de blockbusters como Máquina Mortífera, Forrest Gump, Jurassic Park, Simpsons e Náufrago, além de clássicos da Disney como A Bela e a Fera, O Rei Leão e Aladdin são apenas alguns dos mais de 1,2 mil temas já interpretados pelo oboísta Tom Boyd ao longo de sua carreira. É com este notável currículo que ele se apresenta ao lado do grupo norte-americano The Hollywood Soloists em São Paulo, entre os dias 16 e 21 de dezembro, no projeto UM NATAL DE CINEMA. Espetáculo de Trilhas de Cinema de John Williams e outros mestres de Hollywood.</descricao>
+        <horarios>às 19h30</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Decoração de Natal da Kitchens</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Kitchens</promotor>
+        <local>Lojas Kitchen: Av. Brigadeiro Faria Lima, 2015 / Av. República do Líbano, 1256</local>
+        <ddd>11</ddd>
+        <telefone>3030-1900 / 3889-3400</telefone>
+        <descricao>Com o tema "Natal Gourmet", os bonecos de neve, biscoitos Ginger, duendes e fadas são grandes chefes de cozinha! Os bonecos que ilustram a decoração se movimentam, dando graça à decoração!</descricao>
+        <horarios>das 12h às 22h - de sexta a domingo: das 12h às 00h</horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+    <item>
+        <nome>Decoração de Natal da Crefisa</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Crefisa</promotor>
+        <local>Rua Canadá, 387 - Jardim América</local>
+        <ddd>11</ddd>
+        <telefone>3897-6200</telefone>
+        <descricao>Até a caixa de correio para as cartinhas ao Papai Noel virou poleiro das araras. Animais com movimento, trilha sonora dentro dos dois gazebos e iluminação especial tornaram a Crefisa um dos principais pontos turísticos natalinos de São Paulo.</descricao>
+        <horarios>a partir das 19h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Árvore da Guarapiranga</nome>		  	
+        <categoria>3</categoria>
+        <data_inicio>09/12/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Prefeitura de São Paulo</promotor>
+        <local>Av. Atlântica, 2800 (antiga avenida Robert Kennedy)</local>
+        <ddd>11</ddd>
+        <descricao>A Árvore da Guarapiranga, patrocinada pela Sabesp, terá 54 metros, com mais de 800 mil microlâmpadas, 560 strobles e cerca de 2.300 mil metros de flexlights. A estrela terá 6 metros de altura e 700 Kg e a decoração da Árvore exibirá 2.400 m² de festões ecológicos e 500 bolas de 25 e 50 cm.</descricao>
+        <horarios>das 19h às 5h</horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+
+
+    <item>
+        <nome>Árvore da Tiquatira</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>08/12/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Prefeitura de São Paulo</promotor>
+        <local>Av. Marginal Tietê com a aAvenida Governador Carvalho Pinto</local>
+        <descricao>Em 2011, o Natal Iluminado reserva uma surpresa para a zona leste. Uma árvore de 54 metros, o equivalente a um prédio de 17 andares, vai decorar a Tiquatira, na Penha. A inauguração será realizada no dia 8 de dezembro. Além dos enfeites tradicionais será ornamentada com luzes de LED e microlâmpadas e flexlights branca e vermelha. </descricao>
+        <horarios>das 19h às 5h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Praça Charles Miller</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>03/12/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Prefeitura de São Paulo, Grupo Pão de Açúcar, Grupo Segurador Banco do Brasil Seguros e Mapfre Seguros</promotor>
+        <local>Praça Charles Miller, em frente ao Estádio do Pacaembu</local>
+        <descricao>Novidade na programação, a Praça Charles Miller, resultado da parceria com o Grupo Segurador Banco do Brasil Seguros e Mapfre Seguros e apoio promocional da Globo São Paulo, terá um presépio de proporções gigantescas, projeções monumentais de luz que refletirão imagens inspiradas no natal e na História da Arte brasileira e receberá a apresentação do Balé “O Quebra Nozes”, da Cia Cisne Negro, pela primeira vez numa área ao ar livre. </descricao>
+        <horarios>das 20h às 5h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Fonte Multimídia do Ibirapuera</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>03/12/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Prefeitura de São Paulo e Grupo Pão de Açúcar</promotor>
+        <local>Lago do Ibirapuera - Av. Pedro Álvares Cabral</local>
+        <descricao>As aguardadas projeções da Fonte Multimídia do Ibirapuera, uma parceria com o Grupo Pão de Açúcar, começam no dia 3 de dezembro. 
+Serão duas apresentações diárias gratuitas, às 20h30 e às 21h. A dança das águas deste ano complementa o conjunto de cenas criadas no telão. Além da projeção, mais de 200 árvores serão decoradas com um milhão de lâmpadas de LED de alto nível, iluminando o entorno da fonte. 
+        </descricao>
+        <horarios>às 20h30 e 21h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Parque Trianon</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>03/12/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Prefeitura de São Paulo e Banco do Brasil</promotor>
+        <local>Avenida Paulista, em frente ao MASP</local>
+        <descricao>Numa parceria com o Banco do Brasil, o Parque Tenente Siqueira Campos (Trianon) será transformado em um longo caminho iluminado. As alamedas internas serão cobertas com um céu de luz azul, proporcionando aos visitantes uma experiência mágica que termina em uma imensa árvore de natal com luzes amarelas. 
+        </descricao>
+        <horarios>das 19h às 5h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Parque Trianon</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>03/12/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Prefeitura de São Paulo e Banco do Brasil</promotor>
+        <local>Avenida Paulista, em frente ao MASP</local>
+        <descricao>Numa parceria com o Banco do Brasil, o Parque Tenente Siqueira Campos (Trianon) será transformado em um longo caminho iluminado. As alamedas internas serão cobertas com um céu de luz azul, proporcionando aos visitantes uma experiência mágica que termina em uma imensa árvore de natal com luzes amarelas. 
+        </descricao>
+        <horarios>das 19h às 5h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping Center Lapa - A invasão dos Bonecos de Neve</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>05/12/11</data_inicio>
+        <data_final>24/12/11</data_final>	
+        <promotor>Shopping Center Lapa</promotor>
+        <local>Rua Guaicurus,72 - esquina com Rua Catão - Lapa</local>
+        <ddd>11</ddd>
+        <telefone>3675-2011</telefone>
+        <site>www.shoppingcewnterlapa.com.br</site>
+        <descricao>A Invasão dos Bonecos de Neve é o tema deste ano, trazendo muito brilho e requinte, nas cores típicas do Natal, que são o verde e o vermelho. O ponto alto da decoração é o local do Papai Noel, com árvores ricamente decoradas, e situações divertidas criadas com os bonecos de neve e o seu tradicional trono. Esse cenário será montado no Novo Piso Lapa.</descricao>
+        <horarios>das 10h às 22h / Domingos e Feriados: das 14h às 22h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping Central Plaza - A História do Panetone</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>26/12/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Shopping Central PLaza</promotor>
+        <local>Avenida Dr. Francisco Mesquita, 1000</local>
+        <ddd>11</ddd>
+        <telefone>2066-4422</telefone>
+        <site>www.centralplazashopping.com.br</site>
+        <descricao>Um cenário cheio de detalhes, luzes e um ingrediente muito apreciado por todos, o Panetone, faz parte da emocionante decoração natalina do Shopping.
+Vários bonecos animatrônicos ajudam a contar a História do Panetone, sua origem, seu verdadeiro nome e como passou a ser chamado no Brasil. Todos serão recebidos com muita alegria e espírito de Natal pelas Vovoletes, equipe da 3.ª idade contratadas para informar a sequência das cenas no circuito natalino. O Papai Noel, indispensável para aquele papo com os baixinhos, chegará no Shopping com festa no dia 26 de novembro com show do Patati Patatá a partir das 11h no Estacionamento Coberto. O Papai Noel chegará às 12h.
+        </descricao>
+        <horarios>das 10h às 22h / Domingos e Feriados: das 14h às 20h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping D - Papai Noel nos Alpes</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>19/11/11</data_inicio>
+        <data_final>24/12/11</data_final>	
+        <promotor>Shopping D</promotor>
+        <local>Avenida Cruzeiro do Sul, 1100</local>
+        <ddd>11</ddd>
+        <telefone>4506-6100</telefone>
+        <site>www.shoppingd.com.br</site>
+        <descricao>Alegre e gracioso. Esse será o tom da decoração de Natal que o Shopping Center D estréia no dia 19 de Novembro. Sob o tema Papai Noel nos Alpes, a decoração é inspirada na Guirlanda do Advento. O objetivo é resgatar uma das tradições mais antigas da Alemanha. Originária do século 19, a Guirlanda do Advento foi incorporada aos rituais religiosos como forma de celebrar os quatro domingos que antecedem o Natal, o chamado tempo do Advento.</descricao>
+        <horarios>das 10h às 22h / Domingos e Feriados: das 14h às 20h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping Eldorado - A Casa dos Sonhos</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>05/11/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Shopping Eldorado</promotor>
+        <local>Avenida Rebouças, 3970</local>
+        <ddd>11</ddd>
+        <telefone>2197-7815</telefone>
+        <site>www.shoppingeldorado.com.br</site>
+        <descricao>O Shopping Eldorado preparou para este ano uma decoração maior e inédita no shopping. A partir de 5 de novembro, a “Casa dos Sonhos” proporcionará um verdadeiro ambiente de fantasia para todas as idades. Com 3 andares, a casa é toda decorada com ursinhos, bonecos animatrônicos, caixas de presentes, livros e muita iluminação. Em cima da casa ainda terá uma árvore de 15 metros. O Papai Noel ficará na decoração para atender os pedidos de mais de 50 mil crianças até o final do Natal, segundo acompanhamento do ano anterior.
+ Ao lado da decoração principal, haverá a tradicional Árvore Social. Lá, os clientes podem “adotar” uma criança do Lar Bom Caminho e deixar um presente para a criança com os ajudantes do Papai Noel.
+        </descricao>
+        <horarios>das 10h às 22h / Domingos e Feriados: das 14h às 20h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping Ibirapuera - O Natal dos Cavalos Dourados</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>11/11/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Shopping Ibirapuera</promotor>
+        <local>Avenida Ibirapuera, 3103</local>
+        <ddd>11</ddd>
+        <telefone>5095-2300</telefone>
+        <site>www.ibirapuera.com.br</site>
+        <descricao>A chegada do Papai Noel será em 11/11/2011 às 19h. O Bom Velhinho entra pelo piso Jurupis lado 5 e 6 e passa por todos os corredores do shopping acompanhado de uma animada Banda Musical, da Mamãe Noel, além de Bonecas de Pano, Renas e Bonecos de Neve escoltados por uma Guarda de Cavaleiros. Os personagens ganham vida especialmente para esta grande festa! Os figurinos remetem à decoração natalina deste ano que tem como tema “O Natal dos Cavalos Dourados”. </descricao>
+        <horarios>das 10h às 22h / Domingos e Feriados: das 14h às 20h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping Iguatemi - Estação de Natal</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>06/11/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Shopping Iguatemi</promotor>
+        <local>Avenida Brigadeiro Faria Lima, 2232</local>
+        <ddd>11</ddd>
+        <telefone>3816-6116</telefone>
+        <site>www.iguatemisaopaulo.com.br</site>
+        <descricao>A belíssima decoração deste ano do Shopping Iguatemi leva você a desfrutar do espírito natalino. Com o tema "Estação de Natal", vários bonecos se movendo em meio a presentes e árvores cobertas de neve compõem o cenário da estação. </descricao>
+        <horarios>das 10h às 22h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping Interlagos - Natal , Emoção de Geração para Geração</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>01/11/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Shopping Interlagos</promotor>
+        <local>Avenida Interlagos, 2255</local>
+        <ddd>11</ddd>
+        <telefone>3471-8888</telefone>
+        <site>www.interlagos.com.br</site>
+        <descricao>Confira a Decoração de Natal do Shopping Interlagos! </descricao>
+        <horarios>das 10h às 22h / Domingos e Feriados: das 14h às 20h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping Light - Laços e Presentes</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>26/11/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Shopping Light</promotor>
+        <local>Rua Coronel Xavier de Toledo, 23 - Centro</local>
+        <ddd>11</ddd>
+        <telefone>3154-2292</telefone>
+        <site>www.shoppinglight.com.br</site>
+        <descricao> No Shopping Light, localizado no coração de São Paulo, a decoração promete ser uma atração à parte. Com o tema “Laços e Presentes” o empreendimento pretende entrar para o roteiro turístico natalino da cidade. Haverão laços espelhados na fachada (avenida 23 de maio e da rua Xavier de Toledo). Além disso, serão utilizadas 20 mil mini-lâmpadas na decoração interna e 600 metros de mangueiras luminosas na parte externa.</descricao>
+        <horarios>das 9h às 21h / Sábados: das 9h às 20h / Domingos e Feriados: das 11h às 18h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping Metrô Tatuapé e Boulevard Tatuapé - Disney Club Penguin</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>17/11/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Shopping Metrô Tatuapé e Boulevard Tatuapé</promotor>
+        <local>Shoppping Metrô Tatuapé – Av. Radial Leste, esquina 		com a rua Tuiutí.
+		Shopping Metrô Boulevard Tatuapé – Rua Golçalves 			Crespo, com a rua Tuiutí.
+        </local>
+        <ddd>11</ddd>
+        <telefone>Shoppping Metrô Tatuapé: 2090-7400
+		Shopping Metrô Boulevard Tatuapé: 2225-7000
+        </telefone>
+        <site>www.shoppingtatuape.com.br</site>
+        <descricao> O Club Penguin é o maior mundo virtual para as crianças, pensando nisso, os shoppings receberam um cenário interativo inspirado na ilha.</descricao>
+        <horarios>das 10h às 22h / Domingos e Feriados: das 14h às 20h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping Higienópolis - Carrossel do Papai Noel</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>05/11/11</data_inicio>
+        <data_final>05/01/12</data_final>	
+        <promotor>Shopping Higienópolis</promotor>
+        <local>Av. Higienópolis, 618 - Higienópolis
+        </local>
+        <ddd>11</ddd>
+        <telefone>3823-2300
+        </telefone>
+        <site>www.patiohigienopolis.com.br</site>
+        <descricao>O público pode conferir, o clima de Natal no Shopping Pátio Higienópolis, com uma decoração especial que resgata a memória infantil. Carrosséis, trenzinhos e cavalinhos que  relembram a infância romântica e trazem à tona a alegria e expectativa da chegada do Papai Noel. Inspirada na tradição de algumas regiões da França, a decoração natalina criada pela empresária Cecilia Dale é baseada nos parques de diversões europeus e promete encantar crianças e adultos.</descricao>
+        <horarios>das 10h às 22h / Domingos e Feriados: das 10h às 20h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping Plaza Sul - Todo Presente tem uma História para Contar</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>12/11/11</data_inicio>
+        <data_final>06/01/12</data_final>	
+        <promotor>Shopping Plaza Sul</promotor>
+        <local>Praça Leonor Kauppa, 100 - Saúde
+        </local>
+        <ddd>11</ddd>
+        <telefone>5077-7300
+        </telefone>
+        <site>www.shoppingplazasul.com.br</site>
+        <descricao>O Plaza Sul tem, neste ano, foco na magia, emoção e tradição da data, aliadas à tecnologia e aos cuidados com o meio ambiente. O desenvolvimento da decoração dos dez empreendimentos leva a assinatura da empresa C+E Criadores de Experiências. O cenário principal, no formato 360º, mostrará a casa do Papai Noel dividida em três faces, sendo duas internas: a sala de estar, com lareira e um boneco animatrônico do bom velhinho em escala humana, e o escritório, que possui a escrivaninha, com a máquina de escrever antiga.</descricao>
+        <horarios>das 10h às 22h / Domingos e Feriados: das 10h às 20h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Shopping West Plaza - Natal de Neve</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>06/11/11</data_inicio>
+        <data_final>23/12/11</data_final>	
+        <promotor>Shopping West Plaza</promotor>
+        <local>Avenida Francisco Matarazzo, s/n
+        </local>
+        <ddd>11</ddd>
+        <telefone>3677-4000
+        </telefone>
+        <site>www.westplaza.com.br</site>
+        <descricao>No período de 6 de novembro a 23 de dezembro, o West Plaza vai promover o show de neve artificial todos os dias no Boulevard do Shopping, em dois horários, 20h e 21h. Além do espetáculo com a neve, que encanta adultos e crianças, artistas circenses vão divertir os clientes com apresentações nos fins de semana.Na figueira central do Boulevard, um espetáculo a mais: 50 snowfalls foram instalados, e um lindo show de luzes brancas e vermelhas sincronizadas com a música acontecerá durante os shows de neve. 
+Para completar o encanto do Natal, uma árvore de mais de 10 metros de altura foi montada na Praça de Eventos, em cima de uma base de 3 metros. No espaço, as crianças poderão falar com o Papai Noel. O Bom Velhinho fica à disposição de todos que desejarem fazer pedidos, ganhar doces e tirar fotos, todos os dias das 10h às 22h, exceto no dia 24 de dezembro, quando o atendimento será das 10h às 18h.
+        </descricao>
+        <horarios>das 10h às 22h / Domingos e Feriados: das 14h às 20h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+
+    <item>
+        <nome>Exposição "Presépios Consulares"</nome>		  
+        <categoria>5</categoria>
+        <data_inicio>28/11/11</data_inicio>
+        <data_final>08/01/12</data_final>	
+        <promotor>Museu de Arte Sacra</promotor>
+        <local>Avenida Tiradentes, 676 - Luz</local>
+        <ddd>11</ddd>
+        <telefone>3326-1373</telefone>
+        <site>www.mkuseuartesacra.org.br</site>
+        <descricao>O MAS, além da tradicional exposição de Presépios que ocupa um anexo do museu, este ano, está organizando uma mostra denominada "Presépios Consulares". </descricao>
+        <horarios>das 10h às 18h</horarios>
+        <precos>R$ 6 / Grátis aos sábados</precos>
+    </item>
+
+
+    <item>
+        <nome>Bazar Artístico de Natal da Ponto Art</nome>		  
+        <categoria>1</categoria>
+        <data_inicio>16/11/11</data_inicio>
+        <data_final>22/12/11</data_final>	
+        <promotor>PontoArt - Espaço de Artes e Objetos</promotor>
+        <local>Rua Inácio Pereira da Rocha, 246 - Vila Madalena</local>
+        <ddd>11</ddd>
+        <telefone>2548-1661</telefone>
+        <site>www.pontoart.art.br</site>
+        <descricao>No sentido de promover o gosto pela Arte, criando uma alternativa para presentes na época de Natal e fim de ano, a PontoArt promoverá um Bazar Artístico de Natal. Serão expostas obras consignadas nas duas salas do andar térreo da galeria.</descricao>
+        <horarios>de 4ª à 6ª feira das 11h às 18h e aos sábados das 12h às 17h. Fechada de domingo à 3ª feira.</horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+    <item>
+        <nome>15º Bazar Panaceia 2011</nome>		  
+        <categoria>1</categoria>
+        <data_inicio>25/11/11</data_inicio>
+        <data_final>24/12/11</data_final>	
+        <promotor>Atelier Panaceia</promotor>
+        <local>Rua Delfina, 91 - Vila Madalena</local>
+        <ddd>11</ddd>
+        <telefone>3814-0234</telefone>
+        <site>www.atelierpanaceia.com.br</site>
+        <descricao> Desde de sua criação, em 1995, a Panacéia promove seu bazar reunindo criadores de objetos de decoração, utilitários, brinquedos, papelaria, jóias, roupas e outros tipos de presente.</descricao>
+        <horarios>Segunda à Sexta: das 10h às 20h; Sábado: das 10h às 18h; Domingo: das 12h às 16h.</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>10ª Feira de Artes Noel</nome>		  
+        <categoria>1</categoria>
+        <data_inicio>11/12/11</data_inicio>
+        <data_final>11/12/11</data_final>	
+        <promotor>Centro Cultural Vila Madalena</promotor>
+        <local>Rua Fradique Coutinho - entre as ruas Aspicuelta e rua Wizard - Vila Madalena</local>
+        <ddd>11</ddd>
+        <telefone>3813-2954</telefone>
+        <site>www.centroculturalvilamadalena.com.br</site>
+        <descricao>  O objetivo é oferecer ao público um dia de lazer e compras ao ar livre, ao mesmo tempo em que concede ao artista local uma agradável oportunidade de apresentar suas peças aos visitantes.</descricao>
+        <horarios>das 9h às 19h</horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+    <item>
+        <nome>12ª Feira Natalina Peruana</nome>		  
+        <categoria>1</categoria>
+        <data_inicio>26/11/11</data_inicio>
+        <data_final>24/12/11</data_final>	
+        <promotor>Comitê Das Senhoras Peruanas</promotor>
+        <local>Rua Normandia, 90 - Moema</local>
+        <ddd>11</ddd>
+        <telefone>3742-4336</telefone>
+        <descricao> Feira em prol da Casa da Criança Santo Amaro, organizada pelo Comitê das Senhoras Peruanas e com o apoio do Consulado Geral do Peru em São Paulo. O evento conta com a venda de diversos tipos de produtos da cultura popular do Peru como peças decorativas e utilitárias em prata, argila, cerâmica, gesso; tapetes de lã; palha; cabaças; jóias em prata; roupas em algodão e lã de alpaca, artesanato religioso além de presépios e enfeites natalinos das diversas regiões do país.</descricao>
+        <horarios>de segunda à sexta das 10h às 19h; sábados, domingos e feriados, das 10h às 14h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Mesa Decorada para o Natal</nome>		  
+        <categoria>10</categoria>
+        <data_inicio>06/12/11</data_inicio>
+        <data_final>06/12/11</data_final>	
+        <promotor>Lar Center</promotor>
+        <local>Avenida Otto Baumgart, 500</local>
+        <ddd>11</ddd>
+        <telefone>2224-5959</telefone>
+        <site>www.larcenter.com.br</site>
+        <descricao>Ensinar aos participantes noções básicas de montagem e decoração de mesa para a festa do natal.</descricao>
+        <horarios>das 19h às 21h</horarios>
+        <precos>R$ 10</precos>
+    </item>
+
+    <item>
+        <nome>Árvores Natalinas e Guirlandas</nome>		  
+        <categoria>10</categoria>
+        <data_inicio>07/12/11</data_inicio>
+        <data_final>23/12/11</data_final>	
+        <promotor>SESC Pinheiros</promotor>
+        <local>Rua Paes Leme, 195 - Sala de Oficinas - 3º andar</local>
+        <ddd>11</ddd>
+        <telefone>3095-9400</telefone>
+        <site>www.sescsp.org.br</site>
+        <descricao>Criação de enfeites natalinos, como árvores e guirlandas, utilizando a arte do origami, fuxico, técnicas de costura e amarrações com tecidos, arames, folhas e flores secas, botões, fitas, fios e lãs.</descricao>
+        <horarios>às 10h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+
+    <item>
+        <nome>Estrelas de Natal - Fenstersterne</nome>		  
+        <categoria>10</categoria>
+        <data_inicio>08/12/11</data_inicio>
+        <data_final>08/12/11</data_final>	
+        <promotor>SESC Ipiranga</promotor>
+        <local>Rua Bom Pastor 822 - Ipiranga</local>
+        <ddd>11</ddd>
+        <telefone>3340-2000</telefone>
+        <site>www.sescsp.org.br</site>
+        <descricao>Atividade para confecção de estrelas de Natal. Delicadas e complexas, as estrelas chamadas “Fensterstern”, ligadas à tradição alemã, são feitas de dobraduras de papéis translúcidos e coloridos para serem colocadas nas janelas na época de Natal. Utilizadas há vários séculos, simbolizam a "Estrela Guia”. </descricao>
+        <horarios>às 15h</horarios>
+        <precos>Grátis</precos>
+    </item>
+   
+
+    <item>
+        <nome>Concertos no Museu Paulista</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>11/12/11</data_inicio>
+        <data_final>18/12/11</data_final>	
+        <promotor>Museu Paulista (Museu do Ipiranga)</promotor>
+        <local>Parque da Independência, s/n - Ipiranga</local>
+        <ddd>11</ddd>
+        <telefone>2065-8000</telefone>
+        <site>www.mp.usp.br</site>
+        <descricao>Concertos sob a coordenação do Maestro Samuel Kerr. </descricao>
+        <horarios>das 20h às 22h</horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+	
+    <item>
+        <nome>Decoração de Natal - Mega Loja Ponto Frio</nome>		  
+        <categoria>3</categoria>
+        <data_inicio>20/11/11</data_inicio>
+        <data_final>24/12/11</data_final>	
+        <promotor>Ponto Frio Megastore</promotor>
+        <local>Av. Embaixador Macedo Soares, 9175 - Marginal Tietê</local>
+        <ddd>11</ddd>
+        <telefone>5212-5422</telefone>
+        <site>www.pontofrio.com.br</site>
+        <descricao>Decoração de natal – Fachada da mega loja + iluminação das arvores nas proximidades
+Casa do papai Noel – Espaço interno com cenografia da casa do papai noel e presença do bom velhinho
+        </descricao>
+        <horarios></horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+	
+
+    <item>
+        <nome>Jantar Natalino - São Vito</nome>		  
+        <categoria>9</categoria>
+        <data_inicio>17/12/11</data_inicio>
+        <data_final>17/12/11</data_final>	
+        <promotor>Centro Social da A.B.S.V.M.</promotor>
+        <local>Rua Fernandes Silva, 96 - Brás</local>
+        <ddd>11</ddd>
+        <telefone>3227-8234 / 3229-5678</telefone>
+        <descricao>No cardápio do jantar haverá:                                                                                      Saladas Variadas; Maionese; Salada de Bacalhau com Grão de Bico;
+Calzone (ricota forte, cebolinha e de carne e queijo) Massas: Richitelli e Penne Molhos:  ao Sugo e À Romanesca Arroz com Passsas, Carnes: Cabrito; Lombo; Guimirelle, Farofa
+Sobremesa: Torta de Sorvete Crocante com,  Calda de Chocolate,   Bebidas à parte e terá música ao Vivo
+        </descricao>
+        <horarios>a partir das 20h30</horarios>
+        <precos>R$ 50 - crianças até 5 anos não pagam</precos>
+    </item>
+    
+
+    <item>
+        <nome>Corrida Internacional de São Silvestre</nome>		  
+        <categoria>11</categoria>
+        <data_inicio>31/12/11</data_inicio>
+        <data_final>31/12/11</data_final>	
+        <promotor>Corrida de São Silvestre</promotor>
+        <local>Largada na Av. Paulista, em frente ao MASP, e chegada na região da Praça Túlio Fontoura ou região do Obelisco do Parque Ibirapuera</local>
+        <site>www.saosilvestre.com.br</site>
+        <descricao>Tradicional Corrida de Encerramento do Ano atrai corredores de todo o país.</descricao>
+        <horarios>a partir das 15h10</horarios>
+        <precos>De R$ 90 a R$ 800</precos>
+    </item>
+
+
+    <item>
+        <nome>Reveillon na Paulista</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>31/12/11</data_inicio>
+        <data_final>31/12/11</data_final>	
+        <promotor>Prefeitura de São Paulo</promotor>
+        <local>Avenida Paulista - Altura da Consolação</local>
+        <site>www.cidadedesaopaulo.com</site>
+        <descricao>Realizado desde 1996, o Réveillon na Avenida Paulista 2012, mais conhecido como Virada na Paulista, chega a sua 15ª edição, sendo a principal festa de encerramento na passagem do ano velho para o ano novo na Cidade de São Paulo.
+O evento é repleto de muita animação ao longo de toda a avenida e shows com os mais variados artistas.
+        </descricao>
+        <horarios>a definir</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+
+    <item>
+        <nome>Corrida e Caminhada Noturna Light the Night</nome>		  
+        <categoria>11</categoria>
+        <data_inicio>10/12/11</data_inicio>
+        <data_final>10/12/11</data_final>	
+        <promotor>Abrale</promotor>
+        <local>Av. Escola Politécnica, ao lado do portão 2 da USP</local>
+        <ddd>11</ddd>
+        <site>www.ideeia.org.br/lightthenight/2011/index.asp</site>
+        <descricao>Caminhada e Corrida Noturna desbrava a noite.</descricao>
+        <horarios>a partir das 19:30</horarios>
+        <precos>R$ 40 a R$ 100</precos>
+    </item>
+
+
+
+    <item>
+        <nome>São Silvestrinha</nome>		  
+        <categoria>11</categoria>
+        <data_inicio>27/12/11</data_inicio>
+        <data_final>27/12/11</data_final>	
+        <promotor>São Silvestrinha</promotor>
+        <local>Estádio Ícaro de Castro Mello, no Conjunto Desportivo Constâncio Vaz Guimarães - Rua Marechal Estênio de Albuquerque Lima, 82</local>
+        <site>www.saosilvestrinha.com.br</site>
+        <descricao>Idealizada pelo superintendente da Gazeta Esportiva.Net, Júlio Deodoro de Souza, a São Silvestrinha nasceu em 1994 como proposta de ser a versão infanto-juvenil da mais importante prova de rua da América Latina, a Corrida Internacional de São Silvestre.
+Ao longo desses anos, o evento tem cumprido com os seus objetivos. De forma lúdica, desperta o interesse dos jovens pelo esporte, para a disciplina e para o exercício prático de cidadania.
+        </descricao>
+        <horarios>a partir das 16h</horarios>
+        <precos>R$ 35</precos>
+    </item>
+    
+
+    <item>
+        <nome>45º Prova Pedestre Sargento Gonzaguinha</nome>		  
+        <categoria>11</categoria>
+        <data_inicio>11/12/11</data_inicio>
+        <data_final>11/12/11</data_final>		
+        <local>Centro de Capacitação Física e Operacional (Escola de 		Educação Física da Polícia Militar)
+- Av. Cruzeiro do Sul, 548 – Canindé
+        </local>
+        <site>www.yescom.com.br/provasargentogonzaguinha/2011</site>
+        <descricao>Corrida de Pedestres - Sargento Gonzaguinha</descricao>
+        <horarios>a partir das 7h30</horarios>
+        <precos>R$ 50 a R$ 55</precos>
+    </item>
+    
+
+    <item>
+        <nome>Corrida de Natal - Corpore</nome>		  
+        <categoria>11</categoria>
+        <data_inicio>18/12/11</data_inicio>
+        <data_final>18/12/11</data_final>	
+        <promotor>Corpore</promotor>
+        <local>USP - Av. Prof. Melo Moraes</local>
+        <site>www.corpore.org.br</site>
+        <descricao>Corrida Natalina da Corpore</descricao>
+        <horarios>às 8h</horarios>
+        <precos>Grátis</precos>
+    </item>
+  
+    <item>
+        <nome>Aniversário de 1 ano do Parque Barragem e Dia da Cultura de Paz</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>17/12/11</data_inicio>
+        <data_final>18/12/11</data_final>	
+        <local>Av. Dr. Caetano Petraglia Sobrinho, 41 -  acesso pela Av. 		Atlântica</local>
+        <ddd>11</ddd>
+        <telefone>5524-8403</telefone>
+        <precos>Grátis</precos>
+    </item>
+ 
+    <item>
+        <nome>Projeto "Música no Parque" - Bandolim Elétrico</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>11/12/11</data_inicio>
+        <data_final>11/12/11</data_final>	
+        <promotor>Parque Burle Marx</promotor>
+        <local>Av. Dona Helena Pereira de Moraes, 200</local>
+        <site>www.parqueburlemarx.com.br</site>
+        <descricao>Bandolim Elétrico se apresenta dia 11 no Parque Burle Marx. O evento é gratuito.</descricao>
+        <horarios>às 11h</horarios>
+        <precos>Grátis</precos>
+    </item>
+
+    <item>
+        <nome>Concerto de Natal do Theatro São Pedro</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>08/12/11</data_inicio>
+        <data_final>08/12/11</data_final>	
+        <promotor>Theatro São Pedro</promotor>
+        <local>Rua Barra Funda, 171</local>
+        <ddd>11</ddd>
+        <telefone>3667-0499</telefone>
+        <descricao>No programa, grandes nomes como Teleman e Vivaldi .</descricao>
+        <horarios>às 20h</horarios>
+        <precos>R$ 20</precos>
+    </item>
+    
+	
+    <item>
+        <nome>Banda Sinfônica do Estado de São Paulo</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>11/12/11</data_inicio>
+        <data_final>11/12/11</data_final>	
+        <promotor>Banda Sinfônica do Estado de São Paulo</promotor>
+        <local>MASP - Avenida Paulista, 1578 - Cerqueira César</local>
+        <ddd>11</ddd>
+        <telefone>3251-5644</telefone>
+        <descricao>Especial Música no MASP: Natal. No programa: Aleluia (George Frederic Handel), Jesus Alegria dos Homens (Johann Sebastian Bach), O Quebra Nozes (Peter I. Tchaikovsky), A Home Alone Christmas (John Williams), A Christmas Celebration (Alfred Reed). 
+Regente: Marcos Sadao Shirakawa.
+        </descricao>
+        <horarios>às 11h</horarios>
+        <precos>R$ 10</precos>
+    </item>
+    
+	
+    <item>
+        <nome>Concerto de Natal - Banda Sinfônica do Exército</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>11/12/11</data_inicio>
+        <data_final>11/12/11</data_final>	
+        <promotor>Banda Sinfônica do Exército</promotor>
+        <local>Fundação Maria Luisa e Oscar Americano - Av. Morumbi, 4077 - Morumbi</local>
+        <ddd>11</ddd>
+        <telefone>3742-0077</telefone>
+        <descricao>A banda tem por objetivo fazer da música um bem comum, como parte das atividades culturais do Exército. É composta por músicos militares selecionados entre instrumentistas de todo território nacional. No programa, grandes nomes como BIZET e KORSAKOV.</descricao>
+        <horarios>às 11h30</horarios>
+        <precos>Grátis - Chegar com 1h de antecedência - apenas 400 lugares</precos>
+    </item>
+    
+	
+    <item>
+        <nome>Orquestra Pinheiros e Coral ECP</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>18/12/11</data_inicio>
+        <data_final>18/12/11</data_final>	
+        <promotor>Orquestra Pinheiros e Coral ECP</promotor>
+        <local>Museu da Casa Brasileira - Av. Brigadeiro Faria Lima, 2705</local>
+        <ddd>11</ddd>
+        <telefone>3032-3727 / 3032-2564</telefone>
+        <descricao>A Orquestra Pinheiros, formada por associados e convidados de outros clubes foi formada em 2002 com o maestro Murilo Alvarenga e vem desenvolvendo um trabalho de enorme sucesso. O Coral do ECP já é uma tradição do club. Todo ano mostra um repertório variadíssimo da musica coral e sempre um emocionante espetáculo com musicas natalinas. No repertório deste ano, variações de músicas já consagradas com outras menos conhecidas e uma inédita de Francisco Mignone, com adaptação especial para orquestra.</descricao>
+        <horarios>às 11h</horarios>
+        <precos>Grátis - Entrada por ordem de chegada</precos>
+    </item>
+
+
+    <item>
+        <nome>Orquestra Sinfônica Municipal e Coral Paulistano</nome>		  
+        <categoria>2</categoria>
+        <data_inicio>22/12/11</data_inicio>
+        <data_final>22/12/11</data_final>	
+        <promotor>Orquestra Sinfônica Municipal e Coral Paulistano</promotor>
+        <local>Theatro Municipal de São Paulo - Praça Ramos de Azevedo s/n - Centro</local>
+        <ddd>11</ddd>
+        <telefone>3397-0300</telefone>
+        <descricao>Dentro do especial "Cantatas de Natal", o repertório inclui “Concerto fatto per la notte di Natale", "Concerto de Brandenburgo nº 2", em fá maior, "Te Deum" e “Cantata de Natal”</descricao>
+        <horarios>às 21h</horarios>
+        <precos>R$ 7 a R$ 50</precos>
+    </item>
+    
+	
+	
+    <item>
+        <nome>"Papai Noel Existe"</nome>		  
+        <categoria>7</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>22/12/11</data_final>	
+        <promotor>Teatro Bibi Ferreira</promotor>
+        <local>Teatro Bibi Ferreira - Av. Brig. Luis Antônio, 931 - Bela Vista</local>
+        <descricao>Nesta releitura dos contos natalinos, o consagrado dramaturgo Ronaldo Ciambroni remete-nos a um clima de magia e sonho, mostrando a importância da fantasia e do desenvolvimento da criatividade na formação do caráter e dos conceitos morais e éticos da criança. "Papai Noel Existe" é um conto enternecedor e divertido sobre a vida de uma garotinha, filha de camponeses, que vive na floresta, isolada da convivência com outras crianças e é obrigada a exercitar diariamente a sua intuição e seu poder criativo, povoando a própria existência com seres imaginários. Ela passa por diversas situações até deparar-se com um dilema: como separar a realidade e a fantasia? Nesse ínterim, a figura do Papai Noel, talvez a mais agigantada de todas as entidades que conhece, toma um lugar especial em sua vida e transforma definitivamente todo o seu cotidiano. 
+Texto e Direção: Ronaldo Ciambroni. Com Simoni Zucatto, Kaka Mureno, Rodrigo Nascimento e Bárbara Winter.
+        </descricao>
+        <horarios>Terças, quartas (exceto 07/12) e quintas (exceto 15/12), às 20h30; sextas, às 16h; sábados, às 17h30 e domingos, às 17h</horarios>
+        <precos>R$ 40</precos>
+    </item>
+    
+	
+    <item>
+        <nome>"Então é Natal"</nome>		  
+        <categoria>7</categoria>
+        <data_inicio>03/12/11</data_inicio>
+        <data_final>18/12/11</data_final>	
+        <promotor>Centro Cultural São Paulo</promotor>
+        <local>Rua Vergueiro, 1000 - Paraíso</local>
+        <descricao>O mês de dezembro é o encerramento da temporada de contações de histórias na Sala de Leitura Infanto-juvenil da Biblioteca. Para tanto, contaremos com Eliana Brogglio, uma contadora que promete divertir as crianças com histórias e muitas brincadeiras. Em seu repertório, teremos os contos: O casamento da Dona Baratinha, Três lobinhos e o porco mau, A princesa e o sapo, além de uma grande surpresa em cada dia de contação: um conto natalino de autores clássicos (Grimn, Eça de Queirós, Dostoievski, entre outros) para deixar a criançada no clima do Papai Noel.</descricao>
+        <horarios>às 14h30h</horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+	
+    <item>
+        <nome>Contos e Cantos: O Natal do Anjo Gabriel, com Prosa dos Ventos </nome>		  
+        <categoria>7</categoria>
+        <data_inicio>11/12/11</data_inicio>
+        <data_final>11/12/11</data_final>	
+        <promotor>Shopping Bourbon e Livraria Cultura</promotor>
+        <local>Av. Turiassú, 2100 - Lapa</local>
+        <descricao>O Bourbon Shopping São Paulo e a Livraria Cultura convidam para uma viagem aos contos e cantos do Brasil e do mundo. O projeto tem como objetivo oferecer ao público uma forma diferente de narrar e de fazer teatro. Com shows performáticos, coloridos e lúdicos, "Contos e Cantos" é uma mistura de histórias e músicas que promete interação entre artistas, pais e filhos. Neste domingo, a Cia. Prosa dos Ventos apresenta: "O Natal do Anjo Gabriel". Um jovem anjo recém-formado precisa passar por um estágio na Terra para ganhar suas asas. Para isso, terá que cumprir três missões, bem na véspera de Natal. </descricao>
+        <horarios>às 18h</horarios>
+        <precos>Grátis - Retirada de ingressos a partir das 16h em frente ao Auditório</precos>
+    </item>
+    
+	
+	
+    <item>
+        <nome>Dobraduras de Natal</nome>		  
+        <categoria>7</categoria>
+        <data_inicio>10/12/11</data_inicio>
+        <data_final>10/12/11</data_final>	
+        <promotor>Livraria Cultura - Shopping Villa Lobos</promotor>
+        <local>Av. Nações Unidas, 4777 - Pinheiros</local>
+        <descricao>O projeto envolve performance teatral, jogos e oficina pedagógica. O espetáculo conta a história de dois duendes da fábrica de brinquedos do Papai Noel, que chegam para encontrar o verdadeiro significado do natal. Com muita música e brincadeiras, os duendes ensinam os participantes a transformar o papel Chamequinho em lindos enfeites de natal, e juntos todos vão descobrindo o significado de vários símbolos natalinos. </descricao>
+        <horarios>às 13h</horarios>
+        <precos>Grátis</precos>
+    </item>
+    
+		
+    <item>
+        <nome>Natal, Símbolos e Histórias</nome>		  
+        <categoria>7</categoria>
+        <data_inicio>11/12/11</data_inicio>
+        <data_final>11/12/11</data_final>	
+        <promotor>SESC Itaquera</promotor>
+        <local>Av. Fernando do Espírito Santo Alves de Mattos, 1000 - Itaquera</local>
+        <descricao>A partir da montagem de uma árvore de natal e de um presépio, Extrabão e Amadis vão contando algumas histórias de natal, como o Bolo de Natal e a Estrelinha Azul, tiradas da coleção Disquinho e falando sobre o significado de vários símbolos, objetos e enfeites natalinos utilizados durante este período de festas. Algumas músicas clássicas de natal são cantadas durante esta apresentação. 
+Com Cia. Megamini. 
+        </descricao>
+        <horarios>às 13h</horarios>
+        <precos>R$ 1 a R$ 7</precos>
+    </item>
+    
+	
+    <item>
+        <nome>Contos e Encantos de Natal</nome>		  
+        <categoria>7</categoria>
+        <data_inicio>18/12/11</data_inicio>
+        <data_final>18/12/11</data_final>	
+        <promotor>SESC Interlagos</promotor>
+        <local>Av. Manuel Alves Soares, 1100</local>
+        <descricao>Das malas dos viajantes saem adereços, os quais remetem aos contos de Natal de várias partes da Terra. Ao longo da história, um presépio original vai surgindo. Bonecos de manipulação, rimas e música ao vivo perfazem o ambiente alegre.</descricao>
+        <horarios>às 15h</horarios>
+        <precos>R$ 1 a R$ 7</precos>
+    </item>
+
+
+    <item>
+        <nome>Natal de Natanael</nome>		  
+        <categoria>7</categoria>
+        <data_inicio>18/12/11</data_inicio>
+        <data_final>18/12/11</data_final>	
+        <promotor>SESC Itaquera</promotor>
+        <local>Av. Espírito Santo Alves de Mattos, 1000 - Itaquera</local>
+        <descricao>A família de Natanael é uma família como todas as outras. Quer dizer, quase uma família como todas as outras, porque sempre nas noites de Natal, algum imprevisto acontece e o pai de Natanael tem que sair às pressas de casa. Natanael tem uma idéia: pedir ao Papai Noel, de presente de Natal, que o seu pai passe a noite de Natal com ele. No entanto, isso não acontece e Natanael resolve seguir o pai e passar a noite de Natal com ele, mesmo sem ser visto, mesmo escondido. A partir desse momento, ele vai viver a aventura mais emocionante da sua vida. 
+Com Grupo Cuidado que Mancha (RS).   
+        </descricao>
+        <horarios>às 13h</horarios>
+        <precos>R$ 1 a R$ 7</precos>
+    </item>
+    
+    
+    <item>
+        <nome>Corais no Continental Shopping</nome>                          
+        <categoria>2</categoria>
+        <data_inicio>09/12/11</data_inicio>
+        <data_final>22/12/11</data_final>      
+        <promotor>Continental Shopping</promotor>
+        <local>Av. Leão Machado, 100 - Jaguaré</local>
+        <ddd>11</ddd>
+        <telefone>3769-3769</telefone>
+        <site>www.continentalshopping.com.br</site>
+        <descricao>O Continental Shopping promove no mês de dezembro diversas apresentações gratuitas dos melhores corais natalinos da cidade de São Paulo. Todos os clientes podem apreciar as músicas tradicionais do Natal em horários específicos. Cada apresentação tem em média 50 minutos de duração e são realizadas no 3° piso do Continental Shopping.
+Entre os corais participantes destacam-se o Coral Encant’hus H.U. da USP, Coral Infanto Juvenil São Pio X, Coral Santa Cecília, Coral Instituto Stefanini e Coral IEVY. “Esta é mais uma atração gratuita que promovemos para oferecer aos nossos clientes ainda mais entretenimento e diversão, aliando o Natal a cultura e a música”, afirma Rodrigo Rufino, coordenador de marketing do Continental Shopping.
+As apresentações acontecem com datas programadas e horários específicos até o dia 22/12. Confira a programação completa:
+09/12 - Coral Encant’hus H.U. da USP (19h)
+10/12 – Coral Carolina e Coral Chama do Amor (13h)
+11/12 – Coral Luzes da Ribalta (15h)
+12/12 – Coral Fito (19h)
+14/12 – Coral Infanto Juvenil São Pio X (19h)
+15/12 – Coral Instituto Stefanini (18h30)
+16/12 - Coral Santa Cecília (19h)
+17/12 – Coral Palavra Viva (15h)
+17/12 – Coral Quarteto Vitória (18h30)
+18/12 – Coral Igreja Presbiteriana de Vila Baronesa (15h)
+20/12 – Coral IEVY (20h)
+21/12 – Coral Unidos no Amor (20h)
+22/12 – Coral Esperança (19h30)
+        </descricao>
+        <horarios>específico para cada apresentação</horarios>
+        <precos>Gratuito</precos>
+    </item>
+    
+    <item>
+        <nome>Natal em Rede</nome>                            
+        <categoria>11</categoria>
+        <data_inicio>17/12/11</data_inicio>
+        <data_final>18/12/11</data_final>      
+        <promotor>Rede Social Zona Norte</promotor>
+        <local>Av. Santa Inês, 3321</local>
+        <site>www.redesociazonanorte.blogspot.com</site>
+        <descricao>Nos dias 17 e 18 de dezembro, a Rede Social Zona Norte realiza a segunda edição do Natal em Rede, evento que valoriza os artistas e a cultura local em diversas manifestações, como dança, teatro, circo, música, artes, plásticas, artesanato e mostra fotográfica.
+        </descricao>
+        <horarios>Dia 17 - das 18h às 21h / Dia 18 - das 10h às 20h </horarios>
+        <precos>Gratuito</precos>
+    </item>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <item>
+        <nome>Concerto de Natal - Hospital Alemão Oswaldo Cruz </nome>                  
+        <categoria>2</categoria>
+        <data_inicio>15/12/11</data_inicio>
+        <data_final>15/12/11</data_final>      
+        <promotor>Hospital Alemão Oswaldo Cruz</promotor>
+        <local>Rua  Treze de Maio, 1815 - Paraíso</local>
+        <ddd>11</ddd>
+        <telefone>3549-1000</telefone>
+        <site>www.hospitalalemão.org.br</site>
+        <descricao>O Hospital Alemão Oswaldo Cruz preparou uma programação especial para as festas de final de ano. No dia 15 de dezembro, às 20h, acontece o Concerto de Natal, que contará com apresentações da Orquestra de Câmara Paulista, com regência do Maestro Branco Bernardes, e do Coral do Hospital, conduzido pelo Maestro David Wesley. </descricao>
+        <horarios>às 20h</horarios>
+        <precos>Grátis</precos>
+    </item>
+               
+   
+    <item>
+        <nome>Roteiro Natalino - Andanças Viagens e Turismo</nome>                           
+        <categoria>6</categoria>
+        <data_inicio>03/12/11</data_inicio>
+        <data_final>28/12/11</data_final>      
+        <promotor>Andanças Turismo e Viagens</promotor>
+        <local>Saída e retorno na Rua Loefgreen, 1048</local>
+        <ddd>11</ddd>
+        <telefone>2945-8828</telefone>
+        <email>andancastur@uol.com.br</email>
+        <site>www.andancastur.com.br</site>
+        <descricao> Durante o roteiro, o guia conta histórias de Natal, passa pelos principais locais ornamentados como ruas enfeitadas, fachadas, luzes, lojas, edifícios e shoppings que se esmeram nos enfeites presenteando a cidade nesta data festiva que representa a união familiar e a aproximação com os amigos.
+Roteiro: Av. Paulista, Itaú Personalité, Bradesco Prime, Parque do Ibirapuera, Árvore de Natal do Ibirapuera, Fonte do Ibirapuera, Shopping Iguatemi, Colégio Arquidiocesano.
+Incluso no pacote: Ônibus ou Micro Ônibus de Turismo, Guia de Turismo cadastrado pelo Ministério do Turismo, água, refrigerante, biscoito doce e salgado, balas.
+        </descricao>
+        <horarios>às 18h</horarios>
+        <precos>R$ 45</precos>
+    </item>
+    
+               
+    <item>
+        <nome>Passeio de Helicópteco e as Luzes de Natal - Andanças Viagens e Turismo</nome>                     
+        <categoria>6</categoria>
+        <data_inicio>03/12/11</data_inicio>
+        <data_final>28/12/11</data_final>      
+        <promotor>Andanças Turismo e Viagens</promotor>
+        <local>Saída e retorno no Campo de Marte - Avenida Olavo Fontoura nº 650 - Santana</local>
+        <ddd>11</ddd>
+        <telefone>2945-8828</telefone>
+        <email>andancastur@uol.com.br</email>
+        <site>www.andancastur.com.br</site>
+        <descricao> Roteiro sobrevoando os principais pontos da cidade de São Paulo: saída do Campo de Marte, Vale do Anhangabaú, Praça da Sé, Área da Av. Paulista, Ibirapuera, Ipiranga, Retorno ao Campo de Marte.
+Duração do vôo : aproximadamente 30 minutos a partir do acionamento do motor do helicóptero. (Decolagem e pouso com duração aproximada de 3 a 4 minutos). Outra informações: O peso calculado por passageiro é de 75Kg; Reserva com antecedência de 48 horas.
+        </descricao>
+        <horarios>a definir</horarios>
+        <precos>R$ 850 - de 2 a 5 passageiros</precos>
+    </item>
+ 
+   
+    <item>
+        <nome>Check Point Receptive Service</nome>                              
+        <categoria>6</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>31/12/11</data_final>      
+        <promotor>Check Point Tours</promotor>
+        <local>Serviço Privativo</local>
+        <ddd>11</ddd>
+        <telefone>2791-1316</telefone>
+        <email>atendimento@checkpointtours.com.br</email>
+        <site>www.checkpointtours.com.br</site>
+        <descricao> Roteiro: Saída do endereço escolhido pelo cliente, passando pelos principais atrativos natalinos. No centro antigo de São Paulo, parada para tirar fotos; na Av. Paulista, para apreciar a decoração de seus edifícios; em seguida, Parque do Ibirapuera, com tempo para assistir a programação local. Após o tour, retorno ao hotel.</descricao>
+        <horarios>a definir</horarios>
+        <precos>R$ 110 - mínimo três passageiros</precos>
+    </item>
+ 
+   
+    <item>
+        <nome>Cicerona Cultura</nome>                         
+        <categoria>6</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>31/12/11</data_final>      
+        <promotor>Cicerona Cultura</promotor>
+        <local>Av. Paulista com Av. Rebouças</local>
+        <ddd>11</ddd>
+        <telefone>3804-3346</telefone>
+        <email>contato@ciceronacultura.com</email>
+        <site>ciceronacultura.blogspot.com</site>
+        <descricao>Parque do Ibirapuera (show das águas), Av. 23 de maio, Av. Paulista.
+Duração: Aproximadamente 3 horas.
+Datas de saídas: a combinar. Roteiro realizado em micro ônibus (com água e banheiro), acompanhamento de cicerones que contarão histórias natalinas e farão brincadeiras sobre o Natal durante o trajeto. Cada participante ganhará um brinde ao final. Atmosfera lúdica. 
+        </descricao>
+        <horarios>às 19h20, nas datas a combinar.</horarios>
+        <precos>$80 por pessoa (fins de semana), R$60,00 (seg. a sex. e idosos).
+Crianças de colo não pagam. Consulte para outras possibilidades de desconto.
+        </precos>
+    </item>
+   
+    <item>
+        <nome>Circuito São Paulo</nome>                      
+        <categoria>6</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>31/12/11</data_final>      
+        <promotor>Circuito São Paulo</promotor>
+        <local>Saída: Bar Brahma - Av. São João, 677 - Centro</local>
+        <ddd>11</ddd>
+        <telefone>5182-3974</telefone>
+        <email>info@circuitosaopaulo.com.br</email>
+        <site>www.circuitosaopaulo.com.br</site>
+        <descricao>Roteiro: Bar Brahma, Praça da República, Av. 23 de Maio, Parque do Ibirapuera (desembarque: show das águas), Av. Paulista (desembarque: apresentação no Banco Itaú Personnalité, Parque Trianon, Parque Mário Covas, Banco Bradesco, MASP, entre outros). Centro Histórico: Bairro da Liberdade, Casa de Portugal, Praça da Sé e Marco Zero, Catedral da Sé, Conjunto Cultural da Caixa, Solar da Marquesa, Pátio do Colégio, Complexo São Bento, Ed. Martinelli, Ed. Atlino Arantes, Vale do Anhangabaú, Viaduto do Chá, Teatro Municipal, Praça Ramos de Azevedo, Largo do Paissandu, Igreja Nossa Senhora do Rosário dos Homens Pretos, cruzamento da Av. Ipiranga com a Av. São João, Bar Brahma.</descricao>
+        <horarios>às 19h</horarios>
+        <precos>R$ 35</precos>
+    </item>
+ 
+   
+    <item>
+        <nome>Claudia Lopez Turismo</nome>                             
+        <categoria>6</categoria>
+        <data_inicio>04/12/11</data_inicio>
+        <data_final>04/01/12</data_final>      
+        <promotor>Claudia Lopez Turismo</promotor>
+        <local>Específico para cada roteiro</local>
+        <ddd>11</ddd>
+        <telefone>3812-1256</telefone>
+        <email>info@claudialopezturismo.com ou vendas@sampa4you.com.br</email>
+        <site>www.claudialopezturismo.com ou www.sampa4you.com.br</site>
+        <descricao>Roteiro 1: CAMINHADA E PEDALADA DE NATAL (À NOITE)
+Itinerário: Saída Metrô Vila Mariana (para deixar as bikes no bicicletário); logo, saída de metrô para Estação Brigadeiro; caminhada pela Paulista (nas duas calçadas) até a Estação Trianon - Masp (durante todo o percurso serão salientados o significado dos símbolos natalinos). Retorno à estação Vila Mariana para pegar as bicicletas, descida até o Parque do Ibirapuera, visita à Árvore de Natal e enfeites do entorno.
+Inclui 3 horas de estacionamento no Bicicletário da Vila Mariana (não inclui aluguel da bike) + passagem de metrô ida e volta + barra de cereal + chapéu de Papai Noel (condições para alugar bicicleta no site: http://www.metro.sp.gov.br/servicos/bicicletario/bicicletario.asp).
+ 
+Roteiro 2: CAMINHADA E PEDALADA DE NATAL (DE MANHÃ)
+Itinerário: Saída Metrô Vila Mariana (para deixar as bikes no bicicletário); logo, saída de metrô para Estação Brigadeiro; caminhada pela Paulista (nas duas calçadas) até a Estação Trianon - Masp (durante todo o percurso serão salientados o significado dos símbolos natalinos). Retorno à estação Vila Mariana para pegar as bicicletas, descida até o Parque do Ibirapuera, visita à Árvore de Natal e enfeites do entorno.
+Inclui 3 horas de estacionamento no Bicicletário da Vila Mariana (não inclui aluguel da bike) + passagem de metrô ida e volta + barra de cereal + chapéu de Papai Noel (condições para alugar bicicleta no site: http://www.metro.sp.gov.br/servicos/bicicletario/bicicletario.asp).
+Roteiro 3: NATAL EXPRESS
+Ponto de encontro no Metrô Anhangabaú, Viaduto do Chá, Teatro Municipal, Largo do Paissandú, Av. Ipiranga, Metrô República. Viagem de metrô na linha amarela até a estação Paulista. Caminhada pela Av. Paulista até a estação Trianon-Masp.Inclui: passagem de metrô ida e volta + chapéu de Papai Noel. 
+        </descricao>
+        <horarios>Específico para cada roteiro</horarios>
+        <precos>de R$ 59 a R$ 65</precos>
+    </item>
+ 
+ 
+    <item>
+        <nome>For You Turismo Receptivo</nome>                    
+        <categoria>6</categoria>
+        <data_inicio>04/12/11</data_inicio>
+        <data_final>22/12/11</data_final>      
+        <promotor>For You Turismo Receptivo</promotor>
+        <local>Específico para cada roteiro</local>
+        <ddd>11</ddd>
+        <telefone>2381-2779</telefone>
+        <email>ivaldo@foryouturismo.com.br</email>
+        <site>www.foryouturismo.com.br</site>
+        <descricao>Roteiro 1 - Pacote Luzes Natalinas (1 diária em quarto-double+café da manhã + 1 City Tour Luzes de Natal / Roteiro itinerário: passando pelo Parque do Ibirapuera, para ver o Show das Águas dançantes ( desembarque ) e pela Avenida Paulista ( desembarque). Duração: 3 horas aproximadamente;
+ Roteiro 2 - Roteiro: City Tour Luzes de Natal - Passando pelo Parque do Ibirapuera, para ver a Árvore Gigante e o Show das Águas dançantes (desembarque) e pela Avenida Paulista (desembarque).
+Duração: aproximadamente 3 horas.
+Local de saída: em frente ao Centro Cultural São Paulo
+        </descricao>
+        <horarios>às 19h30</horarios>
+        <precos>de R$ 46 a R$ 182</precos>
+    </item>
+   
+    <item>
+        <nome>Graffit Turismo</nome>                            
+        <categoria>6</categoria>
+        <data_inicio>11/12/11</data_inicio>
+        <data_final>31/12/11</data_final>      
+        <promotor>Graffit Turismo</promotor>
+        <local>Saída: Largo do Arouche, 200</local>
+        <ddd>11</ddd>
+        <telefone>5549-9569</telefone>
+        <email>graffit@graffit.com.br</email>
+        <site>www.graffit.com.br</site>
+        <descricao>Roteiro: CIRCUITO LUZES DE NATAL – Centro Velho, Centro Novo, Av. Paulista, Ibirapuera, Colégio Arquidiocesano e Shopping Santa Cruz (Vila Mariana). Inclui transporte em ônibus especial de turismo decorado no motivo natalino, com ar condicionado, guia de turismo credenciado pelo Ministério do Turismo, água, bala, brinde e folheteria informativa da cidade.
+Duração: aproximadamente 4 horas e meia.
+        </descricao>
+        <horarios>das 19h às 23h</horarios>
+        <precos>R$ 42 - menores de 12 anos pagam meia.</precos>
+    </item>
+   
+    <item>
+        <nome>Number One Tours</nome>                   
+        <categoria>6</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>31/12/11</data_final>      
+        <promotor>Number One Tours</promotor>
+        <local>a definir</local>
+        <ddd>11</ddd>
+        <telefone>3081-4004</telefone>
+        <email>info@numberonetours.com</email>
+        <site>www.numberonetours.com</site>
+        <descricao>Roteiro: passeio pela cidade de São Paulo para apreciar a decoração de Natal (Parque do Ibirapuera, Av. Paulista, Ponte Estaiada, Centro da cidade. O roteiro e o tempo do passeio vai depender do interesse do grupo. Somente passeios privativos, não se trabalha com tours regulares.</descricao>
+        <horarios>a definir</horarios>
+        <precos>Sob consulta</precos>
+    </item>
+ 
+    <item>
+        <nome>Relax Viagens e Turismo</nome>                         
+        <categoria>6</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>31/12/11</data_final>      
+        <promotor>Relax Viagens e Turismo</promotor>
+        <local>A combinar</local>
+        <ddd>11</ddd>
+        <telefone>3663-0638</telefone>
+        <email>relaxturismo@webcable.com.br</email>
+        <site>www.relaxturismo.com.br</site>
+        <descricao>PASSEIO PELAS LUZES DO NATAL
+Roteiro: Passeio panorâmico pela região central de São Paulo/ Shopping Higienópolis/ Av. Paulista (parada de 20 min. para fotos) e Parque do Ibirapuera (parada para assistir a apresentação no lago). Passeio feito em uma van (standard com ar condicionado e capacidade para 13 pessoas.
+Duração: aproximadamente 3 horas.
+        </descricao>
+        <horarios>às 19h30</horarios>
+        <precos>A partir de R$ 50 por pessoa</precos>
+    </item>
+ 
+ 
+    <item>
+        <nome>RMB Tour</nome>                       
+        <categoria>6</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>31/12/11</data_final>      
+        <promotor>RMB Tour</promotor>
+        <local>Shopping Iguatemi ou a combinar com grupos fechados</local>
+        <ddd>11</ddd>
+        <telefone>3758-1569</telefone>
+        <email>rmbcitytour@rmbcitytour.com</email>
+        <site>www.rmbcitytour.com</site>
+        <descricao>Com o objetivo de mostrar o espírito natalino, a magia e o encantamento do Natal Iluminado de São Paulo, é feito o passeio "Natal by Night” em São Paulo.
+Roteiro sugerido: Árvore de Natal e Fonte Multimídia do Parque do Ibirapuera, decoração natalina da Avenida Paulista e Jardins, Shopping Iguatemi, Parque do Povo e Ponte Estaiada.
+        </descricao>
+        <horarios>A combinar</horarios>
+        <precos>A combinar</precos>
+    </item>
+      
+    <item>
+        <nome>Vida e Energia</nome>                             
+        <categoria>6</categoria>
+        <data_inicio>05/12/11</data_inicio>
+        <data_final>23/12/11</data_final>      
+        <promotor>Vida e Energia</promotor>
+        <local>Metrô Santa Cruz - Em frente ao Colégio Arquidiocesano</local>
+        <ddd>11</ddd>
+        <telefone>3567-0628</telefone>
+        <email>vidaeenergia@hotmail.com</email>
+        <site>www.vidaeenergia.com.br</site>
+        <descricao>Roteiro: apresentação do Presépio do Colégio Arquidiocesano, Parque do Ibirapuera para visualização das Fontes e Árvore de Natal (desembarque), Rua Canadá e Presépio (desembarque), Rua Oscar Freire, Av. Paulista para visualização dos enfeites natalinos nos bancos e Pq. Trianon.
+Desembarque: Metrô Trianon e Metrô Santa Cruz – às 22h30. Pacote Inclui: transporte fretado, guia de turismo, monitor, seguro para acidentes.
+        </descricao>
+        <horarios>às 19h30</horarios>
+        <precos>R$ 70 por pessoa</precos>
+    </item>
+   
+    <item>
+        <nome>Exposição "Presépios"</nome>                             
+        <categoria>5</categoria>
+        <data_inicio>01/12/11</data_inicio>
+        <data_final>06/01/12</data_final>      
+        <promotor>Shopping Metrô Boulevard Tatuapé</promotor>
+        <local>Rua Gonçalves Crespo, 78 - Tatuapé (Metrô Tatuapé)</local>
+        <ddd>11</ddd>
+        <telefone>2225-7000</telefone>
+        <descricao>É tempo de Natal e pensando nisso o Complexo Comercial Tatuapé, formado pelos shoppings Metrô e Boulevard Tatuapé, preparou uma exposição especial para os frequentadores. Até o dia 6 de janeiro, a colecionadora e produtora cultural Hilda Breda expõe 30 peças na mostra “Presépios”, no Espaço Cultural Boulevard das Artes. Hilda começou sua coleção de presépios aos seis anos de idade quando se interessou pelo assunto. Sua mãe montou o presépio da família ao longo dos anos e a cada Natal comprava novas peças da réplica de Belém. Com o passar do tempo o interesse aumentou e, então, foi comprando, ganhando e agrupando aquelas obras singelas, diferentes na forma e tão iguais no conteúdo.
+A exposição “Presépios” conta com 30 peças da coleção de Hilda e cada uma veio de um lugar diferente. Alemanha, Itália, México, China, Filipinas, Peru, Canadá, Portugal e também de cidades aqui do Brasil, como Campos do Jordão, Rio Grande da Serra, Taubaté, Uberlândia, Santos, Santo André, São Bernardo do Campo, São Paulo, entre outras.
+        </descricao>
+        <horarios>de segunda a sábado, das 10h às 22h, domingos e feriados, das 11h às 22h</horarios>
+        <precos>Grátis</precos>
+    </item>
+</lista_eventos>

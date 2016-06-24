@@ -1,0 +1,76 @@
+/* http://www.menucool.com */
+
+#sliderFrame {position:relative;margin: 0 auto;} 
+
+#ribbon {
+    display: none;
+    /*    width:111px;height:111px;position:absolute;top:-4px;left:-4px;background:url(ribbon.png) no-repeat;z-index:7;*/
+}
+
+#slider {
+    width: 100%;
+    height: 530px;
+    background-position: center;
+    position: relative;
+}
+#slider img {
+    position:absolute;
+    border:none;
+    display:none;
+}
+
+/* the link style (if an image is wrapped in a link) */
+#slider a.imgLink {
+    z-index:2;
+    display:none;position:absolute;
+    top:0px;left:0px;border:0;padding:0;margin:0;
+    width:100%;height:100%;
+}
+
+
+/* ------ built-in navigation bullets wrapper ------*/
+div.navBulletsWrapper /*nivo-controlNav*/ {
+    /*    top:320px; left:280px;  Its position is relative to the #slider 
+        width:150px;
+        background:none;
+        padding-left:20px;
+        position:relative;
+        z-index:5;
+        cursor:pointer;*/
+    width: 500px;
+    height: 8px;
+    position: absolute;
+    display: inline-block!important;
+    margin: 457px 0 0 42px;
+    z-index: 1000;
+    cursor: pointer;
+
+}
+
+/* each bullet */
+div.navBulletsWrapper div 
+{
+    display:block;
+    width:30px;
+    height:8px;
+    float: left;
+    background:url(http://www.anhembi.com.br/wp-content/themes/Miguel-Juliano-WP-Anhembi/images/slider_control_off.gif);
+    border:0;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+}
+
+div.navBulletsWrapper div.active {
+    background:url(http://www.anhembi.com.br/wp-content/themes/Miguel-Juliano-WP-Anhembi/images/slider_control_on.gif);    
+    text-decoration: none;
+}
+
+
+/* --------- Others ------- */
+#slider 
+{
+    transform: translate3d(0,0,0);
+    -ms-transform:translate3d(0,0,0);
+    -moz-transform:translate3d(0,0,0);
+    -o-transform:translate3d(0,0,0);
+}

@@ -1,0 +1,999 @@
+/*
+Theme Name: Marco Zero WP Theme
+Theme URI: http://www.spturis.com.br/site/monumentos/
+Author: SPTuris/DMV - Luciana Jabur / Leandro Rossi Sampaio / Daniella Parra
+Author URI: http://lesampaio.com.br
+Description: Tema padrao desenvolvido para o aplicativo de QR Code Monumentos da Cidade de Sao Paulo.
+Version: 2.3.2
+License: Todos os direitos reservados.  
+*/
+/* ################################################# Reset CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;   
+}
+article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    font: normal 100% 'MuseoSans300', arial, sans-serif;
+    color: #212121;
+    overflow-x:hidden;
+}
+.aligncenter {
+    margin: 0 auto;
+    display: block;
+}
+.alignleft {
+    float: left;
+    padding: 7px;
+}
+.alignright {
+    float: right;
+    padding: 7px;
+}
+img {
+    border: none;
+}
+p {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 1em;
+    line-height: 20px;
+    margin: 8px;
+}
+@media screen and (max-width: 784px) {
+    p {
+        font-size: 0.9em;
+    }
+}
+a:visited {
+    text-decoration: none;
+    color: #EB1C3C;
+    text-transform: none;
+}
+a:link {
+    text-decoration: none;
+    color: #EB1C3C;
+    text-transform: none;
+}
+a:hover {
+    color: #EB1C3C;
+    text-decoration: underline;
+    text-transform: none;
+}
+a:active {
+    text-decoration: none;
+    color: #EB1C3C;
+    text-transform: none;
+}
+strong {
+    font-family: 'MuseoSans700';
+}
+b {
+    font-family: 'MuseoSans700';
+}
+/* ################################################# Fontes */
+@font-face {
+    font-family: 'MuseoSans300';
+    src: url('fonts/museosans_300-webfont.eot');
+    src: url('fonts/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300-webfont.woff') format('woff'),
+        url('fonts/museosans_300-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300-webfont.svg#MuseoSans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('fonts/museosans_500-webfont.eot');
+    src: url('fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_500-webfont.woff') format('woff'),
+        url('fonts/museosans_500-webfont.ttf') format('truetype'),
+        url('fonts/museosans_500-webfont.svg#MuseoSans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans700';
+    src: url('fonts/museosans_700-webfont.eot');
+    src: url('fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_700-webfont.woff') format('woff'),
+        url('fonts/museosans_700-webfont.ttf') format('truetype'),
+        url('fonts/museosans_700-webfont.svgz#MuseoSans700') format('svg'),
+        url('fonts/museosans_700-webfont.svg#MuseoSans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans900';
+    src: url('fonts/museosans_900-webfont.eot');
+    src: url('fonts/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_900-webfont.woff') format('woff'),
+        url('fonts/museosans_900-webfont.ttf') format('truetype'),
+        url('fonts/museosans_900-webfont.svgz#MuseoSans900') format('svg'),
+        url('fonts/museosans_900-webfont.svg#MuseoSans900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*------ FIM - FONTFACE --- */
+
+body {
+    font: normal 100% 'MuseoSans300', arial, sans-serif;
+    color: #212121;
+}
+
+/*------------------------- CLASSES ---------*/
+.wrap { /*elementos com width 100%*/
+    width: 100%;
+}
+.block { /*elementos "blocos", com padding e margin */
+    margin: 6px 1% 6px 1%;
+    padding: 6px 1% 6px 1%;
+}
+.box { /*areas dos boxes brancos*/
+    float: left;
+    margin: 0 0 2%; 
+}
+.box_content {
+    background-color: #fff;
+    padding: 1%;
+    display: table;
+    width: 98%;
+}
+.section_content {
+    float: left;
+    width: 96%;
+    background-color: #fff;
+}
+.title {
+    font-size: 1.1em;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.breadcrumb{
+    color: white;
+    font-size: 16px;
+    float: left;
+}
+.breadcrumb a{
+    color: white;
+    text-decoration: none
+}
+#tudo {
+    background: url(http://monumentos.spturis.com.br/wp-content/themes/Marco_Zero_WP_Theme/images/tudo_bg.png) repeat;
+    float: left;
+    width: 100%;
+}
+#miolo {
+    background: url(http://monumentos.spturis.com.br/wp-content/themes/Marco_Zero_WP_Theme/images/miolo_bg.png);
+    width: 90%;
+    margin: 0 auto;
+    display: table;
+}
+/*---------------------- Menu Principal (Topo) ---------*/
+#nav {
+    margin: 0 0 50px 0;
+}
+#nav_label {
+    background-color: #921b1f;
+    padding: 5px 0 4px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 10px 1px #000;
+    box-shadow: 0px 0px 10px 1px #000;
+    float: left;
+    position: fixed;
+    z-index: 999;
+}
+#nav_label ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 169px;
+    display: block;
+    list-style: none;
+}
+#nav_label p {
+
+    font-family: 'MuseoSans00', arial, sans-serif;
+    font-size: 14px;
+    line-height: 9px;
+    color: yellow;
+}
+
+#nav_lista{
+
+}
+
+.nav_lista_item {
+    display: block;
+    float: left;
+}
+.nav_lista_item a {
+    display: block;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    text-align: center;
+    font-family: MuseoSans700, arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#warning-mobile{
+    padding: 5px;
+    background-color: #FFFF00 !important;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-family: MuseoSans700, arial, sans-serif;
+}
+/*---------------------------- TOP BAR ----**/
+#topBar {
+}
+/*---------------- MULTIMIDIA --*/
+#topBar_multimidia {
+    height: 35px;
+    z-index: 50;
+}
+/* 1. Menu - Barra */
+.megamenu_container {
+    position:relative;
+    z-index:200;
+}
+.megamenu {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    list-style:none;
+    padding:0;
+    margin:7px 0 0;
+}
+.megamenu li.noactive {
+    background:none;
+}
+.drop {
+    background-color: #921b1f;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    padding: 8px;
+    cursor: pointer;
+}
+/*  _______________________________________
+
+    02 DROP DOWN CONTAINER
+    _______________________________________  */
+.megamenu > li .megamenu_fullwidth {
+    position:absolute;
+    z-index:9998;
+    float:left;
+    margin:0 0 40px -1px;
+    padding:18px 0 18px 0;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;	
+    background:#931B20;
+}
+/*  _______________________________________
+
+    04 COLUMNS GRID
+    _______________________________________  */
+.megamenu .fullwidth_content {
+    float: left;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.megamenu .clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 18px;
+}
+/*  _______________________________________
+
+    08 MOBILE DEVICES
+    _______________________________________  */
+@media only screen and (max-width: 960px) {
+    /* Mega Menu Containers */
+    .megamenu_container {
+        width:100%;
+        height:auto;
+        margin:0;
+        position:relative;
+        left:auto;
+        top:auto;
+    }
+    /* Drop Downs */
+    .megamenu > li .megamenu_fullwidth {
+        position:absolute;
+        top:auto;
+        width: 100%;
+        margin:0;
+    }
+    .megamenu > li .megamenu_fullwidth {
+        position:absolute;
+        top:auto;
+    }
+    .megamenu .dropdownspacer {
+        display:none;
+    }
+    /* Columns Resizing - Switching to percentages */
+    .megamenu .fullwidth_content {
+        margin-left: 0.83333333333333%;
+        margin-right: 0.83333333333333%;
+    }
+    .megamenu .img_margin_right {
+        margin-right: 0.83333333333333%;
+    }
+    .megamenu .fullwidth_content {
+        width: 98%;
+    }
+    /* Drop Downs Content */
+    .megamenu img {
+        max-width: 98%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
+    .megamenu embed,
+    .megamenu object,
+    .megamenu iframe {
+        width: 100%;
+    }
+    .megamenu_scroller_container {
+        position : relative;
+        width : 100%;
+        height : 100%;
+        overflow : visible;
+    }
+    .megamenu .form_element {
+        width:96%;
+    }   
+}
+div.jAbaContainer { padding:3px; }
+div.jAbaHeader {
+    font-size: 13px;
+    margin: 0 0 12px 0;
+}
+div.jAbaBody {}
+
+div.jAbaHeader .jTabHeaderHidden { 
+    color: #fff;
+    padding: 4px;
+    font-size: 12px;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    border: 1px solid #fff;
+}
+div.jAbaHeader .jTabHeaderInline {
+    color: #931B20;
+    background-color: #fff;
+    padding: 4px;
+    font-size: 12px;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    border: 1px solid #fff;
+}
+div.jAbaBody .jTabBodyHidden { display: none;}
+div.jAbaBody .jTabBodyInline{
+    display: inline;
+}
+.audioNome {
+    color: #fff;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    padding: 0 0 5px;
+}
+/*------------- FIM MULTIMIDIA ------ */
+#topBar_language {
+    float: right;
+    height: 24px;
+    margin: 7px 2% 0 0;
+    padding: 0;
+    z-index: 999;
+}
+.trf {
+    height: 25px;
+    width: 75px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+.trf-pt {
+    background-image: url(images/header_lang_pt.png)!important;
+    background-position: 0;
+}
+.trf-us {
+    background-image: url(images/header_lang_en.png)!important;
+    background-position: 0;
+}
+.trf-es {
+    background-image: url(images/header_lang_es.png)!important;
+    background-position: 0;
+}
+.transposh_flags a span:hover, .transposh_flags a img:hover {
+    border-color: transparent; 
+}
+#transposh-2 {
+    list-style: none!important;
+}
+@media screen and (max-width: 395px) {
+    #topBar {
+        height: 70px;
+    }
+    #topBar_language {
+        width: 100%;
+        margin: 0;
+        padding-top: 5px;
+    }
+    #topBar_multimidia {
+        float: left;
+        width: 96%;
+        margin-top: 0;
+    }
+}
+/*----------------------- FIM TOP BAR--------*/
+/*----------------- CONTENT -------------- */
+#section_content, #section_index {
+    float: left;
+    width: 96%;
+}
+#section_index_title {
+    margin: 0 auto;
+    width: 88%;
+}
+#section_index_title_logo {
+    width: 13%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 500px) {
+    #section_index_title_logo {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 501px) and (max-width:862px) {
+    #section_index_title_logo {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 863px) and (max-width:1z300px) {
+    #section_index_title_logo {
+        width: 23%;
+    }
+}
+#section_index_title_logo img {
+    width: 90%;
+}
+#section_index_title_texto {
+    color: #fff;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    text-transform: uppercase;
+    padding: 4%;
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (max-width: 440px) {
+    #section_index_title_texto { 
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width: 441px) and (max-width: 590px) {
+    #section_index_title_texto { 
+        font-size: 1.8em;
+    }
+}
+@media screen and (min-width: 591px) and (max-width: 669px) {
+    #section_index_title_texto {
+        font-size: 2.2em;
+    }
+}
+@media screen and (min-width: 670px) and (max-width: 845px) {
+    #section_index_title_texto {
+        font-size: 2.3em;
+    }
+}
+@media screen and (min-width:846px) {
+    #section_index_title_texto {
+        font-size: 2.5em;
+        width: 64%;
+    } 
+}
+#index_category {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding: 5% 0;
+
+}
+@media screen and (max-width: 670px) {
+    #index_category {
+        margin: 25px auto;
+    }
+}
+#index_category_link {
+    text-align: center;
+    background-color: #fff;
+    padding: 25px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;	
+}
+#index_category a {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    text-decoration: none;
+}
+@media screen and (max-width: 590px) {
+    #index_category a {
+        font-size: 1.5em;
+    }
+}
+#section_content_title {
+    float: left;
+}
+#section_content_title_logo {
+    float: left;
+}
+@media screen and (max-width: 502px) {
+    #section_content_title_logo {
+        float: left;
+        width: 30%;
+    }
+    #section_content_title_texto {
+        width: 65%!important;
+        font-size: 1.8em!important;
+    }
+}
+@media screen and (min-width: 503px) and (max-width: 700px) {
+    #section_content_title_logo {
+        float: left;
+        width: 20%;
+    }
+}
+#section_content_title_logo img {
+    width: 100%;
+}
+#section_content_title_texto {
+    color: #fff;
+    float: left;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 2.1875em;
+    text-transform: uppercase;
+    padding: 2%;
+    width: 76%;
+    margin: 0;
+}
+@media screen and (min-width: 695px) and (max-width: 803px) {
+    #section_content_title_texto {
+        margin: 2% 2% 0;
+        width: 73%;
+    }
+}
+#section_content_page {
+    clear: both;
+    background-color: #fff;
+    padding: 2%;
+    min-height: 168px;
+    float: left;
+    width: 96%;
+}
+#section_content_page ul {
+    list-style: none;
+}
+#section_content_page li {
+    padding: 5px;
+    font-size: 1.3em;   
+}
+#section_content_page li a:visited {
+    color: #212121;
+    text-transform: none;
+    text-decoration: none;
+}
+#section_content_page li a:link {
+    color: #212121;
+    text-transform: none;
+    text-decoration: none;
+}
+#section_content_page li a:hover {
+    color: #212121;
+    text-transform: none;
+    text-decoration: none;
+}
+#section_content_page li a:active {
+    color: #212121;
+    text-transform: none;
+    text-decoration: none;
+}
+#all_categories {
+}
+#all_categories a {
+    height: auto;
+    text-decoration: none;
+}
+#all_categories img {
+    width: 100%;
+}
+#all_categories h1 {
+    text-align: center;
+    display: block;
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+@media screen and (min-width: 1025px) {
+    #all_categories a {
+        width: auto;
+    }
+}
+#all_categories_box {
+    float: left;
+    width: 29%;
+}
+@media screen and (max-width: 450px) {
+    #all_categories_box {
+        min-height: 129px;
+    }
+    #all_categories h1 {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 520px)  {
+    #all_categories_box {
+        min-height: 144px;
+    }
+}
+@media screen and (min-width: 521px) {
+    #all_categories_box {
+        min-height: 174px;
+    }
+}
+@media screen and (min-width: 1025px) {
+    #all_categories_box {
+        width: auto;
+    }
+    #nav_label p {
+        display: block;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #nav_label p {
+        display: none;
+    }
+}
+
+/*----------- ARTICLE ----------*/
+#article_description { 
+    background: #fff;
+    padding: 1%;   
+    min-height: 30px;
+    width: 100%;
+}
+#article_info {
+    width: 70%;
+}
+@media screen and (max-width: 784px) {
+    #article_info {
+        width: 69%;
+        min-height: 168px;
+    }
+}
+#article_social {
+    width: 29%;
+    margin-left: 1%;
+}
+@media screen and (max-width: 784px) {
+    #article_social {
+        width: 29%;
+        margin-left: 2%;
+    }
+}
+#article_social_content {
+    padding: 2.2%;
+}
+#social_mod1 {
+    margin: 0 auto;
+    width: 90%;
+}
+#social_mod1 a {
+    max-width: 40%;
+    display: block;
+    float: left;
+    margin: 5% 5% 0 5%;
+    position: relative;
+}
+#social_mod1 a img {
+    width: 100%;
+}
+#social_mod2 {
+    margin: 0 auto;
+    width: 90%;
+}
+#social_mod2 a {
+    max-width: 43%;
+    display: block;
+    float: left;
+    margin: 3% 3% 0 3%;
+    position: relative;
+}
+#social_mod2 a img {
+    width: 100%;
+}
+#article_category {
+    width: 50%;
+}
+@media screen and (max-width: 784px) {
+    #article_category {
+        width: 49%;
+    }
+}
+#article_comoChegar {
+    width: 100%;
+}
+#articleBox1 {
+    height: 220px;
+    display: block;
+    float: left;
+    margin: 2% 0 2% 0;
+    width: 100%;
+}
+#articleBox2 {
+    height: 220px;
+    display: block;
+    float: left;
+    margin: 0 0 2% 0;
+    width: 100%;
+}
+.section_contentContainer {
+    width: 100%;
+    margin: 15px 0 0 0;
+}
+.article_title70 {
+    width: 68%;
+    position: relative;
+    float: left;
+    display: block;
+    padding: 0 0 0 1%;
+}
+.article_title30 {
+    width: 26%;
+    position: relative;
+    float: right;
+    display: block;
+    padding: 0 0 0 3%;
+}
+.article_title50 {
+    width: 48%;
+    position: relative;
+    float: left;
+    display: block;
+    padding: 0 0 0 1%;
+}
+.section_contentContainer_title {
+    height: 22px;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 15px 0 0 0;
+}
+.section_contentContainer_miolo {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+#section_contentContainer_miolo_info {
+    padding: 0;
+    display: table;
+    width: 69%;
+    float: left;
+    margin: 0 2% 0 0;
+    position: relative;
+    z-index: 30;
+    min-height: 30px;
+}
+#section_contentContainer_miolo_social {
+    padding: 0;
+    display: table;
+    width: 28%;
+    float: left;
+    position: relative;
+    z-index: 30;
+}
+#section_contentContainer_miolo_vejaMais {
+    padding: 0;
+    display: table;
+    width: 49%;
+    float: left;
+    margin: 0 2% 0 0;
+    position: relative;
+    z-index: 30;
+}
+#section_contentContainer_miolo_porPerto {
+    padding: 0 4px 0 0;
+    display: table;
+    width: 47%;
+    float: left;
+    position: relative;
+    z-index: 30;
+}
+.section_contentContainer_miolo_bg {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+    height: 100%;
+}
+/*-------- Category Links -----*/
+.post-categories {
+    list-style: none;
+}
+.post-categories li {
+    float: left;
+    background: #EB1C3C;
+    padding: 4px;
+    margin: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+.post-categories li a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+.post-categories li a:link{
+    color: #fff;
+    text-decoration: none;
+}
+.post-categories li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.post-categories li a:active{
+    color: #fff;
+    text-decoration: none;
+}
+#article_tags {
+    width: 49%;
+    margin-left: 1%;
+}
+@media screen and (max-width: 784px) {
+    #article_tags {
+        width: 49%;
+        margin-left: 2%;
+    }
+}
+/*----- Tags Links ----*/
+.post-tags {
+    list-style: none;
+}
+.post-tags a {
+    float: left;
+    background: #EB1C3C;
+    padding: 4px;
+    margin: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+.post-tags a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+.post-tags a:link{
+    color: #fff;
+    text-decoration: none;
+}
+.post-tags a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.post-tags a:active{
+    color: #fff;
+    text-decoration: none;
+}
+/*------------------------------- SLIDER --- */
+#slider {
+    height: 250px;
+    width: 100%;
+    background-color: #921b1f;
+}
+@media screen and (max-width: 415px) {
+    #slider {
+        background-color: transparent;
+    }
+}
+@-moz-document url-prefix() { 
+    #slider {
+    float: left;
+}
+}
+
+#slider_lista {
+    position: relative;
+    height: 250px;
+    width: 100%;    
+}
+.slider_lista_item {
+    height: 250px !important;
+    width: 100% !important;
+    display: block !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.slider_lista_item img {
+    height: 250px;
+}
+#banner-fade {
+    width: 100%!important;
+    height: 250px!important;
+}
+
+.slider_legenda {
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index: 999;
+    margin: -20px 0 0 0;
+    text-align: center;
+    text-shadow: 0 0 4px #000000;
+}
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{display: none;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{display: none;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+/*-------------------------- FIM SLIDER ---------*
+/*############ FOOTER ############*/
+#footer {
+    background-color: #CE2033;
+}
+#footer_logos {
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+@media screen and (min-width: 591px) {
+    #footer_logos {
+        width: 328px;
+        margin: 0 auto;
+    }
+}
+#footer_logos img {
+    margin: 9px;
+}
+
+@media screen and (max-width: 590px) {
+    #footer_logos {
+        width: 350px;
+        padding: 20px 0 20px 0 !important;
+    }
+    #logo_SPTuris {
+        margin: 24px 9px 0 25% !important; 
+        display: block;
+    }
+  
+    #logo_SP{
+        display: block;
+        margin: 20px 9px 0 21% !important;  
+        float: left;
+    }
+    #logo_pref{
+        display: block;
+        margin: 40px 0px 0 128px !important;  
+
+    }
+}

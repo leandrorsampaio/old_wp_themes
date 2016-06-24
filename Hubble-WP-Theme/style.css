@@ -1,0 +1,1342 @@
+/**
+  Theme Name: Hubble WP Theme
+  Theme URI: http://www.spturis.com
+  Version: 3.0.11
+  Author: Leandro Rossi Sampaio(DMV)
+  Author URI: http://www.spturis.com
+  Tags: simple, clean, fixed width, widget-ready, widgets, right sidebar, two columns, valid XHTML, valid CSS, blank-slate
+  Licence: LGPL
+  Description: Observatorio do Turismo - 2011
+
+  */
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background-color: #6e95ce;
+    font-family: 'MuseoSans300', arial, sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#tudo {
+    min-height: 100%;
+    position: relative;
+}
+img#wpstats{width:0px;height:0px;padding:0px;border:none;overflow:hidden}
+/* ################################################# Fontes */
+@font-face {
+    font-family: 'MuseoSans100';
+    src: url('fonts/museosans_100-webfont.eot');
+    src: url('fonts/museosans_100-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/museosans_100-webfont.woff') format('woff'),
+    url('fonts/museosans_100-webfont.ttf') format('truetype'),
+    url('fonts/museosans_100-webfont.svg#MuseoSans100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans100Italic';
+    src: url('fonts/museosans_100_italic-webfont.eot');
+    src: url('fonts/museosans_100_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/museosans_100_italic-webfont.woff') format('woff'),
+    url('fonts/museosans_100_italic-webfont.ttf') format('truetype'),
+    url('fonts/museosans_100_italic-webfont.svg#MuseoSans100Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans300';
+    src: url('fonts/museosans_300-webfont.eot');
+    src: url('fonts/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/museosans_300-webfont.woff') format('woff'),
+    url('fonts/museosans_300-webfont.ttf') format('truetype'),
+    url('fonts/museosans_300-webfont.svg#MuseoSans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans300Italic';
+    src: url('fonts/museosans_300_italic-webfont.eot');
+    src: url('fonts/museosans_300_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/museosans_300_italic-webfont.woff') format('woff'),
+    url('fonts/museosans_300_italic-webfont.ttf') format('truetype'),
+    url('fonts/museosans_300_italic-webfont.svg#MuseoSans300Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('fonts/museosans_500-webfont.eot');
+    src: url('fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/museosans_500-webfont.woff') format('woff'),
+    url('fonts/museosans_500-webfont.ttf') format('truetype'),
+    url('fonts/museosans_500-webfont.svg#MuseoSans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans500Italic';
+    src: url('fonts/museosans_500_italic-webfont.eot');
+    src: url('fonts/museosans_500_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/museosans_500_italic-webfont.woff') format('woff'),
+    url('fonts/museosans_500_italic-webfont.ttf') format('truetype'),
+    url('fonts/museosans_500_italic-webfont.svgz#MuseoSans500Italic') format('svg'),
+    url('fonts/museosans_500_italic-webfont.svg#MuseoSans500Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans700Italic';
+    src: url('fonts/museosans_700_italic-webfont.eot');
+    src: url('fonts/museosans_700_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/museosans_700_italic-webfont.woff') format('woff'),
+    url('fonts/museosans_700_italic-webfont.ttf') format('truetype'),
+    url('fonts/museosans_700_italic-webfont.svgz#MuseoSans700Italic') format('svg'),
+    url('fonts/museosans_700_italic-webfont.svg#MuseoSans700Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans700';
+    src: url('fonts/museosans_700-webfont.eot');
+    src: url('fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/museosans_700-webfont.woff') format('woff'),
+    url('fonts/museosans_700-webfont.ttf') format('truetype'),
+    url('fonts/museosans_700-webfont.svgz#MuseoSans700') format('svg'),
+    url('fonts/museosans_700-webfont.svg#MuseoSans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans900';
+    src: url('fonts/museosans_900-webfont.eot');
+    src: url('fonts/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/museosans_900-webfont.woff') format('woff'),
+    url('fonts/museosans_900-webfont.ttf') format('truetype'),
+    url('fonts/museosans_900-webfont.svgz#MuseoSans900') format('svg'),
+    url('fonts/museosans_900-webfont.svg#MuseoSans900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans900Italic';
+    src: url('fonts/museosans_900_italic-webfont.eot');
+    src: url('fonts/museosans_900_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/museosans_900_italic-webfont.woff') format('woff'),
+    url('fonts/museosans_900_italic-webfont.ttf') format('truetype'),
+    url('fonts/museosans_900_italic-webfont.svgz#MuseoSans900Italic') format('svg'),
+    url('fonts/museosans_900_italic-webfont.svg#MuseoSans900Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.negrito {
+    font-family: 'MuseoSans700';
+}
+pre {
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin:20px 0 20px 0;
+    font-family: 'MuseoSans300', arial, sans-serif;
+}
+pre a:visited {
+    text-decoration: none;
+    color:#6E95CE;
+}
+pre a:link {
+    text-decoration: none;
+    color:#6E95CE;
+}
+pre a:hover {
+    text-decoration: underline;
+    color:#6E95CE;
+}
+pre a:active {
+    text-decoration: none;
+    color:#6E95CE;
+}
+a:visited {
+    text-decoration: none;
+    color:inherit;
+}
+a:link {
+    text-decoration: none;
+    color:inherit;
+}
+a:hover {
+    text-decoration: underline;
+    color:inherit;
+}
+a:active {
+    text-decoration: none;
+    color:inherit;
+}
+em {
+    font-style:italic;
+}
+strong {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-weight: bold;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 0.8em;
+}
+h5 {
+    font-size: 0.7em;
+}
+h6 {
+    font-size: 0.6em;
+}
+
+/* ------------------------------------------- GERAL -- */
+#all {
+    background-color: #fff;
+    display: table;
+    margin: 0 auto;
+    padding: 0 2px 0 2px;
+}
+#faixaSPTuris {
+    margin:-28px 0 0 0;
+}
+/* ------------------------------------------- HEADER -- */
+#header {
+    width:960px;
+    height:96px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-bottom: 2px;
+    border-bottom: #000 solid 2px;
+}
+#header_logo {
+    width:500px;
+    height:96px;
+    background-color: #e3e9f6;
+    float:left;
+}
+#header_menu {
+    width:458px;
+    height:96px;
+    float:left;
+    border-left: #fff solid 2px;
+}
+#header_menu_ul {
+}
+#header_menu_ul_a01:visited {
+    height:96px;
+    width: 152px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #bfcfe9;
+    color: #fff;
+}
+#header_menu_ul_a01:link {
+    height:96px;
+    width: 152px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #ccd8e9;
+    color: #fff;
+}
+#header_menu_ul_a01:hover {
+    height:96px;
+    width: 152px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #fff;
+    color: #bfcfe9;
+}
+#header_menu_ul_a01:active {
+    height:96px;
+    width: 152px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #ccd8e9;
+    color: #fff;
+}
+#header_menu_ul_a01_li {
+    display: inline;
+    float:left;
+}
+#header_menu_ul_a02:visited {
+    height:96px;
+    width:91px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #b1c5e1;
+    color: #fff;
+}
+#header_menu_ul_a02:link {
+    height:96px;
+    width:91px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #b1c5e1;
+    color: #fff;
+}
+#header_menu_ul_a02:hover {
+    height:96px;
+    width:91px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #fff;
+    color: #b1c5e1;
+}
+#header_menu_ul_a02:active {
+    height:96px;
+    width:91px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #b1c5e1;
+    color: #fff;
+}
+#header_menu_ul_a02_li {
+    display: inline;
+    float:left;
+}
+#header_menu_ul_a03:visited {
+    height:96px;
+    width: 153px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #97b2da;
+    color: #fff;
+}
+#header_menu_ul_a03:link {
+    height:96px;
+    width: 153px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #97b2da;
+    color: #fff;
+}
+#header_menu_ul_a03:hover {
+    height:96px;
+    width: 153px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #fff;
+    color: #97b2da;
+}
+#header_menu_ul_a03:active {
+    height:96px;
+    width: 153px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #97b2da;
+    color: #fff;
+}
+#header_menu_ul_a03_li {
+    display: inline;
+    float:left;
+}
+#header_menu_ul_a04:visited {
+    height:96px;
+    width:94px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #89a8d6;
+    color: #fff;
+}
+#header_menu_ul_a04:link {
+    height:96px;
+    width:94px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #89a8d6;
+    color: #fff;
+}
+#header_menu_ul_a04:hover {
+    height:95px;
+    width:94px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #fff;
+    color: #89a8d6;
+}
+#header_menu_ul_a04:active {
+    height:96px;
+    width:94px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #89a8d6;
+    color: #fff;
+}
+#header_menu_ul_a04_li {
+    display: inline;
+    float:left;
+}
+#header_menu_ul_a05:visited {
+    height:96px;
+    width: 153px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #7b9ed2;
+    color:#fff;
+    color: #fff;
+}
+#header_menu_ul_a05:link {
+    height:96px;
+    width: 153px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #7b9ed2;
+    color:#fff;
+}
+#header_menu_ul_a05:hover {
+    height:96px;
+    width: 153px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #fff;
+    color:#7b9ed2;
+}
+#header_menu_ul_a05:active {
+    height:96px;
+    wwidth: 153px;
+    display: block;
+    float: left;
+    text-decoration:none;
+    background-color: #7b9ed2;
+    color:#fff;
+}
+#header_menu_ul_a05_li {
+    display: inline;
+    float:left;
+}
+.header_menu_ul_aXX_li_p {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    margin: 56px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    width: 152px;
+}
+/* ------------------------------------------- CONTENT -- */
+#content {
+    width:960px;
+    margin: 0 auto;
+}
+#content_left {
+    width:592px;
+    float:left;
+    display:table;
+    margin:2px 0 40px 0;
+    border-right: #000 solid 1px;
+}
+/* ------------------------ SLIDER -- */
+#content_left_carrousel {
+    width:592px;
+    height:290px;
+    float:left;
+}
+.slider_textarea {
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+    padding: 0px;
+    text-align: left;
+    background: url(images/carrossel-bg.png) repeat;
+}
+.slider_title {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff;
+    padding: 4px 0 0 4px;
+    margin: 0 0 0 42px;
+    font-size: 15px;
+}
+.slider_subtitle {
+    color: #fff;
+    font-size: 13px;
+    padding: 3px 0 0 4px;
+    margin: 0 0 0 42px;
+}
+#sliderFrame {position:relative;margin: 0 auto;} 
+
+#ribbon {
+    display: none;
+    /*    width:111px;height:111px;position:absolute;top:-4px;left:-4px;background:url(ribbon.png) no-repeat;z-index:7;*/
+}
+
+#slider {
+    width: 592px;
+    height: 290px;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;
+}
+#slider img {
+    position:absolute;
+    border:none;
+    display:none;
+}
+#slider a.imgLink {
+    z-index:2;
+    display:none;position:absolute;
+    top:0px;left:0px;border:0;padding:0;margin:0;
+    width:100%;height:100%;
+}
+/*-- navigation buttons on both sides of the slider --*/
+.group1-Wrapper {
+    position: absolute;
+    z-index: 20;
+    top: 250px;
+    margin-left: 50%;
+    width: 1px;
+}
+a.group1-Prev, a.group1-Next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+    cursor: pointer;
+}
+a.group1-Prev {
+    background-position: 0 0;
+    left: -296px;
+    background: url(images/arrow-left.png);
+}
+a.group1-Next {
+    background-position: 0 -150px;
+    left: 256px;
+    background: url(images/arrow-right.png);
+}
+
+.mc-caption {display: none!important;
+   visibility: hidden!important;
+}
+/* ------------ FIM SLIDER -- */
+#content_left_news {
+    width:592px;
+    float:left;
+    margin: 10px 0 0 0;
+}
+#content_left_news-INDEX {
+    width:592px;
+    float:left;
+    margin: 10px 0 0 0;
+    height:510px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+#content_left_news_title {
+    width:592px;
+    height:40px;
+    background-color: #e3e9f6;
+    margin: 20px 0 30px 0;
+}
+.content_titles_h {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 15px;
+    color: #000;
+    text-transform:uppercase;
+    text-align: left;
+    font-weight: bold;
+    margin:13px 0 0 25px;
+    float:left;
+}
+.content_left_news_calls {
+    width:262px;
+    height:218px;
+    margin: 15px 18px 0 15px;
+    float: left;
+}
+.content_left_news_left {
+    width:120px;
+    height:174px;
+    float:left;
+}
+.content_left_news_left a p img {
+    width:120px;
+    height:174px;
+}
+.content_left_news_left a p a img {
+    width:120px;
+    height:174px;
+}
+.content_left_news_left_legenda {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 10px;
+    color: #7b9dd2;
+    text-transform:uppercase;
+    text-align: center;
+}
+.content_left_news_right {
+    width:136px;
+    height:218px;
+    float:left;
+    margin: 0 0 0 5px;
+}
+.content_left_news_right_categoria {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 12px;
+    color: #7b9dd2;
+    text-transform:uppercase;
+    text-align: left;
+}
+.post-categories {
+    margin: 0 0 8px 0;
+}
+.post-categories li a {
+    color: #7b9dd2;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 15px;
+    text-transform:uppercase;
+    text-align: left;
+}
+.content_left_news_right_titulo {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    margin: 0;
+    font-weight: bold;
+}
+.content_left_news_right_texto {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 11px;
+    color: #000;
+    text-align: left;
+    margin: 25px 0 0 0;
+}
+.content_left_news_right_texto a {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 11px;
+    color: #000;
+    text-align: left;
+}
+#content_right {
+    width:366px;
+    float:left;
+    margin:2px 0 0 0;
+    list-style: none;
+    color: #fff;
+    padding: 0 0 25px 0;
+}
+.content_right_destaks {
+    width:367px;
+    height:111px;
+}
+.content_right_destaks_img {
+    width:367px;
+    height:111px;
+}
+.content_right_destaks-ABOX {
+    width:367px;
+    height:40px;
+    display: table;
+    margin:-45px 0 0 0;
+    position: relative;
+    padding:5px 0 0 0;
+}
+.content_right_destaks_legenda:link {
+    background-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/content-legendasBG_OFF.png");
+    width:367px;
+    height:40px;
+    display: table;
+}
+.content_right_destaks_legenda:visited {
+    background-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/content-legendasBG_OFF.png");
+    width:367px;
+    height:40px;
+    display: table;
+}
+.content_right_destaks_legenda:hover {
+    background-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/content-legendasBG_ON.png");
+    width:367px;
+    height:40px;
+    display: table;
+}
+.content_right_destaks_legenda:active {
+    background-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/content-legendasBG_OFF.png");
+    width:367px;
+    height:40px;
+    display: table;
+}
+.content_right_destaks_legenda_titulo {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:#fff;
+    margin:5px 0 0 10px;
+}
+.content_right_destaks_legenda_texto {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color:#fff;
+    margin:2px 0 0 10px;
+}
+#content_right_boletins {
+}
+#content_right_boletins_title {
+    width:367px;
+    height:40px;
+    background-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/content_right_links_title.gif");
+    margin: 30px 0 30px 0;
+}
+.content_right_boletins_box {
+    width:367px;
+    height:72px;
+    float: left;  
+    margin: 0 0 40px 0;
+}
+.content_right_boletins_box_img {
+    width:59px;
+    height:72px;
+    margin: 0 0 0 25px;
+    float:left;
+}
+.content_right_boletins_box_textos {
+    float:left;
+    height:72px;
+    margin: 0 0 0 5px;
+}
+.content_right_boletins_box_textos_titulo {
+    margin: 40px 0 0 0;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:#000;
+}
+.content_right_boletins_box_textos_link {
+    margin: 2px 0 0 0;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color:#000;
+}
+.content_right_sidebarPages {
+    font-family: 'MuseoSans300Italic', arial, sans-serif;
+    font-size: 13px;
+    color: #000000;
+    text-transform:uppercase;
+    text-align: left;
+    margin: 15px 22px 15px 22px;
+    line-height: 18px;
+    font-style:italic;
+}
+/* ------------------------------------------- FOOTER -- */
+#footer {
+    width:964px;
+    height:310px;
+    display: table;
+    margin: 0 auto;
+    background-color: #7b9dd2;
+    bottom: 0;
+}
+#footer_logo {
+    width:535px;
+    margin: 0 auto;
+    padding:40px 0 0 0;
+}
+#footer_logo_01 {
+    width:155px;
+    height:105px;
+    float:left;
+}
+#footer_logo_01_img {
+}
+#footer_logo_02 {
+    width:158px;
+    height:105px;
+    float:right;
+}
+#footer_logo_02_img {
+}
+#footer_logo_03{
+    float: left;
+}
+#footer_logo_03 img{
+    margin: 0 17px 0 0; 
+}
+#footer_info {
+    width:400px;
+    height:50px;
+    clear: both;
+    margin: 0 auto;
+    padding:40px 0 0 0;
+}
+#footer_info_texto1 {
+    color:#fff;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+#footer_info_texto2 {
+    color:#fff;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    font-weight: normal;
+}
+#footer_info_texto3 {
+    color:#fff;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 9px;
+    text-align: center;
+    margin:40px 0 30px 0;
+}
+
+.more-link {
+    display: none;
+}
+#pages-2 {
+    color:#fff;
+    font-size: 1px;
+}
+#pages-2 ul li {
+    width: 260px;
+    height:72px;
+    float: left;
+    margin: 0 0 40px 25px;
+    display:table;
+    background-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/content_right_boletins_box_img.jpg");
+    background-repeat:no-repeat;
+    padding:0 0 0 70px;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:#000;
+}
+#pages-2 ul li a {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:#000;
+}
+#pages-2 ul li a:hover {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:#000;
+    text-decoration: underline;
+}
+#text-3 {
+    list-style: none;
+}
+
+
+
+#search-3 {
+    width:367px;
+    height:68px;
+    background-color: #e6ebf7;
+    list-style: none;
+}
+.screen-reader-text {
+    display: none;
+}   
+#s {
+    width:235px;
+    height:32px;
+    background-color: #fff;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 12px;
+    background-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/content_right_search_inputBG.gif");
+    float: left;
+    border:0;
+    padding:0 0 0 10px;
+    margin:18px 7px 0 22px;
+}
+#searchsubmit {
+    width:75px;
+    height:32px;
+    background-color: #b1c5e1;
+    display: block;
+    float: left;
+    margin:18px 0 0 0;
+    cursor:url;
+    border: 0;
+    color:#fff;
+}
+#searchsubmit:hover {
+    width:75px;
+    height:32px;
+    background-color: #97b2da;
+    display: block;
+    float: left;
+    margin:18px 0 0 0;
+    cursor:url;
+    border: 0;
+    color:#fff;
+}
+.widgettitle {
+    display: none;
+}
+
+
+
+
+#content_right_search_btn:visited {
+    width:34px;
+    height:32px;
+    background-color: #e6ebf7;
+    background-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/content_right_search_btnBG-OFF.gif");
+    display: block;
+    float: left;
+    margin:18px 0 0 0;
+}
+#content_right_search_btn:link {
+    width:34px;
+    height:32px;
+    background-color: #e6ebf7;
+    background-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/content_right_search_btnBG-OFF.gif");
+    display: block;
+    float: left;
+    margin:18px 0 0 0;
+}
+#content_right_search_btn:hover {
+    width:34px;
+    height:32px;
+    background-color: #e6ebf7;
+    background-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/content_right_search_btnBG-ON.gif");
+    display: block;
+    float: left;
+    margin:18px 0 0 0;
+}
+#content_right_search_btn:active {
+    width:34px;
+    height:32px;
+    background-color: #e6ebf7;
+    background-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/content_right_search_btnBG-OFF.gif");
+    display: block;
+    float: left;
+    margin:18px 0 0 0;
+}
+.post {
+    padding:0 15px 0 15px;
+}
+.desaparecer {
+    display: none;
+}
+.postTitle {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    margin:0 0 15px 15px;
+    color: #6E95CD;
+    font-weight: bold;
+    font-size: 22px;
+}
+#search-4 {
+    width:367px;
+    height:68px;
+    background-color: #e6ebf7;
+    list-style: none;
+    margin:10px 0 30px 0;
+}
+#search-2 {
+    width:367px;
+    height:68px;
+    background-color: #e6ebf7;
+    list-style: none;
+    margin:10px 0 30px 0;
+}
+#content_left_news_title-page {
+    width:592px;
+    height:68px;
+    background-color: #e3e9f6;
+    margin: 0 0 30px 0;
+}
+.content_titles_h-page {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 15px;
+    color: #000;
+    text-transform:uppercase;
+    text-align: left;
+    font-weight: bold;
+    margin:26px 0 0 17px;
+    float:left;
+}
+/* ------------------------------------------- Links da Home -- */
+#linkcat-9 {
+    color:#000;
+}
+#linkcat-9 ul li {
+    margin: 10px 0 0 25px;
+}
+#linkcat-9 ul li a {
+    margin: 13px 0 8px 0;
+    display: block;
+    width:340px;
+    height: 41px;
+    position: relative;
+    float:left;
+    font-size: 14px;
+}
+#linkcat-9 ul li a img {
+    margin: 0 5px 0 0;
+    display: block;
+    position: relative;
+    float:left;
+}
+#search-5 {
+    width:367px;
+    height:68px;
+    background-color: #e6ebf7;
+    list-style: none;
+    margin:10px 0 0 0;
+}
+#search-6 {
+    width:367px;
+    height:68px;
+    background-color: #e6ebf7;
+    list-style: none;
+    margin:10px 0 0 0;
+}
+.categoriastitle {
+    width:367px;
+    background-color: #e6ebf7;
+    list-style: none;
+    margin:30px 0 10px 0;
+    display: block;
+    padding:1px 0 10px 0;
+    clear:both;
+    text-transform:uppercase;
+}
+.categoriastitle h3 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color:#000;
+    margin:10px 0 0 25px;
+    font-size: 13px;
+    display: block;
+    font-weight: bold;
+}
+.cat-post-item {
+    color:#000;
+    margin:0 0 8px 35px;
+    list-style-image: url("http://observatoriodoturismo.com.br/wp-content/themes/wp_spturis_01/images/list-style.png");
+    font-size: 14px;
+}
+.content_left_news_search-result {
+    width:592px;
+    height:5px;
+    background-color: #e3e9f6;
+    margin: 0 0 10px 0;
+}
+.categoria_search-p {
+    margin:0 0 0 25px;
+}
+.content_left_news-search {
+    width:592px;
+    float:left;
+    margin: 0 0 0;
+    background-color: #e3e9f6;
+    padding:0 0 20px 0;
+}
+.content_left-search {
+    width:593px;
+    float:left;
+    display:table;
+    margin:10px 0 10px 0;
+}
+.postTitle-search {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    margin:40px 0 15px 15px;
+    color: #6E95CD;
+    font-weight: bold;
+    font-size: 22px;
+}
+#categoryposts-3 {
+    display:table;
+    margin: 0 0 10px 0;
+}
+#categoryposts-3 ul li {
+    float: left;
+    width: 50px;
+}
+#categoryposts-4 {
+    display:table;
+    margin: 0 0 10px 0;
+}
+#categoryposts-4 ul li {
+    float: left;
+}
+#categoryposts-5 {
+    display:table;
+    margin: 0 0 10px 0;
+}
+#categoryposts-5 ul li {
+    float: left;
+    width: 140px;
+}
+#categoryposts-ME {
+    display:table;
+    margin: 0 0 10px 0;
+}
+#categoryposts-ME li {
+    float: left;
+    width: 50px;
+}
+#categoryposts-9 {
+    display:table;
+    margin: 0 20px 10px 0;
+}
+.content_left_news_right_categoria-ESPECIALISTAS {
+    margin:0 0 10px 0;
+    color: #7B9DD2;
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.textopesquisa {
+    font-size: 13px;
+    margin: 0 25px 15px 15px;
+    font-family: 'MuseoSans300', arial, sans-serif;
+}
+.textopesquisa2 {
+    font-size: 13px;
+    margin: 0 25px 25px 15px;
+    font-family: 'MuseoSans300', arial, sans-serif;
+}
+.newSidebar {
+    margin: 10px 0 0 0;
+}
+.content_right_destaksCOPADOMUNDO {
+    width: 367px;
+    height: 222px;
+}
+.content_right_destaksCOPADOMUNDO_img {
+    width: 367px;
+    height: 222px;
+}
+
+
+
+
+
+
+
+
+.demo {
+    margin: 5% 0 0 0;
+}
+.how-use {
+    float: left;
+    width: 300px;
+    display: none;
+}
+#tabInfo {
+    display: none;
+}
+
+
+resp-tabs-list li {
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    padding: 13px 15px;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.resp-tab-content {
+    display: none;
+    padding: 15px;
+}
+
+.resp-tab-active {
+    border: 1px solid #c1c1c1;
+    border-bottom: none;
+    margin-bottom: -1px !important;
+    padding: 12px 14px 14px 14px !important;
+}
+
+.resp-tab-active {
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+
+
+h2.resp-accordion {
+    font-size: 13px;
+    border: 1px solid #fff;
+    border-top: 0px solid #c1c1c1;
+    margin: 0px;
+    padding: 10px 15px;
+    background:#e3e9f6;
+}
+
+h2.resp-tab-active {
+    border-bottom: 0px solid #c1c1c1 !important;
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
+
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #c1c1c1 !important;
+    background: #e3e9f6;
+}
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 30%;
+}
+
+.resp-vtabs .resp-tabs-list li {
+    display: block;
+    padding: 15px 15px !important;
+    margin: 0;
+    cursor: pointer;
+    float: none;
+}
+
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    border: 1px solid #c1c1c1;
+    float: left;
+    width: 68%;
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+}
+
+.resp-vtabs .resp-tab-content {
+    border: none;
+}
+
+.resp-vtabs li.resp-tab-active {
+    border: 1px solid #c1c1c1;
+    border-right: none;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-right: -1px !important;
+    padding: 14px 15px 15px 14px !important;
+}
+
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+
+    border-top: 12px solid #c1c1c1;
+}
+
+h2.resp-tab-active span.resp-arrow {
+    border: none;
+
+    border-bottom: 12px solid #9B9797;
+}
+
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+    background: #fff !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.resp-easy-accordion  h2.resp-accordion {
+    display: block;
+}
+
+
+
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.resp-tab-content-active {
+    display: block;
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+
+    h2.resp-accordion {
+        display: block;
+    }
+
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: initial;
+        clear: none;
+    }
+    .resp-accordion-closed {
+        display:none !important;
+    }
+}

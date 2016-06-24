@@ -1,0 +1,336 @@
+/********** Setting the fonts section ***************/
+@import url("../res-timeline.css");
+
+.jflatTimeline, .jflatTimeline input, .jflatTimeline, textarea{
+    font-family: 'museo_sans300';
+    color: white;
+}
+
+
+
+/********** Normal Styles ***************/
+
+.jflatTimeline{
+    width : 100%;
+    -moz-box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+    box-sizing : border-box;	
+}
+.calendario_titulo{
+    width: 25%;
+    padding: 1%;
+    color: #FECB0B;
+    float: left;
+    font-family: 'museo_sans700';
+}
+.pdf{
+    font-size: 0.6em;
+    text-align: center;
+    display: block;	
+    color: #fff;
+    width: 30%;
+    float: left;
+    margin: 19px 0 0 25px;
+}
+
+.icon-angle-right,
+.icon-angle-left{
+    font-size: 63px;
+}
+/********** Style for the month year bar ***************/
+
+.jflatTimeline .month-year-bar{
+    background-color : #198ACB;
+    display : table;
+    width : 100%;
+    color : #ffffff;
+    font-size : 25px;
+    font-weight : 300;
+    padding : 5px;
+    -moz-box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+    box-sizing : border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor : default;
+}
+
+.jflatTimeline .month-year-bar .prev, 
+.jflatTimeline .month-year-bar .next{
+    padding :  0 12px;
+    font-size : 30px;
+    cursor : pointer;
+}
+
+
+.jflatTimeline .month-year-bar .year{
+    float : left;
+}
+
+.jflatTimeline .month-year-bar .month{
+    float : right;
+}
+
+/********** Style for the bar containing dates ***************/
+
+.jflatTimeline .dates-bar{
+    display : block;
+    width : 100%;
+    -moz-box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+    box-sizing : border-box;	
+    padding : 0 50px;
+    position : relative;
+    font-size : 0;
+    white-space : nowrap;
+    overflow : hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.jflatTimeline .dates-bar a{
+    display: block;
+    height: 70px;
+    width: 70px;
+    color : #198ACB;
+    text-align : center;
+    display : inline-block;
+    -moz-box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+    box-sizing : border-box;
+    cursor : pointer;
+    transition : color .2s, transform .2s;
+    -webkit-transition : color .2s, transform .2s;
+    -moz-transition : color .2s, transform .2s;
+    z-index : 0;
+}
+
+.jflatTimeline .dates-bar a:hover{
+    color: #FECB0B;
+}
+
+.jflatTimeline .dates-bar a span{
+    transition : color .2s, transform .2s;
+    -webkit-transition : color .2s, -webkit-transform .2s;
+    -moz-transition : color .2s, -moz-transform .2s;
+}
+
+.jflatTimeline .dates-bar a.noevent{
+    display : none;
+    width : 100%;
+    color: #7B7B7B;
+    font-size: 19px;
+    line-height: 70px;
+}
+
+.jflatTimeline .dates-bar a.selected{
+    color : #696969;
+}
+
+.jflatTimeline .dates-bar a.selected>span.date{
+    font-family: 'museo_sans700';
+}
+
+.jflatTimeline .dates-bar a.prev,
+.jflatTimeline .dates-bar a.next{
+    position : absolute;
+    top : 0;
+    width : 50px;
+    min-width : 0;
+    font-size : 20px;
+    background-color : #fff;
+    font-size : 30px;
+    line-height : 70px;
+    z-index : 2;
+    display : inline-block;
+}
+
+.jflatTimeline .dates-bar .month span{
+    display: inline-block;
+    min-width: 60px;
+    text-align: center;
+}
+
+.jflatTimeline .dates-bar a.prev{
+    left : 0;
+}
+.jflatTimeline .dates-bar a.next{
+    right : 0;
+}
+
+.jflatTimeline .dates-bar a span.date{
+    display : block;
+    font-size : 30px;
+    color: #198ACB;
+    margin-top: 13px
+}
+
+
+.jflatTimeline .dates-bar a span.month{
+    font-size : 13px;
+    color: #198ACB;
+}
+
+/********** Whole style for timeline-wrap ***************/
+
+.jflatTimeline .timeline-wrap{
+    width : 100%;
+    -moz-box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+    box-sizing : border-box;
+    border-top : 0;
+}
+
+.jflatTimeline .timeline-wrap .event{
+    overflow : auto;
+    border-bottom : solid 1px #e7e7e7;
+    display: none;
+}
+
+.jflatTimeline .timeline-wrap .event.selected{
+    display : block;
+}
+
+.jflatTimeline .timeline-wrap .event .date{
+    color: #3F3F3F;
+    display: block;
+    font-size: 14px;
+    padding: 0 15px 15px;
+}
+
+.jflatTimeline .timeline-wrap .event .date i{
+    padding : 0 10px 0 0;
+}
+
+.jflatTimeline .timeline-wrap .event>div{
+    -moz-box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+    box-sizing : border-box;
+    padding : 15px;
+    width : 100%;
+    display : table;
+}
+
+.jflatTimeline .timeline-wrap .event div.right{
+    -moz-box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+    box-sizing : border-box;
+    padding : 15px;
+    padding-right : 0;
+}
+
+
+
+.jflatTimeline .timeline-wrap .event div.layout1>div{
+    float : left;
+    width : 50%;
+    background: #198ACB;
+}
+
+.jflatTimeline .timeline-wrap .event .layout1 div.left>img{
+    width : 100%;
+}
+
+.jflatTimeline .timeline-wrap .event .layout1 div.right h3{
+    text-align : center;
+    text-transform : uppercase;
+    margin : 5px 0 ;
+    color : #3E3E3E;
+}
+
+.jflatTimeline .timeline-wrap .event .layout1 div.right p{
+    font-size : 13px;
+    color : #707070;
+    line-height : 21px;
+}
+
+.jflatTimeline .timeline-wrap .event div.layout2>div{
+    float : left;
+    width : 50%;
+}
+
+.jflatTimeline .timeline-wrap .event .layout2 div.right>img{
+    width : 100%;
+}
+
+.jflatTimeline .timeline-wrap .event .layout2 div.right h3{
+    text-align : center;
+    text-transform : uppercase;
+    margin : 5px 0 ;
+    color : white;
+}
+
+.jflatTimeline .timeline-wrap .event .layout2 div.right p{
+    font-size : 13px;
+    color : white;
+    line-height : 21px;
+}
+
+.jflatTimeline .timeline-wrap .event h3{
+    text-transform : uppercase;
+    margin : 5px 0 ;
+    color : white;
+}
+
+.jflatTimeline .timeline-wrap .event p{
+    font-size : 13px;
+    color : white;
+    line-height : 21px;
+}
+
+.jflatTimeline .timeline-wrap .event .layout3 img{
+    width : 100%;
+}
+.event.selected{
+    background: #198ACB;
+}
+
+/********** Make it responsive ***************/
+
+
+
+.jflatTimeline.s_screen .timeline-wrap .event div.layout1>div{
+    float : none;
+    width : 100%;
+}
+
+
+.jflatTimeline.s_screen .timeline-wrap .event div.layout2>div{
+    float : none;
+    width : 100%;
+}
+
+@media screen and (max-width:500px) {
+
+}
+
+@media screen and (min-width:501px) and (max-width:639px) {
+
+
+}
+
+
+.month {
+
+}
+.month a {
+    display: block;
+    float: left;
+}
+.month span {
+    display: block;
+    float: left;
+    margin: 24px 0 0 0; 
+}
+.event {
+    overflow-x: hidden !important;
+    margin: 0 0 10px 0;
+}

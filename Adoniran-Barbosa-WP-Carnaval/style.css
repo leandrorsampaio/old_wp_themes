@@ -1,0 +1,2360 @@
+/*
+Theme Name: Adoniran Barbosa WP Carnaval
+Theme URI: http://www.spturis.com
+Description: Tema padrao desenvolvido para o site Oficial do Carnaval de Sao Paulo - by Leandro Rossi Sampaio / Daniella Parra.
+Version: 2.6.3
+License: Todos os direitos reservados.  
+*/
+/* ---------------------RESET------------------_bandeira----- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    list-style: none;
+}
+img {
+    border:0;
+}
+:focus {
+    outline: 0;
+}
+/* FIM RESET */
+/* */
+/* ---------------------@FONTFACE----------------------- */
+@font-face {
+    font-family: 'MuseoSans100';
+    src: url('fonts/museosans_100-webfont.eot');
+    src: url('fonts/museosans_100-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_100-webfont.woff') format('woff'),
+        url('fonts/museosans_100-webfont.ttf') format('truetype'),
+        url('fonts/museosans_100-webfont.svg#MuseoSans100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans300';
+    src: url('fonts/museosans_300-webfont.eot');
+    src: url('fonts/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300-webfont.woff') format('woff'),
+        url('fonts/museosans_300-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300-webfont.svg#MuseoSans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans300Italic';
+    src: url('fonts/museosans_300_italic-webfont.eot');
+    src: url('fonts/museosans_300_italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300_italic-webfont.woff') format('woff'),
+        url('fonts/museosans_300_italic-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300_italic-webfont.svg#MuseoSans300Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('fonts/museosans_500-webfont.eot');
+    src: url('fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_500-webfont.woff') format('woff'),
+        url('fonts/museosans_500-webfont.ttf') format('truetype'),
+        url('fonts/museosans_500-webfont.svg#MuseoSans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans500Italic';
+    src: url('fonts/museosans_500_italic-webfont.eot');
+    src: url('fonts/museosans_500_italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_500_italic-webfont.woff') format('woff'),
+        url('fonts/museosans_500_italic-webfont.ttf') format('truetype'),
+        url('fonts/museosans_500_italic-webfont.svgz#MuseoSans500Italic') format('svg'),
+        url('fonts/museosans_500_italic-webfont.svg#MuseoSans500Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans700Italic';
+    src: url('fonts/museosans_700_italic-webfont.eot');
+    src: url('fonts/museosans_700_italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_700_italic-webfont.woff') format('woff'),
+        url('fonts/museosans_700_italic-webfont.ttf') format('truetype'),
+        url('fonts/museosans_700_italic-webfont.svgz#MuseoSans700Italic') format('svg'),
+        url('fonts/museosans_700_italic-webfont.svg#MuseoSans700Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans700';
+    src: url('fonts/museosans_700-webfont.eot');
+    src: url('fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_700-webfont.woff') format('woff'),
+        url('fonts/museosans_700-webfont.ttf') format('truetype'),
+        url('fonts/museosans_700-webfont.svgz#MuseoSans700') format('svg'),
+        url('fonts/museosans_700-webfont.svg#MuseoSans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans900';
+    src: url('fonts/museosans_900-webfont.eot');
+    src: url('fonts/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_900-webfont.woff') format('woff'),
+        url('fonts/museosans_900-webfont.ttf') format('truetype'),
+        url('fonts/museosans_900-webfont.svgz#MuseoSans900') format('svg'),
+        url('fonts/museosans_900-webfont.svg#MuseoSans900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* FIM @FONTFACE */
+/* */
+/* ---------------------GERAIS----------------------- */
+body {
+    font: normal 100% 'MuseoSans300', arial, sans-serif;
+    color: #212121;
+    overflow-x: hidden;
+}
+p {
+    font-size: 0.8125em; /*13px, pois 13/16 = 0.8125*/
+    font-family: 'MuseoSans300', arial, sans-serif;
+}
+strong {
+    font-family: 'MuseoSans700';
+}
+b {
+    font-family: 'MuseoSans700';
+}
+i {
+    font-family: 'MuseoSans300Italic';
+}
+a:visited {
+    text-decoration: none;
+    color: #212121;
+    font-size: 0.8125em; /*13px, pois 13/16 = 0.8125*/
+    font-family: 'MuseoSans300', arial, sans-serif;
+}
+a:link {
+    text-decoration: none;
+    color: #212121;
+    font-size: 0.8125em; /*13px, pois 13/16 = 0.8125*/
+    font-family: 'MuseoSans300', arial, sans-serif;
+}
+a:hover {
+    text-decoration: underline;
+    color: #212121;
+    font-size: 0.8125em; /*13px, pois 13/16 = 0.8125*/
+    font-family: 'MuseoSans300', arial, sans-serif;
+}
+a:active {
+    text-decoration: none;
+    color: #212121;
+    font-size: 0.8125em; /*13px, pois 13/16 = 0.8125*/
+    font-family: 'MuseoSans300', arial, sans-serif;
+}
+audio {
+    height: 30px;
+    width: 100%;
+}
+.wp-caption-text {
+    font-size: 0.7em!important;
+}
+.red {
+    color: #fff;
+    background-color: #ff0000;
+    padding: 5px 10px 5px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 0 5px 0;
+}
+.red a {
+    color: inherit!important;
+    font-family: inherit!important;
+}
+#tudo {
+    padding:0;
+    background-color: #a9d133;
+}
+#separatorInternasTop {
+    height: 30px;
+    margin: 0 0 25px 0;
+    width: 100%;
+    float: left;
+}
+#separatorInternasBottom {
+    height: 100px;
+    width: 100%;
+    margin: 25px 0 0 0;
+    float: left;
+}
+#englobador {
+    display: table;
+    margin: 0 auto;
+    background-color: #fff;
+}
+/* FIM BOX GERAIS */
+/* */
+/* --------------------- HEADER ----------------------- */
+#header {
+    height: 17.3125em;
+    max-width: 60.625em; /*970px*/
+    margin: 0 auto;
+}
+#header-wrap {
+    background: url(images/wrap.jpg) no-repeat;
+    height: 15.4375em;
+    max-width: 60.625em;
+    margin: 0 auto;
+}
+#slider {
+    height: 15.4375em;
+    max-width: 60.625em;
+    margin: 0 auto;
+}
+.slider_title {
+    position: absolute;
+    z-index: 3000;
+    color: #fff;
+    width: 19%;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    margin: 143px 0 0 89%;
+}
+#header-itens {
+    float: left;
+    position: absolute;
+    width: 50%;
+    z-index: 900;
+}
+#header-logo {
+    margin-top: 1.3125em ;
+    position: absolute;
+    float: left;
+}
+#header-logo img{
+    max-width: 100%;
+}
+/*///// FOOTER */
+#header-footer {
+    margin: 1.3125em ;
+    position: absolute;
+    width: 60.625em;
+}
+#header-acessibilidade {
+    margin: .8125em 4.5625em -0.625em 52em;
+    width: 107px;
+    height: 17px;
+    float: right;
+}
+#header-acessibilidade-480 {
+    display: none;
+}
+#header-footer_flags {
+    margin: 1em 0 0 0.5em;
+    width: 156px;
+    background-position-x: right;
+}
+#header-footer_flags p {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #FFF;
+    width: 44.319588%;
+    font-size: 0.6875em;
+    float: left;
+}
+#header-footer_search {
+    margin: 0 3.3em 0 0;
+    float: right;
+}
+.header-footer_searchInput {
+    width: 11.875em;
+    height: 1.6em;
+    border: 1px solid #666;
+    background-color: #FFF;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    padding: 0 0 0 0.5em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+.header-footer_searchBtn {
+    display: none;
+}
+#header-footer_logos {
+    margin: 7em 3.3em 0 0;
+    float: right;
+    clear: both;
+    width: 37%;
+}
+#header-footer_logos_sp {
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+    border-right: 1px solid #fff;
+    display: block;
+    float: left;
+}
+#header-footer_logos_spt {
+    margin: 0 15px 0 0;
+    display: block;
+    float: left;
+}
+#header-footer_logos_prefeitura {
+    display: block;
+}
+/*///// MENU */
+#header-menu {
+    background-color: #fe0000;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    z-index: 2;
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+#header-menu_itens {
+    margin: 0 auto;
+    width: 960px;
+}
+#header-menu ul {
+    list-style: none;
+    text-align: left;
+    height: 18px;
+}
+#header-menu ul li {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.1em;
+    list-style: none;
+    float: left;
+    color: #FFF;
+    padding: 7px 29px 0 29px;
+    text-transform: uppercase;
+}
+#header-menu ul li a:hover {
+    background: #000;
+    color: #ffcb08;
+}
+#header-menu ul li a:link {
+    display: block;
+}
+#header-menu ul li ul {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    padding: 0;
+}
+#header-menu ul li:hover ul { 
+    display: block;
+    padding: 0;
+}
+#header-menu ul li ul li { /*background (quadrado) do submenu)*/
+    clear: both;
+    display: block;
+    margin: 0;
+    width: 100%;
+    white-space: nowrap;
+    background: #1D8BCB;
+    color: #fff200;
+    padding: 0; 
+}
+#header-menu ul li ul li a:link {
+    text-transform: none;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 0.7em;
+    padding: 8px;
+    border-bottom: 1px solid #fff;
+}
+#header-menu ul li ul li a:hover {
+    background: #ffCB08;
+    color: #000;
+    border-bottom: 1px solid #fff;
+}
+#header-menu_itens a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+#header-menu_itens a:link {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #FFF;
+    text-decoration: none;
+}
+#header-menu_itens a:active {
+    color: #FFF;
+    text-decoration: none;
+}
+#back-top {
+    position: fixed;
+    margin: 122px 0 0 977px;
+}
+#back-top a:hover {
+    color: #000;
+}
+#back-top span {
+    display: block;
+    position:relative;
+    margin: 10px 3px;
+}
+#back-top a:hover span {
+}
+/* FIM HEADER */
+/* ---------------------------------------- INDEX --------- */
+#content-index {
+    width: 960px;
+    margin: 0 auto;
+    padding: 475px 0 50px 25px;
+    display: table;
+    background-color: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*/////// PARANGOLES ///// */
+.parangole {
+    float: left;
+    margin: 1px 1px 1px 1px;
+    width: 180px;
+    height: 298px;
+    display: block;
+}
+.parangole img {
+    width: 100%;
+}
+.parangole_content {
+    position: absolute;
+    width: 180px;;
+}
+.parangole_content img {
+    margin: -63% 0 0 0;
+    height: auto;   
+}
+.parangole_texto {
+    width: 94%;
+    position: absolute;
+    margin: -5.4em 0 0 0.125em;
+    font-size: 0.9em;
+    padding: 0 0 0 8px;
+    font-family: 'MuseoSans500Italic', arial, sans-serif;
+    color: white;
+    line-height: 1.3em;
+}
+.parangole_texto a {
+    font-family: 'MuseoSans500Italic', arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.parangole_texto a:visited {
+    color: white;
+    text-decoration: none;
+}
+.parangole_texto a:link {
+    color: white;
+    text-decoration: none;
+}
+.parangole_texto a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.parangole_texto a:active {
+    color: white;
+    text-decoration: none;
+}
+.parangole_galeria {
+    position: absolute;
+    margin: 2.5em 2em 2em;
+}
+/* ---------------------------------- FIM INDEX --------- */
+/* ---------------------ASIDE (SIDEBAR)----------------------- */
+#aside {
+    width: 20%; /* 196px de 970px */
+    margin: 2.577319587628866% 2.577319587628866% 2.577319587628866% 0; /* 25px */
+    float: left;
+}
+@media screen and (max-width: 600px) { 
+    #aside {
+        display: none;
+    }
+}
+.aside_box {
+    width: 99%;
+    padding: 15px 0 15px 0;
+    float: left;
+    margin: 0 0 25px 0;
+    border: 1px solid #1d8bcb;
+}
+.aside_box_title {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.0625em;
+    color: #1d8bcb;
+    margin: 0 15px 15px 15px;
+}
+#aside_boxPublicidade {
+    width: 100%;
+    float: left;
+    margin: 0 0 25px 0;
+}
+#aside_boxPublicidade_title {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 10px;
+    margin: 0 0 2px 0;
+    float: left;
+    width: 100%;
+    color: #212121;
+}
+#aside_boxPublicidade_OpenAds {
+    width: 100%;
+    height: 90px;
+    background-color: #1D8BCB;
+    float: left;
+}
+#asideBox-leiamais_lista {
+    padding: 0 15px 0 15px;
+}
+.asideBox-leiamais_lista_item {
+    margin: 0 0 15px 0;
+}
+.asideBox-leiamais_lista_item_link {
+    color: #212121;
+}
+.asideBox-leiamais_lista_item_link_img {
+    margin: 0 2px 2px 0;
+    height: 5px;
+    width: 5px;
+    background-color: #1D8BCB;
+}
+.asideBox-maisEscolas_bandeira {
+    width: 170px;
+    float: left;
+    margin: 0 -5px 15px 15px;
+    height: 30px;
+}
+.asideBox-maisEscolas_bandeira_link:hover {
+    -moz-opacity: 0.50;
+    opacity: 0.50;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);
+}
+.asideBox-maisEscolas_bandeira_link_img {
+    border: 1px solid #CCC;
+    width: 100%;
+}
+.bannerIngressos {
+    width: 190px;
+    height: 130px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.correcaoBandeiras2015 {
+    width: 40px !important;
+    height: 30px !important;
+}
+/* FIM ASIDE (SIDEBAR) */
+/* */
+/* ---------------------SAMBA-ENREDO----------------------- */
+#samba {
+    height: 449px;
+    width: 278px; /* 278px de 700px */
+    clear: left;
+    float: left;
+    margin: 25px 2.577319587628866% 0 0; /* 25px de 700px */
+    border-style: solid;
+    border-width: 1px;
+    position: relative;
+}
+#samba_boxTitle {
+    padding: 7px 0 7px 5.357142857142857%; /* 15px de 280px */
+}
+#samba_boxTitle_text {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.0625em; /* 17px */
+}
+#samba_bandeiraThumb {
+    width: 12.14285714285714%; /* 34px de 280px */
+    float: left;
+    margin: 10px 0 0 5.357142857142857%; /* 15px de 280px */
+}
+#samba_bandeiraThumb_img {
+    width: 100%;
+    border: 1px solid #CCC;
+}
+#samba_autor {
+    margin: 10px 5.357142857142857% 0 1.785714285714286%; /* 15px, 5px  de 280px */
+    width: 74.64285714285714%; /* 209px de 280px */
+    float: left;
+}
+#samba_autor_escolaNome {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    font-size: 0.6875em; /* 11px */
+    color: #666;
+}
+#samba_autor_autorNome {
+    font-family: 'MuseoSans500Italic', arial, sans-serif !important;
+    font-size: 0.6875em !important; /* 11px */
+    color: #666 !important;
+}
+#samba_titulo {
+    float: left;
+    width: 88.21428571428571%;
+    height: auto;
+    margin-left: 5.357142857142857%;
+    margin-right: 3.571428571428571%;
+    overflow: hidden;
+    font-family: 'MuseoSans300italic', arial, sans-serif;
+    font-size: 0.95em;
+    white-space: pre-line;
+    color: #666;
+    display: block;
+}
+#samba_letra {
+    font-family: 'MuseoSans300Italic', arial, sans-serif;
+    float: left;
+    width: 88.21428571428571%; /* 247px de 280px */
+    height: 208px;
+    margin-top: 1.785714285714286%; /* 5px de 280px */
+    margin-left: 5.357142857142857%; /* 15px de 280px */
+    margin-right: 3.571428571428571%; /* 10px de 280px */
+    margin-bottom: 5.357142857142857%; /* 15px de 280px */
+    overflow-y: auto;
+}
+#samba_letra p {
+    font-size: 0.6875em; /* 11px */
+    color: #666;
+}
+#samba_audio {
+    float: left;
+    width: 88.21428571428571%; /* 247px de 280px */
+    height: 30px;
+    margin-top: 0; /* 10px de 280px */
+    margin-left: 5.357142857142857%; /* 15px de 280px */
+    margin-right: 3.571428571428571%; /* 10px de 280px */
+    margin-bottom: 5.357142857142857%; /* 15px de 280px */
+    position: absolute;
+    margin-top: 375px;
+}
+#samba_audio p {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'MuseoSans300Italic', arial, sans-serif;
+    color: #666;
+}
+/* FIM SAMBA-EMREDO  */
+/* */
+/* ---------------------LEIA MAIS----------------------- */
+#leiamais {
+    width: 100%;
+    float: left;
+    margin: 25px 0 25px 0;
+}
+#leiamais_title {
+    width: 99%;
+    height: 18px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    padding: 0 0 0 5px;
+}
+#leiamais_lista {
+    margin: 10px 0 10px 0;
+}
+.leiamais_lista_item {
+    margin: 0 5px 7px 5px;
+    width: 100%;
+    float: left;
+}
+.leiamais_lista_item_link {
+    font-size: 0.8125em; /*13px 0.8125 */
+    color: #212121;
+}
+.leiamais_lista_item_link_img {
+    margin: 0 2px 2px 0;
+    height: 5px;
+    width: 5px;
+}
+/* ---------------------BOX GALERIA----------------------- */
+#boxGaleria {
+    height: 449px;
+    width: 56.71428571428571%; /* 397px de 700px */
+    float: left;
+    margin: 25px 0 0 0;
+    border-style: solid;
+    border-width: 1px;
+}
+#boxGaleria_boxTitle {
+    padding: 7px 0 7px 5.357142857142857%; /* 15px de 280px */
+}
+#boxGaleria_boxTitle_text {   
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.0625em; /* 17px */
+}
+#boxGaleria_destaque {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 200px;
+}
+#boxGaleria_destaque img {
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+#boxGaleria_lista {
+}
+#boxGaleria_lista_title {
+    margin: 15px 0 0 15px;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 0.875em; /* 14px */
+}
+#boxGaleria_lista_ul {
+    padding: 10px 15px 10px 15px;
+}
+#boxGaleria_lista_ul_li {
+}
+#boxGaleria_lista_ul_li_a {
+}
+#boxGaleria_lista_ul_li_a_img {
+}
+/* FIM LEIA MAIS */
+/* */
+/* --------- SERVICE BAR --------- */
+#noticias_section_servicebar {
+    width: 99%;
+    float: left;
+    margin: 1em 0 1em;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    height: 22px;
+    padding: 4px;
+}
+#noticias_section_servicebar_rss {
+    float: left;
+    position: absolute;
+}
+#noticias_section_servicebar_emailBG {
+    width: 29px;
+    height: 22px;
+    float: left;
+    margin: 0 3px 0 0;
+}
+#noticias_section_servicebar_rss_email {
+    background: url(images/noticias_section_servicebar_mail.png) no-repeat;
+    position: absolute;
+    width: 29px;
+    height: 22px;
+    float: left;
+}
+#noticias_section_servicebar_cadastro {
+    height: 20px;
+    float: right;
+}
+#noticias_section_outroscarnavais {
+    float: left;
+    margin: 15px 0 15px 0;s
+}
+#noticias_section_outroscarnavais_title {
+    font-size: 20px;
+}
+.noticias_section_outroscarnavais_link {
+    font-size: 20px !important;
+    color: #ED1A3B !important;
+    text-decoration: none !important;
+    font-family: 'MuseoSans500' !important;
+}
+.noticias_section_outroscarnavais_link:hover {
+    text-decoration: underline !important;
+}
+#servicebar_pdf {
+    float: left;
+    margin: -22px 0 0 81px;
+    width: 19px;
+}
+.cadastroInput {
+    width: 300px;
+    background-color: #fff;
+    float: left;
+    font-family: 'MuseoSans300Italic', arial, sans-serif;
+    padding: 0;
+    color: #666;
+    border: 1px solid #fff;
+}
+#cadastrobtn {
+    float: left;
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: white;
+    background-color: #666;
+    border: none;
+    margin: 1px 0 0 7px;
+    width: 24px;
+    padding: 2px 0 2px 0;
+}
+/* FIM SERVICE BAR */
+/* */
+/* ---------------------ESCOLAS DE SAMBA----------------------- */
+#unidosdodesign {
+    max-width: 60.625em; /* 970px */
+    margin: 0 auto;
+}
+#unidosdodesign_section {
+    width: 72.16494845360825%; /* 700px */
+    margin: 2.577319587628866%; /* 25px */
+    float: left;
+}
+@media screen and (max-width: 600px) { 
+    #unidosdodesign_section {
+        background-color: #ccc;
+        width: 94.84536082474227%; /* 920px */
+        margin: 2.577319587628866%; /* 25px */
+        float: left;
+    }
+}
+#unidosdodesign_section_titleLink {
+    color: inherit;
+}
+#unidosdodesign_section_titleLink_bandeiraThumb {
+    width: 7.571428571428571%;
+    float: left;
+    border: 1px solid #CCC;
+}
+#unidosdodesign_section_titleLink_text {
+    font-size: 2.125em;
+    color: inherit;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    float: left;
+    margin: 0 0 0 0.4285714285714286%;
+    text-transform: uppercase;
+}
+#unidosdodesign_section_slider {
+    width: 100%;
+    float: left;
+    margin: 1.428571428571429% 0 2.577319587628866% 0; /* 10px de 25px*/
+}
+#unidosdodesign_section_slider_wrap {
+    margin: 0 auto;
+    width: 100%;
+}
+#unidosdodesign_section_slider_wrap_big {
+    padding: 25px 1.428571428571429% 10px 1.428571428571429%; /* 10px de 700px*/
+    height: 300px;
+}
+#unidosdodesign_section_slider_wrap_big img {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+#normal1 {
+    height: 300px;
+    width: 97.14285714285714%; /* 680px de 700px*/
+    display: block;
+}
+#normal2, #normal3, #normal4, #normal5,
+#normal6, #normal7, #normal8, #normal9,
+#normal10, #normal11, #normal12, #normal13,
+#normal14, #normal15, #normal16, #normal17,
+#normal18, #normal19, #normal20, #normal21,
+#normal22, #normal23, #normal24, #normal25,
+#normal26, #normal27, #normal28, #normal29,
+#normal30, #normal31, #normal32, #normal33 {
+    display: none;
+    height: 300px;
+    width: 97.14285714285714%; /* 680px de 700px*/
+}
+#unidosdodesign_section_slider_wrap_thumbs {
+    padding: 28px 1.428571428571429% 30px 1.428571428571429%; /* 10px de 700px*/
+    height: 25px;
+}
+#unidosdodesign_section_slider_wrap_thumbs a:link {
+    width: 5.147058823529412%; /* 35px de 680px*/
+    height: 35px;
+    border: 2px solid #555;
+    margin: 0 4px 4px 4px;
+    float: left;
+    overflow: hidden;
+}
+#unidosdodesign_section_slider_wrap_thumbs a:visited {
+    width: 5.147058823529412%; /* 35px de 680px*/
+    height: 35px;
+    border: 2px solid #555;
+    margin: 0 4px 4px 4px;
+    float: left;
+    overflow: hidden;
+}
+#unidosdodesign_section_slider_wrap_thumbs a:hover {
+    -moz-opacity: 0.50;
+    opacity: 0.50;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);
+}
+#unidosdodesign_section_slider_wrap_thumbs img {
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+#unidosdodesign_section_bandeira {
+    width: 40%; /* 280px */
+    float: left;
+    margin: 0 2.577319587628866% 0 0; /* 25px */
+}
+#unidosdodesign_section_bandeira_img {
+    width: 100%; 
+    border: 1px solid #CCC;
+}
+#unidosdodesign_section_ficha {
+    width: 57.4%;
+    float: left;
+    margin: 0;
+}
+#unidosdodesign_section_ficha h5 {
+    margin: 0 0 2px 0;
+    font-size: 0.9375em; /* 15px */
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #212121;
+}
+#unidosdodesign_section_ficha_texto {
+    padding: 0 0 16px 0;
+}
+#unidosdodesign_section_ficha_texto p {
+    font-size: 0.8125em; /* 13px */
+    font-family: 'MuseoSans300', arial, sans-serif;
+    color: #212121;
+}
+#unidosdodesign_section_ficha_dados {
+    float: left;
+    width: 100%;
+    margin: 1em 0 0;
+}
+#unidosdodesign_section_ficha_dadosCores {
+    float: left;
+    width: 40.5%;
+}
+#unidosdodesign_section_ficha_cores {
+    border-style: solid;
+    border-width: 2px;
+    height: 30px;
+}
+.unidosdodesign_section_ficha_cores_2coresBox {
+    width: 50%;
+    float: left;
+    height: 30px;
+}
+.unidosdodesign_section_ficha_cores_3coresBox {
+    width: 33.33333333333333%;
+    float: left;
+    height: 30px;
+}
+.unidosdodesign_section_ficha_cores_4coresBox {
+    width: 25%;
+    float: left;
+    height: 30px;
+}
+#unidosdodesign_section_social {
+    width: 26.14285714285714%; /* 183px de 700px*/
+    float: left;
+    margin: 10px 0 0 21px;
+}
+#unidosdodesign_section_social_flecha {
+    height: 21px;
+    float: left;
+    width: 68px;
+    position: absolute;
+    margin: 36px 0 0 97px;
+}
+#unidosdodesign_section_social_flecha img {
+    width: 100%;
+}
+#unidosdodesign_section_social_texto {
+    width: 131px;
+    float: left;
+    margin: 0 0 0 25px;
+    position: absolute;
+    height: 53px;
+}
+#unidosdodesign_section_social_texto h6 {
+    font-family: 'MuseoSans700Italic', arial, sans-serif;
+    font-size: 0.875em; /* 14px */
+}
+#unidosdodesign_section_social_widgets {
+    height: 70px;
+    width: 100%;
+    float: left;
+    margin: -14px 0 0 135px;
+}
+#unidosdodesign_section_social_widgets_gPlus {
+    height: 21px;
+    width: 76.50273224043716%; /* 140px de 183px*/
+    float: right;
+    margin: 0 0 3px 0;
+}
+#unidosdodesign_section_social_widgets_twitter {
+    height: 21px;
+    width: 76.50273224043716%; /* 140px de 183px*/
+    float: right;
+    margin: 0 0 3px 0;
+}
+#unidosdodesign_section_social_widgets_face {
+    height: 21px;
+    width: 76.50273224043716%; /* 140px de 183px*/
+    float: right;
+}
+/*///// PAGE ////// */
+#unidosdodesignPage {
+    max-width: 60.625em; /* 970px */
+    margin: 0 auto;
+}
+#unidosdodesignPage_section {
+    width: 72.16494845360825%; /* 700px */
+    margin: 2.577319587628866%; /* 25px */
+    float: left;
+}
+#unidosdodesignPage_section_especial {
+    border: 1px solid #1d8bcb;
+    height: 185px;
+    margin: 0 0 15px 0;
+    width: 100%;
+}
+#unidosdodesignPage_section_especial_title {
+    height: 185px;
+    width: 30px;
+    float: left;
+    background-color: #1d8bcb;
+}
+#unidosdodesignPage_section_especial_title img {
+    width: 100%;
+    margin: 24px 0 0 0;
+}
+#unidosdodesignPage_section_especial_bandeiras {
+    height: 100%;
+}
+#unidosdodesignPage_section_especial_bandeiras a {
+    display: block;
+    width: 60px;
+    float: left;
+    margin: 15px 17px 0 18px;
+}
+#unidosdodesignPage_section_especial_bandeiras a:hover {
+    -moz-opacity: 0.50;
+    opacity: 0.50;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);
+}
+#unidosdodesignPage_section_especial_bandeiras img {
+    width: 100%;
+    border: 1px solid #CCC;
+}
+#unidosdodesignPage_section_acesso {
+    border: 1px solid #1D8BCB;
+    height: 108px;
+    width: 100%;
+    float: left;
+    margin: 0 3% 3% 0;
+}
+#unidosdodesignPage_section_acesso_title {
+    height: 108px;
+    width: 47px;
+    float: left;
+    background-color: #1D8BCB;
+}
+#unidosdodesignPage_section_acesso_title img {
+    width: 100%;
+    margin: 13px 0 0 0;
+}
+#unidosdodesignPage_section_acesso_bandeiras {
+    height: 100%;
+}
+#unidosdodesignPage_section_acesso_bandeiras a {
+    display: block;
+    width: 50px;
+    float: left;
+    margin: 20px 4px 0 17px;
+}
+#unidosdodesignPage_section_acesso_bandeiras a:hover {
+    -moz-opacity: 0.50;
+    opacity: 0.50;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);
+}
+#unidosdodesignPage_section_acesso_bandeiras img {
+    width: 100%;
+    border: 1px solid #CCC;
+}
+#unidosdodesignPage_section_uesp {
+    border: 1px solid #1D8BCB;
+    height: 108px;
+    margin: 0 0 14px 0;
+    width: 100% !important;
+    float: left;
+}
+#unidosdodesignPage_section_uesp_title {
+    height: 108px;
+    width: 45px;
+    float: left;
+    background: #1D8BCB;
+}
+#unidosdodesignPage_section_uesp_title img {
+    margin: 21px 0 0 0;
+    width: 100%;
+}
+#unidosdodesignPage_section_uesp_bandeiras {
+    height: 100%;
+}
+#unidosdodesignPage_section_uesp_bandeiras a {
+    display: block;
+    width: 45px;
+    float: left;
+    margin: 18px 0px 0px 13px !important;
+}
+#unidosdodesignPage_section_uesp_bandeiras a:hover {
+    -moz-opacity: 0.50;
+    opacity: 0.50;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);
+}
+#unidosdodesignPage_section_uesp_bandeiras img {
+    width: 100%;
+    border: 1px solid #CCC;
+}
+/* FIM ESCOLAS DE SAMBA */
+/* */
+/* ---------------------NOTICIAS----------------------- */
+#noticias {
+    max-width: 60.625em; /* 970px */
+    margin: 0 auto;
+}
+#noticias_section {
+    width: 72.16494845360825%; /* 700px */
+    margin: 2.577319587628866%; /* 25px */
+    float: left;
+}
+#noticias_section_head h1 {
+    text-transform: uppercase;
+}
+#noticias_section_head_data {
+    font-family: 'MuseoSans300italic', arial, sans-serif;
+    font-size: 0.6875em; /* 11px */
+    color:#666;
+}
+#noticias_section_head_title {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.75em; /* 28px */
+    margin: 0 0 20px 0;
+}
+#noticias_section_head_relacionadas {
+    width: 420px;
+    display: table;
+    margin: 0 0 25px 0;
+    float: left;
+}
+#noticias_section_head_relacionadas_title {
+    float: left;
+    margin: 5px 5px 0 0;
+    font-size: 15px;
+}
+#noticias_section_head_relacionadas_bandeiras {
+    width: 247px;
+    display: table;
+    border-right: 1px solid #ed1a3b;
+}
+.noticias_section_head_relacionadas_bandeiras_item {
+    width: 35px;
+    float: left;
+    margin: 0 5px 5px 0;
+}
+.noticias_section_head_relacionadas_bandeiras_item_img {
+    /*    width: 100%;*/
+    border: 1px solid #CCC;
+}
+#noticias_section_head_social {
+    width: 270px;
+    float: left;
+    margin: 0 0 15px 0;
+}
+#noticias_section_head_social_face {
+    float: left;
+    margin: 0 10px 0 0;
+}
+#noticias_section_head_social_gplus {
+    float: left;
+    margin: 0 10px 0 0;
+}
+#noticias_section_head_social_twitter {
+    float: left;
+}
+/*////// SUBMENU ////// */
+#noticias_section_head_submenu {
+    border-bottom: #1D8BCB 1px solid;
+    height: 30px;
+    margin: 0 0 25px;
+    width: 93%;
+}
+#noticias_section_head_submenuImp {
+    width: 100%;
+    border-bottom: #1D8BCB 1px solid;
+    height: 30px;
+    margin: 0 0 25px;
+}
+#noticias_section_head_submenuContent {
+    width: auto;
+}
+.noticias_section_head_submenu_itemON {
+    float: left;
+    height: 22px;
+    background-color: white;
+    border-top: #1D8BCB 1px solid;
+    border-left: #1D8BCB 1px solid;
+    border-right: #1D8BCB 1px solid;
+    border-bottom: 0;
+    padding: 8px 7px 0px 7px;
+    margin: 0 11px 0 2px;
+    text-align: center;
+    font-size: 0.85em;
+}
+.noticias_section_head_submenu_itemOFF {
+    height: 18px;
+    background-color: white;
+    border: 0;
+    float: left;
+    padding: 10px 24px 0px 1px;
+    text-align: center;
+    margin: 0 0 0 0px;
+    font-size: 0.8em;
+}
+.noticias_section_head_submenu_itemON a:visited {
+    font-family: 'MuseoSans900', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemON a:link {
+    font-family: 'MuseoSans900', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemON a:hover {
+    font-family: 'MuseoSans900', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemON a:active {
+    font-family: 'MuseoSans900', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemOFF a:visited {
+    color: #666!important;
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemOFF a:link {
+    color: #666!important;
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemOFF a:hover {
+    color: #666!important;
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemOFF a:active {
+    color: #666!important;
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemON_imp {
+    float: left;
+    height: 22px;
+    background-color: white;
+    border-top: #1D8BCB 1px solid;
+    border-left: #1D8BCB 1px solid;
+    border-right: #1D8BCB 1px solid;
+    border-bottom: 0;
+    padding: 8px 5px 0px 5px;
+    margin: 0 0 0 12px;
+    text-align: center;
+    font-size: 0.85em;
+}
+.noticias_section_head_submenu_itemOFF_imp {
+    width: 75px;
+    height: 18px;
+    background-color: white;
+    border: 0;
+    float: left;
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    font-size: 0.8em;
+}
+.noticias_section_head_submenu_itemON_imp a:visited {
+    font-family: 'MuseoSans900', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemON_imp a:link {
+    font-family: 'MuseoSans900', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemON_imp a:hover {
+    font-family: 'MuseoSans900', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemON_imp a:active {
+    font-family: 'MuseoSans900', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemOFF_imp a:visited {
+    color: #666!important;
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemOFF_imp a:link {
+    color: #666!important;
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemOFF_imp a:hover {
+    color: #666!important;
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.noticias_section_head_submenu_itemOFF_imp a:active {
+    color: #666!important;
+    font-family: 'MuseoSans700', arial, sans-serif;
+}
+.noticias_section_head_submenu_item_link {
+    font-size: 1em!important;
+    color: #1D8BCB!important;
+}
+/* FIM SUBMENU */
+#noticias_section_conteudo {
+    color: #212121;
+    width: 100%;
+    float: left;
+}
+#noticias_section_conteudo h1 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.3125em; /* 21px */
+}
+#noticias_section_conteudo h2 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.1875em; /* 19px */
+}
+#noticias_section_conteudo h3 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.0625em; /* 17px */
+}
+#noticias_section_conteudo h4 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 0.9375em; /* 15px */
+}
+#noticias_section_conteudo h5 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 0.8125em; /* 13px */
+}
+#noticias_section_conteudo h6 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 0.6875em; /* 11px */
+}
+#noticias_section_conteudo p {
+    margin: 0 0 15px 0;
+    font-size: 0.8125em; /* 13px */
+}
+#noticias_section_conteudo a:visited {
+    color: #1d8bcb;
+    text-decoration: none;
+    font-size: 1em; 
+}
+#noticias_section_conteudo a:link {
+    color: #1d8bcb;
+    text-decoration: none;
+    font-size: 1em; 
+}
+#noticias_section_conteudo a:hover {
+    color: #1d8bcb;
+    text-decoration: underline;
+    font-size: 1em; 
+}
+#noticias_section_conteudo a:active {
+    color: #1d8bcb;
+    text-decoration: none;
+    font-size: 1em; 
+}
+#noticias_section_conteudo img {
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    align: none;
+}
+.noticias_section_conteudo_leiamais_lista_item {
+    margin: 0 5px 7px 5px;
+    width: 100%;
+    float: left;
+}
+.noticias_section_conteudo_leiamais_lista_item_link:visited {
+    color: #212121!important;
+}
+.noticias_section_conteudo_leiamais_lista_item_link:link {
+    color: #212121!important;
+}
+.noticias_section_conteudo_leiamais_lista_item_link_img {
+    margin: 0 2px 2px 0;
+    height: 5px;
+    width: 5px;
+}
+#page_section_conteudo img {
+    border: none;
+}
+.alignleft {
+    float: left;
+    margin: 0 5px 0 ;
+}
+.alignright {
+    float: right;
+    margin: 0 0 0 5px;
+}
+/* FIM NOTICIAS */
+/* */
+/* ---------------------GALERIAS----------------------- */
+#pictureka {
+    max-width: 60.625em;
+    margin: 0 auto;
+}
+#pictureka_section {
+    width: 100%;
+    margin: 2.577319587628866%;
+    float: left;
+}
+#pictureka_section_title {
+    font-size: 1.8em;
+    color: #A6CE39;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    line-height: 1.32em;
+    margin: 0 0 0 6.428571%;
+    text-transform: uppercase;
+}
+#pictureka_section_title-img {
+    float: left;
+}
+#pictureka_section_slider {
+    width: 95%;
+    float: left;
+    margin: 1.428571428571429% 0 0.57732% 0;
+    background-color: black;
+}
+#pictureka_section_slider_wrap {
+    margin: 0 auto;
+    width: 100%;
+    height: 70%;
+}
+#pictureka_section_slider_wrap_big {
+    padding: 25px 1.428571428571429% 10px 1.428571428571429%;
+    height: 300px;
+}
+#pictureka_section_slider_wrap_big img {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+#pictureka_section_slider_wrap_thumbs {
+    padding: 10px 1.428571428571429% 30px 1.428571428571429%;
+    height: 25px;
+    margin: 1em 0 0;
+}
+#pictureka_section_slider_wrap_thumbs a:link {
+    width: 4.147059%;
+    height: 29px;
+    border: 2px solid #555;
+    margin: 5px 4px 4px 4px;
+    float: left;
+    overflow: hidden;
+}
+#pictureka_section_slider_wrap_thumbs a:visited {
+    width: 4.147059%;
+    height: 29px;
+    border: 2px solid #555;
+    margin: 5px 4px 4px 4px;
+    float: left;
+    overflow: hidden;
+}
+#pictureka_section_slider_wrap_thumbs a:hover {
+    -moz-opacity: 0.50;
+    opacity: 0.50;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);
+}
+#pictureka_section_slider_wrap_thumbs img {
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.caption {
+    margin: 1em 0 1em 0!important;
+    color: #fff;
+    text-align: center;
+}
+#maisGalerias {
+    width: 46.8%;
+    float: left;
+    margin: 25px 12px 0 0;
+    border: 1px solid #A6CE39;
+    height: 215px;
+}
+#maisGalerias_boxTitle {
+    padding: 7px 0 7px 2.357143%;
+}
+#maisGalerias_boxTitle_text {   
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.0625em; /* 17px */
+}
+#maisGalerias_boxTitle {
+    background-color: #A6CE39;
+}
+#maisGalerias_boxTitle_text {
+    color: #fff;
+}
+#maisGalerias_lista {
+    padding: 2.030927835051546%;
+}
+#maisGalerias_lista_title {
+}
+#maisGalerias_more {
+    text-align: right;
+    margin: -1em 7px 0 0;
+}
+#maisGalerias_more a:link {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff;
+    font-size: 0.85em;
+}
+#maisGalerias_more a:visited {
+    color: #fff;
+    font-size: 0.85em;
+}
+#maisGalerias_more a:hover {
+    color: #fff;
+    font-size: 0.85em;
+}
+#maisGalerias_more a:active {
+    color: #fff;
+    font-size: 0.85em;
+}
+#escolasRel {   
+    width: 45%;
+    float: left;
+    margin: 25px 0 0 25px;
+    border: 1px solid #A6CE39;
+    min-height: 100px;
+}
+#escolasRel_boxTitle {
+    padding: 7px 0 7px 2.357143%;
+}
+#escolasRel_boxTitle_text {   
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.0625em; /* 17px */
+}
+#escolasRel_boxTitle {
+    background-color: #A6CE39;
+}
+#escolasRel_boxTitle_text {
+    color: #fff;
+}
+#escolasRel_box_content {
+    margin: 0 auto;
+    padding: 0 11.587628865979381%;
+}
+.escolasRel_box_content_img {
+    padding: 0.5em;
+    float: left;
+}
+#boxGaleriaDesfiles {
+    height: 449px;
+    width: 36%;
+    margin: 25px 0 0 12px;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+}
+#boxGaleriaDesfiles_destaque {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 200px;
+}
+#boxGaleriaDesfiles_destaque img {
+    max-height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+#boxGaleriaDesfiles_lista {
+    overflow-y: auto;
+    height: 178px;
+    padding: 8px 0 0 0;
+    width: 240px;
+}
+#boxGaleriaEnsaios {
+    margin: 25px 0 0 0; 
+    width: 56.9%;
+    float: left;
+}
+#galeriasDiversas {
+    float: left;
+    margin: 25px 0 0 12px;
+    width: 36%;
+    height: 250px;
+}
+.galeriasDiversas_label {
+    margin: 0 0 12px;
+    background-color: #A6CE39;
+    width: 100%;
+    height: 76px;
+}
+.galeriasDiversas_label h1 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff!important;
+    font-size: 20px;
+    padding: 21px 0 25px 86px;
+    background: url(images/galeriasDiversas_label.png) no-repeat;
+    background-position-x: 19%;
+    background-position-y: 42%;
+}
+.galeriasDiversas_label a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+.galeriasDiversas_label a:link {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.galeriasDiversas_label a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.galeriasDiversas_label a:active {
+    color: #fff;
+    text-decoration: none;
+}
+/* GALERIAS PAGE */
+#picturekaPage {
+    max-width: 60.625em; /* 970px */
+    margin: 0 auto;
+}
+#picturekaPage_section {
+    width: 72.16494845360825%; /* 700px */
+    margin: 2.577319587628866%; /* 25px */
+    float: left;
+}
+#picturekaPage_section_title {
+    font-size: 1.8em;
+    color: #A6CE39;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    line-height: 1.32em;
+    margin: 0 0 2% 8.428571%;
+}
+/* FIM GALERIAS */
+/* ---------------------LDT----------------------- */
+#blank {
+    /*background-color: #fff;
+    width: 100%;
+    padding: 1px 0 0;*/
+    width: 920px;
+    margin: 0 auto;
+    display: table;
+    background-color: #fff;
+}
+#section_ldt {
+    /*max-width: 60.625em;
+    margin: 0 auto;*/
+}
+#section_ldt-title {
+    border-bottom: 2px solid #1D8BCB;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    margin: 1.5em auto;
+    padding: 0 0 1.3em 0;
+    text-align: center;
+}
+#section_ldt-title h1 {
+    font-size: 1.1875em;
+    color: #1D8BCB;
+}
+#section_ldt-case {
+    width: 2.625em;
+    float: left;
+    position: absolute;
+}
+#ldt-ruler {
+    width: 2.625em;
+    float: left;
+    position: absolute;
+}
+#ldt-ruler li {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 0.8125em;
+    background: url(images/ldt-ruler-li.png) no-repeat;
+    padding: 4px 0 6px 8px;
+}
+#ldt-ruler li:hover{
+    background: url(images/ldt-ruler-li_hover.png) no-repeat;
+}
+#ldt-ruler li a:hover {
+    text-decoration: none;
+    color: #8aafc4;
+}
+.ldt-year {
+    width: 60.625em;
+    margin: 0 0 25px;
+    float: left;
+}
+.ldt-year-label {
+    background-color: #1d8bcb;
+    width: 175px;
+    margin: 0 auto;
+    padding: 3px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    border: 2px solid white;
+    color: white;
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+#section_content-deLorean {
+    height: 100%;
+}
+#content-deLorean-left {
+    float: left;
+    width: 465px;
+}
+#content-deLorean-right {
+    float: right;
+    width: 465px; 
+}
+.deLorean {
+    margin: 0 0 2em 3em;
+    padding: 0.5em;
+    border: 1px solid #4799F3;
+}
+.deLorean img {
+    max-width: 100%;
+}
+.deLorean_corner {
+    background: url(images/deLorean_corner.png) no-repeat;
+    width: 31px;
+    height: 20px;
+    display: block;
+    left: 464px;
+    float: left;
+    position: relative;
+    top: 13px;
+}
+.deLorean-right {
+    margin: 0 3em 1em 0;
+    padding: 0.5em;
+    border: 1px solid #4799F3;
+}
+.deLorean-right img {
+    max-width: 100%;
+}
+.deLorean_corner-right {
+    background: url(images/deLorean_corner-right.png) no-repeat;
+    width: 25px;
+    height: 18px;
+    display: block;
+    right: 24px;
+    position: relative;
+    top: 45px;
+}
+.deLorean_title-red {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #ed1a3b;
+    font-size: 1.25em;
+}
+.deLorean_title-green {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #a6ce39;
+    font-size: 1.25em;
+}
+.deLorean_title-generic {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #1d8bcb;
+    font-size: 1.25em;
+}
+.deLorean_xoxial {
+    margin: 1em 0 0;
+    height: 25px;
+}
+.deLorean_xoxial-face {
+    width: 118px;
+    float: left;
+}
+.deLorean_xoxial-twitter {
+    float: left;
+}
+#deLorean-line {
+    background-image: url(images/content-deLorean-bg.png);
+    background-repeat: repeat-y;
+    background-position: 50% 50%;
+    width: 970px;
+    /*z-index: -3000;
+    display: block;*/
+    display: table;
+    position: relative;
+}
+/* FIM LDT */
+/* */
+/* --------------404--------------- */
+#erro404 {
+    color: #212121;
+    width: 100%;
+    float: left;
+}
+#erro404 p {
+    margin: 0 0 15px;
+}
+#erro404 h1 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.3125em; /* 21px */
+}
+#erro404 h2 {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.1875em; /* 19px */
+}
+#erro404 img {
+    border: none;
+    margin: 25px 0 25px 150px;
+}
+#esquerda {
+    float: left;
+    width: 430px;
+}
+#direita{
+    float: right;
+    width: 430px;
+}
+/* FIM 404 */
+/* */
+/* --------------RESULTADOS DA BUSCA--------------- */
+#search {
+    max-width: 60.625em; /* 970px */
+    margin: 0 auto;
+}
+#search_section {
+    width: 72.16494845360825%; /* 700px */
+    margin: 2.577319587628866%; /* 25px */
+    float: left;
+}
+#search_section_head_title {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.75em; /* 28px */
+    margin: 0 0 20px 0;
+}
+#search_section_conteudo {
+    color: #212121;
+    width: 100%;
+    float: left;
+}
+.search_section_result {
+    margin: 0 0 25px 0;
+}
+.search_section_result_title a:link{
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 1.2em;
+}
+.search_section_result_data {
+    font-family: 'MuseoSans700', arial, sans-serif;
+    font-size: 0.80em;
+    color: #666;
+}
+.search_section_result_resumo {
+    font-size: 1.0625em; /* 17px */
+}
+.search_section_result p {
+    margin: 0 0 15px 0;
+    font-size: 0.8125em; /* 13px */
+}
+/* FIM RESULTADOS DA BUSCA */
+.navigation {
+    float: right;
+}
+/*---- IF FIREFOX ---*/
+@-moz-document url-prefix() { 
+    #servicebar_pdf {
+        margin: 0;
+    }
+    #unidosdodesignPage_section_uesp_bandeiras a {
+        margin: 9px 17px 0px 5px;
+    }
+    #unidosdodesignPage_section_uesp {
+        width: 49.9%;
+    }
+    .asideBox-maisEscolas_bandeira {
+        margin: 0px 0 15px 9px;
+    }
+    .deLorean img {
+        max-width: 399px!important;
+    }
+    #deLorean-line {
+        width: 972px!important;
+    }
+    .deLorean_corner-right {
+        right: 26px!important;
+        border-right: 2px #fff solid;
+    }
+}
+/*/////////////////////////////////////////////////////// MEDIA QUERIES */
+
+/* */
+/*--------------NIVO----------- */
+.nivoSlider {
+    position:relative;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0;
+    left:0;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:0;
+    padding:0;
+    margin:0;
+    z-index:6;
+    display:none;
+    text-decoration: none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+    display:block;
+    position:absolute;
+    z-index: 5;
+    height:100%;
+}
+.nivo-box {
+    display:block;
+    position:absolute;
+    z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+    position:absolute;
+    left:0;
+    bottom:0;
+    background:#000;
+    color:#fff;
+    opacity:0.8; /* Overridden by captionOpacity setting */
+    width:100%;
+    z-index:8;
+}
+.nivo-caption p {
+    padding:5px;
+    margin:0;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav {
+    width: 200px;
+    height: 25px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 10;
+    margin: 510px 0 0 330px;
+}
+.nivo-directionNav a {
+    cursor:pointer;
+}
+.nivo-prevNav {
+    left:0;
+}
+.nivo-nextNav {
+    right:0;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+    position:relative;
+    z-index:20;
+    cursor:pointer;
+    display: none;
+}
+.nivo-controlNav a.active {
+    font-weight:bold;
+}
+/* NIVO SLIDER - DEFAULT THEME CSS */
+.theme-default {
+    width: 1600px;
+    height: 400px;
+    background-color: #000;
+    margin: 0 auto;
+}
+.theme-default .nivoSlider {
+    position:relative;
+    background:#fff url(nivo-slider/loading.gif) center;
+    margin-bottom: 50px;
+}
+.theme-default .nivoSlider img {
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+.theme-default .nivoSlider a {
+    border:0;
+    display:block;
+}
+#wrap .nivo-controlNav {
+    position: absolute;
+    display: inline-block;
+    z-index: 3000;
+    margin: 306px 0 0 442px;
+}
+#wrap .nivo-controlNav a {
+    display:block;
+    width:13px;
+    height:14px;
+    float: left;
+    background:url(images/slider_control_off.png);
+    border:0;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+    z-index: 3000;
+}
+#wrap .nivo-controlNav a.active {
+    background:url(images/slider_control_on.png);    
+    text-decoration: none;
+    z-index: 3000;
+}
+.theme-default .nivo-directionNav a {
+    display:block;
+    width:30px;
+    height:30px;
+    background:url(nivo-slider/arrows.png) no-repeat;
+    text-indent:-9999px;
+    border:0;
+}
+.theme-default a.nivo-nextNav {
+    background-position:-30px 0;
+    right:15px;
+}
+.theme-default a.nivo-prevNav {
+    left:15px;
+}
+/*-----------NIVO-----------*/
+headerV2 {
+    height: 450px;
+    background-color: #fe0000;
+    margin: 0 auto;
+    width: 100%;
+}
+#sliderV2 {
+    position: absolute;
+    background-color: #ffffff;
+    height: 450px;
+    width: 100%;
+}
+/*-----------SLIDER 2014-----------*/
+.boxes div {
+    display: none;
+    background-repeat: no-repeat;
+    background-color: #fe0000;
+}
+.box1 {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-position: center center;
+}
+.box2 {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-position: center center;
+}
+.box3 {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-position: center center;
+}
+.box4 {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-position: center center;
+}
+.box5 {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-position: center center;
+}
+/*-----------SLIDER 2014-----------*/
+#sliderV2_destaque {
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-position: center center;
+}
+#sliderV2_whiteBG {
+    background: url(images/sliderV2-2-whiteBG.png);
+    background-repeat: repeat-y;
+    margin: 0 auto;
+    position: relative;
+    width: 1500px;
+    height: 250px;
+    padding-top: 200px;
+}
+#sliderV2_logo {
+    background: url(images/logo2014.png);
+    margin: 0 auto;
+    position: relative;
+    width: 933px;
+    height: 310px;
+    background-repeat: no-repeat;
+    margin-top: -375px;
+}
+.sliderV2_creditos {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-family: 'MuseoSans500';
+    font-size: 14px;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    position: absolute;
+    z-index: 999;
+    margin: 430px 0 0 0;
+}
+.sliderV2_creditos span {
+    width: 910px;
+    margin: 0 auto;
+    display: block;
+}
+/* --------------------- INDEX START ----------------------- */
+#homeInicio {
+    margin: 25px 25px 0 0;
+    width: 909px;
+    height: 285px;
+}
+#homeInicio .quadX {   
+    width: 273px;
+    float: left;
+    display: block;
+    position: relative;
+    height: 297px;
+}
+#homeInicio .homeInicio_title {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'MuseoSans700';
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+#homeInicio .homeInicio_text {
+    text-align: center;
+    font-size: 14px;
+}
+#homeInicio img {
+    height: 195px;
+    width: 205px;   
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.homeInicio_quad1 {
+    width: 229px;
+}
+.homeInicio_quad1 h1 {
+    font-family: 'MuseoSans100';
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 40px;
+    margin: 0 0 10px 0;
+}
+.homeInicio_quad1 span {
+    font-family: 'MuseoSans700';
+}
+.homeInicio_quad1 p {
+    font-family: 'MuseoSans300', arial, sans-serif;
+    font-size: 14px;
+}
+.homeInicio_quad2 {
+    width: 300px;
+    margin: 0 40px 0 40px;
+}
+.homeInicio_quad3 {
+    width: 300px;
+}
+.homeInicio_quad3 .homeInicio_title {
+    font-size: 17px !important;
+}
+.homeInicio_quad4 {
+    margin: 30px 0 40px 0;
+}
+.homeInicio_quad5 {
+    margin: 30px 40px 40px 40px;
+}
+.homeInicio_quad6 {
+    margin: 30px 0 40px 0;
+}
+/* --------------------- FOOTER v2 ----------------------- */
+#footer {
+    height: 250px;
+    width: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 0px -10px 15px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    0px -10px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow:         0px -10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+#footer footer {
+    width: 960px;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+}
+#footer_policy {
+    display: block;
+    width: 300px;
+    float: left;
+    margin: 50px 0 0 30px;
+}
+#footer_policy p {
+    font-size: 14px !important;
+}
+#footer_policy p a {
+    font-size: 14px !important;
+    text-decoration: underline !important;
+}
+#footer_policy p a:hover {
+    color:#666666;
+}
+#footer_logo {
+    height: 130px;
+    display: block;
+    width: 552px;
+    float: right;
+    margin: 50px 30px 0 0;
+}
+#footer_logo a {
+}
+#footer_logo a img {
+}
+#footer_logo_marcasp {
+    height: 130px;
+    display: block;
+    width: 167px;
+    float: left;
+}
+#footer_logo_spturis {
+    height: 130px;
+    display: block;
+    float: left;
+    width: 150px;
+    margin: 0 25px 0 0;
+}
+#footer_logo_prefeitura {
+    height: 130px;
+    display: block;
+    float: left;
+    width: 158px;
+}
+#footer_logo_separator {
+    height: 130px;
+    background-color: #000;
+    display: block;
+    float: left;
+    width: 1px;
+    margin: 0 25px 0 25px;
+}
+/* --------------------- Header Interno v2 ----------------------- */
+header {
+}
+#headerInterno {
+    height: 250px;
+    width: 100%;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: #fe0000;
+    background-position: center;
+}
+#headerInterno_logo {
+    background: url(images/sliderV2-whiteBG.png);
+    background-repeat: repeat-y;
+    width: 970px;
+    margin: 0 auto;
+    height: 100%;
+}
+#headerInterno_logo img {
+    display: block;
+    width: 190px;
+    margin: 46px 0px 0px 40px;
+    position: absolute;
+}
+#headerInterno p {
+    display: block;
+    margin: 0 auto;
+    width: 950px;
+    text-align: right;
+    margin-top: -20px;
+    color: #fff;
+}
+/* --------------------- IFRAME IMPRENSA ----------------------- */
+#iframeImprensa {
+    width: 970px; /* 970px */
+    margin: 0 auto;
+}
+#iframeImprensa iframe {
+    width: 825px;
+    height: 700px;
+    margin: 0 auto;
+    display: block;
+}
+/* --------------------- BIBLIOTECA DO SAMBA ----------------------- */
+#noticias_section-biliotecaSampa {
+    width: auto;
+    margin: 2.577319587628866%; /* 25px */
+    float: left;
+}
+.biliotecaSampa_title {
+    width: 100%;
+    display: block;
+    margin: 35px 0 0 0;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    background-color: #1d8bcb;
+    color: #fff;
+    font-size: 1.5em !important;
+    float: left;
+}
+.wrapperBiliotecaSampa {
+    width: 280px;
+    float: left;
+    margin: 0 13px 10px 13px;
+}
+.bandeiras_title_01 {
+    font-size: 10px;
+    text-align: center;
+    padding: 3px 0 0 0;
+    height: 24px;
+}
+.bandeiras_title_02 {
+    font-size: 10px;
+    text-align: center;
+    padding: 3px 0 0 0;
+}
+.bandeiras_title_03 {
+    font-size: 10px;
+    text-align: center;
+    padding: 3px 0 0 0;
+}
+.bandeiraSidebarText {
+    float: left !important;
+    display: block !important;
+    width: 125px;
+}
+.bandeiraSidebarImagem {
+    float: left !important;
+    display: block !important;
+    width: 40px;
+    margin: 0 5px 0 0;
+}

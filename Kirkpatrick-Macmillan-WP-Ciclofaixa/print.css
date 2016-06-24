@@ -1,0 +1,73 @@
+#menu {
+    display: none;
+}
+#headerInterna {
+    display: none;
+}
+#headerSocial {
+    display: none;
+}
+#internaContent {
+    width: 100%;
+}
+#internaContent_wrap {
+    width: 100%;
+}
+#imprimir {
+    display: none;
+}
+#indique_amigo {
+    display: none;
+}
+#footer {
+    display: none;
+}
+.internaTitulo {
+    font-size: 22px!important;
+}
+#internaContent_alugueBike_left {
+    float: none;
+}
+#internaContent_alugueBike_left img {
+    display: none;
+}
+#internaContent_alugueBike_right {
+    margin: 34px 0 0 0;
+}
+.internaContent_2col {
+    width: 100%;
+    border: none;
+}
+#internaContent_2col_li p{
+    float: none;
+}
+#alugueBike_right_links {
+    display: none;
+}
+#ciclofaixas_esq { 
+    display: none;
+}
+.ciclofaixas_dir_bloco {
+    margin: 0 0 72px 120px;
+}
+#ciclofaixas_dir p {
+    color: #000;
+}
+#metroEtrem_esq {
+    display: none;
+}
+#turismo_esq {
+    display: none;
+}
+.segurancaDicas {
+    width: 50%;
+}
+.parqueDescricao {
+    width: 167px;
+}
+#map_canvas{
+    width: 990px;
+    height: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}

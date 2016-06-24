@@ -1,0 +1,254 @@
+@import "variaveis.less";
+@import "fonts.less";
+
+
+
+.megaMenuPqsp {
+    .megaMenuPqsp_links {
+        width: 30%;
+        float:left;
+        a {
+            color: #fff;
+            float: left;
+            width: 100%;
+            display: block;
+            font-size: 2em;
+            margin-top: 5.45%;
+            font-family: @museo500;
+            text-transform: uppercase;
+        }
+        a:nth-child(1) {
+            margin-top: 8%;
+        }
+        .subItem {
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-left: 25px;
+            font-family: @museo500;
+            text-transform: none;
+        }
+    }
+    .megaMenuPqsp_banner_first {
+        width: 34%;
+        float: left;
+        background-color: #ccc;
+        height: 245px;
+        margin-top: 30px;
+        margin-right: 2%;
+        margin-left: 1%;
+    }
+    .megaMenuPqsp_banner_second {
+        width: 33%;
+        margin-right: 0%;
+        float: left;
+        background-color: #ccc;
+        height: 245px;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+.ldt {
+    float: left;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    .ldt_title {
+        font-family: @museo700;
+        font-size: 2em;
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 4px;
+        color: #fff;
+        background-color: @azul;
+    }
+    .ldt_linha {
+        width:100%;
+        background-image: url(../images/bg_2px_azul.gif);
+        background-repeat: repeat-y;
+        background-position: center center;
+        display: table;
+        padding: 30px 0 30px 0;
+        .ldt_linha_item {
+            width:50%;
+            float:left;
+            margin: 10px 0 15px 0;
+            .ldt_linha_item_esqMark {
+                width:5%;
+                float: left;
+                margin-right: -1px;
+                position: relative;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .ldt_linha_item_dirMark {
+                width:5%;
+                float: left;
+                margin-left: -1px;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .ldt_linha_item_content {
+                width:95%;
+                float: left;
+                background-color: #fff;
+                border: 1px solid @azul;
+                padding: 15px;
+                border-radius: 4px;
+                .ldt_linha_item_content_ano {
+                    font-family: @museo100_i;
+                    font-size: 2.2em;
+                    color: @azul_dark;
+                }
+                .ldt_linha_item_content_titulo {
+                    font-family: @museo700;
+                    font-size: 2.5em;
+                    margin: 10px 0 10px 0;
+                    color: @azul;
+                }
+                .ldt_linha_item_content_img {
+                    display: block;
+                    width: 100%;
+                }
+                .ldt_linha_item_content_credito {
+                    display: block;
+                    margin: 5px 0 0 0;
+                    width: 100%;
+                    text-align: right;
+                    font-size: 0.9em;
+                }
+                .ldt_linha_item_content_text {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: @media_tablet_2) {
+    .ldt_linha_item {
+        width: 100% !important;
+        margin: 20px 0 25px 0 !important;
+    }
+    .ldt_linha_item_content {
+        width: 100% !important;
+    }
+    .ldt_linha_item_esqMark {
+        display: none !important;
+    }
+    .ldt_linha_item_dirMark {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+//
+// ------------ TESTES
+//
+//
+//
+.landingBoxRazoesTESTE_azul {
+    background-image: url(../images/bgTeste.jpg);
+    background-size: cover;
+}
+.landingBoxRazoesTESTE_azul:hover {
+    background-image: url(../images/bgTeste_azul.jpg);
+}
+.landingBoxRazoesTESTE_azul2 {
+    background-image: url(../images/bgTeste_azulChapado.jpg);
+    background-size: cover;
+}
+.landingBoxRazoesTESTE_azul2:hover {
+    background-image: url(../images/bgTeste_azul.jpg);
+    background-size: cover;
+    -webkit-transition: all @transition_4;
+    -moz-transition: all @transition_4;
+    -o-transition: all @transition_4;
+    -ms-transition: all @transition_4;
+    transition: all @transition_4;
+}
+
+
+.landingBoxRazoesTESTE_azul3 {
+    background-image: url(../images/bgTeste_azulChapado.jpg);
+    background-size: cover;
+}
+.landingBoxRazoesTESTE_azul3 {
+    background-image: url(../images/bgTeste_azulChapado.jpg);
+    background-size: cover;
+}
+.landingBoxRazoesTESTE_lista {
+    padding: 110px 0 0 0;
+    display: block;
+    li {
+        padding-top: 15px;
+        width: 100%;
+        text-align: center;
+        a {
+            color: #fff;
+            font-family: @museo500;
+            font-size: 1.8em;
+        }
+    }
+}
+.landingBoxRazoesTESTE_tituloItem360 {
+    color: #fff; 
+    font-family: @museo100;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    padding: 20px 0 0 0;
+    float: left;
+    display: block;
+    text-align: center;
+    width: 100%;
+    -webkit-transition: all @transition_4;
+    -moz-transition: all @transition_4;
+    -o-transition: all @transition_4;
+    -ms-transition: all @transition_4;
+    transition: all @transition_4;
+}
+.landingBoxRazoesTESTE_titulo360 {
+    color: #fff; 
+    font-family: @museo900;
+    font-size: 6em;
+    text-transform: uppercase;
+    padding: 25px;
+    float: left;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+.landingBoxRazoesTESTE_texto360 {
+    color: #fff; 
+    font-family: @museo100;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    padding: 25px;
+}

@@ -1,0 +1,246 @@
+/*
+Theme Name: Mercurius Wordpress Theme
+Theme URI: http://newsletters.spturis.com.br
+Author: SPTuris - Luciana Jabur, Leandro Rossi Sampaio e Michele Miki Oyamata.
+Author URI: http://spturis.com
+Description: Tema desenvolvido para a geração de Newsletters.
+Version: 1.4.4
+License: Todos os direitos reservados
+*/
+html, body {
+    border: 0;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div, span, object, iframe, img, table, caption, thead, tbody,
+tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu,
+nav, footer, header, section, summary, mark, audio, video, ul, li {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+ol, ul, li, fieldset, legend, label {
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+    display: block;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    vertical-align: middle;
+}
+a img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+/* FONT FACE */
+@font-face {
+    font-family: 'museo_sans300_italic';
+    src: url('fonts/museosans_300_italic-webfont-webfont.eot');
+    src: url('fonts/museosans_300_italic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300_italic-webfont-webfont.woff') format('woff'),
+        url('fonts/museosans_300_italic-webfont-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300_italic-webfont-webfont.svg#museo_sans300_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans300';
+    src: url('fonts/museosans_300-webfont-webfont.eot');
+    src: url('fonts/museosans_300-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300-webfont-webfont.woff') format('woff'),
+        url('fonts/museosans_300-webfont-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300-webfont-webfont.svg#museo_sans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans700';
+    src: url('fonts/museosans_700-webfont-webfont.eot');
+    src: url('fonts/museosans_700-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_700-webfont-webfont.woff') format('woff'),
+        url('fonts/museosans_700-webfont-webfont.ttf') format('truetype'),
+        url('fonts/museosans_700-webfont-webfont.svg#museo_sans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans900';
+    src: url('fonts/museosans_900-webfont.eot');
+    src: url('fonts/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_900-webfont.woff') format('woff'),
+        url('fonts/museosans_900-webfont.ttf') format('truetype'),
+        url('fonts/museosans_900-webfont.svgz#MuseoSans900') format('svg'),
+        url('fonts/museosans_900-webfont.svg#MuseoSans900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Tudo */
+body {
+    background-color: #379eff;
+}
+.all {
+    width: 1100px;
+    margin: 0 auto;
+    height: 600px;
+    padding: 25px 0 0 0;
+}
+.caixa {
+    width: 300px;
+    float: left;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 2px;
+    height: 300px;
+    background-color: #fff;
+    margin: 50px 0 0 50px;
+    color: #379eff;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.caixa:hover {
+    background-color: #2d83d4;
+    color: #fff !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.title {
+    font-family: 'museo_sans300', Helvetica, Arial, sans-serif;
+    text-align: right;
+    font-size: 40px;
+    margin: 0 20px 0 20px;
+    letter-spacing: -1px;
+    line-height: 42px;
+}
+.title2 {
+    font-family: 'museo_sans100', Helvetica, Arial, sans-serif;
+    text-align: left;
+    width: 260px;
+    font-size: 16px;
+    margin: 20px;
+}
+.faItens {
+    font-size: 80px !important;
+    text-align: right;
+    width: 100%;
+    padding: 20px;
+}
+.mainTitle {
+    font-family: 'museo_sans900', Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-size: 55px;
+    margin: 20px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.fa-wordpress {
+    margin: 0 5px 0 0;
+}
+/* Pages */
+.pageHeader {
+    padding: 0 0 30px 0;
+}
+.pageHeader_h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'museo_sans900', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.pageHeader_logo {
+    font-size: 80px !important;
+    padding: 0 15px 0 0;
+}
+.postsUl {
+    width: 100%;
+    border-top: 1px solid #fff;
+}
+.postsUl_li {
+    width: 100%;
+    float: left;
+    display: block;
+    border-bottom: 1px solid #fff;
+    padding: 8px 3% 8px 3%;
+}
+.postsUl_li_title {
+    font-family: 'museo_sans300', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    width: 60%;
+    text-align: left;
+    display: block;
+    float: left;
+    color: #fff;
+}
+.postsUl_li_visualizar {
+    font-family: 'museo_sans300', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    width: 20%;
+    text-align: center;
+    display: block;
+    float: left;
+}
+.postsUl_li_editar {
+    font-family: 'museo_sans300', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    width: 20%;
+    text-align: center;
+    display: block;
+    float: left;
+}
+.link {
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.link:hover {
+    color: #2d83d4;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}

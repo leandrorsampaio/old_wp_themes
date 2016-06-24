@@ -1,0 +1,2347 @@
+@import "variaveis.less";
+@import "fonts.less";
+
+// TESTE //
+.landingBoxTESTE_vermelho {
+    background-image: url(../images/bgTeste.jpg);
+    background-size: cover;
+}
+.landingBoxTESTE_vermelho:hover {
+    background-image: url(../images/bgTeste_vermelho.jpg);
+}
+
+.landingBoxTESTE_vermelho2 {
+    background-image: url(../images/bgTeste_vermelho.jpg);
+    background-size: cover;
+}
+
+.landingBoxTESTE_lista {
+    padding: 110px 0 0 0;
+    display: block;
+    li {
+        padding-top: 15px;
+        width: 100%;
+        text-align: center;
+        a {
+            color: #fff;
+            font-family: @museo500;
+            font-size: 1.8em;
+        }
+    }
+}
+
+.landingBoxTESTEtexto_vermelho {
+    font-size: 1.7em;
+    color: #fff;
+    font-family: @museo100;
+    margin: 5.5% 6%;
+    background-color: @vermelho;
+}
+
+//MAIS SP//
+.box {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.box .overbox {
+    background-color: @vermelho_alpha90;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+}
+
+.box:hover .overbox { opacity: 1; }
+
+.box .overtext {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+}
+
+.box .title {
+    font-size: 3.5em;
+    font-family: @museo700;
+    opacity: 0;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+}
+
+.box:hover .title,
+.box:focus .title {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+
+.box .tagline {
+    font-size: 2.8em;
+    font-family: @museo100;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.box:hover .tagline,
+.box:focus .tagline {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+}
+
+.box_paulistanes {
+    height: 592px;
+}
+.overbox_paulistanes {
+    height: 592px; 
+    padding: 180px 20px;
+}
+
+.background_paulistanes {
+    background-image:url(../images/paulistanes.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    @media screen and (max-width: @media_mobile) { 
+        background-size: 100%;
+    }
+}
+
+.background_natal {
+    background-image:url(../images/nataliluminado.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    @media screen and (max-width: @media_mobile) { 
+        background-size: 100%;
+    }
+}
+
+.background_ecoturismo {
+    background-image:url(../images/ecoturismo.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    @media screen and (max-width: @media_mobile) { 
+        background-size: 100%;
+    }
+}
+
+.background_spdebike {
+    background-image:url(../images/spdebike.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    @media screen and (max-width: @media_mobile) { 
+        background-size: 100%;
+    }
+}
+
+.background_lgbt {
+    background-image:url(../images/guialgbt.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    @media screen and (max-width: @media_mobile) { 
+        background-size: 100%;
+    }
+}
+
+//////////////////////
+
+.vivasp_cultura {
+    span {
+        margin: 0 auto;
+        width: 80%;
+        display: block;
+        padding: 30px 0 0 0;
+        img {
+            width: 30%;
+            display: block;
+            float: left;
+        }
+
+
+
+        h1 {
+            width: 70%;
+            float: left;
+            font-family: @museo100;
+            font-size: 4.5em;
+            margin-top: 30px;
+            color: #fff;
+        }
+        @media screen and (max-width: @media_tablet_2) {
+            img {
+                display: none;
+            }
+            h1 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    p {
+        margin: 0 auto;
+        width: 90%;
+        font-family: @museo100_i;
+        font-size: 1.6em;
+        text-align: justify;
+        color: #fff;
+        padding: 20px 0 0 0;
+        display: block;
+    }
+}
+
+.vivasp_pontosturisticos {
+    span {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        padding: 35px 0 0 0;
+        img {
+            display: block;
+            width: 40% !important;
+            float: left;
+        }
+        p {
+            margin: 0px;
+            width: 60%;
+            float: left;
+        }
+        .line1 {
+            font-family: @museo100;
+            font-size: 4.2em;
+            margin-top: 30px !important;
+            color: #fff;
+        }
+        .line2 {
+            font-family: @museo100;
+            font-size: 3.0em;
+            color: #fff;
+        }
+        @media screen and (max-width: @media_tablet_2) {
+            img {
+                display: none;
+            }
+            p {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.vivasp_esportes {
+    a {
+        img {
+            width: 50% !important;
+            margin: 0 auto;
+            display: block;
+            margin-top: 25px;
+        }
+        h1 {
+            font-family: @museo100;
+            font-size: 4.5em;
+            text-align: center;
+            padding: 3px;
+            color: #fff;
+        }
+        @media screen and (max-width: @media_tablet_2) {
+            img {
+                display: none;
+            }
+            h1 {
+                padding-top: 40px;
+            }
+        }
+    }
+
+}
+
+.vivasp_compras {
+    .background_bairrosimperdiveis_gradiente {
+        img {
+            display: block;
+            width: 40% !important;
+            margin: 0 auto;
+            margin-top: 40px; 
+        }
+        h1 {
+            font-family: @museo100;
+            font-size: 4.5em;
+            text-align: center;
+            padding: 20px 0 0 0;
+            color: #fff;
+        }
+        @media screen and (max-width: @media_tablet_2) {
+            img {
+                width: 20% !important;
+            }
+        }
+    }
+}
+
+.vivasp_roteiros {
+    h1 {
+        font-family: @museo100;
+        font-size: 4.5em;
+        text-align: center;
+        margin-top: 25px;
+        color: #FFF;
+    }
+    ul {
+        display: block;
+        width: 100%;
+        margin: 20px 0 0 15%;
+        border-left: 1px solid #fff;
+        padding: 10px 0 10px 5%;
+        li {
+            display: block;
+            margin: 15px 0 0 0;
+            a {
+                color: #fff;
+                font-size: 2em;
+            }
+        }
+    }
+    @media screen and (max-width: @media_mobile) {
+        ul {
+            margin: 0;
+            border: none;
+        }
+    }
+}
+
+.vivasp_sobmedida {
+    padding-top: 6%;
+    span {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        img {
+            width: 30%;
+            float: left;
+            display: block;
+        }
+
+        h1 {
+            margin: 0px !important;
+            color: #fff;
+            width: 70%;
+            float: left;
+            display: block;
+        }
+        .line1 {
+            font-family: @museo100;
+            font-size: 4.5em;
+        }
+        .line2 {
+            font-family: @museo100;
+            font-size: 3.5em;
+        }
+        @media screen and (max-width: @media_tablet_2) {
+            img {
+                display: none;
+            }
+
+            h1 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    p {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        font-family: @museo100_i;
+        font-size: 1.6em;
+        text-align: justify;
+        color: #fff;
+        float: left;
+        padding: 15px 20px 0 20px;    
+    }
+}
+
+.vivasp_roteirostematicos {
+    height: 400px;
+    img {
+        display: block;
+        margin: 0 auto;
+        padding: 100px 0 20px 0;
+    }
+    h1 {
+        font-size: 4em;
+        margin: 0px! important;
+        color: #fff;
+        font-family: @museo100;
+        text-align: center;
+    }
+}
+
+
+
+.vivasp_fiquemaisumdia {
+    img {
+        display: block;
+        width: 30%;
+        float: right;
+        margin: 15px 5% 15px 0;
+    }
+    h2 {
+        font-family: @museo100;
+        font-size: 3em;
+        text-align: center;
+        width: 100%;
+        float: left;
+        display: block;
+        color: #fff;
+    }
+    p {
+        font-family: @museo100_i;
+        font-size: 1.6em;
+        text-align: justify;
+        padding: 2px 13px;
+        width: 100%;
+        float: left;
+        display: block;
+        color: #fff;
+    }
+}
+
+.vivasp_roteirosape {
+    h1 {
+        display: block;
+        font-size: 4em;
+        font-family: @museo100;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        height: 200px;
+        padding: 85px 0 0 0;
+        color: #fff;
+    }
+}
+
+
+.content_block_box_content_title {
+    font-size:4.5em;
+    color: #FFF;
+    font-family: @museo100;
+    margin: 5% 0;
+
+}
+
+.fiquemaisumdia_roteirossobmedida {
+    .textbox {
+        margin-top: 220px !important;
+        margin-bottom: 0px !important;
+        margin-left: 9px;
+        h1 {
+            font-size: 6em;
+            margin: 0px! important;
+            font-family: @museo100;
+            color: #fff;
+            font-weight: normal;
+        }
+        @media screen and (max-width: @media_mobile) {
+            margin-top: 135px !important;
+            margin-left: 20px;
+        }
+    }
+}
+
+
+.fiquemaisumdia_roteirosape { 
+    .textbox {
+        margin-top: 35px !important;
+        margin-bottom: 0px !important;D
+        margin-left: 20px;
+        width: 30%;
+        h1 {
+
+            font-size: 4em;
+            margin: 0px! important;
+            font-family: @museo100;
+            color: #fff;
+            font-weight: normal;
+        }
+    }
+}
+
+//BACKGROUND//
+.background_home_bemvindo_explosao {
+    background-image:url(../images/vivasp_home_bemvindo_explosao.png);
+    background-size: cover !important;
+}
+
+// EXPLOSOES
+
+.background_vivasp_10y_explosao {
+    background-image:url(../images/vivasp_10y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_vivasp_10y_explosao_roteiros {
+    background-image:url(../images/vivasp_10y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+.background_vivasp_15y_explosao {
+    background-image:url(../images/vivasp_15y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_vivasp_20y_explosao {
+    background-image:url(../images/vivasp_20y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_vivasp_25y_explosao {
+    background-image:url(../images/vivasp_25y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_vivasp_30y_explosao {
+    background-image:url(../images/vivasp_30y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_vivasp_35y_explosao {
+    background-image:url(../images/vivasp_35y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_vivasp_40y_explosao {
+    background-image:url(../images/vivasp_40y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_vivasp_45y_explosao {
+    background-image:url(../images/vivasp_45y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_vivasp_50y_explosao {
+    background-image:url(../images/vivasp_50y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_vivasp_55y_explosao {
+    background-image:url(../images/vivasp_55y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_vivasp_60y_explosao {
+    background-image:url(../images/vivasp_60y_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+//
+.background_roteirostem {
+    background-image:url(../images/vivasp_roteirostematicos_bw.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_roteirostem:hover {
+    background-image:url(../images/vivasp_roteirostematicos_color.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_roteirostem_explosao {
+    background-image:url(../images/vivasp_roteirostematicos_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+//
+
+.background_bairrosimperdiveis {
+    background-image:url(../images/vivasp_bairrosimperdiveis_bw.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_bairrosimperdiveis:hover {
+    background-image:url(../images/vivasp_bairrosimperdiveis_color.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_bairrosimperdiveis_gradiente {
+    background-image:url(../images/vivasp_bairrosimperdiveis_gradiente.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_noite_gradiente {
+    background-image:url(../images/vivasp_bairrosimperdiveis_gradiente.png);
+    background-size: cover !important;
+}
+
+// 
+
+.background_sobmedida_explosao {
+    background-image:url(../images/vivasp_sobmedida_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+//
+
+.background_sobmedida_icon {
+    background-image:url(../images/vivasp_sobmedida_icon.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_cultura_icon {
+    background-image:url(../images/vivasp_cultura_icon.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+
+.background_pontosturisticos_icon {
+    background-image:url(../images/vivasp_pontosturisticos_icon.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+
+}
+
+//
+
+.background_roteirosape {
+    background-image:url(../images/vivasp_roteirosape_color.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+/*.background_roteirosape {
+background-image:url(../images/vivasp_roteirosape_bw.png);
+    background-size: cover !important;
+background-repeat: no-repeat;
+}*/
+
+/*.background_roteirosape:hover {
+background-image:url(../images/vivasp_roteirosape_color.png);
+    background-size: cover !important;
+background-repeat: no-repeat;
+}*/
+
+.background_roteirosape_explosao {
+    background-image:url(../images/vivasp_roteirosape_explosao.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+// BACKGROUND // HOME //
+
+
+.background_avpaulista {
+    background-image:url(../images/vivasp_home_avenidapaulista_color.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_compras {
+    background-image:url(../images/vivasp_compras_bw.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_compras:hover {
+    background-image:url(../images/vivasp_compras_color.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_noite {
+    background-image:url(../images/vivasp_noite_bw.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_noite:hover {
+    background-image:url(../images/vivasp_noite_color.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_arredores {
+    background-image:url(../images/vivasp_arredores_bw.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_arredores:hover {
+    background-image:url(../images/vivasp_arredores_color.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_roteirosape_20y {
+    background-image:url(../images/vivasp_roteirosape_20y_bw.png);
+    background-size: cover !important;  
+    background-repeat: no-repeat;
+}
+
+.background_roteirosape_20y:hover {
+    background-image:url(../images/vivasp_roteirosape_20y_color.png);
+    background-size: cover !important;  
+    background-repeat: no-repeat;
+}
+// 
+
+.background_compras_popular {
+    background-image:url(../images/vivasp_compras_popular_icon.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_compras_artesanato {
+    background-image:url(../images/vivasp_compras_artesanato_icon.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_compras_feiras {
+    background-image:url(../images/vivasp_compras_feiras_icon.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_compras_outlets {
+    background-image:url(../images/vivasp_compras_outlets_icon.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_compras_shoppings {
+    background-image:url(../images/vivasp_compras_shoppings_icon.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_compras_luxo {
+    background-image:url(../images/vivasp_compras_luxo_icon.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.background_compras_ruastematicas {
+    background-image:url(../images/vivasp_compras_ruastematicas_icon.png);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+//
+
+///////// VIVASP LANDING //////////
+
+.vivasp_avpaulista {
+    .box {
+        margin-top: 295px;
+        width: 100%;
+        h1 {
+            font-family: @museo300;
+            font-size: 3em;
+            margin-left: 15px;
+            color: #fff;
+        }
+        p {
+            font-family: @museo100_i;
+            font-size: 2.2em;
+            margin-left: 15px;
+            color: #fff;
+        }
+    }
+}
+
+.vivasp_restaurantes {
+    .iconbox {
+        width: 50%;
+        float: left;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    h1 {
+        font-family: @museo100;
+        font-size: 5.5em;
+        margin-top: 28px;
+        color: #fff;
+        font-weight: normal;
+    }
+    .tripbox {
+        width: 86%;
+        margin-left: 30px;
+    }
+}
+
+.vivasp_maissp {
+    h1 {
+        margin-top: 100px;
+        font-family: @museo100_i;
+        text-align: center;
+        color: #fff;
+    }
+    @media screen and (max-width: @media_mobile) {
+        h1 {
+            font-size: 10em;
+        }
+    }
+    @media screen and (min-width: @media_tablet_1) and (max-width: @media_tablet_2) {
+        h1 {
+            font-size: 12em;
+        }
+    }
+    @media screen and (min-width: @media_medium_1) and (max-width: @media_medium_2) {
+        h1 {
+            font-size: 15em;
+        }
+    }
+    @media screen and (min-width: @media_full) {
+        h1 {
+            font-size: 15em;
+        }
+    }
+}
+
+.vivasp_arredores {
+    display: block;
+    img {
+        width: 40%;
+        margin: 0 auto;
+        display: block;
+        padding: 38px 0 20px 0;
+    }
+    h1 {
+        font-family: @museo100;
+        font-size: 4em;
+        text-align: center;
+        color: #fff;
+    }
+
+
+}
+
+.vivasp_bairrosimperdiveis {
+    display: table !important;
+    height: 400px !important;
+    .background_bairrosimperdiveis_gradiente {
+        height: 100%;
+        h1 {
+            font-size: 4.5em;
+            padding: 280px 0 0 15px !important;
+            font-family: @museo100;
+            color: #fff;
+        }
+    }   
+}
+
+.fiquemaisumdia_bairrosimperdiveis {
+    display: table !important;
+    .background_bairrosimperdiveis_gradiente {
+        height: 100%;
+        h1 {
+            font-size: 4.5em;
+            padding: 280px 0 0 15px !important;
+            font-family: @museo100;
+            color: #fff;
+        }
+    }   
+}
+
+.comerebeber {
+    .imgbox {
+        width: 50%;
+        margin-top: 15px;
+        float: left;
+    }
+    .titlebox {
+        font-family: @museo100;
+        font-size: 4.2em;
+        margin-top: 65px;
+        color: #fff;
+        float: left;
+    }
+    .tripbox {
+        width: 86%;
+        margin-left: 30px;
+    }
+}
+
+
+
+
+// ROTEIROS A PE //
+.homeroteirosape {
+    .homeroteirosape_cards {
+        float: left;
+        width: 100%;
+        margin: 0 0 25px 0;
+        .homeroteirosape_cards_title {
+            float: left;
+            width: 100%;
+            margin: 0 0 15px 0;
+            font-size: 2em;
+            text-transform: uppercase;
+            text-align: right;
+            display: block;
+            color: @vermelho;
+            font-family: @museo700;
+        }
+    }
+}
+.roteirosape_item {
+    display: block;
+    float: left;
+    width: 17.8%;
+    border: 2px dotted @vermelho;
+    background-color: @cinza;
+    margin: 0 1% 25px 1%;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 10px 0 @vermelho;
+    box-shadow: 0 0 2px 0 @vermelho;
+    -webkit-transition: @transition_3;
+    -moz-transition: @transition_3;
+    -o-transition: @transition_3;
+    -ms-transition: @transition_3;
+    transition: @transition_3;
+    .roteirosape_item_img {
+        display: block;
+        width: 100%;
+        height: 230px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3px 3px 0 0;
+    }
+    .roteirosape_item_content {
+        display: block;
+        padding: 15px;
+        position: relative;
+        height: 200px; 
+        h2 {
+            font-family: @museo700;
+            text-align: left;
+            font-size: 1.7em;
+            color: @vermelho;
+            position: absolute;
+            width: 83%; 
+        }
+        h3 {
+            font-family: @museo100;
+            text-align: left;
+            font-size: 1.2em;
+            color: @vermelho;
+            position: absolute;
+            float: right;
+            width: 83%;
+            bottom: 35px;
+
+        }
+        h4 {
+            font-family: @museo100;
+            text-align: left;
+            font-size: 1.2em;
+            color: @vermelho;
+            position: absolute;
+            float: right;
+            width: 83%;
+            bottom: 20px;
+        }
+        a {
+            font-family: @museo700;
+            text-align: left;
+            font-size: 1.7em;
+            color: @vermelho;
+            position: absolute;
+            width: 83%; 
+        }
+        p {
+            font-family: @museo100;
+            margin: 40px 0 40px 0;
+            text-align: left;
+            font-size: 1.2em;
+            color: @vermelho;
+            position: absolute;
+            float: right;
+            width: 83%;
+        }
+    }
+}
+.roteirosape_item:hover {
+    border: 2px solid @vermelho;
+    -webkit-box-shadow: 0 0 10px 0 @vermelho_alpha90;
+    box-shadow: 0 0 10px 0 @vermelho_alpha90;
+    -webkit-transition: @transition_3;
+    -moz-transition: @transition_3;
+    -o-transition: @transition_3;
+    -ms-transition: @transition_3;
+    transition: @transition_3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.homeroteirostematicos {
+    .homeroteirostematicos_cards {
+        float: left;
+        width: 100%;
+        margin: 0 0 25px 0;
+        .homeroteirostematicos_cards_title {
+            float: left;
+            width: 100%;
+            margin: 0 0 15px 0;
+            font-size: 2em;
+            text-transform: uppercase;
+            text-align: right;
+            display: block;
+            color: @vermelho;
+            font-family: @museo700;
+        }
+    }
+    .roteirostematicos_intro {
+        position:relative;
+        display: block;
+        float: left;
+        width: 47%;
+        height: 309px;
+        border: 2px dotted @vermelho;
+        margin: 0 1% 25px 1%;
+        border-radius: 3px;
+        -webkit-box-shadow: 0 0 10px 0 @vermelho;
+        box-shadow: 0 0 2px 0 @vermelho;
+        -webkit-transition: @transition_3;
+        -moz-transition: @transition_3;
+        -o-transition: @transition_3;
+        -ms-transition: @transition_3;
+        transition: @transition_3;
+        background-color: @vermelho_alpha90;
+        p {
+            color: #FFF;
+            font-size: 1.6em;
+            text-align: justify;
+            padding: 10px;
+        }
+    }
+}
+
+.roteirostematicos_item {
+    .roteirostematicos_item_img {
+        width: 100%;
+        height: 305px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3px 3px 0 0;
+        float: left;
+        position: relative;
+    }
+}
+
+.link_roteirostematicos {
+    position:relative;
+    display: block;
+    float: left;
+    width: 15%;
+    height: 305px;
+    border: 2px dotted @vermelho;
+    background-color: @cinza;
+    margin: 0 2% 25px 0;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 0 @vermelho;
+    box-shadow: 0 0 2px 0 @vermelho;
+
+    .img_roteirostematicos {
+        display: block;
+    }
+    p {
+        display: none;
+        -webkit-transition:  @transition_3;
+        -moz-transition: @transition_3;
+        -o-transition: @transition_3;
+        -ms-transition: @transition_3;
+        transition: @transition_3;
+    }
+}
+
+
+
+
+.link_roteirostematicos {
+    position:relative;
+    display: block;
+    float: left;
+    width: 15%;
+    height: 305px;
+    border: 2px dotted @vermelho;
+    background-color: @cinza;
+    margin: 0 2% 25px 0;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 0 @vermelho;
+    box-shadow: 0 0 2px 0 @vermelho;
+
+    .img_roteirostematicos {
+        display: block;
+    }
+    p {
+        display: none;
+        -webkit-transition:  @transition_3;
+        -moz-transition: @transition_3;
+        -o-transition: @transition_3;
+        -ms-transition: @transition_3;
+        transition: @transition_3;
+    }
+}
+
+.link_roteirostematicos:hover {
+    border: 2px solid @vermelho;
+    -webkit-box-shadow: 0 0 10px 0 @vermelho_alpha90;
+    box-shadow: 0 0 10px 0 @vermelho_alpha90;
+    display: block;
+    background-color: @vermelho_alpha90;
+
+    .img_roteirostematicos {
+        display: none;
+    }
+    p {
+        display: block;
+        font-family: @museo300;
+        font-size: 1.5em;
+        color:#fff;
+        line-height: 15px;
+        margin-left: 5px;
+        margin-top: 3px;
+        -webkit-transition:  @transition_3;
+        -moz-transition: @transition_3;
+        -o-transition: @transition_3;
+        -ms-transition: @transition_3;
+        transition: @transition_3;
+    }
+}
+///
+///
+///
+.homeroteirosporperiodo {
+    .roteirosporperiodo_cards {
+        float: left;
+        width: 100%;
+        margin: 0 0 25px 0;
+        .roteirosporperiodo_cards_title {
+            float: left;
+            width: 100%;
+            margin: 0 0 15px 0;
+            font-size: 2em;
+            text-transform: uppercase;
+            text-align: right;
+            display: block;
+            color: @vermelho;
+            font-family: @museo700;
+        }
+    }
+    .roteirosporperiodo_intro {
+        position:relative;
+        display: block;
+        float: left;
+        width: 57.8%;
+        height: 239px;
+        border: 2px dotted @vermelho;
+        margin: 0 1% 25px 1%;
+        border-radius: 3px;
+        -webkit-box-shadow: 0 0 10px 0 @vermelho;
+        box-shadow: 0 0 2px 0 @vermelho;
+        -webkit-transition: @transition_3;
+        -moz-transition: @transition_3;
+        -o-transition: @transition_3;
+        -ms-transition: @transition_3;
+        transition: @transition_3;
+        background-color: @vermelho_alpha90;
+        p {
+            color: #FFF;
+            font-size: 1.6em;
+            text-align: justify;
+            padding: 10px;
+        }
+    }
+}
+.roteirosporperiodo_item {
+    .roteirosporperiodo_item_img {
+        width: 100%;
+        height: 235px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3px 3px 0 0;
+        float: left;
+        position: relative;
+    }
+}
+.link_roteirosporperiodo {
+    position:relative;
+    display: block;
+    float: left;
+    width: 17.6%;
+    height: 235px;
+    border: 2px dotted @vermelho;
+    background-color: @cinza;
+    margin: 0 1% 25px 1%;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 10px 0 @vermelho;
+    box-shadow: 0 0 2px 0 @vermelho;
+    -webkit-transition: @transition_3;
+    -moz-transition: @transition_3;
+    -o-transition: @transition_3;
+    -ms-transition: @transition_3;
+    transition: @transition_3;
+    .img_roteirosporperiodo {
+        display: block;
+    }
+    p {
+        display: none;
+    }
+}
+.link_roteirosporperiodo:hover {
+    border: 2px solid @vermelho;
+    -webkit-box-shadow: 0 0 10px 0 @vermelho_alpha90;
+    box-shadow: 0 0 10px 0 @vermelho_alpha90;
+    -webkit-transition: @transition_3;
+    -moz-transition: @transition_3;
+    -o-transition: @transition_3;
+    -ms-transition: @transition_3;
+    transition: @transition_3;
+    display: block;
+    background-color: @vermelho_alpha90;
+
+    .img_roteirosporperiodo {
+        display: none;
+    }
+    p {
+        display: block;
+        font-family: @museo300;
+        font-size: 1.5em;
+        color:#fff;
+        line-height: 15px;
+        margin-left: 5px;
+        margin-top: 3px;
+    }
+}
+
+//
+
+.homeroteirosporregiao {
+    .roteirosporregiao_cards {
+        float: left;
+        width: 100%;
+        margin: 0 0 25px 0;
+        .roteirosporregiao_cards_title {
+            float: left;
+            width: 100%;
+            margin: 0 0 15px 0;
+            font-size: 2em;
+            text-transform: uppercase;
+            text-align: right;
+            display: block;
+            color: @vermelho;
+            font-family: @museo700;
+        }
+    }
+    .roteirosporregiao_intro {
+        position:relative;
+        display: block;
+        float: left;
+        width: 47%;
+        height: 309px;
+        border: 2px dotted @vermelho;
+        margin: 0 1% 25px 1%;
+        border-radius: 3px;
+        -webkit-box-shadow: 0 0 10px 0 @vermelho;
+        box-shadow: 0 0 2px 0 @vermelho;
+        -webkit-transition: @transition_3;
+        -moz-transition: @transition_3;
+        -o-transition: @transition_3;
+        -ms-transition: @transition_3;
+        transition: @transition_3;
+        background-color: @vermelho_alpha90;
+        p {
+            color: #FFF;
+            font-size: 1.6em;
+            text-align: justify;
+            padding: 10px;
+        }
+    }
+}
+
+
+.roteirosporregiao_item {
+    .roteirosporregiao_item_img {
+        width: 100%;
+        height: 305px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3px 3px 0 0;
+        float: left;
+        position: relative;
+    }
+}
+
+
+
+.link_roteirosporregiao {
+    position:relative;
+    display: block;
+    float: left;
+    width: 14%;
+    height: 305px;
+    border: 2px dotted @vermelho;
+    background-color: @cinza;
+    margin: 0 1% 25px 1%;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 10px 0 @vermelho;
+    box-shadow: 0 0 2px 0 @vermelho;
+    -webkit-transition: @transition_3;
+    -moz-transition: @transition_3;
+    -o-transition: @transition_3;
+    -ms-transition: @transition_3;
+    transition: @transition_3;
+    .img_roteirosporregiao {
+        display: block;
+    }
+    p {
+        display: none;
+    }
+}
+.link_roteirosporregiao:hover {
+    border: 2px solid @vermelho;
+    -webkit-box-shadow: 0 0 10px 0 @vermelho_alpha90;
+    box-shadow: 0 0 10px 0 @vermelho_alpha90;
+    -webkit-transition: @transition_3;
+    -moz-transition: @transition_3;
+    -o-transition: @transition_3;
+    -ms-transition: @transition_3;
+    transition: @transition_3;
+    display: block;
+    background-color: @vermelho_alpha90;
+
+    .img_roteirosporregiao {
+        display: none;
+    }
+    p {
+        display: block;
+        font-family: @museo300;
+        font-size: 1.5em;
+        color:#fff;
+        line-height: 15px;
+        margin-left: 5px;
+        margin-top: 3px;
+    }
+}
+
+
+
+
+//
+
+.linhaHorizontal_roteiros {
+    width: 100%;
+    border-top: 1px solid @vermelho;
+    margin: 10px 0px 50px;
+}
+
+.selecione_roteiros {
+    font-family: @museo300;
+    text-align: left;
+    font-size: 2.2em;
+    color: @vermelho;
+    text-transform: uppercase; 
+
+}
+
+.selecione_roteiros_lang_img {
+    clear: both;
+    align: right;
+    margin-bottom: -6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.roteirosLandingPage {
+    li {
+        height: 300px;
+        background-color: @vermelho_alpha90;
+        border-radius: 3px;
+        margin: 0 2% 25px 0;
+        float: left;
+        width: 15%;
+    }
+    li:nth-child(4), li:nth-child(10), li:nth-child(16), li:nth-child(22),
+        li:nth-child(28), li:nth-child(34), li:nth-child(40), 
+        li:nth-child(46), li:nth-child(52), li:nth-child(58) {
+        margin-right: 0;
+    }
+    .roteirosLandingPage_intro {
+        width: 49%;
+        padding: 2%;
+        font-size: 1.6em;
+        color: #fff;
+    }
+    .roteirosLandingPage_item {
+        .roteirosLandingPage_item_link {
+            display: block;
+            height: 100%;
+            width: 100%;
+            background-position: center center;
+            background-size: cover;
+            span {
+                font-size: 0em;
+                opacity:0;
+                transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+            }
+        }
+        .roteirosLandingPage_item_link:hover {
+            span {
+                -webkit-transition: all @transition_3;
+                -moz-transition: all @transition_3;
+                -o-transition: all @transition_3;
+                -ms-transition: all @transition_3;
+                transition: all @transition_3;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(233, 31, 61, 0.8);
+                color: #fff;
+                font-size: 1.4em;
+                padding: 5%;
+                opacity:1;
+                transition-delay:0s;
+                border-radius: 3px;
+            }
+        }
+    }
+    @media screen and (max-width: @media_mobile) {
+        .roteirosLandingPage_intro {
+            width: 100%;
+        }
+        li {
+            width: 49%;
+        }
+        li:nth-child(3), li:nth-child(5), li:nth-child(7), li:nth-child(9), li:nth-child(11) {
+            margin-right: 0;
+        }
+        li:nth-child(4), li:nth-child(6), li:nth-child(8), li:nth-child(10) {
+            margin-right: 2%;
+        }
+    }
+    @media screen and (min-width: @media_tablet_1) and (max-width: @media_tablet_2) {
+        .roteirosLandingPage_intro {
+            width: 100%;
+            height: 175px;
+        }
+        li {
+            width: 23.5%;
+        }
+        li:nth-child(5), li:nth-child(9), li:nth-child(13) {
+            margin-right: 0;
+        }
+        li:nth-child(3), li:nth-child(4), li:nth-child(6), li:nth-child(7), li:nth-child(8) {
+            margin-right: 2%;
+        }
+    }
+    @media screen and (min-width: @media_medium_1) and (max-width: @media_medium_2) {
+        .roteirosLandingPage_intro {
+            width: 100%;
+            height: 155px;
+        }
+        li {
+            width: 18.4%;
+        }
+        li:nth-child(6), li:nth-child(12), li:nth-child(18) {
+            margin-right: 0;
+        }
+        li:nth-child(4) {
+            margin-right: 2%;
+        }
+
+    }
+    @media screen and (min-width: @media_full) {
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+.roteirosHeader {
+    height: 220px;
+    background-position: center center;
+    background-size: cover;
+    .roteirosHeader_red {
+        position: absolute;
+        background-color: @vermelho_alpha90;
+        padding: 15px 15px 15px 35px;
+        margin: 100px 0 0 0;
+        height: auto;
+        a {
+            float: left;
+            display: block;
+            margin: 0 20px 0 0;
+            color: #fff;
+            -webkit-transition: color @transition_3;
+            -moz-transition: color @transition_3;
+            -o-transition: color @transition_3;
+            transition: color @transition_3;
+            i {
+                font-size: 4em;
+                display: block;
+                text-align: center;
+            }
+            span {
+                font-size: 1em;
+                text-transform: uppercase;
+                display: block;
+                width: 70px;
+                margin: 3px 0 0 0;
+                text-align: center;
+            }
+        }
+        a:hover {
+            color: @amarelo;
+            -webkit-transition: color @transition_3;
+            -moz-transition: color @transition_3;
+            -o-transition: color @transition_3;
+            transition: color @transition_3;
+        }
+    }
+    @media screen and (max-width: @media_mobile) {
+        .roteirosHeader_red {
+            background-color: @vermelho_alpha90;
+            padding: 15px;
+            margin: 20px 0 0 0;
+            width: 100%;
+            position: relative;
+            height: 100%;
+            display: table;
+            bottom: 0;
+            a {
+                margin: 20px 20px 0 0;
+            }
+        }
+    }
+
+
+
+}
+.roteirosIframe {
+    width: 100%;
+    padding: 0 0 15px 0;
+    iframe {
+        width: 100%;
+        display: block;
+    }
+}
+.roteirosSidebar {
+    margin-top:0;
+    .roteirosSidebar_box {
+        .roteirosSidebar_box_header {
+            color: #fff;
+            background-color: @vermelho_dark;
+            padding: 8px 0 8px 0;
+            text-align: center;
+            font-family: @museo700;
+            text-transform: uppercase;
+            font-size: 1.8em;
+            display: block;
+            width: 100%;
+            float: left;
+        }
+        ul {
+            width: 33%;
+            float: left;
+            margin: 0 0 25px 0.5%;
+            li {
+                a {
+                    font-family: @museo300;
+                    font-size: 1.6em;
+                    padding: 7px 5px 7px 5px;
+                    background-color: @vermelho;
+                    line-height: 1.2em;
+                    display: block;                    
+                    color: #fff;
+                    -webkit-transition: background-color @transition_3;
+                    -moz-transition: background-color @transition_3;
+                    -o-transition: background-color @transition_3;
+                    transition: background-color @transition_3;
+                    margin: 2px 0 0 0;
+                }
+                a:hover {
+                    background-color: @vermelho_dark;
+                    -webkit-transition: background-color @transition_3;
+                    -moz-transition: background-color @transition_3;
+                    -o-transition: background-color @transition_3;
+                    transition: background-color @transition_3;
+                }
+                .roteirosporperiodoLink {
+                    text-align: center;                
+                }
+                .roteirosporperiodoLink-artistas {
+                    display: block;
+                    background-size: cover;
+                    background-position: center center;
+                    padding: 27px 5px 27px 5px;
+                    p {
+                        display: none;
+                    }
+                }
+                .roteirosporperiodoLink-artistas:hover {
+                    padding: 17.5px 0px 17.5px 0px !important;
+                    background-image:none !important;
+                    p {
+                        display: block;
+                        padding: 0 !important;
+                    }
+                }
+            }
+        }
+        .roteirosSidebar_box_header_roteiroPeriodo {
+            width: 100%;
+            margin: 0;
+        }
+    } 
+}
+
+// FIQUE MAIS UM DIA //
+.fiquemaisumdia_bemvindos {
+    .textbox {
+        width: 86%;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+        h1 {
+            font-size:4.5em;
+            color: #FFF;
+            font-family: @museo100;
+            margin: 5% 0;
+        }
+        p {
+            font-family: @museo100;
+            font-size: 2.2em;
+            margin-left: 5px;
+            color: #FFF;
+        }
+    }
+}
+
+.fiquemaisumdia_programese {
+    h1 {
+        font-size:4.5em;
+        color: #FFF;
+        font-family: @museo100;
+        margin: 5% 0;
+    }
+    .textbox {
+        width: 86%;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+        p {
+            font-family: @museo100;
+            font-size: 2.2em;
+            margin-left: 5px;
+            color: #FFF;
+        }
+    }
+}
+
+.fiquemaisumdia_bairrosimperdiveis {
+    .titlebox {
+        margin-top: 55px !important;
+        margin-bottom: 0px !important;
+        h1 {
+            font-family: @museo100;
+            font-size: 4em;
+            color: #fff;
+            font-weight: normal;
+            margin-left: 15px;
+        }
+    }
+    .textbox {
+        margin-left: 15px;
+        margin-top: 20px;
+        width: 75%;
+        p {
+            font-family: @museo100;
+            font-size: 2em;
+            margin-left: 5px;
+            color: #FFF;
+        }
+    }
+}
+
+
+.fiquemaisumdia_roteirostem {
+    .titlebox {
+        margin-top: 270px !important;
+        margin-bottom: 0px !important;
+        h1 {
+            font-family: @museo100;
+            font-size: 5em;
+            color: #fff;
+            font-weight: normal;
+            margin-left: 15px;
+        }
+    }
+}
+
+// ESPORTE //
+.esporte {
+    .iconbox {
+        width: 50%;
+        margin-left: 95px;
+        margin-top: 15px;
+
+    }
+    .titlebox {
+        h1 {
+            margin: 0px !important;
+            font-family: @museo100;
+            font-size: 4.5em;
+            text-align: center;
+            padding: 3px;
+            color: #fff;
+        }
+    }
+    @media screen and (max-width: @media_mobile) {
+        .iconbox {
+            margin-left: 75px;
+        }
+    }
+}
+
+
+
+
+
+
+
+// NOITE //
+
+.noite {
+    .background_noite {
+        height: 100%;
+        display: table;
+        width: 100%;
+    }
+    .background_noite_gradiente {
+        height: 100%;
+        display: table;
+        width: 100%;
+    }
+    a {
+        display: table;
+        width: 80%;
+        margin: 0 auto;
+        padding: 45px 0 0 0;   
+        img {
+            display: block;
+            width: 30%;
+            float: left;
+        }
+        h1 {
+            font-family: @museo100;
+            font-size: 4.5em;
+            display: block;
+            width: 70%;
+            float: left;
+            margin-top: 13px;
+            color: #fff;
+        }
+        @media screen and (max-width: @media_tablet_2) {
+            img {
+                display: none;
+            }
+            h1 {
+                width: 100%;
+            }
+        }
+    }
+    .tripDummy {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+    @media screen and (max-width: @media_tablet_2) {
+        .tripDummy {
+            display: none;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+// COMER E BEBER //
+.comerebeber {
+    .iconbox {
+        width: 50%;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .titlebox {
+        margin-top: 45px;
+        h1 {
+            font-family: @museo100;
+            font-size: 4.2em;
+        }
+    }
+    .tripbox {
+        width: 86%;
+        margin-left: 30px;
+    }
+}
+.roteirosLandingPageLeiaMais {
+    .roteirosLandingPageLeiaMaisTitle {
+        color: @vermelho;
+        font-size: 2em;
+        float: left;
+        border-bottom: 1px solid @vermelho;
+        padding: 0 0 2px 15px;
+        width: 100%;
+        margin: 0 0 15px 0;
+        font-family: @museo500;
+    }
+    .roteirosVejaMais {
+        margin: 0 6% 25px 0;
+        width: 20%;
+    }  
+}
+@media screen and (max-width: @media_mobile) {
+    .roteirosLandingPageLeiaMais {
+        display: none !important;
+    }
+}
+@media screen and (min-width: @media_tablet_1) and (max-width: @media_tablet_2) {
+}
+@media screen and (min-width: @media_medium_1) and (max-width: @media_medium_2) {
+}
+@media screen and (min-width: @media_full) {
+}
+
+
+.lpgAtrativos {
+    .lpgAtrativos_box {
+        border: 1px solid @cinza;
+        height: 550px;
+        border-radius: 3px;
+        width: 90% !important;
+        margin: 0 auto;
+        float: none !important;
+        -webkit-transition: all @transition_2;
+        -moz-transition: all @transition_2;
+        -o-transition: all @transition_2;
+        -ms-transition: all @transition_2;
+        transition: all @transition_2;
+        @media screen and (max-width: @media_mobile) {
+            width: 100% !important;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        .lpgAtrativos_box_title {
+            font-family: @museo700;
+            font-size: 2em;
+            color: @preto;
+            text-transform: uppercase;
+            width: 100%;
+            display: block;
+            text-align: right;
+            margin-bottom: 15px;
+            -webkit-transition: all @transition_2;
+            -moz-transition: all @transition_2;
+            -o-transition: all @transition_2;
+            -ms-transition: all @transition_2;
+            transition: all @transition_2;
+        }
+        .lpgAtrativos_box_img {
+            height: 335px;
+            width: 100%;
+            display: block;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 3px 3px 0 0;
+        }
+        .lpgAtrativos_box_resumo {
+            font-family: @museo100;
+            font-size: 1.5em;
+            color: @preto;
+            text-align: right;
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .lpgAtrativos_box_end {
+            font-family: @museo100;
+            font-size: 1.2em;
+            color: @preto;
+            width: 100%;
+            display: block;
+            text-align: right;
+        }
+        .lpgAtrativos_box_cat {
+            font-family: @museo100;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: @vermelho;
+            display: block;
+            text-align: right;
+            position: absolute;
+            bottom: 0;
+            padding: 5px 10px 3px 10px;
+            border-radius: 4px;
+            right: 15px;
+        }
+        .lpgAtrativos_box_img_credito {
+            font-size: 1em;
+            font-family: @museo100;
+            color: #fff;
+            text-align: right;
+            padding: 320px 15px 0 0;
+            text-shadow: 0 0 6px #000;
+            @media screen and (max-width: @media_mobile) {
+                padding: 320px 6px 0 0;
+            }
+        }
+    }
+    .lpgAtrativos_box_content {
+        text-align: left;
+        padding: 15px;
+        position: relative;
+        height: 202px;
+    }
+}
+
+.lpgAtrativos:hover {
+    .lpgAtrativos_box {
+        border: 1px solid @vermelho;
+        -webkit-transition: all @transition_2;
+        -moz-transition: all @transition_2;
+        -o-transition: all @transition_2;
+        -ms-transition: all @transition_2;
+        transition: all @transition_2;
+    }
+    .lpgAtrativos_box_title {
+        color: @vermelho;
+        -webkit-transition: all @transition_2;
+        -moz-transition: all @transition_2;
+        -o-transition: all @transition_2;
+        -ms-transition: all @transition_2;
+        transition: all @transition_2;
+    }
+}
+
+
+
+.atrativosHeader {
+    background-image: url(../images/bgTeste.jpg);
+    background-size: cover;
+}
+.atrativosBusca {
+    display: block;
+    width: 300px;
+    padding: 20px;
+    border-radius: 3px;
+    float: right;
+    margin: 30px 5% 0 0;
+    background-color: @branco_alpha80;
+    .atrativosBusca_title {
+        display: block;
+        color: @vermelho;
+        font-size: 2.3em;
+        text-transform: uppercase;
+    }
+    .atrativosBusca_form {
+        display: block;
+        padding: 20px 0 0 0;
+        width: 100%;
+        .atrativosBusca_form_label {
+            display: block;
+            width: 30%;
+            font-size: 1.4em;
+            color: red;
+            float: left;
+            margin: 0 0 10px 0;
+            height: 25px;
+            padding: 7px 0 0 0;
+        }
+        .atrativosBusca_form_nome {
+            display: block;
+            width: 70%;
+            background-color: #fff;
+            font-size: 1.4em;
+            color: @preto;
+            float: left;
+            margin: 0 0 10px 0;
+            border: 0;
+            height: 25px;
+            padding: 0 5px 0 5px;
+            font-family: @museo300;
+            border-radius: 3px;
+        }
+        .atrativosBusca_form_select {
+            display: block;
+            width: 70%;
+            background-color: #fff;
+            font-size: 1.4em;
+            color: @preto;
+            float: left;
+            margin: 0 0 10px 0;
+            border: 0;
+            height: 25px;
+            padding: 0 5px 0 5px;
+            border-radius: 3px;     
+            font-family: @museo300;
+            option {
+                display:block;    
+                font-family: @museo300;
+                font-size: 1em;
+            }
+        }
+        .atrativosBusca_form_btn {
+            display: block;
+            float: right;
+            width: 30%;
+            height: 20px;
+            border: 0;
+            background-color: @vermelho;
+            color: #fff;
+            font-size: 1.4em;
+            border-radius: 5px;
+            cursor: pointer;
+            -webkit-transition: all @transition_2;
+            -moz-transition: all @transition_2;
+            -o-transition: all @transition_2;
+            -ms-transition: all @transition_2;
+            transition: all @transition_2;
+        }
+        .atrativosBusca_form_btn:hover {
+            background-color: #fff;
+            color: @vermelho;
+            -webkit-transition: all @transition_2;
+            -moz-transition: all @transition_2;
+            -o-transition: all @transition_2;
+            -ms-transition: all @transition_2;
+            transition: all @transition_2;
+        }
+        .atrativosBusca_form_btn:focus {
+            background-color: #fff;
+            color: @vermelho;
+            -webkit-transition: all @transition_2;
+            -moz-transition: all @transition_2;
+            -o-transition: all @transition_2;
+            -ms-transition: all @transition_2;
+            transition: all @transition_2;
+        }
+    }
+}
+
+.atrativoMain {
+    .atrativoMain_header_credito {
+        display: block;
+        text-align: right;
+        width: 55%;
+        position: absolute;
+        text-shadow: 0 0 6px #000;
+        color: #fff;
+        padding: 270px 50px 0 0;
+        font-size: 0.8em;
+    }
+    .atrativoMain_header {
+        width: 100%;
+        height: 280px;
+    }
+    .atrativoMain_content {
+        margin-top: 20px;
+        height: auto;
+    }
+    .atrativoMain_galeria {
+
+    }
+}
+
+.atrativoSidebar {
+    width: 100%;
+    height: 280px;
+    background-color: @vermelho;
+    h1 {
+        color: #fff;
+        background-color: #c21f3d;
+        padding: 8px 0 8px 0;
+        text-align: center;
+        font-family: 'MuseoSans-700', Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 1.8em;
+        display: block;
+        width: 100%;
+        float: left;
+        margin-bottom: 3%;
+    }
+    p {
+        font-size: 1.5em;
+        padding: 3%;
+    }
+}
+
+.atrativoAqui {
+    width: 100%;
+    height: auto;
+    h1 {
+        color: @vermelho;
+        padding: 8px 0 8px 0;
+        text-align: center;
+        font-family: @museo300;
+        text-transform: uppercase;
+        font-size: 1.8em;
+        display: block;
+        width: 100%;
+        float: left;
+    }
+}
+
+.atrativoArredores {
+    width: 100%;
+    background-color: @vermelho;
+    margin-top: 5%;
+    h1 {
+        color: #fff;
+        background-color: #c21f3d;
+        padding: 8px 0 8px 0;
+        text-align: center;
+        font-family: 'MuseoSans-700', Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 1.8em;
+        display: block;
+        width: 100%;
+        float: left;
+        margin-bottom: 3%;
+    }
+    p {
+        font-size: 1.5em;
+        padding: 3%;
+    }
+}
+
+
+.atrativoAcontece {
+    height: 300px;
+    background-color: #ccc;
+    margin-top: 40px;
+}
+
+.atrativoComents {
+    background-color: #ccc;
+    height: 300px;
+    margin-top: 40px;
+}
+
+.atrativoReadmore {
+
+}
+
+.atrativosBoxTitle {
+    color: @vermelho;
+    font-size: 2em;
+    float: left;
+    border-bottom: 1px solid @vermelho;
+    padding: 0 0 2px 15px;
+    width: 100%;
+    margin: 0 0 15px 0;
+    font-family: @museo500;
+}
+
+
+
+.atrativosIconeBox {
+    width: 79px;
+    height: 79px;
+    background-color: #fff;
+    float: left;
+    margin: 2%;
+    border: 1px solid @vermelho;
+    .atrativosIcone {
+        width: 100%;
+        padding: 7%;
+    }
+}
+
+.atrativosIconeBox:nth-child(5), .atrativosIconeBox:nth-child(9)  {
+    margin-right: 0%;
+}
+
+.atrativosVerFotos {
+    width: 88px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    text-shadow: 0 0 6px #000;
+    background-color: #e91f3d;
+    margin: 260px 0px 0px 675px;
+    p {
+        color: #fff;
+        padding: 5px 0px 0 12px;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+
+
+
+.roteirosHomeMobile {
+    .roteirosHomeMobile_link {
+        h3 {
+            padding: 40px 10px 0 10px;
+            font-size: 2.5em;
+            font-family: @museo700 !important;
+        }
+        h4 {
+            font-size: 1.5em;
+            padding: 5px 10px 0 10px;
+            font-family: @museo300;
+        }
+    }
+}
+
+
+.programeseBox {
+    h1 {
+        padding: 40px 10px 0 10px;
+        font-size: 4.5em;
+        color: #fff;
+        font-family: @museo100 !important;
+    }
+    p {
+        font-size: 1.5em;
+        padding: 5px 10px 0 10px;
+        color: #fff;
+        font-family: @museo300;
+    }
+}

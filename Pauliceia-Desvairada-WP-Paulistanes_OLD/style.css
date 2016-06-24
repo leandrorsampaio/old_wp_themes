@@ -1,0 +1,2862 @@
+/*
+Theme Name: Pauliceia Desvairada WP Theme
+Theme URI: http://www.spturis.com
+Author: SPTuris/DMV - Luciana Jabur / Leandro Rossi Sampaio / Daniella Parra
+Author URI: http://lesampaio.com.br
+Description: Tema padrao desenvolvido para o site do Dicionario de Paulistanes
+Version: 1.3.2
+License: Todos os direitos reservados.  
+*/
+/* --------------------- RESET ----------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    border:0;
+    width: 100%;
+}
+:focus {
+    outline: 0;
+}
+a:link {   
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {   
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {   
+    text-decoration: none;
+    color: #ed1a3b;
+}
+a:active {   
+    text-decoration: none;
+    color: inherit;
+}
+/* FIM RESET */
+*, html, body {
+    font-size: 10px;
+}
+body {
+    line-height: 1;    
+    font-family: 'museo_sans300', arial, sans-serif;
+    overflow-x: hidden;
+    color: #212121;
+    background-image: url(images/bg.png);
+}
+#tudo {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    display: table;
+    -webkit-box-shadow: 0 0 20px 1px rgba(00,00,00,50);
+    box-shadow: 0 0 20px 1px rgba(00,00,00,50);
+}
+@media screen and (max-width: 479px) {
+    #tudo {
+        width: 100%;
+    }    
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #tudo {
+        width: 100%;
+    }    
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #tudo {
+        width: 100%;
+    }    
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+    #tudo {
+        width: 960px;
+    }    
+}
+@media screen and (min-width: 1250px) {
+    #tudo {
+        width: 1200px;
+    }    
+}
+/* --------------------- @FONTFACE ----------------------- */
+@font-face {
+    font-family: 'amaticbold';
+    src: url('fonts/amatic-bold-webfont.eot');
+    src: url('fonts/amatic-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/amatic-bold-webfont.woff') format('woff'),
+        url('fonts/amatic-bold-webfont.ttf') format('truetype'),
+        url('fonts/amatic-bold-webfont.svg#amaticbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'honey_scriptsemibold';
+    src: url('fonts/honeyscript-semibold-webfont.eot');
+    src: url('fonts/honeyscript-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/honeyscript-semibold-webfont.woff') format('woff'),
+        url('fonts/honeyscript-semibold-webfont.ttf') format('truetype'),
+        url('fonts/honeyscript-semibold-webfont.svg#honey_scriptsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* FONT SEM ACENTOS
+@font-face {
+    font-family: 'Bad Script', cursive;;
+    src: url('fonts/skinny-regular-webfont.eot');
+    src: url('fonts/skinny-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/skinny-regular-webfont.woff') format('woff'),
+        url('fonts/skinny-regular-webfont.ttf') format('truetype'),
+        url('fonts/skinny-regular-webfont.svg#skinnyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+@font-face {
+    font-family: 'museo_sans300_italic';
+    src: url('fonts/museosans_300_italic-webfont-webfont.eot');
+    src: url('fonts/museosans_300_italic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300_italic-webfont-webfont.woff') format('woff'),
+        url('fonts/museosans_300_italic-webfont-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300_italic-webfont-webfont.svg#museo_sans300_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans300';
+    src: url('fonts/museosans_300-webfont-webfont.eot');
+    src: url('fonts/museosans_300-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_300-webfont-webfont.woff') format('woff'),
+        url('fonts/museosans_300-webfont-webfont.ttf') format('truetype'),
+        url('fonts/museosans_300-webfont-webfont.svg#museo_sans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo_sans700';
+    src: url('fonts/museosans_700-webfont-webfont.eot');
+    src: url('fonts/museosans_700-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/museosans_700-webfont-webfont.woff') format('woff'),
+        url('fonts/museosans_700-webfont-webfont.ttf') format('truetype'),
+        url('fonts/museosans_700-webfont-webfont.svg#museo_sans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Bad Script', cursive;
+    font-size: 4.5em;
+}
+article i, em {
+    font-family: 'museo_sans300_italic';
+}
+strong, b {
+    font-family: 'museo_sans700';
+}
+i {
+    font-family: 'museo_sans300_italic';
+}
+.font-1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font-2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+.font-3 {
+    font-family: 'Comic Sans MS', cursive;
+}
+.font-4 {
+    font-family: 'Courier New', 'Courier New', monospace;
+}
+.font-5 {
+    font-family: Georgia, serif;
+}
+.font-6 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+.font-7 {
+    font-family: 'Lucida Console', Monaco, monospace;
+}
+.font-8 {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+.font-9 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+.font-10 {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.font-11 {
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+}
+.font-12 {
+    font-family: 'Trebuchet MS1', 'Trebuchet MS', sans-serif;
+}
+.font-13 {
+    font-family: Verdana, Verdana, Geneva, sans-serif;
+}
+.font-14 {
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+}
+.font-15 {
+    font-family: amaticbold;
+}
+.font-16 {
+    font-family: honey_scriptsemibold;
+}
+.font-17 {
+    font-family: 'Bad Script', cursive;;
+}
+.font-18 {
+    font-family: museo_sans300;
+}
+.font-19 {
+    font-family: museo_sans300_italic;
+}
+.font-20 {
+    font-family: museo_sans700;
+}
+/* --------------------- HEADER ----------------------- */
+header {
+}
+#header {
+    width: 100%;
+    float: left;
+}
+#header_logo {
+    width: 26%;
+    float: left;
+}
+#header_logo h1 {
+    font-family: honey_scriptsemibold;
+    font-size: 13em;
+}
+#header_logo h2 {
+    font-family: museo_sans300;
+    font-size: 2.2em;
+    margin: -26px 0 0 0;
+    float: right;
+}
+#header_carinha {
+    width: 10%;
+    float: left;
+    margin: -8px 0 0 -5px;
+}
+#header_menuMobile {
+    width: 130px;
+    height: 130px;
+    float: left;
+}
+#header_menuMobile nav {
+    width: 545px;
+    float: right;
+}
+#header_menuMobile nav ul {
+}
+#header_menuMobile nav ul li {
+    width: 100%;
+    height: 50px;
+    margin: 1px;
+    background-image: url(images/bg-75.png);
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 12px 0 0 0;
+    font-family: 'museo_sans700';
+}
+#header_menuMobile nav ul li a {
+    width: 100%;
+    display: block;
+}
+#header_menuMobile .nav-toggle {
+    height: 130px;
+    width: 130px;
+    background-image: url(images/menuBG-responsive.png);
+    display: block;
+    font-family: honey_scriptsemibold;
+    padding: 65px 0 0 38px;
+    font-size: 5em;
+}
+#header_menu {
+    width: 64%;
+    float: left;
+}
+#header_menu_balaoEsq {
+    width: 47px;
+    height: 27px;
+    float: left;
+    margin: 60px 0 0 1px;
+    position: absolute;
+}
+#header_menu_balaoEsq img {   
+}
+#header_menu ul {
+    height: 110px;
+    float: right;
+    border: dashed 3px #000;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+#header_menu ul li {
+    float: left;
+    font-family: honey_scriptsemibold;
+    font-size: 4.5em;
+    margin: 0 35px 0 35px;
+}
+#header_menu ul li a {
+}
+#header_menu-linkMania {
+    margin-top: 11px !important;
+    display: block;
+}
+#header_menu-linkMania a {
+}
+#header_menu-linkTraducoes {
+    margin-top: 30px !important;
+    display: block;
+}
+#header_menu-linkTraducoes a {
+}
+#header_menu-linkGastronomia {
+    margin-top: 30px !important;
+    display: block;
+}
+#header_menu-linkGastronomia a {
+}
+#header_menu-linkDialetos {
+    margin-top: 11px !important;
+    display: block;
+}
+#header_menu-linkDialetos a {
+}
+#header_menu-linkPrefacio {
+    position: absolute;
+    float: right !important;
+    margin: 110px 0 0 596px !important;
+    font-size: 2.7em !important;
+}
+#header_menu-linkPrefacio a {
+}
+#header_alfabeto {
+    width: 100%;
+    clear: both;
+    float: left;
+    border-top: dashed 2px #ed1a3b;
+    border-bottom: dashed 2px #ed1a3b;
+    padding: 10px 0 10px 0;
+    margin: 25px 0 25px 0;
+}
+#header_alfabeto_title {
+    font-family: 'museo_sans300_italic';
+    font-size: 18px;
+    float: left;
+    margin: 16px 0 0 10px;
+}
+#header_alfabeto a {
+    font-size: 3.0em;
+    margin: 0 12px 0 12px;
+    float: left;
+}
+.elastislide-wrapper nav span {
+    position: absolute;
+    background: #999 url(images/nav.png) no-repeat 4px 3px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    text-indent: -9000px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.elastislide-wrapper {
+    position: relative;
+    background-color: transparent;
+    margin: 0 auto;
+    min-height: 60px;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+}
+#alfabeto_carousel {
+    float: left;
+    height: 49px;
+}
+#carousel2 li {
+    width: 25px!important;
+}
+.elastislide-horizontal ul {
+    width: 50px!important;
+}
+@media screen and (max-width: 479px) {
+    .HeadCentralizador {
+        width: 361px;
+        margin: 0 auto;
+        height: 86px;
+    }
+    #header_logo {
+        width: 201px;
+    }
+    #header_logo h1 {
+        font-size: 8.5em;
+    } 
+    #header_logo h2 {
+        font-size: 1.7em;
+        margin: -16px 0 0 0;
+    }
+    #header_carinha {
+        width: 74px;
+        margin: 0;
+    }
+    #header_menuMobile {
+        width: 86px;
+        height: 86px;
+    }
+    #header_menuMobile nav {
+        width: 362px;
+    }
+    #header_menuMobile nav ul li {
+        height: 43px;
+        font-size: 2.0em;
+    }
+    #header_menuMobile .nav-toggle {
+        height: 86px;
+        width: 86px;
+        background-image: url(images/menuBG-responsive-3.png);
+        padding: 41px 0 0 24px;
+        font-size: 3.6em;
+    }
+    #header_menu{
+        display: none;
+    }
+    #header_alfabeto_title {
+        float: none;
+        margin: 0 auto;
+        width: 192px;
+    }
+    #alfabeto_carousel {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    .HeadCentralizador {
+        width: 443px;
+        margin: 0 auto;
+        height: 108px;
+    }
+    #header_logo {
+        width: 244px;
+    }
+    #header_logo h1 {
+        font-size: 10.5em;
+    } 
+    #header_logo h2 {
+        font-size: 2em;
+        margin: -18px 0 0 0;
+    }
+    #header_carinha {
+        width: 92px;
+        margin: 0;
+    }
+    #header_menuMobile {
+        width: 106px;
+        height: 106px;
+    }
+    #header_menuMobile nav {
+        width: 443px;
+    }
+    #header_menuMobile nav ul li {
+        height: 43px;
+        font-size: 2.0em;
+    }
+    #header_menuMobile .nav-toggle {
+        height: 106px;
+        width: 106px;
+        background-image: url(images/menuBG-responsive-2.png);
+        padding: 51px 0 0 28px;
+        font-size: 4.5em;
+    }
+    #header_menu{
+        display: none;
+    }
+    #header_alfabeto_title {
+        float: none;
+        margin: 0 auto;
+        width: 192px;
+    }
+    #alfabeto_carousel {
+        width: 96%;
+    }
+    #carousel2 li {
+        width: 31px!important;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .HeadCentralizador {
+        width: 545px;
+        margin: 0 auto;
+        height: 130px;
+    }
+    #header_logo {
+        width: 301px;
+    }
+    #header_carinha {
+        width: 112px;
+        margin: 0;
+    }
+    #header_menu{
+        display: none;
+    }
+    #indexContent_palavraDestaque_titulo {
+        margin: 20px 15px 0 0;
+        font-size: 11em;
+    }
+    #header_alfabeto_title {
+        float: none;
+        margin: 0 auto;
+        width: 192px;
+    }
+    #alfabeto_carousel {
+        width: 98%;
+    }
+    #carousel2 li {
+        width: 34px!important;
+    }
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+    #header_logo {
+        width: 28%;
+    }
+    #header_logo h1 {
+        font-size: 11em;
+    }
+    #header_logo h2 {
+        font-size: 1.8em;
+        margin: -22px 0 0 0;
+    }
+    #header_carinha {
+        width: 11%;
+        margin: -8px 0 0 -17px;
+    }
+    #header_menuMobile{
+        display: none;
+    }
+    #header_menu {
+        width: 62.8%;
+    }
+    #header_menu_balaoEsq {
+        margin: 60px 0 0 0;
+    }
+    #header_menu ul li {
+        font-size: 38px;
+        margin: 0 23px 0 24px;
+        padding: 5px 0 0 0;
+    }
+    #header_alfabeto {
+        margin: 40px 0 25px 0;
+    }
+    #header_alfabeto a {
+        font-size: 2.6em;
+    }
+    #header_alfabeto_title span {
+        display: none;
+    }
+    #alfabeto_carousel {
+        width: 820px;
+    }
+    #header_menu-linkPrefacio {
+        margin: 107px 0 0 452px !important;
+    }
+    #carousel2 li {
+        width: 32px!important;
+    }
+    .elastislide-wrapper {
+        width: 100%;
+    }
+    .elastislide-horizontal ul {
+        width: 800px!important;
+    }
+}
+@media screen and (min-width: 1250px) {
+    #header_menuMobile{
+        display: none;
+    }
+    #carousel2 li {
+        width: 37px!important;
+    }
+    .elastislide-horizontal ul {
+        width: 800px!important;
+    }
+    #alfabeto_carousel {
+        width: 972px;
+    }
+}
+/* --------------------- RESPONSIVE NAV MENU ----------------------- */
+/*! responsive-nav.js 1.0.25 by @viljamis */
+.nav-collapse ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    list-style: none;
+}
+.nav-collapse li {
+    width: 100%;
+    display: block;
+}
+.js .nav-collapse {
+    clip: rect(0 0 0 0);
+    max-height: 0;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    zoom: 1;
+}
+.nav-collapse.opened {
+    max-height: 9999px;
+    z-index: 99;
+}
+.nav-collapse.disable-pointer-events {
+    pointer-events: none !important;
+}
+.nav-toggle {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* --------------------- FOOTER ----------------------- */
+footer {
+}
+#footer {
+    width: 100%;
+    margin: 35px 0 0 0;
+    float: left;
+    border-top: dashed 2px #000;
+    padding: 35px 0 15px 0;
+}
+#footer_menu {
+    width: 30%;
+    float: left;
+    display: block;
+    padding: 0 0 0 3%;
+}
+#footer_menu h3 {
+    font-size: 3.8em;
+    color: #ed1a3b;
+    letter-spacing: -2px;
+    margin: 0 0 10px 0;
+    display: block;
+}
+#footer_menu_lista {
+}
+#footer_menu_lista li {
+    font-size: 13px;
+    margin: 0 0 6px 0;
+}
+#footer_logos {
+    width: 550px;
+    float: right;
+    display: block;
+    margin: 0 20px 0 0;
+}
+#footer_logos a {
+    display: block;
+    float: left;
+    margin: 0 35px 0 0;
+    height: 115px;
+}
+#footer_logos img {
+}
+#footer_logos-marcasp {
+    width: 150px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 0 25px 0 0;
+    border-right: 2px solid #133f6d;
+}
+#footer_logos-marcasp img {
+}
+#footer_logos-spturis {
+    width: 150px;
+}
+#footer_logos-spturis img {
+}
+#footer_logos-prefeitura {
+    width: 150px;
+    margin: 0 !important;
+}
+#footer_logos-prefeitura img {
+}
+
+
+
+
+@media screen and (max-width: 479px) {
+    #footer_menu {
+        display: none;   
+    }
+    #footer_logos {
+        width: 301px !important;
+    }
+    #footer_logos a {
+        height: auto;
+    }
+    #footer_logos-marcasp {
+        width: 78px;
+        margin: 0 20px 0 0 !important;
+    }
+    #footer_logos-spturis {
+        width: 78px;
+        margin: 0 20px 0 0 !important;
+    }
+    #footer_logos-prefeitura {
+        width: 78px;
+        margin: 0 !important;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #footer_menu {
+        width: 25%;
+    }
+    #footer_logos {
+        width: 301px !important;
+    }
+    #footer_logos a {
+        height: auto;
+    }
+    #footer_logos-marcasp {
+        width: 78px;
+        margin: 0 20px 0 0 !important;
+    }
+    #footer_logos-spturis {
+        width: 78px;
+        margin: 0 20px 0 0 !important;
+    }
+    #footer_logos-prefeitura {
+        width: 78px;
+        margin: 0 !important;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #footer_logos {
+        width: 460px;
+    }
+    #footer_logos a {
+        height: auto;
+    }
+    #footer_logos-marcasp {
+        width: 120px;
+    }
+    #footer_logos-spturis {
+        width: 120px;
+    }
+    #footer_logos-prefeitura {
+        width: 120px;
+    }
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+
+}
+@media screen and (min-width: 1250px) {
+
+}
+
+
+
+
+/* --------------------- INDEX ----------------------- */
+#indexContent {
+    float: left;
+    width: 100%;
+}
+#indexContent_palavraDestaque {
+    height: 150px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+#indexContent_palavraDestaque_titulo {
+    font-family: 'amaticbold';
+    float: left;
+    margin: 5px 15px 0 0;
+    text-align: right;
+    font-size: 12em;
+    width: 21%;
+}
+#indexContent_palavraDestaque_chave{
+    width: 29px;
+    height: 150px;
+    float: left;
+    margin: 12px 15px 0 0;
+}
+#indexContent_palavraDestaque_imgDestak {
+    width: 200px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+#indexContent_palavraDestaque_imgDestak a {
+    display: block;
+    width: 200px;
+    float: left;
+    margin: 11px 10px 0 0;
+}
+#indexContent_palavraDestaque_descricao {
+    /* max-width: 50%; */
+    width: 380px;
+    height: 150px;
+    float: left;
+    font-size: 1.6em;
+    font-family: museo_sans300_italic;
+    display: table;
+    position: static;
+}
+#indexContent_palavraDestaque_descricao p {
+    display: table-cell;
+    vertical-align: middle;
+    position: static;
+}
+#indexContent_palavraDestaque_audio {
+    width: 147px;
+    height: 75px;
+    float: left;
+    margin: 42px 0 0 15px;
+    background-image: url(images/palavraPlay-index.png);
+}
+#indexContent_palavraDestaque_audio audio {
+    width: 42px;
+    margin: 25px 0 0 75px;
+}
+.indexContent_boxTri {
+    float: left;
+    margin: 25px 23px 25px 0;
+    width: 32%;
+}
+.boxTri-NoMargin {
+    margin-right: 0 !important;
+    border-left: #ed1a3b 2px dashed;
+}
+#indexContent_boxTri_palavras {
+    margin: 0 0 15px 0;
+    float: left;
+}
+#indexContent_boxTri_palavras_balao {
+    width: 34px;
+    float: left;
+    height: 27px;
+    margin: 53px 0 0 6px;
+    position: absolute;
+}
+#indexContent_boxTri_palavras_content {
+    width: 90%;
+    float: right;
+    padding: 20px;
+    border: #ed1a3b 2px dashed;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+#indexContent_boxTri_palavras_content h2 {
+    text-align: center;
+    color: #ed1a3b;
+    font-size: 4.5em;
+    height: 40px;
+    letter-spacing: -3px;
+}
+#indexContent_boxTri_palavras_content ul {
+}
+#indexContent_boxTri_palavras_content ul li  {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 17px 0 0 0;
+}
+#indexContent_boxTri_palavras_content a {
+}
+#indexContent_boxTri_palavras_content img {
+}
+#indexContent_boxTri_palavras_content p {
+}
+#indexContent_boxTri_palavras_content .thumb {
+    width: 20%;
+    display: block;
+    float: left;
+}
+#indexContent_boxTri_palavras_content .palavra {
+    font-size: 25px;
+    margin: 8px 0 0 8px;
+    display: block;
+    float: left;
+}
+#indexContent_boxTri_social {
+}
+#indexContent_boxTri_social_balao {   
+    width: 34px;
+    float: left;
+    height: 27px;
+    margin: 310px 0 0 6px;
+    position: absolute;
+}
+#indexContent_boxTri_social_content {    
+    width: 90%;
+    float: right;
+    padding: 20px;
+    border: #ed1a3b 2px dashed;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+#indexContent_boxTri_social_content h2 {
+    font-size: 3.4em;
+    text-align: center;
+    color: #ed1a3b;
+    height: 40px;
+    letter-spacing: -3px;
+}
+#indexContent_boxTri_social_content a {
+}
+#indexContent_boxTri_social_content img {
+    display: block;
+    height: 70px;
+    width: 70px;
+    background-color: #5555ff;
+    float: left;
+    margin: 6px 0 0 48px;
+}
+#indexContent_boxTri_mania {
+}
+#mania_titulo {
+    font-family: honey_scriptsemibold;
+    font-size: 7em;
+    text-align: center;
+    display: block;
+}
+#mania_imagem {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+#mania_imagem img {
+}
+#mania_legenda {
+    text-align: right;
+    margin: 0 5% 0 0;
+    font-size: 1.1em;
+}
+#mania_resumo {
+    font-size: 1.7em;
+    margin: 0 5% 0 5%;
+    text-align: center;
+    padding: 15px 0 0 0;
+    display: block;
+}
+#indexContent_boxTri_gastronomia {
+}
+#gastronomia_titulo {
+    font-family: 'amaticbold';
+    font-size: 7em;
+    text-align: center;
+    display: block;
+    margin: -10px 0 15px 0;
+    height: 70px;
+}
+#gastronomia_imagem {
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+}
+#gastronomia_imagem img {
+}
+#gastronomia_legenda {
+    text-align: right;
+    margin: 0 5% 0 0;
+    font-size: 1.1em;
+}
+#gastronomia_item {
+    font-family: 'Bad Script', cursive;;
+    text-align: center;
+    display: block;
+    font-size: 4.5em;
+    margin: 15px 0 0 0;
+    letter-spacing: -3px;
+}
+#gastronomia_resumo {
+    font-size: 1.7em;
+    margin: 0 5% 0 5%;
+    text-align: center;
+    display: block;
+}
+#index_content_boxDialetos {
+    float: left;
+    margin: 20px 0 0 0;
+    width: 100%;
+    border-top: dashed 2px #ed1a3b;
+    border-bottom: dashed 2px #ed1a3b;
+    padding: 20px 0 20px 0;
+}
+#index_content_boxDialetos_titulo {
+    float: left;
+    width: 218px;
+    height: 160px;
+    background-image: url(images/dialetos-balaoBG.png);
+    margin: 0 0 0 17px;
+}
+#index_content_boxDialetos_titulo_link {
+}
+#index_content_boxDialetos_titulo_link h2 {
+    font-family: 'amaticbold';
+    width: 135px;
+    color: #ed1a3b;
+    text-align: center;
+    font-size: 4.9em;
+    margin: 30px 0 0 25px;
+}
+#index_content_boxDialetos_carrossel {
+    float: left;
+    width: 910px;
+}
+.index_content_boxDialetos_carrossel_lista .elastislide-horizontal ul {
+    width: 354px!important;
+    /*    margin: 0 5% 0 5%;
+        width: 95%;*/
+}
+/*.index_content_boxDialetos_carrossel_lista ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+.index_content_boxDialetos_carrossel_lista li {
+    width: 154px;
+    height: 154px;
+    margin: 6px;
+    display: block;
+    float: left;
+}*/
+.dialetos_imagem {
+    width: 154px;
+    height: 154px;
+}
+.prev {
+    float: left;
+    margin-left: 10px;
+    display: block !important;
+}
+.next {
+    float: right;
+    margin-right: 10px;
+    display: block !important;
+}
+#index_content_boxDialetos_carrossel_controles {
+    display: block !important;
+    position: absolute;
+    z-index: 999;
+    margin: -120px 65px 0 -43px;
+    width: 910px;
+}
+#indexContent_boxBoiando {
+    float: left;
+    margin: 25px 3% 0 0;
+    width: 57%;
+    border-right: dashed 2px #ed1a3b;
+    padding: 0 3% 0 2%;
+}
+#indexContent_boxBoiando_blackpower {    
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 7% 0 0;
+}
+#indexContent_boxBoiando_blackpower img {
+}
+#indexContent_boxContribua {
+    float: left;
+    margin: 25px 0 0 0;
+    width: 40%;
+}
+#indexContent_boxPraDoDia {   
+    float: left;
+    padding: 15px;
+    margin: 25px 0 0 0;
+    width: 100%;
+    background-image: url(images/lousa-pattern.jpg);
+}   
+#indexContent_boxPraDoDia_title {   
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+#indexContent_boxPraDoDia_title img  {   
+}
+#indexContent_boxPraDoDia ul {   
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 55px;
+}
+#indexContent_boxPraDoDia ul li  {   
+    font-family: honey_scriptsemibold;
+    font-size: 5em;
+    float: left;
+    display: block;
+    width: 18%;
+    margin: 0 1% 0 1%;
+    text-align: center;
+    color: #fff;
+}
+.boxPraDoDia-thumb {
+    padding: 0 0 10px 0;
+    display: block;
+}
+.boxPraDoDia-thumb img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+.boxPraDoDia-title {
+}
+@media screen and (max-width: 479px) {
+    #indexContent_palavraDestaque_titulo {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    #indexContent_palavraDestaque_imgDestak {
+        display: none;
+    }
+    #indexContent_palavraDestaque_descricao {
+        width: 90%;
+        float: none;
+        clear: both;
+        margin: 0 auto;
+        height: 132px;
+    }
+    #indexContent_palavraDestaque_descricao p {
+        text-align: center;
+    }
+    #indexContent_palavraDestaque_chave {
+        display: none;
+    }
+    #indexContent_palavraDestaque_audio {
+        clear: both;
+        float: none;
+        margin: 0 auto;
+    }
+    #index_content_boxDialetos {
+        display: none;
+    }
+    .boxTri-responsivel {
+        display: none;
+    }
+    .indexContent_boxTri {
+        float: left;
+        margin: 25px 23px 25px 0;
+        width: 100%;
+    }
+    #indexContent_boxTri_mania {
+        margin: 175px 0 0;
+    }
+    .boxTri-NoMargin {
+        border-left: none;
+        border-top: #ed1a3b 2px dashed;
+        padding: 25px 0 0;
+    }
+    #indexContent_boxBoiando {
+        float: left;
+        margin: 25px 3% 0 0;
+        width: 100%;
+        border-top: dashed 2px #ed1a3b;
+        border-bottom: dashed 2px #ed1a3b;
+        border-right: none;
+        padding: 15px 3% 15px 2%;
+    }
+    #indexContent_boxContribua {
+        float: left;
+        margin: 25px 0 0 0;
+        width: 100%;
+    }
+    #indexContent_boxContribua {
+        float: left;
+        margin: 25px 0 0 0;
+        width: 100%;
+    }
+    #indexContent_boxPraDoDia {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #indexContent_palavraDestaque_titulo {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    #indexContent_palavraDestaque_imgDestak {
+        display: none;
+    }
+    #indexContent_palavraDestaque_descricao {
+        width: 90%;
+        float: none;
+        clear: both;
+        margin: 0 auto;
+        height: 132px;
+    }
+    #indexContent_palavraDestaque_descricao p {
+        text-align: center;
+    }
+    #indexContent_palavraDestaque_chave {
+        display: none;
+    }
+    #indexContent_palavraDestaque_audio {
+        clear: both;
+        float: none;
+        margin: 0 auto;
+    }
+    #index_content_boxDialetos {
+        display: none;
+    }
+    .boxTri-responsivel {
+        display: none;
+    }
+    .indexContent_boxTri {
+        float: left;
+        margin: 25px 23px 25px 0;
+        width: 100%;
+    }
+    #indexContent_boxTri_mania {
+        margin: 175px 0 0;
+    }
+    .boxTri-NoMargin {
+        border-left: none;
+        border-top: #ed1a3b 2px dashed;
+        padding: 25px 0 0;
+    }
+    #indexContent_boxBoiando {
+        float: left;
+        margin: 25px 3% 0 0;
+        width: 100%;
+        border-top: dashed 2px #ed1a3b;
+        border-bottom: dashed 2px #ed1a3b;
+        border-right: none;
+        padding: 15px 3% 15px 2%;
+    }
+    #indexContent_boxContribua {
+        float: left;
+        margin: 25px 0 0 0;
+        width: 100%;
+    }
+    #indexContent_boxPraDoDia {
+        display: none;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #indexContent_palavraDestaque_titulo {
+        margin: 13px 15px 0 0;
+        font-size: 10em;
+    }
+    #indexContent_palavraDestaque_imgDestak {
+        display: none;
+    }
+    #indexContent_palavraDestaque_descricao {
+        font-size: 1.4em;
+        width: 47%;
+    }
+    .boxTri-responsivel {
+        display: none;
+    }
+    .indexContent_boxTri {
+        width: 48%;
+    }
+    #boxDialetos-responsivel {
+        margin: 0 auto;
+        width: 672px;
+    }
+    #index_content_boxDialetos_titulo {
+        width: 160px;
+        height: 108px;
+        background-image:none;
+        margin: 0;
+    }
+    #index_content_boxDialetos_titulo_link h2 {
+        width: auto;
+        margin: 0 0 0 15px;
+    }
+    #index_content_boxDialetos_carrossel {
+        width: 504px;
+        margin: 0 0 0 8px;
+    }
+    .index_content_boxDialetos_carrossel_lista li {
+        width: 100px;
+        height: 100px;
+    }
+    #index_content_boxDialetos_carrossel_controles {
+        margin: -95px 65px 0 -37px;
+        width: 523px;
+    }
+    #indexContent_boxPraDoDia ul li {
+        width: 19%;
+        margin: 0 3% 0 3%;
+    }
+    .pratododiaCont-5 {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+    #indexContent_palavraDestaque_titulo {
+        width: 21%;
+    }
+    #indexContent_palavraDestaque_descricao {
+        width: 260px;
+    }
+    .indexContent_boxTri {
+        margin: 25px 18px 25px 0;
+    }
+    #indexContent_boxTri_palavras_balao {
+        margin: 53px 0 0 4px;
+    }    
+    #indexContent_boxTri_palavras_content {
+        width: 88%;
+    }
+    #indexContent_boxTri_palavras_content .palavra {
+        font-size: 2em;
+        margin: 5px 0 0 8px;
+    }
+    #indexContent_boxTri_social_balao {
+        margin: 310px 0 0 4px;
+    }
+    #indexContent_boxTri_social_content {
+        width: 88%;
+    }
+    #indexContent_boxTri_social_content h2 {
+        font-size: 2.9em;
+    }
+    #indexContent_boxTri_social_content img {
+        margin: 10px 0 0 32px;
+        height: 60px;
+        width: 60px;
+    }
+    #mania_titulo {
+        font-size: 6.5em;
+    }
+    #mania_legenda {
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+    #mania_resumo {
+        display: none;
+    }
+    #gastronomia_titulo {
+        margin: 0 0 15px 0;
+    }
+    #index_content_boxDialetos_titulo {
+        margin: 0 5px 0 7px;
+    }
+    #index_content_boxDialetos_carrossel {
+        width: 680px;
+        margin: 4px 0 0 0;
+    }
+    .index_content_boxDialetos_carrossel_lista li {
+        width: 140px;
+        height: 140px;
+    }
+    #index_content_boxDialetos_carrossel_controles {
+        width: 685px;
+        margin: -114px 65px 0 -39px;
+    }
+    #indexContent_boxBoiando_blackpower {
+        padding: 15px 0 40px 0;
+    }
+    #contribuaBox_wpComments input {
+        width: 69% !important;
+    }
+    #contribuaBox_wpComments textarea {
+        width: 69% !important;
+    }
+    #recaptcha_area {
+        margin: 0 0 0 0 !important;
+    }
+}
+@media screen and (min-width: 1250px) {
+}
+/* --------------------- SINGLE (S) ----------------------- */
+#internaContent {
+    float: left;
+    width: 100%;
+}
+#internaContent_article {
+    float: left;
+    border-right: 2px dashed #ed1a3b;
+    padding: 0 25px 0 0;
+}
+#internaContent_article_palavra {
+}
+#internaContent_article_palavra_title {
+    font-family: 'amaticbold', arial, sans-serif;
+    font-size: 8em;
+    color: #ed1a3b;
+}
+#internaContent_article_palavra_imagem {
+    margin: 25px 0;
+    width: 62%;
+}
+#internaContent_article_palavra_imagem img {
+}
+#internaContent_article_palavra_imagem p {
+    font-size: 1.3em;
+    font-family: 'museo_sans300_italic', arial, sans-serif;
+    margin: 5px 0 0;
+}
+#internaContent_article_palavra_texto {
+    font-size: 1.5em;
+    margin: 0 0 25px;
+}
+#internaContent_article_palavra_exemplo {
+    font-family: 'museo_sans300_italic', arian, sans-serif;
+    font-size: 1.5em;
+}
+#internaContent_article_palavra_exemplo h3 {
+    font-family: 'Bad Script', cursive;
+    color: #ed1a3b;
+    font-size: 1.6em;
+    letter-spacing: -1px;
+    margin: 15px 0 10px 0;
+    display: block;
+}
+#internaContent_article_palavra_exemplo strong {
+    font-family: 'museo_sans700', arial,sans-serif;
+    color: #ed1a3b;
+}
+#internaContent_article_palavra_ouvir {
+    width: 400px;
+    margin: 0 auto;
+    display: table;
+    margin-top: 25px;
+}
+#internaContent_article_palavra_ouvir p {
+    font-family: 'museo_sans300_italic', arian, sans-serif;
+    font-size: 1.6em;
+    margin: 35px 0 0 13px;
+    float: left;
+}
+#internaContent_article_palavra_ouvir_chamada {
+    float: left;
+    color: #ed1a3b;
+    margin: 15px 0 0;
+    letter-spacing: -3px;
+}
+#internaContent_article_palavra_ouvir_chamada_responsivel {
+    float: left;
+    color: #000;
+    margin: 10px 0 0;
+    font-size: 6em;
+    letter-spacing: -3px;
+}
+#internaContent_article_palavra_ouvir_player {
+    width: 147px;
+    height: 75px;
+    float: left;
+    margin: 0 0 0 15px;
+    background-image: url(images/palavraPlay-index.png);
+}
+#internaContent_article_palavra_ouvir_player audio {
+    width: 42px;
+    margin: 25px 0 0 75px;
+}
+#internaContent_article_palavra_relacionadas {
+    float: left;
+    width: 100%;
+    border-bottom: 2px dashed #ed1a3b;
+    border-top: 2px dashed #ed1a3b;
+    padding: 13px 0;
+    height: 121px;
+    margin: 25px 0 0;
+}
+#internaContent_article_palavra_relacionadas_title {
+    font-family: 'honey_scriptsemibold';
+    color: #ed1a3b;
+}
+#internaContent_article_palavra_relacionadas_lista ul {
+    margin: 11px 0 0;
+}
+.internaContent_article_palavra_relacionadas_lista_item  {
+    float: left;
+    font-size: 1.5em;
+    margin: 0 13px;
+    background: url(images/li-list.png) no-repeat;
+    padding: 0 0 0 13px;
+}
+.internaContent_article_palavra_relacionadas_lista_item_imagem {
+    float: left;
+    width: 30%;
+}
+#internaContent_article_palavra_contribua {
+    display: table;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+@media screen and (max-width: 479px) {
+    #internaContent_article {
+        width: 100%;
+        border-right: none;
+        padding: 0;
+    }
+    #internaContent_article_palavra_title {
+        font-size: 12em;
+        text-align: center;
+    }
+    #internaContent_article_palavra_imagem {
+        margin: 25px 0;
+        width: 100%;
+    }
+    #internaContent_article_palavra_texto {
+        text-align: center;
+    }
+    #internaContent_article_palavra_exemplo {
+        text-align: center;
+    }
+    #internaContent_article_palavra_ouvir {
+        width: 270px;
+    }
+    #internaContent_article_palavra_ouvir_chamada {
+        display: none;
+    }
+    #internaContent_article_palavra_relacionadas {
+        height: auto;
+    }
+    .internaContent_article_palavra_relacionadas_lista_item {
+        font-size: 1.5em;
+        margin: 13px 13px 13px 0;
+        background: none;
+        padding: 0 0 0 13px;
+        width: 100%;
+        float: left;
+    }
+    .internaContent_article_palavra_relacionadas_lista_item_texto {
+        float: left;
+        margin: 7% 0 0 20px;
+    }
+    .internaContent_article_palavra_relacionadas_lista_item_texto p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #internaContent_article {
+        width: 100%;
+        border-right: none;
+        padding: 0;
+    }
+    #internaContent_article_palavra_title {
+        font-size: 12em;
+        text-align: center;
+    }
+    #internaContent_article_palavra_imagem {
+        margin: 25px 0;
+        width: 100%;
+    }
+    #internaContent_article_palavra_texto {
+        text-align: center;
+    }
+    #internaContent_article_palavra_exemplo {
+        text-align: center;
+    }
+    #internaContent_article_palavra_ouvir {
+        width: 270px;
+    }
+    #internaContent_article_palavra_ouvir_chamada {
+        display: none;
+    }
+    #internaContent_article_palavra_relacionadas {
+        height: auto;
+    }
+    .internaContent_article_palavra_relacionadas_lista_item {
+        font-size: 1.5em;
+        margin: 13px 13px 13px 0;
+        background: none;
+        padding: 0 0 0 13px;
+        width: 100%;
+        float: left;
+    }
+    .internaContent_article_palavra_relacionadas_lista_item_texto {
+        float: left;
+        margin: 7% 0 0 20px;
+    }
+    .internaContent_article_palavra_relacionadas_lista_item_texto p {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #internaContent_article {
+        width: 100%;
+        border-right: none;
+        padding: 0;
+    }
+    #internaContent_article_palavra_imagem {
+        margin: 25px 0;
+        width: 100%;
+    }
+    #internaContent_article_palavra_ouvir_chamada_responsivel {
+        display: none;
+    }
+    .internaContent_article_palavra_relacionadas_lista_item_imagem {
+        display: none;
+    }
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+    #internaContent_article {
+        width: 70%;
+    }    
+    #internaContent_article_palavra_ouvir_chamada_responsivel {
+        display: none;
+    }
+    .internaContent_article_palavra_relacionadas_lista_item_imagem {
+        display: none;
+    }
+}
+@media screen and (min-width: 1250px) {
+    #internaContent_article {
+        width: 70%;
+    }  
+    #internaContent_article_palavra_ouvir_chamada_responsivel {
+        display: none;
+    }   
+    .internaContent_article_palavra_relacionadas_lista_item_imagem {
+        display: none;
+    }
+}
+/* --------------------- SIDEBARS (SINGLE) ----------------------- */
+#internaContent_sidebar {
+    float: right;
+    width: 28%;
+}
+#internaContent_sidebar_responsivel {
+    margin: 0 auto;
+}
+#internaContent_sidebar_tituloBalao {
+    float: left;
+    width: 226px;
+    height: 199px;
+    background-image: url(images/aside-balaoBG.png);
+    margin: 0 0 0 35px;
+}
+#internaContent_sidebar_tituloBalao_link {
+}
+#internaContent_sidebar_tituloBalao_link h2 {
+    font-family: 'amaticbold';
+    width: 135px;
+    color: #ed1a3b;
+    text-align: center;
+    font-size: 5.9em;
+    margin: 27px 0 0 44px;
+}
+#internaContent_sidebar_tituloResponsivel {
+    float: left;
+}
+#internaContent_sidebar_tituloResponsivel h2 {
+    font-family: 'Bad Script', cursive;;
+    color: #ed1a3b;
+    font-size: 3.9em;
+    text-align: center;
+    margin: 28px 0 0;
+}
+.internaContent_sidebar_social {
+    float: left;
+    width: 100%;
+}
+.internaContent_sidebar_social img {
+    width: 60%;
+    display: table;
+    margin: 15px auto 0;
+}
+#internaContent_sidebar_title {
+    font-family: 'honey_scriptsemibold';
+    color: #ed1a3b;
+    font-size: 5.5em;
+    margin: 0 0 15px 0;
+}
+#internaContent_sidebar_palRelacionadas {
+}
+#internaContent_sidebar_palRelacionadas_lista {
+    margin: 0 0 30px 0;
+    float: left;
+}
+#internaContent_sidebar_palRelacionadas_lista li {
+    width: 100%;
+    float: left;
+    margin: 0 0 15px 0;
+}
+.internaContent_sidebar_palRelacionadas_lista_imagem {
+    width: 28%;
+    float: left;
+}
+.internaContent_sidebar_palRelacionadas_lista_texto {
+    float: left;
+    width: 50%;
+    margin: 22px 0 0 8px;
+    font-size: 2em;
+    font-family: 'museo_sans300_italic', arial, sans-serif;
+}
+
+@media screen and (max-width: 479px) {
+    #internaContent_sidebar {
+        width: 100%;
+        margin: 50px 0 0;
+        border-top: 2px dashed #ed1a3b;;
+        padding: 23px 0 0;
+    }
+    #internaContent_sidebar_tituloBalao {
+        display: none;
+    }
+    #internaContent_sidebar_tituloResponsivel {
+        width: 39%;
+    }
+    #internaContent_sidebar_tituloResponsivel h2 {
+        font-family: 'Bad Script', cursive;;
+        margin: 16px 0 0;
+        font-size: 3.1em;
+        letter-spacing: -2px;
+    }
+    .internaContent_sidebar_social {
+        width: 28%;
+    }
+    .internaContent_sidebar_social img {
+        width: 100%;
+        margin: 0;
+    }
+    #internaContent_sidebar_palRelacionadas {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #internaContent_sidebar {
+        width: 100%;
+        margin: 50px 0 0;
+        border-top: 2px dashed #ed1a3b;;
+        padding: 23px 0 0;
+    }
+    #internaContent_sidebar_responsivel {
+        width: 100%;
+    }
+    #internaContent_sidebar_tituloBalao {
+        display: none;
+    }
+    #internaContent_sidebar_tituloResponsivel {
+        width: 36%;
+    }
+    #internaContent_sidebar_tituloResponsivel h2 {
+        font-size: 3.7em;
+        margin: 15% 0 0;
+        letter-spacing: -3px;
+    }
+    .internaContent_sidebar_social {
+        width: 25%;
+        margin: 0 3% 0 0;
+    }
+    .internaContent_sidebar_social img {
+        width: 100%;
+        margin: 0;
+    }
+    #internaContent_sidebar_palRelacionadas {
+        display: none;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #internaContent_sidebar {
+        width: 100%;
+        margin: 50px 0 0;
+        border-top: 2px dashed #ed1a3b;;
+        padding: 23px 0 0;
+    }
+    #internaContent_sidebar_responsivel {
+        width: 89%;
+    }
+    #internaContent_sidebar_tituloBalao {
+        display: none;
+    }
+    #internaContent_sidebar_tituloResponsivel {
+        width: 34%;
+        margin: 0 10% 0 0;
+    }
+    #internaContent_sidebar_tituloResponsivel h2 {
+        font-size: 5em;
+        margin: 15% 0 0;
+        letter-spacing: -4px;
+    }
+    .internaContent_sidebar_social {
+        width: 23%;
+        margin: 0 27px 0 0;
+    }
+    .internaContent_sidebar_social img {
+        width: 100%;
+        margin: 0;
+    }
+    #internaContent_sidebar_palRelacionadas {
+        display: none;
+    }
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+    #internaContent_sidebar {
+    }    
+    #internaContent_sidebar_tituloResponsivel {
+        display: none;
+    }
+}
+@media screen and (min-width: 1250px) {
+    #internaContent_sidebar {
+    }   
+    #internaContent_sidebar_tituloResponsivel {
+        display: none;   
+    }
+}
+/*---------------------- SIDEBARS (PAGES) ----------------*/
+#internaContent_sidebar_boxPraDoDia {
+    float: left;
+    padding: 15px;
+    margin: 0 0 25px;
+    width: 100%;
+    background-image: url(images/lousa-pattern.jpg);
+} 
+#internaContent_sidebar_boxPraDoDia_title {   
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+#internaContent_sidebar_boxPraDoDia_title img  {   
+}
+#internaContent_sidebar_boxPraDoDia ul {   
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+#internaContent_sidebar_boxPraDoDia ul li {
+    font-family: honey_scriptsemibold;
+    font-size: 5em;
+    display: block;
+    width: 100%;
+    margin: 0 1% 1% 1%;
+    text-align: center;
+    color: #fff;
+}
+#internaContent_sidebar_boxPraDoDia ul li a { 
+}
+#internaContent_sidebar_palavraDestaque {
+    width: 100%;
+    margin: 0 0 25px 0;
+}
+#internaContent_sidebar_palavraDestaque h2 {
+    font-family: 'honey_scriptsemibold';
+    font-size: 7em;
+}
+#internaContent_sidebar_palavraDestaque_balaobico {
+    width: 17px;
+    position: absolute;
+    margin: -6px 0 0 75px;
+}
+#internaContent_sidebar_palavraDestaque_titulo {
+    padding: 10px 25px 10px 25px;
+    border: 2px dashed #ed1a3b;
+    width: 100%;
+    float: right;
+    border-radius: 20px;
+    margin: 25px 0 25px;
+}
+#internaContent_sidebar_palavraDestaque_titulo h3 {
+    text-align: center;
+    font-size: 10em;
+    font-family: 'honey_scriptsemibold';
+}
+@media screen and (max-width: 479px) {
+    #internaContent_sidebar_boxPraDoDia_title {   
+        width: 260px;
+    }
+    #internaContent_sidebar_boxPraDoDia ul li {
+        text-align: center;
+        font-size: 4em;
+    }
+    #internaContent_sidebar_palavraDestaque {
+        display: none;
+    } 
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #internaContent_sidebar_boxPraDoDia_title {   
+        width: 260px;
+    } 
+    #internaContent_sidebar_boxPraDoDia ul li {
+        text-align: center;
+        font-size: 4em;
+    }
+    #internaContent_sidebar_palavraDestaque {
+        display: none;
+    } 
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #internaContent_sidebar_boxPraDoDia_title {   
+        width: 300px;
+    }
+    #internaContent_sidebar_boxPraDoDia ul li {
+        width: 20%;
+        margin: 0 1% 1% 1%;
+        float: left;
+    }
+    #internaContent_sidebar_palavraDestaque {
+        display: none;
+    } 
+}
+/*@media screen and (max-width: 1249px) and (min-width: 1024px) {*/
+/*    #internaContent_sidebar_palavraDestaque {
+        display: none;
+    }   */
+/*@media screen and (min-width: 1250px) {
+    #tudo {
+        width: 1200px;
+    }    
+}*/
+/* --------------------- TAXONOMY ----------------------- */
+#internaContent_taxTitle {
+    float: right;
+    border: 1px dashed #ed1a3b;
+    padding: 27px 54px;
+}
+#internaContent_taxTitle h1 {
+    font-size: 10em;
+    font-family: museo_sans700;
+    text-transform: lowercase;
+}
+.internaContent_article_tax {
+    width: 100%;
+    float: left;
+    margin: 25px 0 0;
+}
+.internaContent_article_tax_title {
+    font-size: 9em;
+    float: left;
+    width: 60%;
+    margin: 47px 0 5px 20px;
+    font-family: honey_scriptsemibold;
+}
+#internaContent_article_taxTitle_Responsivel {
+    width: 180px;
+    margin: 0 auto;
+}
+.internaContent_article_tax_imagem {
+    float: left;
+    width: 30%;
+}
+.internaContent_article_tax_imagem a {
+    border: none;
+}
+.internaContent_article_tax_imagem img {
+    width: 100%;
+}
+.internaContent_article_tax_imagem p {
+    font-family: 'museo_sans300_italic';
+    font-size: 1.2em;
+    float: left;
+    margin: 5px 0 0;
+}
+.internaContent_article_tax_content {
+    float: left;
+    margin: 0 0 0 15px;
+    width: 63%;
+}
+.internaContent_article_tax_content p {
+    font-size: 1.5em;
+}
+@media screen and (max-width: 479px) {
+    #internaContent_article_taxTitle_Responsivel {
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+    }    
+    #internaContent_taxTitle {
+        padding: 18px 41px;
+    }
+    #internaContent_taxTitle h1 {
+        font-size: 7em;
+    }
+    .internaContent_article_tax_title {
+        text-align: center;
+        width: 90%;
+        margin: 5px 0 25px 20px;
+    }
+    .internaContent_article_tax_imagem {
+        width: 74%;
+        margin: 0 auto;
+        float: none;
+    }
+    .internaContent_article_tax_imagem p {
+        display: none;
+    }
+    .internaContent_article_tax_content {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #internaContent_article_taxTitle_Responsivel {
+        display: block;
+        width: 20%;
+        margin: 0 auto;
+    }    
+    #internaContent_taxTitle {
+        padding: 18px 41px;
+    }
+    #internaContent_taxTitle h1 {
+        font-size: 7em;
+    }
+    .internaContent_article_tax_title {
+        text-align: center;
+        width: 90%;
+        margin: 5px 0 25px 20px;
+    }
+    .internaContent_article_tax_imagem {
+        width: 74%;
+        margin: 0 auto;
+        float: none;
+    }
+    .internaContent_article_tax_imagem p {
+        display: none;
+    }
+    .internaContent_article_tax_content {
+        display: none;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #internaContent_article_taxTitle_Responsivel {
+        display: block;
+        width: 20%;
+        margin: 0 auto;
+    }    
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+    .internaContent_article_tax_title {
+        margin: 25px 0 5px 20px;
+    } 
+}
+/*
+@media screen and (min-width: 1250px) {
+    #tudo {
+        width: 1200px;
+    }    
+}*/
+/* --------------------- PAGE (PADRAO) ----------------------- */
+#internaContent_article_page {
+}
+#internaContent_article_page_title {
+    font-family: 'honey_scriptsemibold';
+    color: #ed1a3b;
+    font-size: 7em;
+}
+#internaContent_article_page_content {
+}
+#internaContent_article_page_content p {
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+/* --------------------- PAGE DIALETOS ----------------------- */
+#internaContent_article_dialetos {
+}
+.internaContent_article_dialetos_regiao {
+    margin: 40px 0 0 0;
+}
+.internaContent_article_dialetos_regiao_title {
+    font-family: 'honey_scriptsemibold';
+    font-size: 6em;
+}
+.internaContent_article_dialetos_regiao_imagem {
+    width: 100%;
+}
+.internaContent_article_dialetos_regiao_imagem img {
+}
+.internaContent_article_dialetos_regiao_imagem p {
+    font-size: 1.1em;
+    font-family: 'museo_sans300_italic';
+}
+.internaContent_article_dialetos_regiao_content {
+    margin: 10px 0 0;
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+.internaContent_article_dialetos_regiao_exemplo {
+    margin: 16px 15px 0;
+    font-size: 1.4em;
+    line-height: 1.2;
+    font-family: 'museo_sans300_italic';
+}
+.internaContent_article_dialetos_regiao_exemplo strong {
+    color: #ed1a3b;
+}
+/* --------------------- PAGE GASTRONOMIA ----------------------- */
+#internaContent_article_gastronomia {
+    background-image: url(images/lousa-pattern.jpg);
+    display: table;
+    padding: 30px 25px 0 25px;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+.internaContent_article_gastronomia_item {
+    height: 265px;
+    width: 200px;
+    float: left;
+    margin: 0 22px 35px 23px;
+}
+.internaContent_article_gastronomia_item_title { 
+    font-family: honey_scriptsemibold; 
+    margin: 0 0 8px 0;
+}
+.internaContent_article_gastronomia_item_imagem {
+    height: 150px;
+    width: 200px;
+    background-color: #000;
+}
+.internaContent_article_gastronomia_item p {   
+    margin: 3px 0 7px 0;
+}
+.internaContent_article_gastronomia_item_chamada {
+    font-size: 1.4em;
+}
+@media screen and (max-width: 479px) {
+    .internaContent_article_gastronomia_item {
+        width: 45%;
+        float: left;
+        margin: 0 5% 35px 0;
+        height: auto;
+    }
+    .internaContent_article_gastronomia_item_title { 
+        margin: 0 0 6px 0;
+        font-size: 3.0em;
+    }
+    .internaContent_article_gastronomia_item_imagem {
+        height: auto;
+        width: auto;
+    }
+    .internaContent_article_gastronomia_item_chamada {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    .internaContent_article_gastronomia_item {
+        width: 29%;
+        height: 260px !important;
+        float: left;
+        margin: 0 2% 35px 2%;
+    }
+    .internaContent_article_gastronomia_item_title { 
+        margin: 0 0 6px 0;
+        font-size: 3.4em;
+    }
+    .internaContent_article_gastronomia_item_imagem {
+        height: auto;
+        width: auto;
+    }
+    .internaContent_article_gastronomia_item_chamada {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .internaContent_article_gastronomia_item {
+        width: 29%;
+        height: 300px !important;
+        float: left;
+        margin: 0 2% 35px 2%;
+    }
+    .internaContent_article_gastronomia_item_title { 
+        margin: 0 0 6px 0;
+        font-size: 3.8em;
+    }
+    .internaContent_article_gastronomia_item_imagem {
+        height: auto;
+        width: auto;
+    }
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+    .internaContent_article_gastronomia_item {
+        height: 250px;
+        width: 150px;
+        float: left;
+        margin: 0 20px 35px 19px;
+    }
+    .internaContent_article_gastronomia_item_title { 
+        margin: 0 0 6px 0;
+        font-size: 3.8em;
+    }
+    .internaContent_article_gastronomia_item_imagem {
+        height: 113px;
+        width: 150px;
+    }
+}
+@media screen and (min-width: 1250px) {  
+}
+/* --------------------- PAGE PREFCIO ----------------------- */
+#internaContent_article_prefacio {
+}
+#internaContent_article_prefacio_form {
+    float: left;
+    width: 100%;
+    margin: 25px 0 0;
+}
+#internaContent_article_prefacio_form h2 {
+    float: left;
+    width: 21%;
+    text-align: right;
+    color: #ed1a3b;
+    margin: 4px 0 0 0;
+    font-size: 4em;
+    letter-spacing: -3px;
+}
+.internaContent_article_prefacio_form_input {
+    width: 75%;
+    margin: 0 0 30px 10px;
+    font-family: 'amaticbold', arial, sans-serif;
+    font-size: 3em;
+    padding: 3px 1px 8px 8px;
+    border: 1px dashed #ed1a3b;
+}
+#internaContent_article_prefacio_form_textarea {
+    margin: 0 0 0 10px;
+    width: 75%;
+    height: 200px;
+    font-size: 3em;
+    border: 1px dashed #ed1a3b;
+    padding: 8px 0 8px 8px;
+    font-family: 'amaticbold', arial, sans-serif;
+}
+#internaContent_article_prefacio_form_btn {
+    float: right;
+    margin: 20px 11px 0 0;
+    border: none;
+    background-color: #ed1a3b;
+    padding: 3px 25px 10px 25px;
+    color: #fff;
+    font-size: 3.3em;
+    font-family: 'amaticbold', arial, sans-serif;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 479px) {
+    #internaContent_article_prefacio_form h2 {
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+    .internaContent_article_prefacio_form_input {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    #internaContent_article_prefacio_form_textarea {
+        width: 100%;
+        margin: 0;
+    }
+    #internaContent_article_prefacio_form_btn {
+        float: none;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #internaContent_article_prefacio_form h2 {
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+    .internaContent_article_prefacio_form_input {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    #internaContent_article_prefacio_form_textarea {
+        width: 100%;
+        margin: 0;
+    }
+    #internaContent_article_prefacio_form_btn {
+        float: none;
+    }
+}
+/*@media screen and (max-width: 1023px) and (min-width: 768px) {
+}*/
+/*@media screen and (max-width: 1249px) and (min-width: 1024px) {
+    #tudo {
+        width: 960px;
+    }    
+}
+@media screen and (min-width: 1250px) {
+    #tudo {
+        width: 1200px;
+    }    
+}*/
+/* --------------------- PAGE CONTRIBUA ----------------------- */
+#internaContent_article_contribua {
+}
+#internaContent_article_contribuaBox {
+}
+#internaContent_article_contribua #internaContent_article_contribuaBox {
+    width: 383px;
+    display: block;
+    margin: 0 auto;
+}
+#internaContent_article_contribuaBox h3 {
+    font-size: 7em;
+    margin: 0 0 0 130px;
+}
+#internaContent_article_contribuaBox_balaobico {
+    width: 16px;
+    margin: -29px 0 0 106px;
+    position: absolute;
+}
+#internaContent_article_contribuaBox_balaobico img {
+}
+#internaContent_article_contribuaBox_wpComments {
+    padding: 20px;
+    border: #ed1a3b 2px dashed;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    float: left;
+    width: auto;
+}
+#internaContent_article_contribuaBox_wpComments label {
+    font-size: 1.5em;
+    float: left;
+    width: 86px;
+    text-align: right;
+    padding: 5px 7px 0 0;
+    margin: 0 0 10px 0;
+    font-family: 'museo_sans700';
+}
+#internaContent_article_contribuaBox_wpComments input {
+    width: 72%;
+    float: left;
+    display: block;
+    font-size: 1.2em;
+    padding: 2px 5px 2px 5px;
+    margin: 0 0 10px 0;
+    font-family: 'museo_sans300_italic';
+}
+#internaContent_article_contribuaBox_wpComments textarea {
+    width: 73%;
+    float: left;
+    display: block;
+    font-size: 1.2em;
+    padding: 2px 5px 2px 5px;
+    margin: 0 0 10px 0;
+    height: 45px;
+    font-family: 'museo_sans300_italic';
+}
+#contribuaConfirmacao {
+    font-family: 'honey_scriptsemibold';
+    color: #ed1a3b;
+    font-size: 7em;
+}
+#contribuaConfirmacao_link {
+    font-family: 'honey_scriptsemibold';
+    color: #ed1a3b;
+    font-size: 2em;
+}
+@media screen and (max-width: 479px) {
+    #internaContent_article_contribuaBox {
+        width: 100%;
+    }
+    #internaContent_article_contribuaBox_wpComments {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #internaContent_article_contribuaBox {
+        width: 383px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #internaContent_article_contribuaBox {
+        width: 383px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+/*---------------------- 404 ---------------------------------- */
+#internaContent_article_404 {
+}
+#internaContent_article_404 h1 {
+    float: left;
+    font-family: 'amaticbold', arial, sans-serif;
+    font-size: 30em;
+}
+#internaContent_article_404 img {
+    width: 30%;
+    float: left;
+}
+#internaContent_article_404_content {
+    width: 58%;
+    float: right;
+    margin: 130px 0 0;
+}
+#internaContent_article_404_content p {
+    font-size: 4em;
+}
+#internaContent_article_404_content strong {
+    color: #ed1a3b;
+}
+@media screen and (max-width: 479px) {
+    #internaContent_article_404 img {
+        width: 72%;
+        margin: 169px auto;
+        display: block;
+        float: none;
+    }
+    #internaContent_article_404 h1 {
+        float: left;
+        font-family: 'amaticbold', arial, sans-serif;
+        font-size: 19em;
+        position: absolute;
+        top: 181px;
+    }
+    #internaContent_article_404_content {
+        width: 100%;
+        float: right;
+        margin: -122px 0 0;
+    }
+    #internaContent_article_404_content p {
+        font-size: 2.9em;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #internaContent_article_404 img {
+        width: 72%;
+        margin: 201px auto;
+        display: block;
+        float: none;
+    }
+    #internaContent_article_404 h1 {
+        float: left;
+        font-family: 'amaticbold', arial, sans-serif;
+        font-size: 23em;
+        position: absolute;
+        top: 195px;
+    }
+    #internaContent_article_404_content {
+        width: 100%;
+        float: right;
+        margin: -122px 0 0;
+    }
+    #internaContent_article_404_content p {
+        font-size: 2.9em;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #internaContent_article_404 img {
+        width: 42%;
+        float: left;
+    }
+    #internaContent_article_404_content p {
+        font-size: 3.5em;
+    }
+    #internaContent_article_404_content {
+        width: 100%;
+        float: right;
+        margin: 20px 0 0;
+    }
+}
+/*@media screen and (max-width: 1249px) and (min-width: 1024px) {
+    #tudo {
+        width: 960px;
+    }    
+}
+@media screen and (min-width: 1250px) {
+    #tudo {
+        width: 1200px;
+    }    
+}*/
+/*---------------------- MOD CONTRIBUA ---------------------------------- */
+#contribuaBox {
+}
+#contribuaBox h3 {
+    font-size: 6em;
+    margin: 0 0 0 130px;
+    letter-spacing: -4px
+}
+#contribuaBox_balaobico {
+    width: 16px;
+    margin: -29px 0 0 106px;
+    position: absolute;
+}
+#contribuaBox_balaobico img {
+}
+#contribuaBox_wpComments {
+    padding: 20px;
+    border: #ed1a3b 2px dashed;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    float: left;
+    width: 100%;
+}
+#contribuaBox_wpComments h5 {
+    float: left;
+    font-size: 1.6em;
+    font-family: 'museo_sans300';
+    margin: 0 18px 20px 0;
+}
+#contribuaBox_wpComments label {
+    font-size: 1.5em;
+    float: left;
+    width: 86px;
+    text-align: right;
+    padding: 5px 7px 0 0;
+    margin: 0 0 10px 0;
+    font-family: 'museo_sans700';
+}
+#contribuaBox_wpComments input {
+    width: 72%;
+    float: left;
+    display: block;
+    font-size: 1.2em;
+    padding: 2px 5px 2px 5px;
+    margin: 0 0 10px 0;
+    font-family: 'museo_sans300_italic';
+}
+#contribuaBox_wpComments textarea {
+    width: 73%;
+    float: left;
+    display: block;
+    font-size: 1.2em;
+    padding: 2px 5px 2px 5px;
+    margin: 0 0 10px 0;
+    height: 45px;
+    font-family: 'museo_sans300_italic';
+}
+#recaptcha_widget_div {
+    display: block;
+    float: left;
+    width: 100%;
+}
+#recaptcha_area {   
+    width: 350px;
+    height: 129px;
+    float: right;
+    margin: 0 15px 0 0;
+}
+#recaptcha-submit-btn-area {   
+}
+#recaptcha-submit-btn-area #submit {  
+    margin: 10px 15px 0 0 !important;
+    height: 30px;
+    width: 140px;
+    float: right;
+    font-family: 'museo_sans700';
+}
+#contribuaBox_responsivel {
+    display: block;
+    margin: 0 auto;
+    width: 376px;
+}
+#contribuaBox_responsivel h3 {
+    float: left;
+    margin: 33px 0 0 0;
+    font-size: 5em;
+    letter-spacing: -4px;
+}
+#contribuaBox_responsivel_balaobico1 {
+    width: 30px;
+    position: absolute;
+    margin: 52px 0 0 159px;
+}
+#contribuaBox_responsivel_balaobico2 {
+    width: 15px;
+    position: absolute;
+    margin: 88px 0 0 172px;
+}
+#contribuaBox_responsivel_texto {
+    padding: 20px;
+    border: 2px dashed #000;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    float: left;
+    width: 177px;
+    margin: 0 0 0 47px;
+    text-align: center;
+}
+#contribuaBox_responsivel_texto h4 {
+    font-family: 'museo_sans700', arial, sans-serif;
+    font-size: 2em;
+}
+@media screen and (max-width: 479px) {
+    #contribuaBox {
+        display: none;
+    }
+    #contribuaBox_responsivel_balaobico2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #contribuaBox {
+        display: none;
+    }
+    #contribuaBox_responsivel_balaobico2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #contribuaBox {
+        display: none;
+    }
+    #contribuaBox_responsivel_balaobico1 {
+        display: none;
+    }
+    #contribuaBox_responsivel_texto {
+        width: 80%;
+        height: 100px;
+        margin: 0;
+    }
+    #contribuaBox_responsivel h3 {
+        font-size: 5.4em;
+        letter-spacing: -3px;
+        margin: 61px 0 0 0;
+    }
+    #contribuaBox_responsivel_texto h4 {
+        font-size: 2.4em;
+        margin: 4px 0 0 0;
+    }
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+    #contribuaBox_responsivel {
+        display: none;
+    }
+}
+@media screen and (min-width: 1250px) {
+    #contribuaBox_responsivel {
+        display: none;
+    }
+}
+/*---------------------- LAYOU CONTENT TRADUCOES ---------------------------------- */
+.traducoesContentDIV1 {
+    display: table !important;
+    width: 400px !important;
+    margin: 0 60px 0 5% !important;
+    float: left !important;
+}
+.traducoesContentDIV2 {
+    display: table !important;
+    width: 400px !important;
+    margin: 10px 5% 35px 60px !important;
+    float: right !important;
+}
+.traducoesContentAVATAR {
+    width: 80px !important;
+    display: block !important;
+    float: left !important;
+    height: auto !important;
+}
+.traducoesContentTEXT1 {
+    text-align: left !important;
+    display: block !important;
+    float: left !important;
+    font-size: 2em !important;
+    width: 300px !important;
+    margin: 18px 0 0 20px !important;
+    font-family: 'museo_sans300_italic' !important;
+}
+.traducoesContentTEXT2 {
+    text-align: right !important;
+    display: block !important;
+    float: left !important;
+    font-size: 2em !important;
+    width: 300px !important;
+    margin: 18px 20px 0 0 !important;
+    font-family: 'museo_sans300_italic' !important;
+}
+/*---------------------- SOCIAL SHARE ---------------------------------- */
+.socialShare {
+    width: 100%;
+    float: left;
+    margin: 20px 0 20px 0;
+}
+.socialShare .btnSocial {
+    height: 22px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.socialShare_facebook {
+}
+.socialShare_gPlus {
+}
+.socialShare_twitter {
+}
+/*---------------------- NOVO PLAYER ---------------------------------- */
+.audiojs {
+    width: 36px !important;
+    margin: 22px 0 0 80px !important;
+    display: block !important;
+    position: absolute !important;
+}
+.audiojs audio {
+}
+.play-pause {
+    border: 0 !important;
+}
+.play-pause .play {
+    margin: auto !important;
+}
+.play-pause p {
+    margin: auto !important;
+}
+.scrubber {
+    display: none !important;
+}
+.time {
+    display: none !important;
+}
+.error-message {
+    display: none !important;
+}
+/*---------------------- BUSCA ---------------------------------- */
+#search {
+}
+#search_titulo {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+#search_resultado {
+    width: 100%;
+}
+.search_resultado_pagination {
+    height: 50px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    position: relative;
+    left: 50%;
+    margin-top: 40px;
+}
+.search_resultado_paginationCentralizador {
+    position: relative;
+    left: -50%;
+}
+#paginationCurrent {
+    font-size: 18px;
+    float: left;
+}
+.pagination {
+    float: left;
+    height: 50px;
+    font-size: 18px;
+    margin: 0 0 0 25px;
+}
+.pagination .current {
+    float: left;
+    margin: 0 5px 0 5px;
+    color: #ed1a3b;
+}
+.pagination a {
+    float: left;
+    margin: 0 5px 0 5px;
+}
+.pagination img {
+    width: 17px;
+    height: 10px;
+    float: left;
+    margin: 4px 5px 0 5px;
+}
+.campoBuscaIndex {
+    width: 100%;
+    float: left;
+    margin: 35px 0 5px 0;
+    border-top: dashed 2px #ed1a3b;
+    border-bottom: dashed 2px #ed1a3b;
+    padding: 20px 0 20px 0;
+}
+.campoBuscaIndex_title {
+    width: 50%;
+    margin: 1px 15px 0 3%;
+    float: left;
+    font-size: 4em;
+    text-align: right;
+}
+.campoBuscaIndex form {
+    display: block;
+    float: left;
+    width: 35%;
+}
+.campoBuscaIndex_input {
+    width: 73%;
+    float: left;
+    display: block;
+    font-size: 3em;
+    padding: 2px 5px 2px 5px;
+    margin: 0 0 0 0;
+    height: 40px;
+    font-family: 'museo_sans300_italic';
+    border: 1px solid #000;
+}
+.campoBuscaIndex_btn {
+    width: 18%;
+    float: left;
+    display: block;
+    font-size: 3em;
+    padding: 2px 5px 2px 5px;
+    margin: 0 0 0 10px;
+    height: 46px;
+    font-family: 'museo_sans300_italic';
+    cursor: pointer;
+    background-color: #ed1a3b;
+    border: 0;
+    color: #fff;
+}
+@media screen and (max-width: 479px) {
+    .campoBuscaIndex_title {
+        width: 100%;
+        margin: 1px 0 20px 0;
+        text-align: center;
+    }
+    .campoBuscaIndex form {
+        width: 80%;
+        margin: 0 auto;
+        float: initial;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    .campoBuscaIndex_title {
+        width: 100%;
+        margin: 1px 0 20px 0;
+        text-align: center;
+    }
+    .campoBuscaIndex form {
+        width: 80%;
+        margin: 0 auto;
+        float: initial;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .campoBuscaIndex_title {
+        width: 100%;
+        margin: 1px 0 20px 0;
+        text-align: center;
+    }
+    .campoBuscaIndex form {
+        width: 80%;
+        margin: 0 auto;
+        float: initial;
+    }
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+}

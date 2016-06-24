@@ -1,0 +1,221 @@
+/*---------------------- HEADER ------------------*/
+#IEall {
+    background-color: #F15C27;
+}
+#highlights_pattern {
+    float: right;
+    display: table;
+    margin: 0 0 0 -1042px;
+}
+/*-- slider --*/
+.slider_title {
+    height: 130px;
+    margin: 400px 0 0 0;
+    float: left;
+}
+.slider_title h2 {
+    margin: 0 0 0 40px;
+}
+/*-- menu drop-down --*/
+#header_content_menus_nav_content ul li:hover ul { 
+    display: none;
+}
+#header_content_menus_nav {
+    width: 774px;
+}
+/*------------------- INDEX --------------------*/
+.content_bloco2_boxX {
+    width: 210px;
+}
+.content_bloco2_boxX_article_aTitle_h1 {
+    width: 230px;
+}
+.widgettitle {
+    color: #212121;
+    font-size: 14px;
+    font-family: CenturyBold, arial, sans-serif;
+    text-decoration: none;
+    text-align: left;
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+}
+.textwidget {
+    font-size: 12px;
+    font-family: Century, arial, sans-serif;
+}
+/*---------------------- DIREITA ------------------*/
+#content_direita {
+    width: 689px;
+    min-height: 300px;
+    float: left;
+    padding: 25px;
+}
+/*---------------------- ESQUERDA -------------------- */
+/*---------------------- DESTAQUES ------------------*/
+#destaquesNoticias {
+    width: 689px;
+    height: 261px;
+    background-color: black;
+    text-decoration: none;
+    margin: 0;
+}
+.destaques3col {
+    width: 213px;
+    float: left;
+    margin: 25px 25px 0 0;
+}
+.destaques3col_videos {
+    width: 188px;
+    float: left;
+    margin: 25px 25px 0 0;
+}
+/*---------------------- SERVIÇOS ------------------*/
+.servicosHome_2col {
+    width: 332px;
+    float: left;
+    margin: 25px 25px 0 0;
+}
+.servicos_4col {
+    width: 130px;
+    float: left;
+    margin: 0 44px 0 0;
+}
+#telecomTables_titulos h1 {
+    font-size: 15px;
+    font-family: CenturyBold, arial, sans-serif;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+    color: #F15C27;
+}
+#telecomTables_titulos {
+    width: 144px;
+    float: left;
+}
+.contentEsquerda_servicos_box {
+    margin: 25px 0 0 0;
+    width: 180px;
+}
+/*---------------------- VIDEOS ------------------*/
+#content_videos {
+    margin: 0 0 0 0;
+    width: 940px;
+    float: left;
+}
+#videosDestaque {
+    float: left;
+    width: 564px;
+    background-color: #000;
+    height: 308px
+}
+.videosMosaico_thumb_title_IE {  
+    text-decoration: none;
+    background-color: #000;
+    width: 130px;
+    margin: 71px 0 0 -192px;
+    padding: 3px 1px 4px 7px;
+    font-family: AntiqueRegular, arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    position: absolute;
+    float: left;
+}
+.videosMosaico_thumb_IE {
+    width: 188px;
+    height: 154px;
+    float: left;
+    cursor: pointer;
+}
+/*---------------------- SEARCH ------------------*/
+#searchContent {
+    margin: 0;
+}
+#searchContent p {
+    text-decoration: none;
+}
+.searchContent_result {
+    margin: 0;
+}
+#searchContentSub {
+    margin: 0 0 25px 0;
+    width: 689px;
+    border-bottom: #F68725 dotted 2px;
+}
+.pagination {
+    float: right;
+    margin: 0;
+}
+.searchContent_result_resumo {
+    font-family: Century, arial, sans-serif;
+    margin: 5px 0 5px 0;
+    font-size: 11px;
+    color: #212121;
+}
+.searchContent_result_title {
+    text-decoration: none;
+    color: #212121;
+    margin: 20px 0 2px 0;
+}
+.searchContent_result_data {
+    font-size: 11px;
+    margin: 0;
+}
+/*----------------- Como Chegar ---------------------*/
+#comoChegar_lista_item_linkMetro {
+    float: left;
+    margin: 5px 5px 0 0;
+}
+#comoChegar_lista_item_linkOnibus {
+    float: left;
+    margin: 5px 5px 0 0;
+}
+#comoChegar_lista_item_linkBike {
+    float: left;
+    margin: 8px 5px 0 0;
+}
+#comoChegar_lista_item_linkCarro {
+    float: left;
+    margin: 9px 5px 0 0;
+}
+#comoChegar_lista_item_linkTaxi {
+    float: left;
+    margin: 9px 5px 0 0;
+}
+#comoChegar_lista_item_linkHelicoptero {
+    float: left;
+    margin: 7px 5px 0 0;
+}
+#comoChegar_lista_item_linkAviao {
+    float: left;
+    margin: 0;
+}
+#comoChegar_title {
+    margin: 2px 0 0 80px;
+}
+/*--------------- Downloads ---------------*/
+#downloads_lista_item_linkPlanta {
+    float: left;
+    margin: 0 0 0 5px;
+}
+#downloads_lista_item_linkManuais {
+    float: left;
+    margin: 0 0 0 5px;
+}
+#downloads_lista_item_linkFolhetos {
+    float: left;
+    margin: 0 0 0 5px;
+}
+#downloads_lista_item_linkLogo {
+    float: left;
+    margin: 0 0 0 5px;
+}
+#downloads_lista_item_linkMapa {
+    float: left;
+    margin: 0 0 0 5px;
+}
+#downloads_lista {
+    margin: 0 25px 0 0;
+}

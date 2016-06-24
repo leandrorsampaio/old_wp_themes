@@ -1,0 +1,38 @@
+#header {
+    display: none;
+}
+#noticias_section_head_relacionadas {
+    display: none;
+}
+#noticias_section_head_social {
+    display: none;
+}
+#noticias_section_servicebar {
+    display: none;
+}
+#leiamais {
+    display: none;
+}
+#aside {
+    display: none;
+}
+#noticias_section_conteudo p {
+    font-family: 'MuseoSans500', arial, sans-serif;
+    color: #000;
+}
+#noticias_section_head_title { 
+    font-family: 'MuseoSans500', arial, sans-serif;
+}
+#noticias_section_head_data {
+    font-family: 'MuseoSans300italic', arial, sans-serif;
+    color: #666;
+}
+#noticias_section_head_submenu {
+    display: none;
+}
+#noticias_section_head_submenuImp {
+    display: none;
+}
+#pictureka_section_slider {
+    display: none;
+}
